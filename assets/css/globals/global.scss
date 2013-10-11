@@ -1,0 +1,121 @@
+$gray: #647678;
+$gray_bg: #2f3738;
+$blue_soft: #98b1da;
+$blue: #6699FF;
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../../fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Italic";
+  src: url("../../fonts/OpenSans-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Semibold";
+  src: url("../../fonts/OpenSans-Semibold.ttf");
+}
+
+@font-face {
+  font-family: "Recetrac Bold";
+  src: url("../../fonts/BARAKB.TTF");
+}
+
+$default_font: "Open Sans Light";
+
+@function getSize($pt) {
+  @return (($pt * 100%) / 10.5%) + 0%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+hgroup, article,
+nav, aside,
+section {
+  display: block;
+}
+
+body {
+  width: 100%;
+  font-size:  getSize(12);
+  font-family: $default_font;
+}
+
+.container {
+  max-width: 970px;
+}
+
+@import "header";
+
+
+hgroup {
+  line-height: 100%;
+  padding: 0 0 50px 0;
+  display: block;
+}
+
+h1 {
+  color: $gray;
+  font-weight: normal;
+  font-size:  getSize(36);
+  margin: 0;
+  padding: 0;
+  font-family: $default_font;
+}
+
+h2 {
+  @extend h1;
+  font-size:  getSize(24);
+  font-family: $default_font;
+}
+
+a.blue_btn {
+  color: #ffffff;
+  font-size: getSize(24);
+  font-family: $default_font;
+  background: $blue;
+  font-weight: normal;
+  padding: 20px 100px;
+}
+
+blockquote {
+  border: none;
+  padding: 0px 0 0 50px;
+  margin: 50px 0;
+  background: url("../../img/quotes.png") left top no-repeat;
+
+  p {
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  h3 {
+    color: $gray;
+    font-weight: normal;
+    font-size:  getSize(24);
+    font-family: $default_font;
+  }
+}
+
+p {
+  display: block;
+  color: $gray;
+  font: getSize(14) normal $default_font;
+}
+
+@import "footer";

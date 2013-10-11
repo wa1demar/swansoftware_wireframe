@@ -1,0 +1,24 @@
+#mainHeader {
+  background: $gray_bg;
+  padding: 25px 0 10px 0;
+
+  hgroup {
+    padding: 0;
+
+    h1 {
+      color: #ffffff;
+      padding: 0;
+      margin: 15px 0 0 0;
+      font-size: getSize(50);
+      font-family: "Recetrac Bold";
+    }
+
+    h2 {
+      padding: 0;
+      margin: 0;
+      color: #ffffff;
+      font-size: getSize(18); // TODO: 20pt
+      font-family: $default_font;
+    }
+  }
+}

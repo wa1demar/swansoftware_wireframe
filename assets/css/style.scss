@@ -1,0 +1,526 @@
+$gray: #647678;
+$gray_bg: #2f3738;
+$blue_soft: #98b1da;
+$blue: #6699FF;
+
+@function getSize($pt) {
+  @return (($pt * 100%) / 10.5%) + 0%;
+}
+
+@mixin font_size($pt) {
+  font-size: getSize($pt);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Italic";
+  src: url("../fonts/OpenSans-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans Semibold";
+  src: url("../fonts/OpenSans-Semibold.ttf");
+}
+
+@font-face {
+  font-family: "Recetrac Bold";
+  src: url("../fonts/BARAKB.TTF");
+}
+
+$default_font: "Open Sans Light";
+
+body {
+  width: 100%;
+  @include font_size(12);
+  font-family: $default_font;
+
+  .container {
+    max-width: 970px;
+  }
+
+  //========= Main content style ==============
+  hgroup {
+    line-height: 100%;
+    padding: 0 0 50px 0;
+    display: block;
+  }
+
+  h1 {
+    color: $gray;
+    font-weight: normal;
+    @include font_size(36);
+    margin: 0;
+    padding: 0;
+    font-family: $default_font;
+  }
+
+  h2 {
+    @extend h1;
+    @include font_size(24);
+    font-family: $default_font;
+  }
+
+  a.blue_btn {
+    color: #ffffff;
+    @include font_size(24);
+    font-family: $default_font;
+    background: $blue;
+    font-weight: normal;
+    padding: 20px 100px;
+  }
+
+  article {
+    display: block;
+
+    p {
+      display: block;
+      color: $gray;
+      font: getSize(14) normal $default_font;
+    }
+
+    blockquote {
+      border: none;
+      padding: 0px 0 0 50px;
+      margin: 50px 0;
+      background: url("../img/quotes.png") left top no-repeat;
+
+      p {
+        padding: 10px 0;
+        margin: 0;
+      }
+
+      h3 {
+        color: $gray;
+        font-weight: normal;
+        @include font_size(24);
+        font-family: $default_font;
+      }
+    }
+
+  }
+
+  //================ Header ===================
+  #mainHeader {
+    //display: block;
+    background: $gray_bg;
+    //vertical-align: middle;
+    padding: 25px 0 10px 0;
+
+    hgroup {
+      display: block;
+      padding: 0;
+
+      h1 {
+        color: #ffffff;
+        padding: 0;
+        margin: 15px 0 0 0;
+        font-size: getSize(50);
+        font-family: "Recetrac Bold";
+      }
+
+      h2 {
+        padding: 0;
+        margin: 0;
+        color: #ffffff;
+        @include font_size(18); // TODO: 20pt
+        font-family: $default_font;
+      }
+    }
+
+    .address {
+      width: 100%;
+
+      ul {
+        margin: 0;
+        width: auto;
+        //padding-left: 50%;
+
+        li {
+
+        }
+
+        li.address {
+          background: url("../img/location_25x25.png") no-repeat left center;
+          @include font_size(14);
+        }
+
+        li.phone {
+          background: url("../img/cellphone_25x25.png") no-repeat left center;
+
+          p {
+            font-family: "Open Sans Bold";
+            @include font_size(18);
+          }
+        }
+
+        li {
+          list-style: none;
+          padding: 5px 0 5px 35px;
+
+          p {
+            color: #ffffff;
+            padding: 0;
+            margin: 0;
+            line-height: 120%;
+          }
+        }
+      }
+
+    }
+
+    ul.mainMenu {
+      text-align: right;
+      margin: 0;
+
+      li {
+        list-style: none;
+        display: inline-block;
+        padding: 5px 0 0 10px;
+
+        a {
+          color: #ffffff;
+          @include font_size(14);
+          font-family: $default_font;
+        }
+      }
+    }
+  }
+
+  // ==================== FIRST SLIDER =======================>
+
+  #sliderFirst {
+    background: url("../img/slider_navigation_bg.png") repeat-x top;
+    height: 785px;
+
+    ul {
+
+      &.socialLinks {
+        margin: 0 auto;
+        list-style: none;
+        text-align: center;
+        background: $blue_soft;
+        width: 130px;
+
+        li {
+          display: inline-block;
+          padding: 10px 2px;
+          margin: 0;
+        }
+      }
+
+    }
+
+    .topBanner {
+      background: url("../img/banner_temp.png") center top no-repeat;
+      height: 665px;
+      //margin-top: 20px;
+
+      .sliderPopups {
+        height: 280px;
+      }
+
+      .getStartedButton {
+        text-align: center;
+
+        a {
+          color: #ffffff;
+          font-size: getSize(24);
+          font-family: $default_font;
+          font-weight: normal;
+          padding: 20px 100px;
+
+        }
+      }
+
+      h1 {
+        color: #ffffff;
+        text-align: center;
+        @include font_size(36);
+        font-family: $default_font;
+        padding: 30px 0 30px 0;
+        font-weight: normal;
+      }
+
+      .topBannerLinks {
+        text-align: center;
+
+        .box {
+          cursor: pointer;
+          //width: (100% / 5) + 0%;
+          padding: 0;
+
+          &:hover .round_image {
+            background: $blue;
+
+          }
+
+          .round_image {
+            margin: 0 auto;
+            padding: 40px;
+            width: auto;
+            background: url("../img/bg-blue-transparent.png") repeat;
+            border-radius: 80px;
+            width: 65%;
+            //width: getSize(12);
+
+            img {
+              width: 80px;
+
+            }
+
+          }
+
+          p {
+            color: #ffffff;
+            padding: 20px 5px;
+            @include font_size(24); // TODO:  24pt
+            font-family: $default_font;
+          }
+
+        }
+      }
+    }
+
+  }
+
+  // ==================== SECOND SLIDER =======================>
+
+  #sliderSecond {
+
+    .sliderSecondInner {
+      padding: 50px 0;
+
+      div {
+
+        ul.secondSidebarMenu {
+          list-style: none;
+
+          li {
+            padding: 0;
+            background: #ffffff;
+            line-height: 120%;
+
+            a {
+              width: 100%;
+              height: 100%;
+              display: block;
+              padding: 15px 5px 15px 60px;
+              font-family: $default_font;
+              font-size: getSize(16);
+              color: $blue;
+              text-decoration: none;
+              line-height: 100%;
+            }
+
+          }
+
+          .mobile {
+            background: #ffffff url("../img/icon_s_1_45.png") left center no-repeat;
+
+            &:hover,
+            &.active {
+              background: $blue url("../img/service1_25x25.png") left center no-repeat;
+
+              a {
+                color: #ffffff;
+              }
+            }
+          }
+
+          .staf {
+            background: #ffffff url("../img/icon_s_2_45.png") left center no-repeat;
+
+            &:hover,
+            &.active {
+              background: $blue url("../img/service2_25x25.png") left center no-repeat;
+
+              a {
+                color: #ffffff;
+              }
+            }
+          }
+
+          .app {
+            background: #ffffff url("../img/icon_s_3_45.png") left center no-repeat;
+
+            &:hover,
+            &.active {
+              background: $blue url("../img/service3_25x25.png") left center no-repeat;
+
+              a {
+                color: #ffffff;
+              }
+            }
+          }
+
+          .design {
+            background: #ffffff url("../img/icon_s_4_45.png") left center no-repeat;
+
+            &:hover,
+            &.active {
+              background: $blue url("../img/service4_25x25.png") left center no-repeat;
+
+              a {
+                color: #ffffff;
+              }
+            }
+          }
+
+          .marketing {
+            background: #ffffff url("../img/icon_s_5_45.png") left center no-repeat;
+
+            &:hover {
+              background: $blue url("../img/service5_25x25.png") left center no-repeat;
+
+              a {
+                color: #ffffff;
+              }
+            }
+          }
+
+        }
+
+      }
+
+      .phoneBG {
+        background: #fff url("../img/phone_bg.png") right center no-repeat;
+        background-size: contain;
+      }
+
+    }
+
+  }
+
+  #sliderThird {
+    background: $gray_bg;
+    position: relative;
+    text-align: center;
+
+    img {
+      width: 100%;
+      max-width: 1366px;
+    }
+
+    .news_line {
+      background: url("../img/bg-black-transparent.png") repeat;
+      color: #ffffff;
+      padding: 20px 0;
+      position: absolute;
+      bottom: 10%;
+      width: 100%;
+      text-align: justify;
+
+      p {
+        padding: 10px 0;
+        text-align: justify;
+        font-size: getSize(14);
+      }
+
+      ul {
+        padding: 0;
+        li {
+          list-style: url("../img/marker.png");
+
+          h3 {
+            font: getSize(14) bold "Open Sans Bold";
+            color: #ffffff;
+          }
+          footer {
+            color: #ffffff;
+            font: getSize(14) normal "Open Sans Light";
+          }
+        }
+      }
+    }
+  }
+
+  #sliderFourth {
+    background: #fff;
+    padding: 50px;
+
+    h1 {
+      text-align: center;
+      font-size: getSize(36);
+    }
+  }
+
+  #sliderFifth {
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .mainFooter {
+    display: block;
+    background: #2F3738;
+    padding: 50px 0;
+
+    h1 {
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+      font-size: getSize(69.49);
+      font-family: "Open Sans Light";
+      font-weight: normal;
+    }
+
+    h2 {
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+      font-size: getSize(26.06);
+      font-family: "Open Sans Light";
+      font-weight: normal;
+    }
+
+    ul.footerNav {
+      list-style: none;
+
+      li {
+        display: inline-block;
+        padding: 10px;
+        font-size: getSize(14);
+
+        a {
+          color: cornflowerblue;
+          text-decoration: none;
+        }
+      }
+    }
+
+    ul.footerEAddresses,
+    ul.footerPhones,
+    ul.footerAddress {
+      list-style: none;
+
+      li {
+        color: gray;
+
+        h3 {
+          font-size: 100%; // TODO: font
+          font-weight: normal;
+          color: cornflowerblue;
+        }
+      }
+    }
+  }
+}

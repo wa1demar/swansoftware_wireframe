@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../../fonts/OpenSans-Light.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../../fonts/OpenSans-Bold.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Italic";
+  src: url("../../fonts/OpenSans-Italic.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Semibold";
+  src: url("../../fonts/OpenSans-Semibold.ttf"); }
+
+@font-face {
+  font-family: "Recetrac Bold";
+  src: url("../../fonts/BARAKB.TTF"); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+hgroup, article,
+nav, aside,
+section {
+  display: block; }
+
+body {
+  width: 100%;
+  font-size: 114.28571%;
+  font-family: "Open Sans Light"; }
+
+.container {
+  max-width: 970px; }
+
+#mainHeader {
+  background: #2f3738;
+  padding: 25px 0 10px 0; }
+  #mainHeader hgroup {
+    padding: 0; }
+    #mainHeader hgroup h1, #mainHeader hgroup h2 {
+      color: #ffffff;
+      padding: 0;
+      margin: 15px 0 0 0;
+      font-size: 476.19048%;
+      font-family: "Recetrac Bold"; }
+    #mainHeader hgroup h2 {
+      padding: 0;
+      margin: 0;
+      color: #ffffff;
+      font-size: 171.42857%;
+      font-family: "Open Sans Light"; }
+
+hgroup {
+  line-height: 100%;
+  padding: 0 0 50px 0;
+  display: block; }
+
+h1, h2 {
+  color: #647678;
+  font-weight: normal;
+  font-size: 342.85714%;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Light"; }
+
+h2 {
+  font-size: 228.57143%;
+  font-family: "Open Sans Light"; }
+
+a.blue_btn {
+  color: #ffffff;
+  font-size: 228.57143%;
+  font-family: "Open Sans Light";
+  background: #6699ff;
+  font-weight: normal;
+  padding: 20px 100px; }
+
+blockquote {
+  border: none;
+  padding: 0px 0 0 50px;
+  margin: 50px 0;
+  background: url("../../img/quotes.png") left top no-repeat; }
+  blockquote p {
+    padding: 10px 0;
+    margin: 0; }
+  blockquote h3 {
+    color: #647678;
+    font-weight: normal;
+    font-size: 228.57143%;
+    font-family: "Open Sans Light"; }
+
+p {
+  display: block;
+  color: #647678;
+  font: 133.33333% normal "Open Sans Light"; }
