@@ -1,0 +1,43 @@
+@import "../globals/constants";
+#sliderThird {
+  background: $gray_bg;
+  position: relative;
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-width: 1366px;
+  }
+
+  .news_line {
+    background: url("../../img/bg-black-transparent.png") repeat;
+    color: #ffffff;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    text-align: justify;
+
+    p {
+      padding: 10px 0;
+      text-align: justify;
+      font-size: getSize(14);
+    }
+
+    ul {
+      padding: 0;
+      li {
+        list-style: url("../../img/marker.png");
+
+        h3 {
+          font: getSize(14) bold "Open Sans Bold";
+          color: #ffffff;
+        }
+        footer {
+          color: #ffffff;
+          font: getSize(14) normal "Open Sans Light";
+        }
+      }
+    }
+  }
+}

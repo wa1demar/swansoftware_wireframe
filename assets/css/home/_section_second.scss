@@ -1,0 +1,106 @@
+@import "../globals/constants";
+#sliderSecond {
+
+  .sliderSecondInner {
+    padding: 50px 0;
+
+    div {
+
+      ul.secondSidebarMenu {
+        list-style: none;
+
+        li {
+          padding: 0;
+          background: #ffffff;
+          line-height: 120%;
+
+          a {
+            width: 100%;
+            height: 100%;
+            display: block;
+            padding: 15px 5px 15px 60px;
+            font-family: $default_font;
+            font-size: getSize(16);
+            color: $blue;
+            text-decoration: none;
+            line-height: 100%;
+          }
+
+        }
+
+        .mobile {
+          background: #ffffff url("../../img/icon_s_1_45.png") left center no-repeat;
+
+          &:hover,
+          &.active {
+            background: $blue url("../../img/service1_25x25.png") left center no-repeat;
+
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+
+        .staf {
+          background: #ffffff url("../../img/icon_s_2_45.png") left center no-repeat;
+
+          &:hover,
+          &.active {
+            background: $blue url("../../img/service2_25x25.png") left center no-repeat;
+
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+
+        .app {
+          background: #ffffff url("../../img/icon_s_3_45.png") left center no-repeat;
+
+          &:hover,
+          &.active {
+            background: $blue url("../../img/service3_25x25.png") left center no-repeat;
+
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+
+        .design {
+          background: #ffffff url("../../img/icon_s_4_45.png") left center no-repeat;
+
+          &:hover,
+          &.active {
+            background: $blue url("../../img/service4_25x25.png") left center no-repeat;
+
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+
+        .marketing {
+          background: #ffffff url("../../img/icon_s_5_45.png") left center no-repeat;
+
+          &:hover {
+            background: $blue url("../../img/service5_25x25.png") left center no-repeat;
+
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+
+      }
+
+    }
+
+    .phoneBG {
+      background: #fff url("../../img/phone_bg.png") right center no-repeat;
+      background-size: contain;
+    }
+
+  }
+
+}
