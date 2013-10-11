@@ -1,3 +1,5 @@
+@import "constants";
+
 #mainHeader {
   background: $gray_bg;
   padding: 25px 0 10px 0;
@@ -19,6 +21,67 @@
       color: #ffffff;
       font-size: getSize(18); // TODO: 20pt
       font-family: $default_font;
+    }
+  }
+
+  .address {
+    width: 100%;
+
+    ul {
+      margin: 0;
+      width: auto;
+      //padding-left: 50%;
+
+      li {
+
+      }
+
+      li.address {
+        background: url("../../img/location_25x25.png") no-repeat left center;
+
+        p {
+          font-size: getSize(14);
+        }
+
+      }
+
+      li.phone {
+        background: url("../../img/cellphone_25x25.png") no-repeat left center;
+
+        p {
+          font-family: "Open Sans Bold";
+          font-size:  getSize(18);
+        }
+      }
+
+      li {
+        list-style: none;
+        padding: 5px 0 5px 35px;
+
+        p {
+          color: #ffffff;
+          padding: 0;
+          margin: 0;
+          line-height: 120%;
+        }
+      }
+    }
+
+  }
+
+  ul.mainMenu {
+    text-align: right;
+    margin: 0;
+
+    li {
+      list-style: none;
+      padding: 5px 0 0 10px;
+
+      a {
+        color: #ffffff;
+        font-size: getSize(14);
+        font-family: $default_font;
+      }
     }
   }
 }
