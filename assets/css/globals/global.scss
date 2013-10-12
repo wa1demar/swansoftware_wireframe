@@ -19,6 +19,10 @@ body {
 
 .container {
   max-width: 970px;
+
+  &.sec {
+    padding: 50px 0;
+  }
 }
 
 @import "header";
@@ -47,11 +51,20 @@ h2 {
 
 a.blue_btn {
   color: #ffffff;
-  font-size: getSize(24);
+  font-size: getSize(20);
   font-family: $default_font;
-  background: $blue;
-  font-weight: normal;
-  padding: 20px 100px;
+  background: $blue_soft;
+  font-weight: bold;
+  padding: 15px 30px;
+  margin: 30px auto;
+  text-decoration: none;
+  display: block;
+  width: 300px;
+  text-align: center;
+
+  &:hover {
+    background: $blue;
+  }
 }
 
 blockquote {
@@ -92,6 +105,18 @@ ul {
     li {
       display: inline-block;
     }
+  }
+}
+
+span.title {
+  display: table;
+  text-align: right;
+  margin: 0 auto !important;
+  float: none !important;
+
+  a {
+    font-size: getSize(16); // TODO: ???
+
   }
 }
 

@@ -24,56 +24,59 @@
 
 #sliderFirst {
   background: url("../../img/slider_navigation_bg.png") repeat-x top;
-  height: 785px; }
-  #sliderFirst ul.socialLinks {
-    margin: 0 auto;
-    list-style: none;
-    text-align: center;
-    background: #98b1da;
-    width: 130px; }
-    #sliderFirst ul.socialLinks li {
-      padding: 10px 2px;
-      margin: 0; }
-  #sliderFirst .topBanner {
-    background: url("../../img/banner_temp.png") center top no-repeat;
-    height: 665px; }
-    #sliderFirst .topBanner .sliderPopups {
-      height: 280px; }
-    #sliderFirst .topBanner .getStartedButton {
-      text-align: center; }
-      #sliderFirst .topBanner .getStartedButton a {
-        color: #ffffff;
-        font-size: 228.57143%;
-        font-family: "Open Sans Light";
-        font-weight: normal;
-        padding: 20px 100px; }
-    #sliderFirst .topBanner h1 {
-      color: #ffffff;
+  height: 785px;
+  padding: 0; }
+  #sliderFirst .container {
+    padding: 0; }
+    #sliderFirst .container ul.socialLinks {
+      margin: 0 auto;
+      list-style: none;
       text-align: center;
-      font-size: 342.85714%;
-      font-family: "Open Sans Light";
-      padding: 30px 0 30px 0;
-      font-weight: normal; }
-    #sliderFirst .topBanner .topBannerLinks {
-      text-align: center; }
-      #sliderFirst .topBanner .topBannerLinks .box {
-        cursor: pointer;
-        padding: 0; }
-        #sliderFirst .topBanner .topBannerLinks .box:hover .round_image {
-          background: #6699ff; }
-        #sliderFirst .topBanner .topBannerLinks .box .round_image {
-          margin: 0 auto;
-          padding: 40px;
-          background: url("../../img/bg-blue-transparent.png") repeat;
-          border-radius: 80px;
-          width: 65%; }
-          #sliderFirst .topBanner .topBannerLinks .box .round_image img {
-            width: 80px; }
-        #sliderFirst .topBanner .topBannerLinks .box p {
+      background: #98b1da;
+      width: 130px; }
+      #sliderFirst .container ul.socialLinks li {
+        padding: 10px 2px;
+        margin: 0; }
+    #sliderFirst .container .topBanner {
+      background: url("../../img/banner_temp.png") center top no-repeat;
+      height: 665px; }
+      #sliderFirst .container .topBanner .sliderPopups {
+        height: 280px; }
+      #sliderFirst .container .topBanner .getStartedButton {
+        text-align: center; }
+        #sliderFirst .container .topBanner .getStartedButton a {
           color: #ffffff;
-          padding: 20px 5px;
           font-size: 228.57143%;
-          font-family: "Open Sans Light"; }
+          font-family: "Open Sans Light";
+          font-weight: normal;
+          padding: 20px 100px; }
+      #sliderFirst .container .topBanner h1 {
+        color: #ffffff;
+        text-align: center;
+        font-size: 342.85714%;
+        font-family: "Open Sans Light";
+        padding: 30px 0 30px 0;
+        font-weight: normal; }
+      #sliderFirst .container .topBanner .topBannerLinks {
+        text-align: center; }
+        #sliderFirst .container .topBanner .topBannerLinks .box {
+          cursor: pointer;
+          padding: 0; }
+          #sliderFirst .container .topBanner .topBannerLinks .box:hover .round_image {
+            background: #6699ff; }
+          #sliderFirst .container .topBanner .topBannerLinks .box .round_image {
+            margin: 0 auto;
+            padding: 40px;
+            background: url("../../img/bg-blue-transparent.png") repeat;
+            border-radius: 80px;
+            width: 65%; }
+            #sliderFirst .container .topBanner .topBannerLinks .box .round_image img {
+              width: 80px; }
+          #sliderFirst .container .topBanner .topBannerLinks .box p {
+            color: #ffffff;
+            padding: 20px 5px;
+            font-size: 228.57143%;
+            font-family: "Open Sans Light"; }
 
 @font-face {
   font-family: "Open Sans";
@@ -99,8 +102,8 @@
   font-family: "Recetrac Bold";
   src: url("../../fonts/BARAKB.TTF"); }
 
-#sliderSecond .sliderSecondInner {
-  padding: 50px 0; }
+#sliderSecond {
+  position: relative; }
   #sliderSecond .sliderSecondInner div ul.secondSidebarMenu {
     list-style: none; }
     #sliderSecond .sliderSecondInner div ul.secondSidebarMenu li {
@@ -184,7 +187,6 @@
     max-width: 1366px; }
   #sliderThird .news_line {
     background: url("../../img/bg-black-transparent.png") repeat;
-    color: #ffffff;
     padding: 20px 0;
     position: absolute;
     bottom: 10%;
@@ -193,7 +195,7 @@
     #sliderThird .news_line p {
       padding: 10px 0;
       text-align: justify;
-      font-size: 133.33333%; }
+      color: #ffffff; }
     #sliderThird .news_line ul {
       padding: 0; }
       #sliderThird .news_line ul li {
@@ -204,3 +206,12 @@
         #sliderThird .news_line ul li footer {
           color: #ffffff;
           font: 133.33333% normal "Open Sans Light"; }
+
+#sliderFourth {
+  background: url("../../img/gray_equals.png") bottom repeat-x;
+  margin-bottom: 10px; }
+  #sliderFourth section {
+    padding: 0 0 30px 0; }
+
+#sliderFifth {
+  background: url("../../img/swan-bg.png") top center no-repeat; }

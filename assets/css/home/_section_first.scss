@@ -1,91 +1,97 @@
 @import "../globals/constants";
+
 #sliderFirst {
   background: url("../../img/slider_navigation_bg.png") repeat-x top;
   height: 785px;
+  padding: 0;
 
-  ul {
+  .container {
+    padding: 0;
 
-    &.socialLinks {
-      margin: 0 auto;
-      list-style: none;
-      text-align: center;
-      background: $blue_soft;
-      width: 130px;
+    ul {
 
-      li {
-        padding: 10px 2px;
-        margin: 0;
+      &.socialLinks {
+        margin: 0 auto;
+        list-style: none;
+        text-align: center;
+        background: $blue_soft;
+        width: 130px;
+
+        li {
+          padding: 10px 2px;
+          margin: 0;
+        }
       }
+
     }
 
-  }
+    .topBanner {
+      background: url("../../img/banner_temp.png") center top no-repeat;
+      height: 665px;
+      //margin-top: 20px;
 
-  .topBanner {
-    background: url("../../img/banner_temp.png") center top no-repeat;
-    height: 665px;
-    //margin-top: 20px;
-
-    .sliderPopups {
-      height: 280px;
-    }
-
-    .getStartedButton {
-      text-align: center;
-
-      a {
-        color: #ffffff;
-        font-size: getSize(24);
-        font-family: $default_font;
-        font-weight: normal;
-        padding: 20px 100px;
-
+      .sliderPopups {
+        height: 280px;
       }
-    }
 
-    h1 {
-      color: #ffffff;
-      text-align: center;
-      font-size: getSize(36);
-      font-family: $default_font;
-      padding: 30px 0 30px 0;
-      font-weight: normal;
-    }
+      .getStartedButton {
+        text-align: center;
 
-    .topBannerLinks {
-      text-align: center;
-
-      .box {
-        cursor: pointer;
-        //width: (100% / 5) + 0%;
-        padding: 0;
-
-        &:hover .round_image {
-          background: $blue;
+        a {
+          color: #ffffff;
+          font-size: getSize(24);
+          font-family: $default_font;
+          font-weight: normal;
+          padding: 20px 100px;
 
         }
+      }
 
-        .round_image {
-          margin: 0 auto;
-          padding: 40px;
-          background: url("../../img/bg-blue-transparent.png") repeat;
-          border-radius: 80px;
-          width: 65%;
-          //width: getSize(12);
+      h1 {
+        color: #ffffff;
+        text-align: center;
+        font-size: getSize(36);
+        font-family: $default_font;
+        padding: 30px 0 30px 0;
+        font-weight: normal;
+      }
 
-          img {
-            width: 80px;
+      .topBannerLinks {
+        text-align: center;
+
+        .box {
+          cursor: pointer;
+          //width: (100% / 5) + 0%;
+          padding: 0;
+
+          &:hover .round_image {
+            background: $blue;
 
           }
 
-        }
+          .round_image {
+            margin: 0 auto;
+            padding: 40px;
+            background: url("../../img/bg-blue-transparent.png") repeat;
+            border-radius: 80px;
+            width: 65%;
+            //width: getSize(12);
 
-        p {
-          color: #ffffff;
-          padding: 20px 5px;
-          font-size: getSize(24);
-          font-family: $default_font;
-        }
+            img {
+              width: 80px;
 
+            }
+
+          }
+
+          p {
+            color: #ffffff;
+            padding: 20px 5px;
+            font-size: getSize(24);
+            font-family: $default_font;
+          }
+
+        }
       }
     }
   }

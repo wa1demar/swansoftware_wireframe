@@ -38,6 +38,8 @@ body {
 
 .container {
   max-width: 970px; }
+  .container.sec {
+    padding: 50px 0; }
 
 @font-face {
   font-family: "Open Sans";
@@ -132,11 +134,18 @@ h2 {
 
 a.blue_btn {
   color: #ffffff;
-  font-size: 228.57143%;
+  font-size: 190.47619%;
   font-family: "Open Sans Light";
-  background: #6699ff;
-  font-weight: normal;
-  padding: 20px 100px; }
+  background: #98b1da;
+  font-weight: bold;
+  padding: 15px 30px;
+  margin: 30px auto;
+  text-decoration: none;
+  display: block;
+  width: 300px;
+  text-align: center; }
+  a.blue_btn:hover {
+    background: #6699ff; }
 
 blockquote {
   border: none;
@@ -163,3 +172,11 @@ ul {
     display: block; }
   ul.horizontal li {
     display: inline-block; }
+
+span.title {
+  display: table;
+  text-align: right;
+  margin: 0 auto !important;
+  float: none !important; }
+  span.title a {
+    font-size: 152.38095%; }
