@@ -1,0 +1,54 @@
+footer#mainFooter {
+  background: $gray_bg;
+  padding: 50px 0;
+  color: #ffffff;
+
+  .title {
+    display: table;
+
+    h1 {
+      color: #ffffff;
+      font-size: getSize(60); //TODO: ???
+      background: url("../../img/swan_90x60.png") no-repeat left center;
+      padding-left: 100px;
+      float: left;
+    }
+
+    .title-item {
+      //float: left;
+      overflow: hidden;
+      display:table-cell !important;
+      vertical-align:middle;
+
+      h2 {
+        background: none;
+        font-size: getSize(24);
+        padding: 0;
+
+      }
+    }
+  }
+
+  ul {
+    margin: 0;
+    font: getSize(14) normal 'Open Sans Light';
+
+    li {
+      padding: 5px 0 0 10px;
+      line-height: 100%;
+    }
+
+    &.mainMenu {
+      li {
+        a {
+          color: #ffffff;
+          font-family: $default_font;
+        }
+      }
+    }
+
+
+  }
+
+
+}

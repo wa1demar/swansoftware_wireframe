@@ -180,3 +180,33 @@ span.title {
   float: none !important; }
   span.title a {
     font-size: 152.38095%; }
+
+footer#mainFooter {
+  background: #2f3738;
+  padding: 50px 0;
+  color: #ffffff; }
+  footer#mainFooter .title {
+    display: table; }
+    footer#mainFooter .title h1, footer#mainFooter .title h2 {
+      color: #ffffff;
+      font-size: 571.42857%;
+      background: url("../../img/swan_90x60.png") no-repeat left center;
+      padding-left: 100px;
+      float: left; }
+    footer#mainFooter .title .title-item {
+      overflow: hidden;
+      display: table-cell !important;
+      vertical-align: middle; }
+      footer#mainFooter .title .title-item h2 {
+        background: none;
+        font-size: 228.57143%;
+        padding: 0; }
+  footer#mainFooter ul {
+    margin: 0;
+    font: 133.33333% normal "Open Sans Light"; }
+    footer#mainFooter ul li {
+      padding: 5px 0 0 10px;
+      line-height: 100%; }
+    footer#mainFooter ul.mainMenu li a {
+      color: #ffffff;
+      font-family: "Open Sans Light"; }

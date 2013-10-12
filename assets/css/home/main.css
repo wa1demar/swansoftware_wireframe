@@ -78,30 +78,6 @@
             font-size: 228.57143%;
             font-family: "Open Sans Light"; }
 
-@font-face {
-  font-family: "Open Sans";
-  src: url("../../fonts/OpenSans-Regular.ttf"); }
-
-@font-face {
-  font-family: "Open Sans Light";
-  src: url("../../fonts/OpenSans-Light.ttf"); }
-
-@font-face {
-  font-family: "Open Sans Bold";
-  src: url("../../fonts/OpenSans-Bold.ttf"); }
-
-@font-face {
-  font-family: "Open Sans Italic";
-  src: url("../../fonts/OpenSans-Italic.ttf"); }
-
-@font-face {
-  font-family: "Open Sans Semibold";
-  src: url("../../fonts/OpenSans-Semibold.ttf"); }
-
-@font-face {
-  font-family: "Recetrac Bold";
-  src: url("../../fonts/BARAKB.TTF"); }
-
 #sliderSecond {
   position: relative; }
   #sliderSecond .sliderSecondInner div ul.secondSidebarMenu {
@@ -153,30 +129,6 @@
   #sliderSecond .sliderSecondInner .phoneBG {
     background: white url("../../img/phone_bg.png") right center no-repeat;
     background-size: contain; }
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../../fonts/OpenSans-Regular.ttf"); }
-
-@font-face {
-  font-family: "Open Sans Light";
-  src: url("../../fonts/OpenSans-Light.ttf"); }
-
-@font-face {
-  font-family: "Open Sans Bold";
-  src: url("../../fonts/OpenSans-Bold.ttf"); }
-
-@font-face {
-  font-family: "Open Sans Italic";
-  src: url("../../fonts/OpenSans-Italic.ttf"); }
-
-@font-face {
-  font-family: "Open Sans Semibold";
-  src: url("../../fonts/OpenSans-Semibold.ttf"); }
-
-@font-face {
-  font-family: "Recetrac Bold";
-  src: url("../../fonts/BARAKB.TTF"); }
 
 #sliderThird {
   background: #2f3738;
