@@ -1,0 +1,110 @@
+@import "../globals/constants";
+
+
+
+#sliderFirst {
+  background: url("../../pics/technology.png") top center;
+
+  padding: 0;
+
+  ul {
+
+    &.socialLinks {
+      margin: 0 auto;
+      list-style: none;
+      text-align: center;
+      background: $blue_soft;
+      width: 130px;
+
+      li {
+        padding: 10px 2px;
+        margin: 0;
+      }
+    }
+
+  }
+  .info-section{
+    .row{
+      margin: 0 0;
+
+    }
+    .row.darck-background{
+      width: 100%;
+      .text-center.background{
+        padding: 0 0 30px 0;
+
+        .technologies-text-phone{
+          padding: 30px 0;
+
+
+          background: rgba(0,0,0,0.5);
+
+          .container{
+            color: white;
+            font-size: getSize(20);  //TODO
+            h1{
+               color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#sliderSecond{
+  padding: 50px 0;
+  img{
+    //width: 100%;
+  }
+}
+#sliderThird{
+  background-color: #64898c ;
+   padding-bottom: 50px;
+  .row{
+    margin: 0 0;
+    h1{
+      margin: 40px 0 80px 0;
+      color: white;
+    }
+    .round_image{
+      width: 120px;
+      height: 120px;
+      padding-top: 20px;
+      margin: 0 auto;
+      background: url("../../img/link_bg_blue_round.png") no-repeat top center ;
+      background-position: center;
+      background-size: 100%;
+      img{
+        width: 80px;
+        height: 80px;
+      }
+     }
+    .row.topBannerLinks p{
+      color: #ffffff;
+      font-size: getSize(20);  //TODO
+    }
+
+
+  }
+}
+#sliderFour{
+  padding: 50px 50px;
+  background: url("../../img/technologi-back-section-2.png") repeat-y ;
+  background-size: cover;
+  ul{
+
+    font-size: getSize(14);  //TODO
+    padding-bottom: 30px;
+    a{
+
+      font-weight: bold;
+    }
+  }
+  ul.link-list li{
+     padding-top: 6px;
+      a{
+        margin-left: 10px;
+      }
+
+  }
+}

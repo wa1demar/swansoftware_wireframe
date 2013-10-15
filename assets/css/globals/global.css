@@ -146,6 +146,10 @@ a.blue_btn {
   text-align: center; }
   a.blue_btn:hover {
     background: #6699ff; }
+  a.blue_btn.small {
+    margin: 0 auto;
+    width: 200px;
+    padding: 10px 20px; }
 
 blockquote {
   border: none;
@@ -180,6 +184,18 @@ span.title {
   float: none !important; }
   span.title a {
     font-size: 152.38095%; }
+
+ul {
+  margin: 0; }
+
+.social {
+  margin: 0 0 10px 0; }
+  .social .equals {
+    background: url("../../img/gray_equals.png") center repeat-x;
+    height: 30px; }
+  .social ul.socialLinks li {
+    padding: 0px 5px;
+    margin: 0; }
 
 footer#mainFooter {
   background: #2f3738;
