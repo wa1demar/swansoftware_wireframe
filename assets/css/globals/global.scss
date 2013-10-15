@@ -68,7 +68,8 @@ a.blue_btn {
   &.small {
     margin: 0 auto;
     width: 200px;
-    padding: 10px 20px;
+    padding: 7px 20px;
+    font-size: getSize(18);
 
   }
 }
@@ -131,18 +132,18 @@ ul {
 }
 
 .social {
-  margin: 0 0 10px 0;
-
-  .equals {
-    background: url("../../img/gray_equals.png") center repeat-x;
-    height: 30px;
-  }
+  background: url("../../img/gray_equals.png") center repeat-x;
+  margin-bottom: 20px;
+  text-align: center;
 
   ul.socialLinks {
+    width: 150px;
+    margin: 0 auto;
+
     li {
-      padding: 0px 5px;
-      margin: 0;
-     }
+      margin: 0 2px;
+
+    }
   }
 }
 
@@ -150,4 +151,19 @@ ul {
   background: url("../../img/marker.png") left repeat-y;
 }
 
+.blackTransparent {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.reflectBelow	{
+  -webkit-box-reflect: below 0
+  -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
+}
+
 @import "footer";
+
+.center{
+  display : table-cell;
+  vertical-align : middle;
+  float: none;
+}

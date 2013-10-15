@@ -149,7 +149,8 @@ a.blue_btn {
   a.blue_btn.small {
     margin: 0 auto;
     width: 200px;
-    padding: 10px 20px; }
+    padding: 7px 20px;
+    font-size: 171.42857%; }
 
 blockquote {
   border: none;
@@ -189,16 +190,23 @@ ul {
   margin: 0; }
 
 .social {
-  margin: 0 0 10px 0; }
-  .social .equals {
-    background: url("../../img/gray_equals.png") center repeat-x;
-    height: 30px; }
-  .social ul.socialLinks li {
-    padding: 0px 5px;
-    margin: 0; }
+  background: url("../../img/gray_equals.png") center repeat-x;
+  margin-bottom: 20px;
+  text-align: center; }
+  .social ul.socialLinks {
+    width: 150px;
+    margin: 0 auto; }
+    .social ul.socialLinks li {
+      margin: 0 2px; }
 
 .left-border-dotted {
   background: url("../../img/marker.png") left repeat-y; }
+
+.blackTransparent {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.reflectBelow {
+  -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white)); }
 
 footer#mainFooter {
   background: #2f3738;
@@ -229,3 +237,8 @@ footer#mainFooter {
     footer#mainFooter ul.mainMenu li a {
       color: #ffffff;
       font-family: "Open Sans Light"; }
+
+.center {
+  display: table-cell;
+  vertical-align: middle;
+  float: none; }
