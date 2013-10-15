@@ -1,8 +1,9 @@
 #serviceContent {
   padding: 10px 0;
+  background: $white;
 
   .content {
-    background: #ffffff url("../../img/service_content_bg.png") right center no-repeat;
+    background: $white url("../../img/service_content_bg.png") right center no-repeat;
     //background-size: contain;
     .row {
       display: -webkit-box;
@@ -13,6 +14,7 @@
       display: -webkit-box;
       -webkit-box-align: center;
       -moz-box-align: center;
+      font-size: getSize(12);
     }
 
     .articleList {

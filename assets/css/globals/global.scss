@@ -15,6 +15,7 @@ body {
   width: 100%;
   font-size:  getSize(12);
   font-family: $default_font;
+  background: $white;
 }
 
 .container {
@@ -157,9 +158,11 @@ ul {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.reflectBelow	{
-  -webkit-box-reflect: below 0
-  -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
+ul.yellow {
+  li {
+    background: url("../../img/marker_yellow.png") left top no-repeat;
+    padding-left: 20px;
+  }
 }
 
 @import "footer";

@@ -1,0 +1,14 @@
+#info {
+  padding: 50px;
+  background: #a4bdbf;
+
+  h1 {
+    text-align: center;
+  }
+
+  ul {
+    padding: 20px 0;
+    font-size: getSize(16);
+    color: $gray;
+  }
+}
