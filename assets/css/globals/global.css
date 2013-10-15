@@ -34,7 +34,8 @@ section {
 body {
   width: 100%;
   font-size: 114.28571%;
-  font-family: "Open Sans Light"; }
+  font-family: "Open Sans Light";
+  background: #f4feff; }
 
 .container {
   max-width: 970px; }
@@ -162,9 +163,10 @@ blockquote {
     margin: 0; }
   blockquote h3 {
     color: #647678;
-    font-weight: normal;
-    font-size: 228.57143%;
-    font-family: "Open Sans Light"; }
+    font-weight: bold;
+    font-size: 190.47619%;
+    font-family: "Open Sans Light";
+    text-align: right; }
 
 p {
   display: block;
@@ -181,7 +183,7 @@ ul {
 span.title {
   display: table;
   text-align: right;
-  margin: 0 auto !important;
+  margin: 20px auto !important;
   float: none !important; }
   span.title a {
     font-size: 152.38095%; }
@@ -205,8 +207,9 @@ ul {
 .blackTransparent {
   background-color: rgba(0, 0, 0, 0.5); }
 
-.reflectBelow {
-  -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white)); }
+ul.yellow li {
+  background: url("../../img/marker_yellow.png") left top no-repeat;
+  padding-left: 20px; }
 
 footer#mainFooter {
   background: #2f3738;
