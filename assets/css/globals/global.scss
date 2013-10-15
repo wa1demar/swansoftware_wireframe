@@ -142,8 +142,12 @@ ul {
     li {
       padding: 0px 5px;
       margin: 0;
-    }
+     }
   }
+}
+
+.left-border-dotted {
+  background: url("../../img/marker.png") left repeat-y;
 }
 
 @import "footer";
