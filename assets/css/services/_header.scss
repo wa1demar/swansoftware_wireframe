@@ -1,12 +1,12 @@
 .servicesHeader {
-  padding: 20px 0;
+  padding: 10px 0 20px 0;
 
   .headerContent {
-    background: url("../../img/bg-black-transparent.png");
 
     .headerList {
       overflow: hidden;
       display: table;
+      padding: 10px 0;
 
       .image {
         float: left;
@@ -36,7 +36,7 @@
             color: #ffffff;
             font-size: getSize(16);
             padding-left: 20px;
-            background: url("../../img/marker.png") left center no-repeat;
+            background: url("../../img/marker_yellow.png") left center no-repeat;
           }
         }
       }
@@ -44,11 +44,11 @@
     }
 
     .headerForm {
-      background: url("../../img/bg-black-transparent.png");
       padding: 20px;
 
       h2 {
         color: #ffffff;
+        font: getSize(20) normal "Open Sans Light";
 
         span {
           color: $blue_soft;
@@ -64,8 +64,8 @@
 
         label {
           color: #ffffff;
-          font-size: getSize(16);
-          margin-bottom: 10px;
+          font-size: getSize(14);
+          margin-bottom: 12px;
 
         }
 
@@ -73,13 +73,13 @@
           width: 100%;
           font-size: getSize(14);
           padding: 2px 5px;
-          margin-bottom: 20px;
+          margin-bottom: 12px;
 
         }
 
         textarea {
           @extend input;
-          height: 100px;
+          height: 60px;
         }
       }
 
