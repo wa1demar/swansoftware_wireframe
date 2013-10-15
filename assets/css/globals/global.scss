@@ -15,6 +15,7 @@ body {
   width: 100%;
   font-size:  getSize(12);
   font-family: $default_font;
+  background: $white;
 }
 
 .container {
@@ -92,9 +93,10 @@ blockquote {
 
   h3 {
     color: $gray;
-    font-weight: normal;
-    font-size:  getSize(24);
+    font-weight: bold;
+    font-size:  getSize(20);
     font-family: $default_font;
+    text-align: right;
   }
 }
 
@@ -123,8 +125,9 @@ ul {
 span.title {
   display: table;
   text-align: right;
-  margin: 0 auto !important;
+  margin: 20px auto !important;
   float: none !important;
+
 
   a {
     font-size: getSize(16); // TODO: ???
@@ -157,9 +160,11 @@ ul {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.reflectBelow	{
-  -webkit-box-reflect: below 0
-  -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));
+ul.yellow {
+  li {
+    background: url("../../img/marker_yellow.png") left top no-repeat;
+    padding-left: 20px;
+  }
 }
 
 @import "footer";
