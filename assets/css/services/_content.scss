@@ -1,0 +1,36 @@
+#serviceContent {
+  padding: 10px 0;
+
+  .content {
+    background: #ffffff url("../../img/service_content_bg.png") right center no-repeat;
+    //background-size: contain;
+    .row {
+      display: -webkit-box;
+      display: -moz-box;
+    }
+
+    .article {
+      display: -webkit-box;
+      -webkit-box-align: center;
+      -moz-box-align: center;
+    }
+
+    .articleList {
+      padding: 55px;
+      height: 410px;
+
+      h1 {
+        color: #ffffff;
+        margin-bottom: 10px;
+      }
+
+      li {
+        background: url("../../img/marker_yellow_big.png") left top no-repeat;
+        padding-left: 20px;
+        font-size: getSize(14);
+        color: #ffffff;
+      }
+    }
+  }
+
+}

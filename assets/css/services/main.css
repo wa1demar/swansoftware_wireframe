@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../../fonts/OpenSans-Light.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../../fonts/OpenSans-Bold.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Italic";
+  src: url("../../fonts/OpenSans-Italic.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Semibold";
+  src: url("../../fonts/OpenSans-Semibold.ttf"); }
+
+@font-face {
+  font-family: "Recetrac Bold";
+  src: url("../../fonts/BARAKB.TTF"); }
+
+.servicesHeader {
+  padding: 10px 0 20px 0; }
+  .servicesHeader .headerContent .headerList {
+    overflow: hidden;
+    display: table;
+    padding: 10px 0; }
+    .servicesHeader .headerContent .headerList .image {
+      float: left;
+      display: table-cell;
+      vertical-align: middle; }
+      .servicesHeader .headerContent .headerList .image img {
+        padding: 25px; }
+    .servicesHeader .headerContent .headerList .text {
+      display: table-cell;
+      vertical-align: middle; }
+      .servicesHeader .headerContent .headerList .text h1, .servicesHeader .headerContent .headerList .text h3 {
+        color: #ffffff; }
+      .servicesHeader .headerContent .headerList .text h3 {
+        font-size: 152.38095%; }
+      .servicesHeader .headerContent .headerList .text ul li {
+        color: #ffffff;
+        font-size: 152.38095%;
+        padding-left: 20px;
+        background: url("../../img/marker_yellow.png") left center no-repeat; }
+  .servicesHeader .headerContent .headerForm {
+    padding: 20px; }
+    .servicesHeader .headerContent .headerForm h2 {
+      color: #ffffff;
+      font: 190.47619% normal "Open Sans Light"; }
+      .servicesHeader .headerContent .headerForm h2 span {
+        color: #98b1da; }
+    .servicesHeader .headerContent .headerForm form {
+      padding: 20px 0; }
+      .servicesHeader .headerContent .headerForm form > div {
+        text-align: right; }
+      .servicesHeader .headerContent .headerForm form label {
+        color: #ffffff;
+        font-size: 133.33333%;
+        margin-bottom: 12px; }
+      .servicesHeader .headerContent .headerForm form input, .servicesHeader .headerContent .headerForm form textarea {
+        width: 100%;
+        font-size: 133.33333%;
+        padding: 2px 5px;
+        margin-bottom: 12px; }
+      .servicesHeader .headerContent .headerForm form textarea {
+        height: 60px; }
+
+#serviceContent {
+  padding: 10px 0; }
+  #serviceContent .content {
+    background: white url("../../img/service_content_bg.png") right center no-repeat; }
+    #serviceContent .content .row {
+      display: -webkit-box;
+      display: -moz-box; }
+    #serviceContent .content .article {
+      display: -webkit-box;
+      -webkit-box-align: center;
+      -moz-box-align: center; }
+    #serviceContent .content .articleList {
+      padding: 55px;
+      height: 410px; }
+      #serviceContent .content .articleList h1 {
+        color: #ffffff;
+        margin-bottom: 10px; }
+      #serviceContent .content .articleList li {
+        background: url("../../img/marker_yellow_big.png") left top no-repeat;
+        padding-left: 20px;
+        font-size: 133.33333%;
+        color: #ffffff; }
