@@ -93,9 +93,10 @@ blockquote {
 
   h3 {
     color: $gray;
-    font-weight: normal;
-    font-size:  getSize(24);
+    font-weight: bold;
+    font-size:  getSize(20);
     font-family: $default_font;
+    text-align: right;
   }
 }
 
@@ -124,8 +125,9 @@ ul {
 span.title {
   display: table;
   text-align: right;
-  margin: 0 auto !important;
+  margin: 20px auto !important;
   float: none !important;
+
 
   a {
     font-size: getSize(16); // TODO: ???
