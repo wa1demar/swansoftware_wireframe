@@ -22,10 +22,14 @@
 
       }
     }
-    .round_image:hover{
-      background: url("../../img/link_bg_blue_round.png") no-repeat top center ;
-      background-position: center;
-      background-size: 100%;
+    .col-xs-3.text-center:hover{
+
+
+      .round_image{
+        background: url("../../img/link_bg_blue_round.png") no-repeat top center ;
+        background-position: center;
+        background-size: 100%;
+      }
     }
 
   }

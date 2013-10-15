@@ -47,8 +47,7 @@
   src: url("../../fonts/BARAKB.TTF"); }
 
 #sliderFirst {
-  background: url("../../pics/technology.png") top center;
-  padding: 0; }
+  background: url("../../pics/technology.png") top center; }
   #sliderFirst ul.socialLinks {
     margin: 0 auto;
     list-style: none;
@@ -68,13 +67,20 @@
         padding: 30px 0;
         background: rgba(0, 0, 0, 0.5); }
         #sliderFirst .info-section .row.darck-background .text-center.background .technologies-text-phone .container {
+          padding: 0 100px;
           color: white;
           font-size: 190.47619%; }
           #sliderFirst .info-section .row.darck-background .text-center.background .technologies-text-phone .container h1 {
-            color: white; }
+            font-size: 200%;
+            color: white;
+            margin-bottom: 50px; }
+          #sliderFirst .info-section .row.darck-background .text-center.background .technologies-text-phone .container .content {
+            text-align: justify; }
 
 #sliderSecond {
-  padding: 50px 0; }
+  padding: 50px 50px; }
+  #sliderSecond img {
+    margin: 5px 5px; }
 
 #sliderThird {
   background-color: #64898c;
@@ -95,7 +101,7 @@
       #sliderThird .row .round_image img {
         width: 80px;
         height: 80px; }
-    #sliderThird .row .round_image:hover {
+    #sliderThird .row .col-xs-3.text-center:hover .round_image {
       background: url("../../img/link_bg_blue_round.png") no-repeat top center;
       background-position: center;
       background-size: 100%; }
@@ -115,7 +121,7 @@
     color: blue;
     padding-top: 6px; }
     #sliderFour ul.link-list li a {
-      width: 100%;
+      width: 90%;
       height: 100%;
       display: block;
       padding: 15px 5px 15px 10px;

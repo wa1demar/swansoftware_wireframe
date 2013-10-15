@@ -3,7 +3,7 @@
 #sliderFirst {
   background: url("../../pics/technology.png") top center;
 
-  padding: 0;
+
 
   ul {
 
@@ -38,10 +38,16 @@
           background: rgba(0,0,0,0.5);
 
           .container{
+            padding: 0 100px;
             color: white;
             font-size: getSize(20);  //TODO
             h1{
+              font-size: getSize(21);
               color: white;
+              margin-bottom: 50px;
+            }
+            .content{
+              text-align: justify;
             }
           }
         }
