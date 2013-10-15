@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3f710f5-6b13-49ec-80d2-1136207dc108" name="Default" comment="create fourth and fifth section">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/marker_yellow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/marker_yellow_big.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/pics/mobile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/pics/mobile_girl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/img/service_content_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/services/_content.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/assets/css/services/main.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/img/marker.png" afterPath="$PROJECT_DIR$/assets/img/marker_blue.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/services/_header.scss" afterPath="$PROJECT_DIR$/assets/css/services/_header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/home/_section_third.scss" afterPath="$PROJECT_DIR$/assets/css/home/_section_third.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/design_service.html" afterPath="$PROJECT_DIR$/design_service.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/globals/global.css" afterPath="$PROJECT_DIR$/assets/css/globals/global.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/globals/global.scss" afterPath="$PROJECT_DIR$/assets/css/globals/global.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/home/main.css" afterPath="$PROJECT_DIR$/assets/css/home/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/services/main.scss" afterPath="$PROJECT_DIR$/assets/css/services/main.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="b3f710f5-6b13-49ec-80d2-1136207dc108" name="Default" comment="create fourth and fifth section" />
     <ignored path="swanBootstrap.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/" />
@@ -44,7 +27,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="14" selection-start="2464" selection-end="2977" vertical-scroll-proportion="21.333334" vertical-offset="1890" max-vertical-offset="8244">
+            <state line="73" column="14" selection-start="2464" selection-end="2977" vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="8244">
               <folding />
             </state>
           </provider>
@@ -53,11 +36,8 @@
       <file leaf-file-name="design_service.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/design_service.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="33" selection-start="5446" selection-end="5446" vertical-scroll-proportion="-7.6666665" vertical-offset="2025" max-vertical-offset="3924">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="124" column="33" selection-start="5446" selection-end="5446" vertical-scroll-proportion="0.0" vertical-offset="2025" max-vertical-offset="3924">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,7 +54,7 @@
       <file leaf-file-name="global.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/globals/global.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="169" column="14" selection-start="2269" selection-end="2269" vertical-scroll-proportion="-16.148148" vertical-offset="2606" max-vertical-offset="3168">
+            <state line="169" column="14" selection-start="2269" selection-end="2269" vertical-scroll-proportion="0.0" vertical-offset="2606" max-vertical-offset="3168">
               <folding />
             </state>
           </provider>
@@ -83,7 +63,7 @@
       <file leaf-file-name="_header.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/services/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="21" selection-start="150" selection-end="150" vertical-scroll-proportion="0.962963" vertical-offset="170" max-vertical-offset="1728">
+            <state line="8" column="21" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1728">
               <folding />
             </state>
           </provider>
@@ -159,9 +139,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files" />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,18 +213,21 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Ignored.Files" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -331,16 +311,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="26" width="1368" height="743" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="26" width="1368" height="743" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833335" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19242424" sideWeight="0.85333335" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19545455" sideWeight="0.85333335" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15025042" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -349,6 +328,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -370,9 +350,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27575758" sideWeight="0.6716667" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833335" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32833335" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -396,9 +376,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/home/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3150">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3150" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -408,37 +386,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/home/_section_fifth.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="47" selection-start="62" selection-end="62" vertical-scroll-proportion="0.034615386" vertical-offset="0" max-vertical-offset="520">
-          <folding />
-        </state>
+        <state line="1" column="47" selection-start="62" selection-end="62" vertical-scroll-proportion="0.034615386" vertical-offset="0" max-vertical-offset="520" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/home/_section_second.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1998">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1998" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/home/_section_third.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="828">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="828" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/home/_section_first.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1836">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1836" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/globals/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="3" selection-start="1126" selection-end="1361" vertical-scroll-proportion="0.8180147" vertical-offset="1085" max-vertical-offset="1656">
-          <folding />
-        </state>
+        <state line="85" column="3" selection-start="1126" selection-end="1361" vertical-scroll-proportion="0.8180147" vertical-offset="1085" max-vertical-offset="1656" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/globals/_constants.scss">
@@ -450,46 +418,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/globals/_footer.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="1" selection-start="830" selection-end="830" vertical-scroll-proportion="0.8014706" vertical-offset="518" max-vertical-offset="1062">
-          <folding />
-        </state>
+        <state line="53" column="1" selection-start="830" selection-end="830" vertical-scroll-proportion="0.8014706" vertical-offset="518" max-vertical-offset="1062" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="14" selection-start="2464" selection-end="2977" vertical-scroll-proportion="21.333334" vertical-offset="1890" max-vertical-offset="8244">
+        <state line="73" column="14" selection-start="2464" selection-end="2977" vertical-scroll-proportion="0.0" vertical-offset="1890" max-vertical-offset="8244">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/services/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="16" selection-start="68" selection-end="68" vertical-scroll-proportion="0.13235295" vertical-offset="0" max-vertical-offset="544">
-          <folding />
-        </state>
+        <state line="4" column="16" selection-start="68" selection-end="68" vertical-scroll-proportion="0.13235295" vertical-offset="0" max-vertical-offset="544" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/services/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="150" selection-end="150" vertical-scroll-proportion="0.962963" vertical-offset="170" max-vertical-offset="1728">
+        <state line="8" column="21" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="1728">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/globals/global.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="14" selection-start="2269" selection-end="2269" vertical-scroll-proportion="-16.148148" vertical-offset="2606" max-vertical-offset="3168">
+        <state line="169" column="14" selection-start="2269" selection-end="2269" vertical-scroll-proportion="0.0" vertical-offset="2606" max-vertical-offset="3168">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design_service.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="33" selection-start="5446" selection-end="5446" vertical-scroll-proportion="-7.6666665" vertical-offset="2025" max-vertical-offset="3924">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="124" column="33" selection-start="5446" selection-end="5446" vertical-scroll-proportion="0.0" vertical-offset="2025" max-vertical-offset="3924">
+          <folding />
         </state>
       </provider>
     </entry>
