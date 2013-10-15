@@ -1,5 +1,17 @@
 @import "../globals/constants";
 
+section {
+  padding: 50px 0;
+}
+
 @import "header";
 
 @import "content";
+
+@import "info";
+
+@import "separator";
+
+@import "clients";
+
+@import "quotes";
