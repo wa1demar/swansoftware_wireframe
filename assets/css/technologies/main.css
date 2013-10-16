@@ -85,18 +85,21 @@
     #sliderThird .row h1 {
       margin-bottom: 40px;
       color: white; }
-    #sliderThird .row .round_image {
-      width: 120px;
-      height: 120px;
-      padding-top: 20px;
-      margin: 0 auto;
-      background: url("../../img/link_hover_bg_blue_round_transparent.png") no-repeat top center;
-      background-position: center;
-      background-size: 100%; }
-      #sliderThird .row .round_image img {
-        width: 80px;
-        height: 80px; }
-    #sliderThird .row .col-xs-3.text-center:hover .round_image {
+    #sliderThird .row .col-sm-3.col-xs-6.text-center {
+      min-width: 140px;
+      min-height: 200px; }
+      #sliderThird .row .col-sm-3.col-xs-6.text-center .round_image {
+        width: 120px;
+        height: 120px;
+        padding-top: 20px;
+        margin: 0 auto;
+        background: url("../../img/link_hover_bg_blue_round_transparent.png") no-repeat top center;
+        background-position: center;
+        background-size: 100%; }
+        #sliderThird .row .col-sm-3.col-xs-6.text-center .round_image img {
+          width: 80px;
+          height: 80px; }
+    #sliderThird .row .col-sm-3.col-xs-6.text-center:hover .round_image {
       background: url("../../img/link_bg_blue_round.png") no-repeat top center;
       background-position: center;
       background-size: 100%; }
@@ -104,6 +107,10 @@
     color: #ffffff;
     font-size: 190.47619%; }
 
+@media (min-width: 50px) and (max-width: 400px) {
+  #sliderThird .col-sm-3.col-xs-6.text-center {
+    margin: 0 auto;
+    float: center; } }
 #sliderFour {
   padding: 50px 50px;
   background-size: cover; }
