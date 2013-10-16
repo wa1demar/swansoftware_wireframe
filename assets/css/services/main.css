@@ -43,7 +43,8 @@ section {
       .servicesHeader .headerContent .headerList .text h1, .servicesHeader .headerContent .headerList .text h3 {
         color: #ffffff; }
       .servicesHeader .headerContent .headerList .text h3 {
-        font-size: 152.38095%; }
+        font-size: 152.38095%;
+        font-weight: bold; }
       .servicesHeader .headerContent .headerList .text ul li {
         color: #ffffff;
         font-size: 152.38095%;
@@ -113,7 +114,8 @@ section {
     text-align: center;
     font-size: 285.71429%; }
     #separator h1 a {
-      color: #7ebdfb; }
+      color: #7ebdfb;
+      font-weight: bold; }
 
 #clients {
   background: #f4feff;
