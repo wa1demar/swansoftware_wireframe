@@ -1,74 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Bootstrap 3 swan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="assets/css/libs/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="assets/css/globals/global.css"/>
-    <link rel="stylesheet" href="assets/css/home/main.css"/>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <link rel="stylesheet" href="assets/css/libs/strapslide.css"/>
-    <script src="assets/js/strapslide.js"></script>
-
-</head>
-<body>
-
-<header id="mainHeader">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-7">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <img src="assets/img/swan_150x100.png">
-                    </div>
-                    <div class="col-lg-8 col-md-8 col-sm-8">
-                        <hgroup>
-                            <h1>SWAN</h1>
-
-                            <h2>SOFTWARE SOLUTIONS</h2>
-                        </hgroup>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 col-sm-5">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-lg-offset-6 col-md-offset-6">
-                        <div class="address">
-                            <ul>
-                                <li class="phone"><p>317-691-3806</p></li>
-                                <li class="address"><p>698 Pro-Med Ln, <br/>
-                                    Ste 200 Carmel IN 46032;</p></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row ">
-                    <div class="col-lg-12 col-md-12">
-                        <ul class="mainMenu horizontal">
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Clients</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Media Kit</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</header>
-<div id="mainContent">
+<?php get_header()?>
 <section id="sliderFirst">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <ul class="socialLinks horizontal">
-                    <li><a href="#"><img src="assets/img/fb_25x25.png"/></a></li>
-                    <li><a href="#"><img src="assets/img/twitter_25x25.png"/></a></li>
-                    <li><a href="#"><img src="assets/img/g+_25x25.png"/></a></li>
-                    <li><a href="#"><img src="assets/img/linkedin_25x25.png"/></a></li>
+                    <li><a href="#"><img src="<?php bloginfo('template_directory')?>/assets/img/fb_25x25.png"/></a></li>
+                    <li><a href="#"><img src="<?php bloginfo('template_directory')?>/assets/img/twitter_25x25.png"/></a></li>
+                    <li><a href="#"><img src="<?php bloginfo('template_directory')?>/assets/img/g+_25x25.png"/></a></li>
+                    <li><a href="#"><img src="<?php bloginfo('template_directory')?>/assets/img/linkedin_25x25.png"/></a></li>
                 </ul>
             </div>
         </div>
@@ -88,28 +27,28 @@
                         <div class="row topBannerLinks">
                             <div class="box col-sm-3">
                                 <div class="round_image">
-                                    <img src="assets/img/service1_115x100.png">
+                                    <img src="<?php bloginfo('template_directory')?>/assets/img/service1_115x100.png">
                                 </div>
 
                                 <p>Mobile Development</p>
                             </div>
                             <div class="box col-sm-3">
                                 <div class="round_image">
-                                    <img src="assets/img/service2_115x100.png">
+                                    <img src="<?php bloginfo('template_directory')?>/assets/img/service2_115x100.png">
                                 </div>
 
                                 <p>Staff Augmentation</p>
                             </div>
                             <div class="box col-sm-3">
                                 <div class="round_image">
-                                    <img src="assets/img/service3_115x100.png">
+                                    <img src="<?php bloginfo('template_directory')?>/assets/img/service3_115x100.png">
                                 </div>
 
                                 <p>Custom Application Development</p>
                             </div>
                             <div class="box col-sm-3">
                                 <div class="round_image">
-                                    <img src="assets/img/service4_115x100.png">
+                                    <img src="<?php bloginfo('template_directory')?>/assets/img/service4_115x100.png">
                                 </div>
 
                                 <p>Design</p>
@@ -135,10 +74,10 @@
 <section>
     <div id="sliderSecond" class="left" data-slide="prev">
         <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-            <img src="assets/img/left-arrow.png" style="top: 50%; position: absolute; left: 2%">
+            <img src="<?php bloginfo('template_directory')?>/assets/img/left-arrow.png" style="top: 50%; position: absolute; left: 2%">
         </a>
         <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-            <img src="assets/img/right-arrow.png" style="top: 50%; position: absolute; right: 2%"/>
+            <img src="<?php bloginfo('template_directory')?>/assets/img/right-arrow.png" style="top: 50%; position: absolute; right: 2%"/>
         </a>
 
         <div class="container sec">
@@ -150,9 +89,9 @@
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="mobile active">
                                 <a href="#">Mobile Development</a></li>
                             <li data-target="#carousel-example-generic" data-slide-to="1" class="staf"><a href="#">Staf
-                                Augmentation</a></li>
+                                    Augmentation</a></li>
                             <li class="app" data-target="#carousel-example-generic" data-slide-to="2"><a href="#">Custom
-                                Application Development</a></li>
+                                    Application Development</a></li>
                             <li class="design" data-target="#carousel-example-generic" data-slide-to="3"><a href="#">Design</a>
                             </li>
                             <!--<li class="marketing"><a href="#">Internet Marketing</a></li>-->
@@ -309,7 +248,7 @@
 <!--  ================================ Third Section ================================== -->
 <section>
     <div id="sliderThird">
-        <img src="assets/img/team.png"/>
+        <img src="<?php bloginfo('template_directory')?>/assets/img/team.png"/>
 
         <div class="news_line">
             <div class="container">
@@ -364,7 +303,7 @@
                             <h1>Our Clients</h1>
                             <a href="">View All +</a>
                         </span>
-                        <img src="assets/img/clients_0.png"/>
+                        <img src="<?php bloginfo('template_directory')?>/assets/img/clients_0.png"/>
                     </section>
                     <section>
                         <span class="title">
@@ -372,7 +311,7 @@
                             <a href="">View All +</a>
 
                         </span>
-                        <img src="assets/img/tech_0.png"/>
+                        <img src="<?php bloginfo('template_directory')?>/assets/img/tech_0.png"/>
                     </section>
 
                 </div>
@@ -395,59 +334,5 @@
 </section>
 
 </div>
-<footer id="mainFooter">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 title">
-                <h1>SWAN</h1>
 
-                <div class="title-item">
-                    <h2>SOFTWARE</h2>
-
-                    <h2>SOLUTIONS</h2>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <address>
-                    <ul>
-                        <li>Direct Contacts:</li>
-                        <li><a href="#">info@swansoftwaresolutions.com</a></li>
-                        <li>Email Addresses:</li>
-                        <li><a href="#">sales@swansoftwaresolutions.com</a> </li>
-                        <li><a href="#">executive@swansoftwaresolutions.com</a></li>
-                    </ul>
-                </address>
-            </div>
-            <div class="col-lg-2">
-                <ul>
-                    <li>Direct Lines:</li>
-                    <li><b>317-691-3806</b></li>
-                    <li><b>317-362-9017</b></li>
-                    <li><b>317-985-2622</b></li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <ul class="mainMenu horizontal">
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Clients</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Media Kit</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/carousel.js"></script>
-<script>
-    $('.carousel').carousel({
-        interval: 5000
-    })
-</script>
-
-</body>
-</html>
+<?php get_footer()?>
