@@ -1,3 +1,15 @@
+<?php
+/**
+* Template Name: Header
+*
+* Created by PhpStorm.
+* @author: waldemar
+* @date: 16.10.13
+*
+* @note: менять ничего не рекомендую, хрупкий баланс ошибок,
+* компенсирующих друг друга, заставляет программу работать
+*/?>
+
 <!DOCTYPE html>
 <html <?php language_attributes()?>>
 <head>
@@ -9,6 +21,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/assets/css/home/main.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
+    <?php wp_head()?>
 </head>
 <body>
 
@@ -44,13 +57,7 @@
                 </div>
                 <div class="row ">
                     <div class="col-lg-12 col-md-12">
-                        <ul class="mainMenu horizontal">
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Clients</a></li>
-                            <li><a href="#">News</a></li>
-                            <li><a href="#">Media Kit</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
+                        <?php wp_nav_menu(getArgsForMainMenu())?>
                     </div>
                 </div>
 

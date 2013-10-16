@@ -1,6 +1,18 @@
+<?php
+/**
+ * Template Name: Footer
+ *
+ * Created by PhpStorm.
+ * @author: waldemar
+ * @date: 16.10.13
+ *
+ * @note: менять ничего не рекомендую, хрупкий баланс ошибок,
+ * компенсирующих друг друга, заставляет программу работать
+ */?>
 
 </div>
 <footer id="mainFooter">
+    <?php wp_footer()?>
     <div class="container">
         <div class="row">
             <div class="col-lg-6 title">
@@ -34,16 +46,11 @@
         </div>
         <div class="row">
             <div class="col-lg-6">
-                <ul class="mainMenu horizontal">
-                    <li><a href="#">Company</a></li>
-                    <li><a href="#">Clients</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Media Kit</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+                <?php wp_nav_menu(getArgsForMainMenu())?>
             </div>
         </div>
     </div>
+
 </footer>
 
 <script src="<?php bloginfo('template_directory')?>/assets/js/bootstrap.min.js"></script>
