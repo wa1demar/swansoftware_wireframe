@@ -18,7 +18,7 @@
     <meta charset="<?php bloginfo('charset')?>"/>
     <link href="<?php bloginfo('template_directory')?>/assets/css/libs/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/assets/css/globals/global.css"/>
-    <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/assets/css/home/main.css"/>
+<!--    <link rel="stylesheet" href="--><?php //bloginfo('template_directory')?><!--/assets/css/home/main.css"/>-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <?php wp_head()?>

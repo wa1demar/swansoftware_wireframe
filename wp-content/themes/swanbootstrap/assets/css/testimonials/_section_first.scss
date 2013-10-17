@@ -1,4 +1,32 @@
 #sliderFirst{
+  background: url("../../pics/technology.png") repeat-x top;
+  padding:  10px 0 40px 0;
+  .darck-background{
+    background: rgba(0,0,0,0.5);
+    margin: 0 0;
+    width: 100%;
+    padding: 30px 0;
 
+    h1{
+      color: #ffffff;
+    }
+    .title{
+      margin-bottom: 20px;
+    }
+    .content, a{
+      font-size: getSize(14);   // TODO
+      line-height: 1.5;
+    }
+    .content{
+      padding-bottom: 50px;
+      color: #ffffff;
+
+    }
+    a{
+      color: #A0BFFF;
+    }
+
+
+  }
 
 }
