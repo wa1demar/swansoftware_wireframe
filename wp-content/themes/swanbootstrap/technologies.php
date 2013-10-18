@@ -40,20 +40,7 @@
             <div class='row'>
 
                 <div class='col-sm-12 text-center'>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_1.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_2.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_3.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_4.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_1.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_2.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_3.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_4.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_1.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_2.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_3.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_4.png"/></a>
-                    <!--<a href="#"><img src="assets/img/tech_5.png"/></a><-->
-                    <!--<a href="#"><img src="assets/img/tech_6.png"/></a>-->
+                    <?php the_field('technologies')?>
                 </div>
             </div>
         </div>
@@ -71,32 +58,40 @@
             </div>
             <div class="row topBannerLinks">
                 <div class="box col-sm-3 col-xs-6 text-center">
+                    <a href="<?= get_permalink(33, false)?>">
                     <div class="round_image text-center">
                         <img src="<?php bloginfo('template_directory') ?>/assets/img/service1_115x100.png">
                     </div>
 
                     <p>Mobile Development</p>
+                        </a>
                 </div>
                 <div class="box col-sm-3 col-xs-6 text-center">
+                    <a href="<?= get_permalink(56, false)?>">
                     <div class="round_image">
                         <img src="<?php bloginfo('template_directory') ?>/assets/img/service2_115x100.png">
                     </div>
 
                     <p>Staff Augmentation</p>
+                        </a>
                 </div>
                 <div class="box col-sm-3 col-xs-6 text-center">
+                    <a href="<?= get_permalink(58, false)?>">
                     <div class="round_image">
                         <img src="<?php bloginfo('template_directory') ?>/assets/img/service3_115x100.png">
                     </div>
 
                     <p>Custom Application Development</p>
+                        </a>
                 </div>
                 <div class="box col-sm-3 col-xs-6 text-center">
+                    <a href="<?= get_permalink(38, false)?>">
                     <div class="round_image">
                         <img src="<?php bloginfo('template_directory') ?>/assets/img/service4_115x100.png">
                     </div>
 
                     <p>Design</p>
+                        </a>
                 </div>
                 <!--<div class="box col-md-2">-->
                 <!--<div class="round_image">-->

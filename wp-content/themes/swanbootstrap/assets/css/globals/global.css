@@ -42,8 +42,6 @@ body {
 
 .container {
   max-width: 970px; }
-  .container.sec {
-    padding: 50px 0; }
 
 @font-face {
   font-family: "Open Sans";
@@ -80,12 +78,18 @@ body {
       margin: 15px 0 0 0;
       font-size: 523.80952%;
       font-family: "Recetrac Bold"; }
+      #mainHeader hgroup h1 a, #mainHeader hgroup h2 a {
+        color: #ffffff;
+        text-decoration: none; }
     #mainHeader hgroup h2 {
       padding: 0;
       margin: 0;
       color: #ffffff;
       font-size: 190.47619%;
       font-family: "Open Sans Light"; }
+      #mainHeader hgroup h2 a {
+        color: #ffffff;
+        text-decoration: none; }
   #mainHeader .address {
     width: 100%; }
     #mainHeader .address ul {

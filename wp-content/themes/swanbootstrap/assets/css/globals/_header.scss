@@ -13,6 +13,11 @@
       margin: 15px 0 0 0;
       font-size: getSize(55);
       font-family: "Recetrac Bold";
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
     }
 
     h2 {
@@ -21,6 +26,11 @@
       color: #ffffff;
       font-size: getSize(20); // TODO: 20pt
       font-family: $default_font;
+
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
     }
   }
 

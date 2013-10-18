@@ -28,15 +28,6 @@
   padding: 0; }
   #sliderFirst .container {
     padding: 0; }
-    #sliderFirst .container ul.socialLinks {
-      margin: 0 auto;
-      list-style: none;
-      text-align: center;
-      background: #98b1da;
-      width: 130px; }
-      #sliderFirst .container ul.socialLinks li {
-        padding: 10px 2px;
-        margin: 0; }
     #sliderFirst .container .topBanner {
       background: url("../../img/banner_temp.png") center top no-repeat;
       height: 665px; }
@@ -160,10 +151,11 @@
           font: 133.33333% normal "Open Sans Light"; }
 
 #sliderFourth {
-  background: url("../../img/gray_equals.png") bottom repeat-x;
-  margin-bottom: 10px; }
-  #sliderFourth section {
-    padding: 0 0 50px 0; }
+  background: url("../../img/gray_equals.png") bottom repeat-x; }
+  #sliderFourth section.sec {
+    padding-bottom: 0; }
 
 #sliderFifth {
-  background: url("../../img/swan-bg.png") top center no-repeat; }
+  background: url("../../img/swan-bg.png") top center no-repeat;
+  padding: 50px 0;
+  margin-top: 10px; }

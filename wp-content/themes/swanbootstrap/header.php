@@ -48,9 +48,9 @@
                     </div>
                     <div class="col-lg-8 col-md-8 col-sm-8">
                         <hgroup>
-                            <h1>SWAN</h1>
+                            <h1><a href="<?=  get_home_url()?>">SWAN</a></h1>
 
-                            <h2>SOFTWARE SOLUTIONS</h2>
+                            <h2><a href="<?= get_home_url()?>">SOFTWARE SOLUTIONS</a></h2>
                         </hgroup>
                     </div>
                 </div>

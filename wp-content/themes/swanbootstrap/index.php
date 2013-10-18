@@ -8,10 +8,11 @@
  *
  * @note: менять ничего не рекомендую, хрупкий баланс ошибок,
  * компенсирующих друг друга, заставляет программу работать
- */?>
+ */
+?>
 
 <?php get_header() ?>
-    <section id="sliderFirst">
+    <div id="sliderFirst">
         <?php $bg_image = "../assets/pics/mobile.png" ?>
         <?php require "_social.php" ?>
         <div class="container">
@@ -70,187 +71,184 @@
             </div>
 
         </div>
-    </section>
+    </div>
     <!--  ================================ Second Section ================================== -->
-    <section>
-        <div id="sliderSecond" class="left" data-slide="prev">
-            <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                <img src="<?php bloginfo('template_directory') ?>/assets/img/left-arrow.png"
-                     style="top: 50%; position: absolute; left: 2%">
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                <img src="<?php bloginfo('template_directory') ?>/assets/img/right-arrow.png"
-                     style="top: 50%; position: absolute; right: 2%"/>
-            </a>
+    <div id="sliderSecond" class="left" data-slide="prev">
+        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <img src="<?php bloginfo('template_directory') ?>/assets/img/left-arrow.png"
+                 style="top: 50%; position: absolute; left: 2%">
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <img src="<?php bloginfo('template_directory') ?>/assets/img/right-arrow.png"
+                 style="top: 50%; position: absolute; right: 2%"/>
+        </a>
 
-            <div class="container sec">
+        <div class="container sec">
 
-                <div class="row sliderSecondInner carousel slide" id="carousel-example-generic">
-                    <div class="col-lg-4">
-                        <div class="row ">
-                            <ul class="secondSidebarMenu">
-                                <li data-target="#carousel-example-generic" data-slide-to="0" class="mobile active">
-                                    <a href="#">Mobile Development</a></li>
-                                <li data-target="#carousel-example-generic" data-slide-to="1" class="staf"><a href="#">Staf
-                                        Augmentation</a></li>
-                                <li class="app" data-target="#carousel-example-generic" data-slide-to="2"><a href="#">Custom
-                                        Application Development</a></li>
-                                <li class="design" data-target="#carousel-example-generic" data-slide-to="3"><a
-                                        href="#">Design</a>
-                                </li>
-                                <!--<li class="marketing"><a href="#">Internet Marketing</a></li>-->
-                            </ul>
-                        </div>
+            <div class="row sliderSecondInner carousel slide" id="carousel-example-generic">
+                <div class="col-lg-4">
+                    <div class="row ">
+                        <ul class="secondSidebarMenu">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="mobile active">
+                                <a href="#">Mobile Development</a></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1" class="staf"><a href="#">Staf
+                                    Augmentation</a></li>
+                            <li class="app" data-target="#carousel-example-generic" data-slide-to="2"><a href="#">Custom
+                                    Application Development</a></li>
+                            <li class="design" data-target="#carousel-example-generic" data-slide-to="3"><a
+                                    href="#">Design</a>
+                            </li>
+                            <!--<li class="marketing"><a href="#">Internet Marketing</a></li>-->
+                        </ul>
                     </div>
+                </div>
 
-                    <div class="col-lg-8 ">
-                        <div class="carousel-inner">
-                            <div class="row phoneBG item active">
-                                <div class="col-lg-7">
-                                    <article>
-                                        <header>
-                                            <hgroup>
-                                                <h1>JUST1WORD</h1>
+                <div class="col-lg-8 ">
+                    <div class="carousel-inner">
+                        <div class="row phoneBG item active">
+                            <div class="col-lg-7">
+                                <article>
+                                    <header>
+                                        <hgroup>
+                                            <h1>JUST1WORD</h1>
 
-                                                <h2>Free Bible App for iPhone</h2>
-                                            </hgroup>
-                                            <section>
-                                                <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                                    mobile
-                                                    device.
-                                                    Download the Bible app or go to the mobile site to explore the Bible
-                                                    with
-                                                    fully
-                                                    formatted text, red letters and SmartSearch</p>
-                                            </section>
-                                            <blockquote>
-                                                <p>We are very impressed with the quality of the Swan development team.
-                                                    It
-                                                    is
-                                                    loyal, dedicated, and stellar in delivery.</p>
+                                            <h2>Free Bible App for iPhone</h2>
+                                        </hgroup>
+                                        <section>
+                                            <p>Now you can get Bible anytime, anywhere on your iPhone or other
+                                                mobile
+                                                device.
+                                                Download the Bible app or go to the mobile site to explore the Bible
+                                                with
+                                                fully
+                                                formatted text, red letters and SmartSearch</p>
+                                        </section>
+                                        <blockquote>
+                                            <p>We are very impressed with the quality of the Swan development team.
+                                                It
+                                                is
+                                                loyal, dedicated, and stellar in delivery.</p>
 
-                                                <h3>John DOE, J1W</h3>
-                                            </blockquote>
+                                            <h3>John DOE, J1W</h3>
+                                        </blockquote>
 
-                                        </header>
+                                    </header>
 
-                                        <a href="#" class="blue_btn">Case Study</a>
+                                    <a href="#" class="blue_btn">Case Study</a>
 
-                                    </article>
+                                </article>
 
-                                </div>
                             </div>
+                        </div>
 
-                            <div class="row phoneBG item ">
-                                <div class="col-lg-7">
-                                    <article>
-                                        <header>
-                                            <hgroup>
-                                                <h1>JUST1WORD</h1>
+                        <div class="row phoneBG item ">
+                            <div class="col-lg-7">
+                                <article>
+                                    <header>
+                                        <hgroup>
+                                            <h1>JUST1WORD</h1>
 
-                                                <h2>Free Bible App for iPhone</h2>
-                                            </hgroup>
-                                            <section>
-                                                <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                                    mobile
-                                                    device.
-                                                    Download the Bible app or go to the mobile site to explore the Bible
-                                                    with
-                                                    fully
-                                                    formatted text, red letters and SmartSearch</p>
-                                            </section>
-                                            <blockquote>
-                                                <p>We are very impressed with the quality of the Swan development team.
-                                                    It
-                                                    is
-                                                    loyal, dedicated, and stellar in delivery.</p>
+                                            <h2>Free Bible App for iPhone</h2>
+                                        </hgroup>
+                                        <section>
+                                            <p>Now you can get Bible anytime, anywhere on your iPhone or other
+                                                mobile
+                                                device.
+                                                Download the Bible app or go to the mobile site to explore the Bible
+                                                with
+                                                fully
+                                                formatted text, red letters and SmartSearch</p>
+                                        </section>
+                                        <blockquote>
+                                            <p>We are very impressed with the quality of the Swan development team.
+                                                It
+                                                is
+                                                loyal, dedicated, and stellar in delivery.</p>
 
-                                                <h3>John DOE, J1W</h3>
-                                            </blockquote>
+                                            <h3>John DOE, J1W</h3>
+                                        </blockquote>
 
-                                        </header>
-                                        <a href="#" class="blue_btn">Case Study</a>
-                                    </article>
+                                    </header>
+                                    <a href="#" class="blue_btn">Case Study</a>
+                                </article>
 
-                                </div>
                             </div>
+                        </div>
 
-                            <div class="row phoneBG item ">
-                                <div class="col-lg-7">
-                                    <article>
-                                        <header>
-                                            <hgroup>
-                                                <h1>JUST1WORD</h1>
+                        <div class="row phoneBG item ">
+                            <div class="col-lg-7">
+                                <article>
+                                    <header>
+                                        <hgroup>
+                                            <h1>JUST1WORD</h1>
 
-                                                <h2>Free Bible App for iPhone</h2>
-                                            </hgroup>
-                                            <section>
-                                                <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                                    mobile
-                                                    device.
-                                                    Download the Bible app or go to the mobile site to explore the Bible
-                                                    with
-                                                    fully
-                                                    formatted text, red letters and SmartSearch</p>
-                                            </section>
-                                            <blockquote>
-                                                <p>We are very impressed with the quality of the Swan development team.
-                                                    It
-                                                    is
-                                                    loyal, dedicated, and stellar in delivery.</p>
+                                            <h2>Free Bible App for iPhone</h2>
+                                        </hgroup>
+                                        <section>
+                                            <p>Now you can get Bible anytime, anywhere on your iPhone or other
+                                                mobile
+                                                device.
+                                                Download the Bible app or go to the mobile site to explore the Bible
+                                                with
+                                                fully
+                                                formatted text, red letters and SmartSearch</p>
+                                        </section>
+                                        <blockquote>
+                                            <p>We are very impressed with the quality of the Swan development team.
+                                                It
+                                                is
+                                                loyal, dedicated, and stellar in delivery.</p>
 
-                                                <h3>John DOE, J1W</h3>
-                                            </blockquote>
+                                            <h3>John DOE, J1W</h3>
+                                        </blockquote>
 
-                                        </header>
-                                        <a href="#" class="blue_btn">Case Study</a>
-                                    </article>
+                                    </header>
+                                    <a href="#" class="blue_btn">Case Study</a>
+                                </article>
 
-                                </div>
                             </div>
+                        </div>
 
-                            <div class="row phoneBG item ">
-                                <div class="col-lg-7">
-                                    <article>
-                                        <header>
-                                            <hgroup>
-                                                <h1>JUST1WORD</h1>
+                        <div class="row phoneBG item ">
+                            <div class="col-lg-7">
+                                <article>
+                                    <header>
+                                        <hgroup>
+                                            <h1>JUST1WORD</h1>
 
-                                                <h2>Free Bible App for iPhone</h2>
-                                            </hgroup>
-                                            <section>
-                                                <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                                    mobile
-                                                    device.
-                                                    Download the Bible app or go to the mobile site to explore the Bible
-                                                    with
-                                                    fully
-                                                    formatted text, red letters and SmartSearch</p>
-                                            </section>
-                                            <blockquote>
-                                                <p>We are very impressed with the quality of the Swan development team.
-                                                    It
-                                                    is
-                                                    loyal, dedicated, and stellar in delivery.</p>
+                                            <h2>Free Bible App for iPhone</h2>
+                                        </hgroup>
+                                        <section>
+                                            <p>Now you can get Bible anytime, anywhere on your iPhone or other
+                                                mobile
+                                                device.
+                                                Download the Bible app or go to the mobile site to explore the Bible
+                                                with
+                                                fully
+                                                formatted text, red letters and SmartSearch</p>
+                                        </section>
+                                        <blockquote>
+                                            <p>We are very impressed with the quality of the Swan development team.
+                                                It
+                                                is
+                                                loyal, dedicated, and stellar in delivery.</p>
 
-                                                <h3>John DOE, J1W</h3>
-                                            </blockquote>
+                                            <h3>John DOE, J1W</h3>
+                                        </blockquote>
 
-                                        </header>
-                                        <a href="#" class="blue_btn">Case Study</a>
-                                    </article>
+                                    </header>
+                                    <a href="#" class="blue_btn">Case Study</a>
+                                </article>
 
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!--  ================================ Third Section ================================== -->
-    <section>
         <div id="sliderThird">
             <img src="<?php bloginfo('template_directory') ?>/assets/img/team.png"/>
 
@@ -283,14 +281,12 @@
             </div>
 
         </div>
-    </section>
     <!-- =============================================================-->
-    <section>
         <div id="sliderFourth">
-            <div class="container sec">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <section>
+                        <section class="sec">
                         <span class="title">
                             <h1>Our Clients</h1>
                             <a href="">View All +</a>
@@ -300,7 +296,7 @@
                         <section>
                         <span class="title">
                             <h1 class="text-center">Area of Expertise</h1>
-                            <a href="">View All +</a>
+                            <a href="<?=get_permalink(51, false) ?>">View All +</a>
 
                         </span>
                             <img src="<?php bloginfo('template_directory') ?>/assets/img/tech_0.png"/>
@@ -310,9 +306,8 @@
                 </div>
             </div>
         </div>
-    </section>
 
-    <section>
+
         <div id="sliderFifth">
             <div class="container sec">
                 <div class="row">
@@ -323,7 +318,6 @@
                 </div>
             </div>
         </div>
-    </section>
 
     </div>
 

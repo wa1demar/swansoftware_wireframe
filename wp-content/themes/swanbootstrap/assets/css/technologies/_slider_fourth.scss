@@ -1,5 +1,7 @@
 #sliderFour{
 
+  background: $white;
+
 
   .left-border-dotted {
     background: url("../../img/marker_blue.png") left repeat-y;
@@ -18,7 +20,7 @@
     }
   }
   ul.link-list li{
-    color: blue;
+    color: $blue;
     padding-top: 6px;
     a{
       width: 90%;
@@ -27,7 +29,7 @@
       padding: 15px 5px 15px 10px;
       font-family: "Open Sans Light";
       font-size: 152.38095%;
-      color: #6699ff;
+      color: $blue;
       text-decoration: none;
       line-height: 100%;
       font-size: getSize(10);  //TODO
@@ -37,12 +39,11 @@
       margin-left: 10px;
     }
     a:hover{
-      background-color: royalblue;
+      background-color: $blue_soft;
       color: #ffffff;
 
     }
 
   }
-  //njibgyfvtyfvgyjm
 
 }
