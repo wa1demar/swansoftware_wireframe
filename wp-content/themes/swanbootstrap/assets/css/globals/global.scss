@@ -11,6 +11,10 @@ section {
   display: block;
 }
 
+section {
+  padding: 50px 0;
+}
+
 body {
   width: 100%;
   font-size:  getSize(12);
@@ -142,9 +146,13 @@ ul {
   ul.socialLinks {
     width: 150px;
     margin: 0 auto;
+    list-style: none;
+    text-align: center;
 
     li {
       margin: 0 2px;
+      padding: 10px 2px;
+      margin: 0;
 
     }
   }
@@ -172,3 +180,5 @@ ul.yellow {
   vertical-align : middle;
   float: none;
 }
+
+

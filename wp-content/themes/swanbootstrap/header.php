@@ -25,6 +25,8 @@
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/services/main.css"/>
     <?php elseif (is_page_template('contact_us.php')): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/contact_us/main.css"/>
+    <?php elseif (is_page_template('technologies.php')): ?>
+        <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/technologies/main.css"/>
     <?php
     elseif (is_home()): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/home/main.css"/>
