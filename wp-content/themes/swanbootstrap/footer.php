@@ -1,6 +1,5 @@
 <?php
 /**
- * Template Name: Footer
  *
  * Created by PhpStorm.
  * @author: waldemar

@@ -1,6 +1,5 @@
 <?php
 /**
-* Template Name: Header
 *
 * Created by PhpStorm.
 * @author: waldemar
@@ -18,7 +17,15 @@
     <meta charset="<?php bloginfo('charset')?>"/>
     <link href="<?php bloginfo('template_directory')?>/assets/css/libs/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/assets/css/globals/global.css"/>
-    <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/assets/css/home/main.css"/>
+
+    <?php if (is_page_template('home.php')): ?>
+        <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/assets/css/home/main.css"/>
+    <?php elseif (is_page_template('services.php')): ?>
+        <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/assets/css/services/main.css"/>
+    <?php elseif (is_home()): ?>
+        <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/assets/css/home/main.css"/>
+    <?php endif ?>
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <?php wp_head()?>
