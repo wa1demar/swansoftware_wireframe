@@ -26,12 +26,7 @@ body {
   }
 }
 
-//.row {
-//  margin: 0;
-//}
-
 @import "header";
-
 
 hgroup {
   line-height: 100%;
@@ -155,6 +150,9 @@ ul {
   }
 }
 
+.left-border-dotted {
+  background: url("../../img/marker.png") left repeat-y;
+}
 
 .blackTransparent {
   background-color: rgba(0, 0, 0, 0.5);

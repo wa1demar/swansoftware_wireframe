@@ -201,6 +201,9 @@ ul {
     .social ul.socialLinks li {
       margin: 0 2px; }
 
+.left-border-dotted {
+  background: url("../../img/marker.png") left repeat-y; }
+
 .blackTransparent {
   background-color: rgba(0, 0, 0, 0.5); }
 
