@@ -1,7 +1,6 @@
-#sliderFour{
+#sliderFour {
 
   background: $white;
-
 
   .left-border-dotted {
     background: url("../../img/marker_blue.png") left repeat-y;
@@ -10,40 +9,58 @@
   padding: 50px 50px;
 
   background-size: cover;
-  ul{
+  ul {
 
-    font-size: getSize(14);  //TODO
+    font-size: getSize(14); //TODO
     padding-bottom: 30px;
-    a{
+    a {
 
       font-weight: bold;
     }
   }
-  ul.link-list li{
-    color: $blue;
-    padding-top: 6px;
-    a{
-      width: 90%;
-      height: 100%;
-      display: block;
-      padding: 15px 5px 15px 10px;
-      font-family: "Open Sans Light";
-      font-size: 152.38095%;
+  ul.link-list {
+    border: none;
+
+    li {
       color: $blue;
-      text-decoration: none;
-      line-height: 100%;
-      font-size: getSize(10);  //TODO
-      display: block;
+      padding-top: 6px;
+      border: none;
+      float: none;
+
+      &.active {
+        border: none;
+
+        a {
+          border: none;
+          background: $blue_soft;
+          color: #ffffff;
+          border-radius: 0;
+        }
+      }
 
 
-      margin-left: 10px;
+      a {
+        width: 90%;
+        height: 100%;
+        display: block;
+        padding: 15px 5px 15px 10px;
+        font-family: "Open Sans Light";
+        color: $blue;
+        text-decoration: none;
+        line-height: 100%;
+        font-size: getSize(10); //TODO
+        display: block;
+
+        margin-left: 10px;
+      }
+      a:hover {
+        background-color: $blue_soft;
+        color: #ffffff;
+        border-radius: 0;
+
+      }
+
     }
-    a:hover{
-      background-color: $blue_soft;
-      color: #ffffff;
-
-    }
-
   }
 
 }
