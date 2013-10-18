@@ -21,3 +21,99 @@
 @font-face {
   font-family: "Recetrac Bold";
   src: url("../../fonts/BARAKB.TTF"); }
+
+#sliderFirst {
+  background: url("../../pics/technology.png") repeat-x top;
+  padding: 10px 0 40px 0; }
+  #sliderFirst .darck-background {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 0;
+    width: 100%;
+    text-align: left;
+    padding: 30px 0; }
+    #sliderFirst .darck-background img {
+      width: 40%;
+      min-width: 100px;
+      margin-right: 20%; }
+    #sliderFirst .darck-background .text {
+      min-width: 300px;
+      color: #ffffff;
+      text-align: left;
+      font-size: 152.38095%;
+      padding: 30px 0 20px 0; }
+    #sliderFirst .darck-background b {
+      font-weight: bold;
+      font-size: 190.47619%;
+      color: #ffffff; }
+
+#sliderSecond {
+  padding-top: 40px;
+  background: url("../../img/marker_blue.png") bottom repeat-x; }
+  #sliderSecond img {
+    margin: 10px 10px; }
+  #sliderSecond .check-box-container-form {
+    margin-top: 30px;
+    width: 100%; }
+    #sliderSecond .check-box-container-form .label-block {
+      width: 20%;
+      padding: 50px 0; }
+      #sliderSecond .check-box-container-form .label-block input {
+        widht: 15px; }
+  #sliderSecond .css-label.design {
+    padding-top: 23px; }
+  #sliderSecond input[type=checkbox].css-checkbox {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0; }
+  #sliderSecond input[type=checkbox].css-checkbox + label.css-label {
+    padding-left: 32px;
+    height: 55px;
+    display: inline-block;
+    line-height: 25px;
+    background-repeat: no-repeat;
+    font-size: 171.42857%;
+    vertical-align: middle;
+    font-weight: 100;
+    text-align: left;
+    cursor: pointer; }
+  #sliderSecond input[type=checkbox].css-checkbox:checked + label.css-label {
+    background: url("../../../assets/img/checkbox_checked.png") left center no-repeat; }
+  #sliderSecond .css-label {
+    background: url("../../../assets/img/checkbox_unchecked.png") left center; }
+
+#sectionThried {
+  padding: 40px 0 60px 0; }
+  #sectionThried .client-form .col-xs-8 {
+    padding-left: 0px; }
+  #sectionThried .client-form .label {
+    color: #000000;
+    font-weight: 100;
+    font-size: 152.38095%;
+    padding-bottom: 20px;
+    min-width: 45px; }
+  #sectionThried .client-form img {
+    float: right; }
+  #sectionThried .client-form input, #sectionThried .client-form textarea {
+    width: 100%;
+    height: 26px;
+    border: 1px solid #7C99CE; }
+  #sectionThried .client-form .comment-div .col-xs-9 {
+    padding-left: 0px; }
+  #sectionThried .client-form .comment-div textarea {
+    height: 125px;
+    margin-bottom: 20px;
+    float: right; }
+  #sectionThried .client-form .comment-div .label.comment-label {
+    padding-left: 0px;
+    min-width: 30%; }
+  #sectionThried .client-form a.blue_btn {
+    float: right; }
+  #sectionThried .required {
+    background: url("../../../assets/img/star.png") right top no-repeat;
+    padding-right: 15px;
+    font-weight: normal; }

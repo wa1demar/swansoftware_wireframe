@@ -1,4 +1,30 @@
 #sliderFirst{
+  background: url("../../pics/technology.png") repeat-x top;
+  padding:  10px 0 40px 0;
+  .darck-background{
+    background: rgba(0,0,0,0.5);
+    margin: 0 0;
+    width: 100%;
+    text-align: left;
+    padding: 30px 0;
+    img{
+      width: 40%;
+      min-width: 100px;
+      margin-right: 20%;
+    }
+   .text{
+     min-width: 300px;
+     color: #ffffff;
+     text-align: left;
+     font-size: getSize(16);  //TODO
+     padding:  30px 0 20px 0;
+    }
+    b{
+      font-weight: bold;
+      font-size: getSize(20);
+      color: #ffffff;
 
+    }
 
+  }
 }
