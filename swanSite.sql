@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50527
 File Encoding         : 65001
 
-Date: 2013-10-18 14:14:06
+Date: 2013-10-18 19:12:19
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -102,7 +102,7 @@ CREATE TABLE `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB AUTO_INCREMENT=244 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=245 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of wp_options
@@ -163,7 +163,7 @@ INSERT INTO `wp_options` VALUES ('53', 'uploads_use_yearmonth_folders', '1', 'ye
 INSERT INTO `wp_options` VALUES ('54', 'upload_path', '', 'yes');
 INSERT INTO `wp_options` VALUES ('55', 'blog_public', '1', 'yes');
 INSERT INTO `wp_options` VALUES ('56', 'default_link_category', '2', 'yes');
-INSERT INTO `wp_options` VALUES ('57', 'show_on_front', 'posts', 'yes');
+INSERT INTO `wp_options` VALUES ('57', 'show_on_front', 'page', 'yes');
 INSERT INTO `wp_options` VALUES ('58', 'tag_base', '', 'yes');
 INSERT INTO `wp_options` VALUES ('59', 'show_avatars', '1', 'yes');
 INSERT INTO `wp_options` VALUES ('60', 'avatar_rating', 'G', 'yes');
@@ -193,7 +193,7 @@ INSERT INTO `wp_options` VALUES ('83', 'widget_text', 'a:0:{}', 'yes');
 INSERT INTO `wp_options` VALUES ('84', 'widget_rss', 'a:0:{}', 'yes');
 INSERT INTO `wp_options` VALUES ('85', 'uninstall_plugins', 'a:1:{s:41:\"sqlite-integration/sqlite-integration.php\";a:2:{i:0;s:17:\"SQLiteIntegration\";i:1;s:9:\"uninstall\";}}', 'no');
 INSERT INTO `wp_options` VALUES ('86', 'timezone_string', '', 'yes');
-INSERT INTO `wp_options` VALUES ('87', 'page_for_posts', '0', 'yes');
+INSERT INTO `wp_options` VALUES ('87', 'page_for_posts', '29', 'yes');
 INSERT INTO `wp_options` VALUES ('88', 'page_on_front', '0', 'yes');
 INSERT INTO `wp_options` VALUES ('89', 'default_post_format', '0', 'yes');
 INSERT INTO `wp_options` VALUES ('90', 'link_manager_enabled', '0', 'yes');
@@ -205,7 +205,7 @@ INSERT INTO `wp_options` VALUES ('95', 'widget_recent-comments', 'a:2:{i:2;a:2:{
 INSERT INTO `wp_options` VALUES ('96', 'widget_archives', 'a:2:{i:2;a:3:{s:5:\"title\";s:0:\"\";s:5:\"count\";i:0;s:8:\"dropdown\";i:0;}s:12:\"_multiwidget\";i:1;}', 'yes');
 INSERT INTO `wp_options` VALUES ('97', 'widget_meta', 'a:2:{i:2;a:1:{s:5:\"title\";s:0:\"\";}s:12:\"_multiwidget\";i:1;}', 'yes');
 INSERT INTO `wp_options` VALUES ('98', 'sidebars_widgets', 'a:4:{s:18:\"orphaned_widgets_1\";a:6:{i:0;s:8:\"search-2\";i:1;s:14:\"recent-posts-2\";i:2;s:17:\"recent-comments-2\";i:3;s:10:\"archives-2\";i:4;s:12:\"categories-2\";i:5;s:6:\"meta-2\";}s:19:\"wp_inactive_widgets\";a:0:{}s:9:\"main_menu\";a:1:{i:0;s:10:\"nav_menu-2\";}s:13:\"array_version\";i:3;}', 'yes');
-INSERT INTO `wp_options` VALUES ('99', 'cron', 'a:4:{i:1382104085;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1382136011;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1382179220;a:1:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes');
+INSERT INTO `wp_options` VALUES ('99', 'cron', 'a:4:{i:1382136011;a:3:{s:16:\"wp_version_check\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:17:\"wp_update_plugins\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}s:16:\"wp_update_themes\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:10:\"twicedaily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:43200;}}}i:1382179220;a:1:{s:19:\"wp_scheduled_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}i:1382190485;a:1:{s:30:\"wp_scheduled_auto_draft_delete\";a:1:{s:32:\"40cd750bba9870f18aada2478b24840a\";a:3:{s:8:\"schedule\";s:5:\"daily\";s:4:\"args\";a:0:{}s:8:\"interval\";i:86400;}}}s:7:\"version\";i:2;}', 'yes');
 INSERT INTO `wp_options` VALUES ('101', '_site_transient_update_core', 'O:8:\"stdClass\":3:{s:7:\"updates\";a:1:{i:0;O:8:\"stdClass\":9:{s:8:\"response\";s:6:\"latest\";s:8:\"download\";s:40:\"http://wordpress.org/wordpress-3.6.1.zip\";s:6:\"locale\";s:5:\"en_US\";s:8:\"packages\";O:8:\"stdClass\":4:{s:4:\"full\";s:40:\"http://wordpress.org/wordpress-3.6.1.zip\";s:10:\"no_content\";s:51:\"http://wordpress.org/wordpress-3.6.1-no-content.zip\";s:11:\"new_bundled\";s:52:\"http://wordpress.org/wordpress-3.6.1-new-bundled.zip\";s:7:\"partial\";b:0;}s:7:\"current\";s:5:\"3.6.1\";s:11:\"php_version\";s:5:\"5.2.4\";s:13:\"mysql_version\";s:3:\"5.0\";s:11:\"new_bundled\";s:3:\"3.6\";s:15:\"partial_version\";s:0:\"\";}}s:12:\"last_checked\";i:1382092901;s:15:\"version_checked\";s:5:\"3.6.1\";}', 'yes');
 INSERT INTO `wp_options` VALUES ('102', '_site_transient_update_plugins', 'O:8:\"stdClass\":3:{s:12:\"last_checked\";i:1382089932;s:7:\"checked\";a:5:{s:30:\"advanced-custom-fields/acf.php\";s:5:\"4.2.2\";s:19:\"akismet/akismet.php\";s:5:\"2.5.9\";s:9:\"hello.php\";s:3:\"1.6\";s:24:\"pdo-for-wordpress/db.php\";s:5:\"2.7.0\";s:25:\"ultimate-tinymce/main.php\";s:3:\"5.0\";}s:8:\"response\";a:0:{}}', 'yes');
 INSERT INTO `wp_options` VALUES ('105', '_site_transient_update_themes', 'O:8:\"stdClass\":3:{s:12:\"last_checked\";i:1382088074;s:7:\"checked\";a:3:{s:13:\"swanbootstrap\";s:3:\"2.0\";s:14:\"twentythirteen\";s:3:\"1.0\";s:12:\"twentytwelve\";s:3:\"1.2\";}s:8:\"response\";a:0:{}}', 'yes');
@@ -278,7 +278,7 @@ CREATE TABLE `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB AUTO_INCREMENT=196 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=228 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of wp_postmeta
@@ -295,7 +295,7 @@ INSERT INTO `wp_postmeta` VALUES ('9', '9', '_edit_lock', '1381931208:1');
 INSERT INTO `wp_postmeta` VALUES ('10', '11', '_edit_last', '1');
 INSERT INTO `wp_postmeta` VALUES ('11', '11', '_edit_lock', '1381931218:1');
 INSERT INTO `wp_postmeta` VALUES ('12', '13', '_edit_last', '1');
-INSERT INTO `wp_postmeta` VALUES ('13', '13', '_edit_lock', '1382094498:1');
+INSERT INTO `wp_postmeta` VALUES ('13', '13', '_edit_lock', '1382094972:1');
 INSERT INTO `wp_postmeta` VALUES ('14', '15', '_menu_item_type', 'post_type');
 INSERT INTO `wp_postmeta` VALUES ('15', '15', '_menu_item_menu_item_parent', '0');
 INSERT INTO `wp_postmeta` VALUES ('16', '15', '_menu_item_object_id', '13');
@@ -345,7 +345,7 @@ INSERT INTO `wp_postmeta` VALUES ('72', '24', '_edit_lock', '1381938140:1');
 INSERT INTO `wp_postmeta` VALUES ('75', '26', '_edit_last', '1');
 INSERT INTO `wp_postmeta` VALUES ('76', '26', '_edit_lock', '1381939266:1');
 INSERT INTO `wp_postmeta` VALUES ('77', '29', '_edit_last', '1');
-INSERT INTO `wp_postmeta` VALUES ('78', '29', '_edit_lock', '1382006846:1');
+INSERT INTO `wp_postmeta` VALUES ('78', '29', '_edit_lock', '1382101514:1');
 INSERT INTO `wp_postmeta` VALUES ('79', '29', '_wp_page_template', 'index.php');
 INSERT INTO `wp_postmeta` VALUES ('80', '32', '_edit_last', '1');
 INSERT INTO `wp_postmeta` VALUES ('81', '32', 'field_525fc11b50fcc', 'a:11:{s:3:\"key\";s:19:\"field_525fc11b50fcc\";s:5:\"label\";s:20:\"Top background image\";s:4:\"name\";s:10:\"background\";s:4:\"type\";s:5:\"image\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";s:1:\"1\";s:11:\"save_format\";s:3:\"url\";s:12:\"preview_size\";s:9:\"thumbnail\";s:7:\"library\";s:3:\"all\";s:17:\"conditional_logic\";a:3:{s:6:\"status\";s:1:\"0\";s:5:\"rules\";a:1:{i:0;a:3:{s:5:\"field\";s:4:\"null\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:0:\"\";}}s:8:\"allorany\";s:3:\"all\";}s:8:\"order_no\";i:0;}');
@@ -441,6 +441,33 @@ INSERT INTO `wp_postmeta` VALUES ('191', '49', '_wp_attachment_metadata', 'a:5:{
 INSERT INTO `wp_postmeta` VALUES ('193', '48', 'rule', 'a:5:{s:5:\"param\";s:13:\"page_template\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:14:\"contact_us.php\";s:8:\"order_no\";i:0;s:8:\"group_no\";i:0;}');
 INSERT INTO `wp_postmeta` VALUES ('194', '13', 'background', '49');
 INSERT INTO `wp_postmeta` VALUES ('195', '13', '_background', 'field_526114dcf4ea4');
+INSERT INTO `wp_postmeta` VALUES ('196', '50', '_edit_last', '1');
+INSERT INTO `wp_postmeta` VALUES ('197', '50', '_edit_lock', '1382101383:1');
+INSERT INTO `wp_postmeta` VALUES ('198', '51', '_edit_last', '1');
+INSERT INTO `wp_postmeta` VALUES ('199', '51', '_wp_page_template', 'technologies.php');
+INSERT INTO `wp_postmeta` VALUES ('200', '51', '_edit_lock', '1382101362:1');
+INSERT INTO `wp_postmeta` VALUES ('201', '53', '_edit_last', '1');
+INSERT INTO `wp_postmeta` VALUES ('202', '53', 'field_52611aaf762c8', 'a:11:{s:3:\"key\";s:19:\"field_52611aaf762c8\";s:5:\"label\";s:16:\"Background Image\";s:4:\"name\";s:10:\"background\";s:4:\"type\";s:5:\"image\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";s:1:\"1\";s:11:\"save_format\";s:3:\"url\";s:12:\"preview_size\";s:9:\"thumbnail\";s:7:\"library\";s:3:\"all\";s:17:\"conditional_logic\";a:3:{s:6:\"status\";s:1:\"0\";s:5:\"rules\";a:1:{i:0;a:3:{s:5:\"field\";s:4:\"null\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:0:\"\";}}s:8:\"allorany\";s:3:\"all\";}s:8:\"order_no\";i:0;}');
+INSERT INTO `wp_postmeta` VALUES ('204', '53', 'position', 'normal');
+INSERT INTO `wp_postmeta` VALUES ('205', '53', 'layout', 'no_box');
+INSERT INTO `wp_postmeta` VALUES ('206', '53', 'hide_on_screen', '');
+INSERT INTO `wp_postmeta` VALUES ('207', '53', '_edit_lock', '1382100763:1');
+INSERT INTO `wp_postmeta` VALUES ('210', '51', 'background', '49');
+INSERT INTO `wp_postmeta` VALUES ('211', '51', '_background', 'field_52611aaf762c8');
+INSERT INTO `wp_postmeta` VALUES ('213', '54', 'background', '49');
+INSERT INTO `wp_postmeta` VALUES ('214', '54', '_background', 'field_52611aaf762c8');
+INSERT INTO `wp_postmeta` VALUES ('216', '53', 'field_52612f0d9d3f5', 'a:11:{s:3:\"key\";s:19:\"field_52612f0d9d3f5\";s:5:\"label\";s:12:\"Technologies\";s:4:\"name\";s:12:\"technologies\";s:4:\"type\";s:7:\"wysiwyg\";s:12:\"instructions\";s:0:\"\";s:8:\"required\";s:1:\"0\";s:13:\"default_value\";s:0:\"\";s:7:\"toolbar\";s:4:\"full\";s:12:\"media_upload\";s:3:\"yes\";s:17:\"conditional_logic\";a:3:{s:6:\"status\";s:1:\"0\";s:5:\"rules\";a:1:{i:0;a:2:{s:5:\"field\";s:4:\"null\";s:8:\"operator\";s:2:\"==\";}}s:8:\"allorany\";s:3:\"all\";}s:8:\"order_no\";i:1;}');
+INSERT INTO `wp_postmeta` VALUES ('217', '53', 'rule', 'a:5:{s:5:\"param\";s:13:\"page_template\";s:8:\"operator\";s:2:\"==\";s:5:\"value\";s:16:\"technologies.php\";s:8:\"order_no\";i:0;s:8:\"group_no\";i:0;}');
+INSERT INTO `wp_postmeta` VALUES ('218', '51', 'technologies', '<img class=\"alignnone size-full wp-image-47\" alt=\"tech_5\" src=\"http://localhost/swanBootstrap/wp-content/uploads/2013/10/tech_5.png\" width=\"153\" height=\"79\" /> <img class=\"alignnone size-full wp-image-45\" alt=\"tech_3\" src=\"http://localhost/swanBootstrap/wp-content/uploads/2013/10/tech_3.png\" width=\"65\" height=\"72\" /> <img class=\"alignnone size-full wp-image-46\" alt=\"tech_4\" src=\"http://localhost/swanBootstrap/wp-content/uploads/2013/10/tech_4.png\" width=\"147\" height=\"88\" /> <img class=\"alignnone size-full wp-image-44\" alt=\"tech_2\" src=\"http://localhost/swanBootstrap/wp-content/uploads/2013/10/tech_2.png\" width=\"121\" height=\"65\" /> <img class=\"alignnone size-full wp-image-43\" alt=\"tech_1\" src=\"http://localhost/swanBootstrap/wp-content/uploads/2013/10/tech_1.png\" width=\"205\" height=\"48\" />');
+INSERT INTO `wp_postmeta` VALUES ('219', '51', '_technologies', 'field_52612f0d9d3f5');
+INSERT INTO `wp_postmeta` VALUES ('220', '50', '_wp_trash_meta_status', 'draft');
+INSERT INTO `wp_postmeta` VALUES ('221', '50', '_wp_trash_meta_time', '1382101500');
+INSERT INTO `wp_postmeta` VALUES ('222', '56', '_edit_last', '1');
+INSERT INTO `wp_postmeta` VALUES ('223', '56', '_edit_lock', '1382101465:1');
+INSERT INTO `wp_postmeta` VALUES ('224', '56', '_wp_page_template', 'default');
+INSERT INTO `wp_postmeta` VALUES ('225', '58', '_edit_last', '1');
+INSERT INTO `wp_postmeta` VALUES ('226', '58', '_wp_page_template', 'default');
+INSERT INTO `wp_postmeta` VALUES ('227', '58', '_edit_lock', '1382101500:1');
 
 -- ----------------------------
 -- Table structure for wp_posts
@@ -475,7 +502,7 @@ CREATE TABLE `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of wp_posts
@@ -508,7 +535,7 @@ INSERT INTO `wp_posts` VALUES ('25', '1', '2013-10-16 15:43:59', '2013-10-16 15:
 INSERT INTO `wp_posts` VALUES ('26', '1', '2013-10-16 15:44:20', '2013-10-16 15:44:20', '<div>\r\n<div>\r\n\r\n<strong>Lorem Ipsum</strong> - це текст-\"риба\", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною \"рибою\" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. \"Риба\" не тільки успішно пережила п\'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп\'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.\r\n\r\n</div>\r\n<div>\r\n\r\nВже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер на відміну від, наприклад, \"Тут іде текст. Тут іде текст.\" Це робить текст схожим на оповідний. Багато програм верстування та веб-дизайну використовують Lorem Ipsum як зразок і пошук за терміном \"lorem ipsum\" відкриє багато веб-сайтів, які знаходяться ще в зародковому стані. Різні версії Lorem Ipsum з\'явились за минулі роки, деякі випадково, деякі було створено зумисно (зокрема, жартівливі).\r\n\r\n</div>\r\n</div>\r\n<div>\r\n<div>\r\n\r\nНа відміну від поширеної думки Lorem Ipsum не є випадковим набором літер. Він походить з уривку класичної латинської літератури 45 року до н.е., тобто має більш як 2000-річну історію. Річард Макклінток, професор латини з коледжу Хемпдін-Сидні, що у Вірджінії, вивчав одне з найменш зрозумілих латинських слів - consectetur - з уривку Lorem Ipsum, і у пошуку цього слова в класичній літературі знайшов безсумнівне джерело. Lorem Ipsum походить з розділів 1.10.32 та 1.10.33 цицеронівського \"de Finibus Bonorum et Malorum\" (\"Про межі добра і зла\"), написаного у 45 році до н.е. Цей трактат з теорії етики був дуже популярним в епоху Відродження. Перший рядок Lorem Ipsum, \"Lorem ipsum dolor sit amet...\" походить з одного з рядків розділу 1.10.32.\r\n\r\nКласичний текст, використовуваний з XVI сторіччя, наведено нижче для всіх зацікавлених. Також точно за оригіналом наведено розділи 1.10.32 та 1.10.33 цицеронівського \"de Finibus Bonorum et Malorum\" разом із перекладом англійською, виконаним 1914 року Х.Рекемом.\r\n\r\n</div>\r\n<div>\r\n\r\nІснує багато варіацій уривків з Lorem Ipsum, але більшість з них зазнала певних змін на кшталт жартівливих вставок або змішування слів, які навіть не виглядають правдоподібно. Якщо ви збираєтесь використовувати Lorem Ipsum, ви маєте упевнитись в тому, що всередині тексту не приховано нічого, що могло б викликати у читача конфуз. Більшість відомих генераторів Lorem Ipsum в Мережі генерують текст шляхом повторення наперед заданих послідовностей Lorem Ipsum. Принципова відмінність цього генератора робить його першим справжнім генератором Lorem Ipsum. Він використовує словник з більш як 200 слів латини та цілий набір моделей речень - це дозволяє генерувати Lorem Ipsum, який виглядає осмислено. Таким чином, згенерований Lorem Ipsum не міститиме повторів, жартів, нехарактерних для латини слів і т.ін.\r\n\r\n</div>\r\n</div>', 'Our company began training courses ASP.NET MVC3', '', 'publish', 'open', 'open', '', 'our-company-began-training-courses-asp-net-mvc3', '', '', '2013-10-16 15:58:59', '2013-10-16 15:58:59', '', '0', 'http://localhost/swanBootstrap/?p=26', '0', 'post', '', '0');
 INSERT INTO `wp_posts` VALUES ('27', '1', '2013-10-16 15:44:20', '2013-10-16 15:44:20', '', 'Our company began training courses ASP.NET MVC3', '', 'inherit', 'open', 'open', '', '26-revision-v1', '', '', '2013-10-16 15:44:20', '2013-10-16 15:44:20', '', '26', 'http://localhost/swanBootstrap/?p=27', '0', 'revision', '', '0');
 INSERT INTO `wp_posts` VALUES ('28', '1', '2013-10-16 15:58:59', '2013-10-16 15:58:59', '<div>\r\n<div>\r\n\r\n<strong>Lorem Ipsum</strong> - це текст-\"риба\", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною \"рибою\" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. \"Риба\" не тільки успішно пережила п\'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп\'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.\r\n\r\n</div>\r\n<div>\r\n\r\nВже давно відомо, що читабельний зміст буде заважати зосередитись людині, яка оцінює композицію сторінки. Сенс використання Lorem Ipsum полягає в тому, що цей текст має більш-менш нормальне розподілення літер на відміну від, наприклад, \"Тут іде текст. Тут іде текст.\" Це робить текст схожим на оповідний. Багато програм верстування та веб-дизайну використовують Lorem Ipsum як зразок і пошук за терміном \"lorem ipsum\" відкриє багато веб-сайтів, які знаходяться ще в зародковому стані. Різні версії Lorem Ipsum з\'явились за минулі роки, деякі випадково, деякі було створено зумисно (зокрема, жартівливі).\r\n\r\n</div>\r\n</div>\r\n<div>\r\n<div>\r\n\r\nНа відміну від поширеної думки Lorem Ipsum не є випадковим набором літер. Він походить з уривку класичної латинської літератури 45 року до н.е., тобто має більш як 2000-річну історію. Річард Макклінток, професор латини з коледжу Хемпдін-Сидні, що у Вірджінії, вивчав одне з найменш зрозумілих латинських слів - consectetur - з уривку Lorem Ipsum, і у пошуку цього слова в класичній літературі знайшов безсумнівне джерело. Lorem Ipsum походить з розділів 1.10.32 та 1.10.33 цицеронівського \"de Finibus Bonorum et Malorum\" (\"Про межі добра і зла\"), написаного у 45 році до н.е. Цей трактат з теорії етики був дуже популярним в епоху Відродження. Перший рядок Lorem Ipsum, \"Lorem ipsum dolor sit amet...\" походить з одного з рядків розділу 1.10.32.\r\n\r\nКласичний текст, використовуваний з XVI сторіччя, наведено нижче для всіх зацікавлених. Також точно за оригіналом наведено розділи 1.10.32 та 1.10.33 цицеронівського \"de Finibus Bonorum et Malorum\" разом із перекладом англійською, виконаним 1914 року Х.Рекемом.\r\n\r\n</div>\r\n<div>\r\n\r\nІснує багато варіацій уривків з Lorem Ipsum, але більшість з них зазнала певних змін на кшталт жартівливих вставок або змішування слів, які навіть не виглядають правдоподібно. Якщо ви збираєтесь використовувати Lorem Ipsum, ви маєте упевнитись в тому, що всередині тексту не приховано нічого, що могло б викликати у читача конфуз. Більшість відомих генераторів Lorem Ipsum в Мережі генерують текст шляхом повторення наперед заданих послідовностей Lorem Ipsum. Принципова відмінність цього генератора робить його першим справжнім генератором Lorem Ipsum. Він використовує словник з більш як 200 слів латини та цілий набір моделей речень - це дозволяє генерувати Lorem Ipsum, який виглядає осмислено. Таким чином, згенерований Lorem Ipsum не міститиме повторів, жартів, нехарактерних для латини слів і т.ін.\r\n\r\n</div>\r\n</div>', 'Our company began training courses ASP.NET MVC3', '', 'inherit', 'open', 'open', '', '26-revision-v1', '', '', '2013-10-16 15:58:59', '2013-10-16 15:58:59', '', '26', 'http://localhost/swanBootstrap/?p=28', '0', 'revision', '', '0');
-INSERT INTO `wp_posts` VALUES ('29', '1', '2013-10-17 10:42:03', '2013-10-17 10:42:03', '', 'Home', '', 'publish', 'open', 'open', '', 'home', '', '', '2013-10-17 10:42:03', '2013-10-17 10:42:03', '', '0', 'http://localhost/swanBootstrap/?page_id=29', '0', 'page', '', '0');
+INSERT INTO `wp_posts` VALUES ('29', '1', '2013-10-17 10:42:03', '2013-10-17 10:42:03', '', 'Home', '', 'publish', 'open', 'open', '', 'home', '', '', '2013-10-18 13:07:06', '2013-10-18 13:07:06', '', '0', 'http://localhost/swanBootstrap/?page_id=29', '0', 'page', '', '0');
 INSERT INTO `wp_posts` VALUES ('30', '1', '2013-10-17 10:42:03', '2013-10-17 10:42:03', '', 'Home', '', 'inherit', 'open', 'open', '', '29-revision-v1', '', '', '2013-10-17 10:42:03', '2013-10-17 10:42:03', '', '29', 'http://localhost/swanBootstrap/?p=30', '0', 'revision', '', '0');
 INSERT INTO `wp_posts` VALUES ('31', '1', '2013-10-17 10:49:38', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2013-10-17 10:49:38', '0000-00-00 00:00:00', '', '0', 'http://localhost/swanBootstrap/?post_type=acf&p=31', '0', 'acf', '', '0');
 INSERT INTO `wp_posts` VALUES ('32', '1', '2013-10-17 10:52:20', '2013-10-17 10:52:20', '', 'Services', '', 'publish', 'closed', 'closed', '', 'acf_services', '', '', '2013-10-18 09:39:27', '2013-10-18 09:39:27', '', '0', 'http://localhost/swanBootstrap/?post_type=acf&#038;p=32', '0', 'acf', '', '0');
@@ -529,6 +556,17 @@ INSERT INTO `wp_posts` VALUES ('46', '1', '2013-10-18 09:29:55', '2013-10-18 09:
 INSERT INTO `wp_posts` VALUES ('47', '1', '2013-10-18 09:29:56', '2013-10-18 09:29:56', '', 'tech_5', '', 'inherit', 'open', 'open', '', 'tech_5', '', '', '2013-10-18 09:29:56', '2013-10-18 09:29:56', '', '33', 'http://localhost/swanBootstrap/wp-content/uploads/2013/10/tech_5.png', '0', 'attachment', 'image/png', '0');
 INSERT INTO `wp_posts` VALUES ('48', '1', '2013-10-18 11:00:42', '2013-10-18 11:00:42', '', 'Contact Us', '', 'publish', 'closed', 'closed', '', 'acf_contact-us', '', '', '2013-10-18 11:08:14', '2013-10-18 11:08:14', '', '0', 'http://localhost/swanBootstrap/?post_type=acf&#038;p=48', '0', 'acf', '', '0');
 INSERT INTO `wp_posts` VALUES ('49', '1', '2013-10-18 11:02:03', '2013-10-18 11:02:03', '', 'technology', '', 'inherit', 'open', 'open', '', 'technology', '', '', '2013-10-18 11:02:03', '2013-10-18 11:02:03', '', '13', 'http://localhost/swanBootstrap/wp-content/uploads/2013/10/technology.png', '0', 'attachment', 'image/png', '0');
+INSERT INTO `wp_posts` VALUES ('50', '1', '2013-10-18 11:18:22', '2013-10-18 11:18:22', '', 'Technologies', '', 'trash', 'open', 'open', '', 'technologies-2', '', '', '2013-10-18 13:05:00', '2013-10-18 13:05:00', '', '0', 'http://localhost/swanBootstrap/?page_id=50', '0', 'page', '', '0');
+INSERT INTO `wp_posts` VALUES ('51', '1', '2013-10-18 11:19:06', '2013-10-18 11:19:06', 'Swan Software Solutions uses only the most recent technologies to ensure that our customers receive highly-qualified solutions.\r\n\r\nOur specialists are always exploring new technologies and improving the old ones. As a result, the list of the technologies we use is constantly\r\nupdated.', 'Technologies', '', 'publish', 'open', 'open', '', 'technologies', '', '', '2013-10-18 12:53:27', '2013-10-18 12:53:27', '', '0', 'http://localhost/swanBootstrap/?page_id=51', '0', 'page', '', '0');
+INSERT INTO `wp_posts` VALUES ('52', '1', '2013-10-18 11:19:06', '2013-10-18 11:19:06', '', 'Technologies', '', 'inherit', 'open', 'open', '', '51-revision-v1', '', '', '2013-10-18 11:19:06', '2013-10-18 11:19:06', '', '51', 'http://localhost/swanBootstrap/?p=52', '0', 'revision', '', '0');
+INSERT INTO `wp_posts` VALUES ('53', '1', '2013-10-18 11:25:54', '2013-10-18 11:25:54', '', 'Technologies', '', 'publish', 'closed', 'closed', '', 'acf_technologies', '', '', '2013-10-18 12:52:42', '2013-10-18 12:52:42', '', '0', 'http://localhost/swanBootstrap/?post_type=acf&#038;p=53', '0', 'acf', '', '0');
+INSERT INTO `wp_posts` VALUES ('54', '1', '2013-10-18 11:35:09', '2013-10-18 11:35:09', 'Swan Software Solutions uses only the most recent technologies to ensure that our customers receive highly-qualified solutions.\r\n\r\nOur specialists are always exploring new technologies and improving the old ones. As a result, the list of the technologies we use is constantly\r\nupdated.', 'Technologies', '', 'inherit', 'open', 'open', '', '51-revision-v1', '', '', '2013-10-18 11:35:09', '2013-10-18 11:35:09', '', '51', 'http://localhost/swanBootstrap/?p=54', '0', 'revision', '', '0');
+INSERT INTO `wp_posts` VALUES ('55', '1', '2013-10-18 13:05:00', '2013-10-18 13:05:00', '', 'Technologies', '', 'inherit', 'open', 'open', '', '50-revision-v1', '', '', '2013-10-18 13:05:00', '2013-10-18 13:05:00', '', '50', 'http://localhost/swanBootstrap/?p=55', '0', 'revision', '', '0');
+INSERT INTO `wp_posts` VALUES ('56', '1', '2013-10-18 13:06:02', '2013-10-18 13:06:02', '', 'Staff Augmentation', '', 'publish', 'open', 'open', '', 'staff-augmentation', '', '', '2013-10-18 13:06:02', '2013-10-18 13:06:02', '', '0', 'http://localhost/swanBootstrap/?page_id=56', '0', 'page', '', '0');
+INSERT INTO `wp_posts` VALUES ('57', '1', '2013-10-18 13:06:02', '2013-10-18 13:06:02', '', 'Staff Augmentation', '', 'inherit', 'open', 'open', '', '56-revision-v1', '', '', '2013-10-18 13:06:02', '2013-10-18 13:06:02', '', '56', 'http://localhost/swanBootstrap/?p=57', '0', 'revision', '', '0');
+INSERT INTO `wp_posts` VALUES ('58', '1', '2013-10-18 13:06:25', '2013-10-18 13:06:25', '', 'Custom Application Development', '', 'publish', 'open', 'open', '', 'custom-application-development', '', '', '2013-10-18 13:06:28', '2013-10-18 13:06:28', '', '0', 'http://localhost/swanBootstrap/?page_id=58', '0', 'page', '', '0');
+INSERT INTO `wp_posts` VALUES ('59', '1', '2013-10-18 13:06:25', '2013-10-18 13:06:25', '', 'Custom Application Development', '', 'inherit', 'open', 'open', '', '58-revision-v1', '', '', '2013-10-18 13:06:25', '2013-10-18 13:06:25', '', '58', 'http://localhost/swanBootstrap/?p=59', '0', 'revision', '', '0');
+INSERT INTO `wp_posts` VALUES ('60', '1', '2013-10-18 13:06:54', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2013-10-18 13:06:54', '0000-00-00 00:00:00', '', '0', 'http://localhost/swanBootstrap/?page_id=60', '0', 'page', '', '0');
 
 -- ----------------------------
 -- Table structure for wp_term_relationships
