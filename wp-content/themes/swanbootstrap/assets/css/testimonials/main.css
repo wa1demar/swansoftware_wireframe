@@ -23,7 +23,6 @@
   src: url("../../fonts/BARAKB.TTF"); }
 
 #sliderFirst {
-  background: url("../../pics/technology.png") repeat-x top;
   padding: 10px 0 40px 0; }
   #sliderFirst .darck-background {
     background: rgba(0, 0, 0, 0.5);
@@ -34,16 +33,35 @@
       color: #ffffff; }
     #sliderFirst .darck-background .title {
       margin-bottom: 20px; }
-    #sliderFirst .darck-background .content, #sliderFirst .darck-background a {
+    #sliderFirst .darck-background .content {
       font-size: 133.33333%;
       line-height: 1.5; }
-    #sliderFirst .darck-background .content {
-      padding-bottom: 50px;
-      color: #ffffff; }
+      #sliderFirst .darck-background .content p {
+        padding-bottom: 50px;
+        color: #ffffff; }
+        #sliderFirst .darck-background .content p a {
+          font-size: 133.33333%;
+          line-height: 1.5; }
     #sliderFirst .darck-background a {
       color: #A0BFFF; }
 
 #sliderSecond {
   padding: 40px 0; }
-  #sliderSecond img {
-    margin: 10px 10px; }
+  #sliderSecond ul {
+    border: none; }
+    #sliderSecond ul li {
+      border: none;
+      display: table; }
+      #sliderSecond ul li a {
+        border: none;
+        height: 150px;
+        display: table-cell;
+        vertical-align: middle; }
+        #sliderSecond ul li a:hover {
+          background: #f4feff url("../../img/hover.png") center center no-repeat; }
+        #sliderSecond ul li a img {
+          margin: 10px 10px; }
+      #sliderSecond ul li.active a {
+        background: #f4feff url("../../img/hover_active.png") center center no-repeat; }
+        #sliderSecond ul li.active a:hover {
+          background: #f4feff url("../../img/hover_active.png") center center no-repeat; }

@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * Template Name: Testimonials
+ * Template Name Posts:
  *
  * Created by JetBrains PhpStorm.
  * User: Viktor
@@ -9,11 +9,11 @@
  * Time: 1:32 PM
  */
 ?>
-<?php get_header() ?>
-    <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/testimonials/main.css"/>
-    <div id='sliderFirst'>
-        <?php $bg_image = "../'assets/pics/technology.png" ?>
-        <?php require "_social.php" ?>
+<?php get_header()?>
+<?php while ( have_posts() ) : the_post(); ?>
+    <?php $bg = get_field('background'); ?>
+    <div id='sliderFirst' style="background:  url('<?= $bg ?>') center top repeat;">
+        <?php addSocials($bg)?>
 
         <div class='row darck-background'>
             <div class="container text-center">
@@ -75,11 +75,5 @@
     </div>
 
 
-
-
-
-
-
-
-
-<?php get_footer() ?>
+<?php endwhile; ?>
+<?php get_footer()?>

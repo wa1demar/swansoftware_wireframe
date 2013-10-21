@@ -1,6 +1,41 @@
-#sliderSecond{
+#sliderSecond {
   padding: 40px 0;
-  img{
-    margin: 10px 10px;
+  ul {
+    border: none;
+    li {
+      border: none;
+      display: table;
+
+      a {
+        border: none;
+        height: 150px;
+        display: table-cell;
+        vertical-align: middle;
+
+
+        &:hover {
+          background: $white url("../../img/hover.png") center center no-repeat;
+        }
+
+        img {
+          margin: 10px 10px;
+        }
+
+      }
+
+      &.active {
+        a {
+          background: $white url("../../img/hover_active.png") center center no-repeat;
+
+          &:hover {
+            background: $white url("../../img/hover_active.png") center center no-repeat;
+          }
+        }
+
+      }
+
+
+    }
   }
+
 }
