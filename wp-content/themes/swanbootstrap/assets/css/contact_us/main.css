@@ -46,17 +46,6 @@
   font-family: "Recetrac Bold";
   src: url("../../fonts/BARAKB.TTF"); }
 
-#sliderFirst ul.socialLinks {
-  margin: 0 auto;
-  list-style: none;
-  text-align: center;
-  background: #98b1da;
-  width: 130px; }
-  #sliderFirst ul.socialLinks li {
-    padding: 10px 2px;
-    margin: 0; }
-#sliderFirst .info-section .row {
-  margin: 0 0; }
 #sliderFirst .info-section .row.dark-background {
   width: 100%; }
   #sliderFirst .info-section .row.dark-background .text-center.background {
@@ -123,7 +112,5 @@
   src: url("../../fonts/BARAKB.TTF"); }
 
 #sliderSecond .section {
-  background: #50d1ec url("../../img/map.png") center no-repeat;
-  min-height: 500px;
-  min-width: 900px;
-  background-size: 100% 100%; }
+  background: #50d1ec url("../../img/map.png") center center no-repeat;
+  min-height: 500px; }

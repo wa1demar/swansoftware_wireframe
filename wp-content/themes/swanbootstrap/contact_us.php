@@ -72,7 +72,7 @@
                                         </div>
                                         <div class="col-xs-8">
                                             <input type="text"
-                                                   placeholder="  johndoe@jahoo.com">
+                                                   placeholder="johndoe@jahoo.com">
                                         </div>
                                     </div>
                                     <div class="row">

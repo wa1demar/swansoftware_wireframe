@@ -31,6 +31,9 @@ nav, aside,
 section {
   display: block; }
 
+section {
+  padding: 50px 0; }
+
 body {
   width: 100%;
   font-size: 114.28571%;
@@ -39,8 +42,6 @@ body {
 
 .container {
   max-width: 970px; }
-  .container.sec {
-    padding: 50px 0; }
 
 @font-face {
   font-family: "Open Sans";
@@ -77,12 +78,18 @@ body {
       margin: 15px 0 0 0;
       font-size: 523.80952%;
       font-family: "Recetrac Bold"; }
+      #mainHeader hgroup h1 a, #mainHeader hgroup h2 a {
+        color: #ffffff;
+        text-decoration: none; }
     #mainHeader hgroup h2 {
       padding: 0;
       margin: 0;
       color: #ffffff;
       font-size: 190.47619%;
       font-family: "Open Sans Light"; }
+      #mainHeader hgroup h2 a {
+        color: #ffffff;
+        text-decoration: none; }
   #mainHeader .address {
     width: 100%; }
     #mainHeader .address ul {
@@ -197,9 +204,13 @@ ul {
   text-align: center; }
   .social ul.socialLinks {
     width: 150px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    list-style: none;
+    text-align: center; }
     .social ul.socialLinks li {
-      margin: 0 2px; }
+      margin: 0 2px;
+      padding: 10px 2px;
+      margin: 0; }
 
 .left-border-dotted {
   background: url("../../img/marker.png") left repeat-y; }

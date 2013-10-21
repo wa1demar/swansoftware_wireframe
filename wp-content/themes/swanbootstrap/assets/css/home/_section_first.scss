@@ -6,22 +6,6 @@
   .container {
     padding: 0;
 
-    ul {
-
-      &.socialLinks {
-        margin: 0 auto;
-        list-style: none;
-        text-align: center;
-        background: $blue_soft;
-        width: 130px;
-
-        li {
-          padding: 10px 2px;
-          margin: 0;
-        }
-      }
-
-    }
 
     .topBanner {
       background: url("../../img/banner_temp.png") center top no-repeat;

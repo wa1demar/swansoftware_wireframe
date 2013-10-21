@@ -25,11 +25,19 @@
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/services/main.css"/>
     <?php elseif (is_page_template('contact_us.php')): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/contact_us/main.css"/>
+    <?php elseif (is_page_template('technologies.php')): ?>
+        <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/technologies/main.css"/>
+    <?php elseif (is_category('testimonials')): ?>
+        <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/testimonials/main.css"/>
     <?php
     elseif (is_home()): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/home/main.css"/>
     <?php endif ?>
 
+    <meta charset="<?php bloginfo('charset')?>"/>
+    <link href="<?php bloginfo('template_directory')?>/assets/css/libs/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/assets/css/globals/global.css"/>
+<!--    <link rel="stylesheet" href="--><?php //bloginfo('template_directory')?><!--/assets/css/home/main.css"/>-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <?php wp_head() ?>
@@ -46,9 +54,9 @@
                     </div>
                     <div class="col-lg-8 col-md-8 col-sm-8">
                         <hgroup>
-                            <h1>SWAN</h1>
+                            <h1><a href="<?=  get_home_url()?>">SWAN</a></h1>
 
-                            <h2>SOFTWARE SOLUTIONS</h2>
+                            <h2><a href="<?= get_home_url()?>">SOFTWARE SOLUTIONS</a></h2>
                         </hgroup>
                     </div>
                 </div>
