@@ -1,0 +1,87 @@
+@import "../globals/constants";
+
+#sliderFirst {
+
+  ul {
+
+    &.socialLinks {
+      margin: 0 auto;
+      list-style: none;
+      text-align: center;
+      background: $blue_soft;
+      width: 130px;
+
+      li {
+        padding: 10px 2px;
+        margin: 0;
+      }
+    }
+
+  }
+  .info-section {
+    .row {
+      margin: 0 0;
+
+    }
+    .row.dark-background {
+      width: 100%;
+      .text-center.background {
+        padding: 0 0 30px 0;
+
+        .contact-text-phone {
+          padding: 30px 0;
+          background: rgba(0, 0, 0, 0.5);
+          h1 {
+            color: white;
+            margin-bottom: 10px;
+          }
+          .container {
+            color: #ffffff;
+            .text-section {
+              .text-left{
+                margin: 0 auto;
+                max-width: 300px;
+
+              font-size: getSize(14);
+              .text {
+                margin: 10px 0 10px 10px;
+              }
+              b {
+
+                margin-left: 10px;
+                margin-bottom: 40px;
+                font-size: getSize(16);
+              }
+              }
+            }
+            .form-section {
+              padding: 10px;
+              .row {
+                margin-bottom: 15px;
+                .label {
+                  font-size: getSize(16);
+                  text-align: right;
+                  font-weight: normal;
+                  img{
+                    margin-left: 10px;
+                  }
+                }
+                 input {
+                   font-size: getSize(16);
+                  width: 100%;
+                  height: 30px;
+                }
+                textarea{
+                  font-size: getSize(16);
+                  width: 100%;
+                  height: 80px;
+                }
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

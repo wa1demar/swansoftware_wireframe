@@ -1,0 +1,16 @@
+#sliderFour {
+  display: none;
+  padding: 50px 50px;
+  background: url("../../img/technologi-back-section-2.png") repeat-y;
+  background-size: cover; }
+  #sliderFour ul {
+    font-size: getSize(14);
+    padding-bottom: 30px; }
+    #sliderFour ul a {
+      font-weight: bold; }
+  #sliderFour ul.link-list li {
+    padding-top: 6px; }
+    #sliderFour ul.link-list li a {
+      display: block;
+      padding: 10px 10px;
+      margin-left: 10px; }

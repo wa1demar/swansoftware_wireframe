@@ -96,6 +96,8 @@ section {
         padding-left: 20px;
         font-size: 133.33333%;
         color: #ffffff; }
+      #serviceContent .content .articleList p {
+        color: #ffffff; }
 
 #info {
   background: #a4bdbf; }
@@ -120,6 +122,10 @@ section {
 #clients {
   background: #f4feff;
   padding: 50px 0; }
+
+#clients p img,
+#technologies p img {
+  padding: 10px; }
 
 #quotes {
   background: #eef8eb;

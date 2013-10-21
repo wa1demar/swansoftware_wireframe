@@ -1,0 +1,48 @@
+#sliderFour{
+
+
+  .left-border-dotted {
+    background: url("../../img/marker_blue.png") left repeat-y;
+  }
+
+  padding: 50px 50px;
+
+  background-size: cover;
+  ul{
+
+    font-size: getSize(14);  //TODO
+    padding-bottom: 30px;
+    a{
+
+      font-weight: bold;
+    }
+  }
+  ul.link-list li{
+    color: blue;
+    padding-top: 6px;
+    a{
+      width: 90%;
+      height: 100%;
+      display: block;
+      padding: 15px 5px 15px 10px;
+      font-family: "Open Sans Light";
+      font-size: 152.38095%;
+      color: #6699ff;
+      text-decoration: none;
+      line-height: 100%;
+      font-size: getSize(10);  //TODO
+      display: block;
+
+
+      margin-left: 10px;
+    }
+    a:hover{
+      background-color: royalblue;
+      color: #ffffff;
+
+    }
+
+  }
+  //njibgyfvtyfvgyjm
+
+}
