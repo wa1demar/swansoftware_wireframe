@@ -46,23 +46,38 @@
   font-family: "Recetrac Bold";
   src: url("../../fonts/BARAKB.TTF"); }
 
-#sliderFirst .info-section .darck-background {
-  width: 100%; }
-  #sliderFirst .info-section .darck-background .background {
-    padding: 0 0 30px 0; }
-    #sliderFirst .info-section .darck-background .background .technologies-text-phone {
-      padding: 30px 0;
-      background: rgba(0, 0, 0, 0.5); }
-      #sliderFirst .info-section .darck-background .background .technologies-text-phone .container {
-        padding: 0 100px; }
-        #sliderFirst .info-section .darck-background .background .technologies-text-phone .container h1 {
-          font-size: 380.95238%;
-          color: white;
-          margin-bottom: 50px; }
-        #sliderFirst .info-section .darck-background .background .technologies-text-phone .container .content p {
-          text-align: justify;
+#sliderFirst {
+  padding: 10px 0 40px 0; }
+  #sliderFirst ul.socialLinks {
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    background: #98b1da;
+    width: 130px; }
+    #sliderFirst ul.socialLinks li {
+      padding: 10px 2px;
+      margin: 0; }
+  #sliderFirst .info-section .row {
+    margin: 0 0; }
+  #sliderFirst .info-section .row.darck-background {
+    width: 100%; }
+    #sliderFirst .info-section .row.darck-background .text-center.background {
+      padding: 0 0 30px 0; }
+      #sliderFirst .info-section .row.darck-background .text-center.background .technologies-text-phone {
+        padding: 30px 0;
+        background: rgba(0, 0, 0, 0.5); }
+        #sliderFirst .info-section .row.darck-background .text-center.background .technologies-text-phone .container {
+          padding: 0 100px;
           color: white;
           font-size: 190.47619%; }
+          #sliderFirst .info-section .row.darck-background .text-center.background .technologies-text-phone .container h1 {
+            font-size: 200%;
+            color: white;
+            margin-bottom: 50px; }
+          #sliderFirst .info-section .row.darck-background .text-center.background .technologies-text-phone .container .content p {
+            text-align: justify;
+            font-size: 95.2381%;
+            color: white; }
 
 #sliderSecond {
   background: #f4feff; }
@@ -103,43 +118,43 @@
     margin: 0 auto;
     float: center; } }
 #sliderFour {
-  background: #f4feff;
   padding: 50px 50px;
   background-size: cover; }
   #sliderFour .left-border-dotted {
     background: url("../../img/marker_blue.png") left repeat-y; }
   #sliderFour ul {
     font-size: 133.33333%;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    border: none; }
     #sliderFour ul a {
       font-weight: bold; }
-  #sliderFour ul.link-list {
-    border: none; }
-    #sliderFour ul.link-list li {
-      color: #6699ff;
-      padding-top: 6px;
+  #sliderFour ul.link-list li {
+    color: blue;
+    padding-top: 6px;
+    border: none;
+    width: 100%;
+    border-radius: 0; }
+    #sliderFour ul.link-list li.active a {
       border: none;
-      float: none; }
-      #sliderFour ul.link-list li.active {
-        border: none; }
-        #sliderFour ul.link-list li.active a {
-          border: none;
-          background: #98b1da;
-          color: #ffffff;
-          border-radius: 0; }
-      #sliderFour ul.link-list li a {
-        width: 90%;
-        height: 100%;
-        display: block;
-        padding: 15px 5px 15px 10px;
-        font-family: "Open Sans Light";
-        color: #6699ff;
-        text-decoration: none;
-        line-height: 100%;
-        font-size: 95.2381%;
-        display: block;
-        margin-left: 10px; }
-      #sliderFour ul.link-list li a:hover {
-        background-color: #98b1da;
-        color: #ffffff;
-        border-radius: 0; }
+      background: #98b1da;
+      border-radius: 0;
+      color: #ffffff; }
+    #sliderFour ul.link-list li a {
+      width: 90%;
+      height: 100%;
+      display: block;
+      padding: 15px 5px 15px 10px;
+      font-family: "Open Sans Light";
+      font-size: 152.38095%;
+      color: #6699ff;
+      text-decoration: none;
+      line-height: 100%;
+      font-size: 95.2381%;
+      display: block;
+      width: 100%;
+      margin-left: 10px; }
+    #sliderFour ul.link-list li a:hover {
+      background-color: #98b1da;
+      color: #ffffff;
+      border: none;
+      border-radius: 0; }

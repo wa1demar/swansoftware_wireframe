@@ -1,6 +1,7 @@
 @import "../globals/constants";
 
 #sliderFirst {
+  padding: 10px 0 40px 0;
 
   ul {
 
@@ -44,7 +45,12 @@
               margin-bottom: 50px;
             }
             .content{
-              text-align: justify;
+              p {
+                text-align: justify;
+                font-size: getSize(10);
+                color: white;
+              }
+
             }
           }
         }
