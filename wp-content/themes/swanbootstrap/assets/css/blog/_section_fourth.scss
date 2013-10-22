@@ -1,0 +1,57 @@
+#sliderFourth{
+  padding: 20px 0;
+  .img-container{
+    min-height: 400px;
+    background: url("../../img/blog-1.png") center no-repeat;
+
+
+
+
+    font-size: getSize(16);                         // TODO
+    padding-left:  0;
+
+    position: relative;
+    .round-sign{
+      background: url("../../img/link_bg_blue_round.png") no-repeat center ;
+      background-size: cover;
+      width: 150px;;
+      min-height: 150px;
+      position: absolute;
+      bottom: 24%;
+      left: 2%;
+      z-index: 1000;
+      opacity: 0.7;
+      color: #ffffff;
+      h1{
+        color: #ffffff;
+        font-size: getSize(45);                     // TODO
+
+      }
+
+    }
+    .white-footer{
+      color: #647678;
+      height: 40%;
+      margin-right:  8px;
+      margin-left:  2px;
+      background: #ffffff  ;
+      position: absolute;
+      bottom: 5%;
+
+      padding: 3px 0;
+      b.topic-sign{
+        font-size: getSize(12);                     // TODO
+        width: 100%;
+      }
+      .img-text{
+        font-size: getSize(9);                     // TODO
+      }
+
+
+
+
+    }
+
+  }
+
+}
