@@ -48,15 +48,6 @@
 
 #sliderFirst {
   padding: 10px 0 40px 0; }
-  #sliderFirst ul.socialLinks {
-    margin: 0 auto;
-    list-style: none;
-    text-align: center;
-    background: #98b1da;
-    width: 130px; }
-    #sliderFirst ul.socialLinks li {
-      padding: 10px 2px;
-      margin: 0; }
   #sliderFirst .info-section .row {
     margin: 0 0; }
   #sliderFirst .info-section .row.darck-background {
