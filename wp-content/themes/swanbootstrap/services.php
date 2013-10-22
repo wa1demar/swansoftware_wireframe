@@ -130,7 +130,7 @@
                 <div class="col-lg-12 text-center">
                    <span class="title">
                             <h1>Technologies what are used</h1>
-                            <a href="">View All +</a>
+                            <a href="<?=get_permalink('4, false') ?>">View All +</a> <?php //TODO: Get permalink to technologies ?>
                    </span>
                     <?= $tech ?>
                 </div>
