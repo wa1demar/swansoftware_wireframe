@@ -122,6 +122,24 @@ section {
 #clients {
   background: #f4feff;
   padding: 50px 0; }
+  #clients ul {
+    border: none; }
+    #clients ul li {
+      border: none;
+      display: table; }
+      #clients ul li a {
+        border: none;
+        height: 150px;
+        display: table-cell;
+        vertical-align: middle; }
+        #clients ul li a:hover {
+          background: #f4feff url("../../img/hover.png") center center no-repeat; }
+        #clients ul li a img {
+          margin: 10px 10px; }
+      #clients ul li.active a {
+        background: #f4feff url("../../img/hover_active.png") center center no-repeat; }
+        #clients ul li.active a:hover {
+          background: #f4feff url("../../img/hover_active.png") center center no-repeat; }
 
 #clients p img,
 #technologies p img {

@@ -12,6 +12,7 @@
 
     font-size: getSize(14);  //TODO
     padding-bottom: 30px;
+    border: none;
     a{
 
       font-weight: bold;
@@ -20,6 +21,19 @@
   ul.link-list li{
     color: blue;
     padding-top: 6px;
+    border: none;
+    width: 100%;
+    border-radius: 0;
+
+    &.active a {
+      border: none;
+      background: $blue_soft;
+      border-radius: 0;
+      color: #ffffff;
+    }
+
+
+
     a{
       width: 90%;
       height: 100%;
@@ -33,12 +47,17 @@
       font-size: getSize(10);  //TODO
       display: block;
 
+      width: 100%;
+
 
       margin-left: 10px;
     }
     a:hover{
-      background-color: royalblue;
+      background-color: $blue_soft;
       color: #ffffff;
+      border: none;
+      border-radius: 0;
+
 
     }
 

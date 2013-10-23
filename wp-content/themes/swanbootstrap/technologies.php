@@ -22,7 +22,6 @@
                     <div class="col-lg-12  technologies-text-phone ">
                         <div class='container'>
                             <h1>Technologies that we use</h1>
-
                             <div class='content'>
                                 <?php the_content() ?>
                             </div>

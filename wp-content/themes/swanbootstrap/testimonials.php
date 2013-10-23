@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * Template Name Posts:
+ * Template Name Posts: Testimonials
  *
  * Created by JetBrains PhpStorm.
  * User: Viktor

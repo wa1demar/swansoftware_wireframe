@@ -8,13 +8,15 @@
  *
  * @note: менять ничего не рекомендую, хрупкий баланс ошибок,
  * компенсирующих друг друга, заставляет программу работать
- */ ?>
+ */
+?>
 
-<?php get_header()?>
-<?php while ( have_posts() ) : the_post(); ?>
+<?php get_header() ?>
+<?php while (have_posts()) : the_post(); ?>
     <?php $bg = get_field('background'); ?>
     <div class="servicesHeader" style="background: url('<?= $bg ?>') center top repeat-x;">
-       <?php addSocials($bg)?>
+        <?php addSocials($bg) ?>
+        <?php $tech = get_field('technologies') ?>
         <div class="headerContent blackTransparent">
             <div class="container">
                 <div class="row">
@@ -23,8 +25,8 @@
                             <img src="<?php the_field("service_icon") ?>">
                         </div>
                         <div class="text">
-                            <h1><?=the_title() ?></h1>
-                                    <?=the_field('service_offer') ?>
+                            <h1><?= the_title() ?></h1>
+                            <?= the_field('service_offer') ?>
                         </div>
 
                     </div>
@@ -58,22 +60,23 @@
             <div class="row">
                 <div class="col-lg-7 article">
                     <article class="center">
-                        <?php the_content()?>
+                        <?php the_content() ?>
                     </article>
                 </div>
                 <div class="col-lg-5 articleList ">
-                    <?php the_field('our_approach')?>
+                    <?php the_field('our_approach') ?>
                 </div>
             </div>
 
         </div>
 
     </div>
+<?php endwhile; ?>
     <section id="info">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <?php the_field('why_do_you_need')?>
+                    <?php the_field('why_do_you_need') ?>
                 </div>
             </div>
         </div>
@@ -83,40 +86,61 @@
             <h1>You can order the service by <a href="#">filling the form</a> or just <a href="#">cull us</a></h1>
         </div>
     </section>
-    <section id="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <span class="title">
+    <div class="tab1">
+        <section id="clients">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center" >
+                        <span class="title">
                             <h1>Our Clients</h1>
                             <a href="">View All +</a>
                         </span>
-                    <?php the_field('our_clients')?>
+                        <ul class="nav nav-tabs" id="myTab">
+                        <?php query_posts("cat=5&posts_per_page=100"); ?>
+                        <?php $c = 1; if (have_posts()) : while (have_posts()) : the_post(); ?>
+                            <li class="<?php if ($c == 1) echo("active")?>"><a href="#<?=get_field('label') ?>" data-toggle="tab"><img src="<?php the_field('logo') ?>"/></a> </li>
+                            <?php $c++?>
+                        <?php endwhile; endif ?>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="quotes">
+            <div class="container">
+                <div class="row tab-content">
+                    <?php query_posts("cat=5&posts_per_page=100"); ?>
+                    <?php $c = 1; if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+                    <blockquote class="tab-pane <?php if ($c == 1) echo("active") ?>" id="<?=get_field('label') ?>">
+                        <p><?php the_content() ?></p>
+                        <h3><?=get_field('name')?></h3>
+                        <?php $c++;?>
+                    </blockquote>
+
+                    <?php endwhile; endif ?>
+
                 </div>
             </div>
         </div>
-    </section>
-    <section id="quotes">
-        <div class="container">
-            <div class="row">
-                <?php the_field('quotes')?>
-
-            </div>
-        </div>
-    </section>
+    </div>
     <section id="technologies">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                    <span class="title">
                             <h1>Technologies what are used</h1>
-                            <a href="">View All +</a>
+                            <a href="<?=get_permalink('4, false') ?>">View All +</a> <?php //TODO: Get permalink to technologies ?>
                    </span>
-                    <?php the_field('technologies')?>
+                    <?= $tech ?>
                 </div>
             </div>
         </div>
     </section>
-<?php endwhile; ?>
+    <script>
+        $(function () {
+            $('#myTab a:first').tab('show')
+        })
+    </script>
 
-<?php get_footer()?>
+<?php get_footer() ?>

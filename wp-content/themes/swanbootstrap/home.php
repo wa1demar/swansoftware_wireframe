@@ -71,7 +71,7 @@
         </div>
     </div>
     <!--  ================================ Second Section ================================== -->
-    <div id="sliderSecond" class="left" data-slide="prev">
+    <section id="sliderSecond" class="left" data-slide="prev">
         <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
             <img src="<?php bloginfo('template_directory') ?>/assets/img/left-arrow.png"
                  style="top: 50%; position: absolute; left: 2%">
@@ -244,7 +244,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!--  ================================ Third Section ================================== -->
     <div id="sliderThird">
