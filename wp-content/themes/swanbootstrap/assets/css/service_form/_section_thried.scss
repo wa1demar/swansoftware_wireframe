@@ -1,0 +1,59 @@
+#sectionThried {
+  padding: 40px 0 60px 0;
+  .client-form {
+    .col-xs-8 {
+      padding-left: 0px;
+
+    }
+
+    .label {
+      color: #000000;
+      font-weight: 100;
+      font-size: getSize(16);
+      //TODO
+      padding-bottom: 20px;
+      min-width: 45px;
+    }
+    img {
+      //margin: 0 10px;
+      float: right;
+
+    }
+    input, textarea {
+      width: 100%;
+      height: 26px;
+      border: 1px solid #7C99CE;
+
+    }
+    .comment-div {
+      .col-xs-9 {
+        padding-left: 0px;
+      }
+
+      textarea {
+        height: 125px;
+        margin-bottom: 20px;
+        float: right
+
+      }
+
+      .label.comment-label {
+
+        //height: 20px;
+        padding-left: 0px;
+        min-width: 30%;
+      }
+    }
+    a.blue_btn {
+      float: right;
+    }
+
+  }
+  .required {
+    background: url("../../../assets/img/star.png") right top no-repeat;
+    padding-right: 15px;
+    font-weight: normal;
+
+  }
+
+}

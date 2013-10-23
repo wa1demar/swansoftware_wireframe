@@ -1,0 +1,68 @@
+#sliderSecond {
+  padding-top: 40px;
+  background: url("../../img/marker_blue.png") bottom repeat-x;
+
+  img {
+    margin: 10px 10px;
+  }
+
+  .check-box-container-form {
+    margin-top: 30px;
+
+    width: 100%;
+    .label-block {
+      width: 20%;
+
+      //display: inline;
+      padding: 50px 0;
+
+      input {
+        widht: 15px;
+      }
+
+    }
+
+  }
+  .css-label.design {
+    padding-top: 23px;
+
+  }
+  // style for checkbox
+  input[type=checkbox].css-checkbox {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+  input[type=checkbox].css-checkbox + label.css-label {
+    padding-left: 32px;
+    height: 55px;
+    display: inline-block;
+    line-height: 25px;
+    background-repeat: no-repeat;
+    //background-position: 0 0;
+    //background-size: 25;
+    font-size: getSize(18);
+    //TODO
+    vertical-align: middle;
+    font-weight: 100;
+    text-align: left;
+    cursor: pointer;
+  }
+  input[type=checkbox].css-checkbox:checked + label.css-label {
+    //background-position: 0 -25px;
+    background: url("../../../assets/img/checkbox_checked.png") left center no-repeat;
+  }
+  .css-label {
+    background: url("../../../assets/img/checkbox_unchecked.png") left center;
+
+  }
+
+
+
+}
+
