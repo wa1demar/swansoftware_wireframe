@@ -170,6 +170,13 @@ ul.yellow {
   }
 }
 
+ul.blue {
+  li {
+    background: url("../../img/marker_blue.png") left top no-repeat;
+    padding-left: 20px;
+  }
+}
+
 @import "footer";
 
 .center{
