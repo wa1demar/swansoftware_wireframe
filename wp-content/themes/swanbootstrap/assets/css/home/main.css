@@ -128,6 +128,13 @@
   #sliderThird img {
     width: 100%;
     max-width: 1366px; }
+  #sliderThird .col-lg-6.text {
+    font-size: 133.33333%; }
+  #sliderThird .col-lg-4.link {
+    font-size: 133.33333%; }
+    #sliderThird .col-lg-4.link h3 {
+      font-size: 95.2381%;
+      font-weight: bold; }
   #sliderThird .news_line {
     background: url("../../img/bg-black-transparent.png") repeat;
     padding: 20px 0;
