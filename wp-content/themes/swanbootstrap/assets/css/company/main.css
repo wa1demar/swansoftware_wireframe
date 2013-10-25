@@ -34,7 +34,7 @@
       color: #ffffff;
       padding-bottom: 20px;
       font-size: 428.57143%; }
-    #sliderFirst .darck-background .text {
+    #sliderFirst .darck-background .text p {
       color: #ffffff;
       font-size: 142.85714%; }
 
@@ -154,7 +154,7 @@
     #sectionFifth .superheroes h1 {
       padding-bottom: 40px; }
     #sectionFifth .superheroes .col-xs-2 {
-      min-height: 200px;
+      min-height: 250px;
       margin: 10px 0; }
       #sectionFifth .superheroes .col-xs-2 span {
         color: #87A3D3;

@@ -13,9 +13,11 @@
       font-size: getSize(45);                                     //TODO
     }
     .text{
+        p {
+          color: #ffffff;
+          font-size: getSize(15);
+        }
 
-      color: #ffffff;
-      font-size: getSize(15);
     }
 
   }
