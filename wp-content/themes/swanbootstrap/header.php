@@ -31,6 +31,8 @@
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/testimonials/main.css"/>
     <?php elseif (is_page_template('company.php')): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/company/main.css"/>
+    <?php elseif (is_page_template('media.php')): ?>
+        <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/welcome/main.css"/>
     <?php
     elseif (is_home()): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/home/main.css"/>
