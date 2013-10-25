@@ -76,7 +76,8 @@
     #sliderSecond .sliderSecondInner div ul.secondSidebarMenu li {
       padding: 0;
       background: #ffffff;
-      line-height: 120%; }
+      line-height: 120%;
+      width: 100%; }
       #sliderSecond .sliderSecondInner div ul.secondSidebarMenu li a {
         width: 100%;
         height: 100%;
@@ -92,34 +93,41 @@
       #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .mobile:hover, #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .mobile.active {
         background: #6699ff url("../../img/service1_25x25.png") left center no-repeat; }
         #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .mobile:hover a, #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .mobile.active a {
+          background: none;
           color: #ffffff; }
-    #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .staf {
+    #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .staff {
       background: white url("../../img/icon_s_2_45.png") left center no-repeat; }
-      #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .staf:hover, #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .staf.active {
+      #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .staff:hover, #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .staff.active {
         background: #6699ff url("../../img/service2_25x25.png") left center no-repeat; }
-        #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .staf:hover a, #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .staf.active a {
+        #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .staff:hover a, #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .staff.active a {
+          background: none;
           color: #ffffff; }
     #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .app {
       background: white url("../../img/icon_s_3_45.png") left center no-repeat; }
       #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .app:hover, #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .app.active {
         background: #6699ff url("../../img/service3_25x25.png") left center no-repeat; }
         #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .app:hover a, #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .app.active a {
+          background: none;
           color: #ffffff; }
     #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .design {
       background: white url("../../img/icon_s_4_45.png") left center no-repeat; }
       #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .design:hover, #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .design.active {
         background: #6699ff url("../../img/service4_25x25.png") left center no-repeat; }
         #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .design:hover a, #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .design.active a {
+          background: none;
           color: #ffffff; }
     #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .marketing {
       background: white url("../../img/icon_s_5_45.png") left center no-repeat; }
       #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .marketing:hover {
         background: #6699ff url("../../img/service5_25x25.png") left center no-repeat; }
         #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .marketing:hover a {
+          background: none;
           color: #ffffff; }
   #sliderSecond .sliderSecondInner .phoneBG {
     background: white url("../../img/phone_bg.png") right center no-repeat;
     background-size: contain; }
+  #sliderSecond #mobile .carousel-control, #sliderSecond #staff .carousel-control, #sliderSecond #app .carousel-control, #sliderSecond #design .carousel-control {
+    background: none; }
 
 #sliderThird {
   background: #2f3738;
