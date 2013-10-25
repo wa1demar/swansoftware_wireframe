@@ -4,13 +4,22 @@
   padding-bottom: 20px;
   text-align: center;
   #center{
-    background-color: #6598FE;
+    background: $blue_soft;
+    box-shadow: 0 0 10px 2px $gray_bg;
     color: white;
     padding: 30px 40px 30px 40px;
     z-index: 1000;
     position: relative;
     font-size: getSize(15);  //TODO
     font-weight: bold;  //TODO
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:hover {
+      background: $blue;
+    }
   }
 #sliderFirst {
 
