@@ -8,7 +8,8 @@
  *
  * @note: менять ничего не рекомендую, хрупкий баланс ошибок,
  * компенсирующих друг друга, заставляет программу работать
- */?>
+ */
+?>
 <?php get_header() ?>
     <div id="sliderFirst">
         <?php $bg_image = "../assets/pics/mobile.png" ?>
@@ -75,8 +76,28 @@
 <?php require('_customers_slider.php'); ?>
     <!--  ================================ Third Section ================================== -->
     <div id="sliderThird">
-        <img src="<?php bloginfo('template_directory') ?>/assets/img/team.png"/>
 
+<!--        // carousel-->
+
+        <div id="carousel5" class="carousel5 slide">
+            <div class="carousel-inner">
+                <div class="item active">
+
+                    <img src="<?php bloginfo('template_directory') ?>/assets/img/team.png"/>
+                </div>
+                <div class="item">
+
+                    <img src="<?php bloginfo('template_directory') ?>/assets/img/team.png"/>
+                </div>
+                <div class="item">
+
+                    <img src="<?php bloginfo('template_directory') ?>/assets/img/team.png"/>
+                </div>
+            </div>
+        </div>
+
+
+ <!--        // end carousel-->
         <div class="news_line">
             <div class="container">
                 <div class="row">
@@ -121,7 +142,7 @@
                     <section>
                         <span class="title">
                             <h1 class="text-center">Area of Expertise</h1>
-                            <a href="<?=get_permalink(51, false) ?>">View All +</a>
+                            <a href="<?= get_permalink(51, false) ?>">View All +</a>
 
                         </span>
                         <img src="<?php bloginfo('template_directory') ?>/assets/img/tech_0.png"/>

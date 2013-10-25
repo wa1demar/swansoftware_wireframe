@@ -59,15 +59,21 @@
     $('.carousel1').carousel({
         interval: 5000
     })
-</script>
-<script>
+
     $('.carousel2').carousel({
         interval: 5000
     })
-</script>
-<script>
+
     $('.carousel3').carousel({
         interval: 5000
+    })
+
+    $('.carousel4').carousel({
+        interval: 5000
+    })
+
+   $('.carousel5').carousel({
+        interval: 40000
     })
 </script>
 
