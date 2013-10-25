@@ -1,0 +1,158 @@
+#sectionSecond {
+  padding: 40px 0;
+  h1 {
+    padding-bottom: 20px;
+  }
+  .services {
+
+    background: url("../../img/marker_blue.png") right repeat-y;
+    padding-bottom: 40px;
+  }
+  .customers {
+    padding-bottom: 40px;
+
+  }
+
+  ul.secondSidebarMenu {
+    list-style: none;
+
+    li {
+      padding: 0;
+      background: #ffffff;
+      line-height: 120%;
+      max-width: 230px;
+      a {
+        width: 100%;
+        max-width: 230px;
+        height: 100%;
+        display: block;
+        padding: 15px 5px 15px 60px;
+        font-family: $default_font;
+        font-size: getSize(16);
+        color: $blue;
+        text-decoration: none;
+        line-height: 100%;
+      }
+
+    }
+
+    .mobile {
+      background: #ffffff url("../../img/icon_s_1_45.png") left center no-repeat;
+
+      &:hover,
+      &.active {
+        background: $blue url("../../img/service1_25x25.png") left center no-repeat;
+
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+
+    .staf {
+      background: #ffffff url("../../img/icon_s_2_45.png") left center no-repeat;
+
+      &:hover,
+      &.active {
+        background: $blue url("../../img/service2_25x25.png") left center no-repeat;
+
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+
+    .app {
+      background: #ffffff url("../../img/icon_s_3_45.png") left center no-repeat;
+
+      &:hover,
+      &.active {
+        background: $blue url("../../img/service3_25x25.png") left center no-repeat;
+
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+
+    .design {
+      background: #ffffff url("../../img/icon_s_4_45.png") left center no-repeat;
+
+      &:hover,
+      &.active {
+        background: $blue url("../../img/service4_25x25.png") left center no-repeat;
+
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+
+    .marketing {
+      background: #ffffff url("../../img/icon_s_5_45.png") left center no-repeat;
+
+      &:hover {
+        background: $blue url("../../img/service5_25x25.png") left center no-repeat;
+
+        a {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  #greensection {
+
+    background: #64898C;
+
+    width: 100%;
+    padding: 45px 0;
+    h1 {
+      color: #ffffff;
+      padding-bottom: 30px;
+    }
+    img {
+      width: 30%;
+    }
+    .text {
+      color: #ffffff;
+      font-size: getSize(12);
+      //TODO
+    }
+  }
+  .main-staff {
+    img{
+      width: 100%;
+    }
+
+    margin: 40px 0;
+    .partners {
+      span {
+
+        color: #87A3D3;
+        font-size: getSize(18);
+        //TODO
+      }
+    }
+
+    .services {
+      padding-top: 50px;
+      img{
+        width: 90%;
+      }
+
+      .sign {
+        padding-top: 40px;
+
+        font-size: getSize(14);
+        padding-left: 0px;
+        span {
+          width: 100%;
+          color: #87A3D3;
+          font-size: getSize(18);
+          //TODO
+        }
+      }
+    }
+  }
+}
+

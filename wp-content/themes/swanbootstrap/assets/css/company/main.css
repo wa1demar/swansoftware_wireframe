@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../../fonts/OpenSans-Light.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../../fonts/OpenSans-Bold.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Italic";
+  src: url("../../fonts/OpenSans-Italic.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Semibold";
+  src: url("../../fonts/OpenSans-Semibold.ttf"); }
+
+@font-face {
+  font-family: "Recetrac Bold";
+  src: url("../../fonts/BARAKB.TTF"); }
+
+#sliderFirst {
+  background: url("../../pics/technology.png") repeat-x top;
+  padding: 10px 0 40px 0; }
+  #sliderFirst .darck-background {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 0;
+    width: 100%;
+    padding: 30px 0; }
+    #sliderFirst .darck-background h1 {
+      color: #ffffff;
+      padding-bottom: 20px;
+      font-size: 428.57143%; }
+    #sliderFirst .darck-background .text {
+      color: #ffffff;
+      font-size: 142.85714%; }
+
+#sectionSecond {
+  padding: 40px 0; }
+  #sectionSecond h1 {
+    padding-bottom: 20px; }
+  #sectionSecond .services {
+    background: url("../../img/marker_blue.png") right repeat-y;
+    padding-bottom: 40px; }
+  #sectionSecond .customers {
+    padding-bottom: 40px; }
+  #sectionSecond ul.secondSidebarMenu {
+    list-style: none; }
+    #sectionSecond ul.secondSidebarMenu li {
+      padding: 0;
+      background: #ffffff;
+      line-height: 120%;
+      max-width: 230px; }
+      #sectionSecond ul.secondSidebarMenu li a {
+        width: 100%;
+        max-width: 230px;
+        height: 100%;
+        display: block;
+        padding: 15px 5px 15px 60px;
+        font-family: "Open Sans Light";
+        font-size: 152.38095%;
+        color: #6699ff;
+        text-decoration: none;
+        line-height: 100%; }
+    #sectionSecond ul.secondSidebarMenu .mobile {
+      background: white url("../../img/icon_s_1_45.png") left center no-repeat; }
+      #sectionSecond ul.secondSidebarMenu .mobile:hover, #sectionSecond ul.secondSidebarMenu .mobile.active {
+        background: #6699ff url("../../img/service1_25x25.png") left center no-repeat; }
+        #sectionSecond ul.secondSidebarMenu .mobile:hover a, #sectionSecond ul.secondSidebarMenu .mobile.active a {
+          color: #ffffff; }
+    #sectionSecond ul.secondSidebarMenu .staf {
+      background: white url("../../img/icon_s_2_45.png") left center no-repeat; }
+      #sectionSecond ul.secondSidebarMenu .staf:hover, #sectionSecond ul.secondSidebarMenu .staf.active {
+        background: #6699ff url("../../img/service2_25x25.png") left center no-repeat; }
+        #sectionSecond ul.secondSidebarMenu .staf:hover a, #sectionSecond ul.secondSidebarMenu .staf.active a {
+          color: #ffffff; }
+    #sectionSecond ul.secondSidebarMenu .app {
+      background: white url("../../img/icon_s_3_45.png") left center no-repeat; }
+      #sectionSecond ul.secondSidebarMenu .app:hover, #sectionSecond ul.secondSidebarMenu .app.active {
+        background: #6699ff url("../../img/service3_25x25.png") left center no-repeat; }
+        #sectionSecond ul.secondSidebarMenu .app:hover a, #sectionSecond ul.secondSidebarMenu .app.active a {
+          color: #ffffff; }
+    #sectionSecond ul.secondSidebarMenu .design {
+      background: white url("../../img/icon_s_4_45.png") left center no-repeat; }
+      #sectionSecond ul.secondSidebarMenu .design:hover, #sectionSecond ul.secondSidebarMenu .design.active {
+        background: #6699ff url("../../img/service4_25x25.png") left center no-repeat; }
+        #sectionSecond ul.secondSidebarMenu .design:hover a, #sectionSecond ul.secondSidebarMenu .design.active a {
+          color: #ffffff; }
+    #sectionSecond ul.secondSidebarMenu .marketing {
+      background: white url("../../img/icon_s_5_45.png") left center no-repeat; }
+      #sectionSecond ul.secondSidebarMenu .marketing:hover {
+        background: #6699ff url("../../img/service5_25x25.png") left center no-repeat; }
+        #sectionSecond ul.secondSidebarMenu .marketing:hover a {
+          color: #ffffff; }
+  #sectionSecond #greensection {
+    background: #64898C;
+    width: 100%;
+    padding: 45px 0; }
+    #sectionSecond #greensection h1 {
+      color: #ffffff;
+      padding-bottom: 30px; }
+    #sectionSecond #greensection img {
+      width: 30%; }
+    #sectionSecond #greensection .text {
+      color: #ffffff;
+      font-size: 114.28571%; }
+  #sectionSecond .main-staff {
+    margin: 40px 0; }
+    #sectionSecond .main-staff img {
+      width: 100%; }
+    #sectionSecond .main-staff .partners span {
+      color: #87A3D3;
+      font-size: 171.42857%; }
+    #sectionSecond .main-staff .services {
+      padding-top: 50px; }
+      #sectionSecond .main-staff .services img {
+        width: 90%; }
+      #sectionSecond .main-staff .services .sign {
+        padding-top: 40px;
+        font-size: 133.33333%;
+        padding-left: 0px; }
+        #sectionSecond .main-staff .services .sign span {
+          width: 100%;
+          color: #87A3D3;
+          font-size: 171.42857%; }
+
+#sectionThird {
+  border-top: 2px solid #C4D1D1;
+  padding: 20px 0;
+  background: #DFEDEE; }
+  #sectionThird h1 {
+    padding-bottom: 20px; }
+  #sectionThird .managers img {
+    width: 100%; }
+  #sectionThird .managers span {
+    color: #87A3D3;
+    font-size: 133.33333%; }
+
+#sectionFouth .sliders {
+  margin: 0 0; }
+  #sectionFouth .sliders .col-xs-4 {
+    padding: 0 0; }
+    #sectionFouth .sliders .col-xs-4 img {
+      width: 100%;
+      height: 300px; }
+
+#sectionFifth {
+  padding: 40px 0; }
+  #sectionFifth .superheroes {
+    font-size: 123.80952%; }
+    #sectionFifth .superheroes h1 {
+      padding-bottom: 40px; }
+    #sectionFifth .superheroes .col-xs-2 {
+      min-height: 200px;
+      margin: 10px 0; }
+      #sectionFifth .superheroes .col-xs-2 span {
+        color: #87A3D3;
+        font-size: 133.33333%; }
+      #sectionFifth .superheroes .col-xs-2 img {
+        width: 100%; }
