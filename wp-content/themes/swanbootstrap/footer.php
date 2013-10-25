@@ -56,7 +56,17 @@
 <script src="<?php bloginfo('template_directory')?>/assets/js/carousel.js"></script>
 <script src="<?php bloginfo('template_directory')?>/assets/js/tab.js"></script>
 <script>
-    $('.carousel').carousel({
+    $('.carousel1').carousel({
+        interval: 5000
+    })
+</script>
+<script>
+    $('.carousel2').carousel({
+        interval: 5000
+    })
+</script>
+<script>
+    $('.carousel3').carousel({
         interval: 5000
     })
 </script>

@@ -7,6 +7,16 @@
     width: 100%;
     max-width: 1366px;
   }
+  .col-lg-6.text{
+    font-size: getSize(14);                                         //TODO
+  }
+  .col-lg-4.link{
+    font-size: getSize(14);                                         //TODO
+    h3{
+      font-size: getSize(10);                                         //TODO
+      font-weight: bold;
+    }
+  }
 
   .news_line {
     background: url("../../img/bg-black-transparent.png") repeat;
@@ -20,6 +30,8 @@
       padding: 10px 0;
       text-align: justify;
       color: #ffffff;
+
+
     }
 
     ul {

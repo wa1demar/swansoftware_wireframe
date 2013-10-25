@@ -13,6 +13,7 @@
           padding: 0;
           background: #ffffff;
           line-height: 120%;
+          width: 100%;
 
           a {
             width: 100%;
@@ -36,12 +37,14 @@
             background: $blue url("../../img/service1_25x25.png") left center no-repeat;
 
             a {
+              background: none;
               color: #ffffff;
             }
           }
+
         }
 
-        .staf {
+        .staff {
           background: #ffffff url("../../img/icon_s_2_45.png") left center no-repeat;
 
           &:hover,
@@ -49,6 +52,8 @@
             background: $blue url("../../img/service2_25x25.png") left center no-repeat;
 
             a {
+              background: none;
+
               color: #ffffff;
             }
           }
@@ -62,6 +67,8 @@
             background: $blue url("../../img/service3_25x25.png") left center no-repeat;
 
             a {
+              background: none;
+
               color: #ffffff;
             }
           }
@@ -75,6 +82,8 @@
             background: $blue url("../../img/service4_25x25.png") left center no-repeat;
 
             a {
+              background: none;
+
               color: #ffffff;
             }
           }
@@ -87,6 +96,8 @@
             background: $blue url("../../img/service5_25x25.png") left center no-repeat;
 
             a {
+              background: none;
+
               color: #ffffff;
             }
           }
@@ -101,6 +112,12 @@
       background-size: contain;
     }
 
+  }
+  #mobile, #staff, #app, #design {
+  .carousel-control {
+   background: none;
+
+  }
   }
 
 }
