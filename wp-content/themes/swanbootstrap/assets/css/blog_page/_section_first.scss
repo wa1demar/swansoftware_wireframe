@@ -1,0 +1,117 @@
+@import "../globals/constants";
+
+#sliderFirst {
+
+  background: url("../../pics/technology.png") center ;
+
+  padding: 10px 0 40px 0;
+
+
+  .darck-background {
+    background:  url('../../img/bg-black-transparent.png') no-repeat center  ;
+    background-position: 99% 50%;
+    background-size: 100% 90%;
+    margin: 0 0;
+    //width: 100%;
+    padding: 0 0 0 0;
+    img{
+      width: 100%;
+    }
+    .img-background{
+      min-height: 400px;
+      background: url("../../img/blog-1.png") center no-repeat;
+
+
+      font-size: getSize(16);                         // TODO
+      padding-left:  0;
+
+      position: relative;
+      .round-sign{
+        background: url("../../img/link_bg_blue_round.png") no-repeat center ;
+        background-size: cover;
+        width: 150px;;
+        min-height: 150px;
+        position: absolute;
+        bottom: 24%;
+        left: 2%;
+        z-index: 1000;
+        opacity: 0.7;
+        color: #ffffff;
+        h1{
+          color: #ffffff;
+        }
+        font-size: getSize(13);                     // TODO
+      }
+      .white-footer{
+        color: #647678;
+        height: 40%;
+        margin-right:  8px;
+        margin-left:  2px;
+        background: #ffffff  ;
+        position: absolute;
+        bottom: 5%;
+        padding: 10px 0;
+        a{
+          margin-top: 10px;
+        }
+
+      }
+
+    }
+    h1.title{
+      margin: 20px 0;
+      color: #ffffff;
+      padding-bottom: 20px;
+      background: url("../../img/gray_equals.png") bottom repeat-x   ;
+    }
+    .inputs{
+
+      b{
+        color: #ffffff;
+        font-size: getSize(20);                    //TODO
+        font-weight: 100;
+        margin-left: 15px ;
+
+      }
+      input{
+        border-radius: initial;
+        background-color: #3D4955;
+        color: #566E96;
+        border: none;
+        margin-top: 5px;
+        margin-bottom: 30px;
+      }
+      .input1{
+        padding-right: 0px;
+      }
+      .input_submit{
+        background-color: #6699FF;
+        color: #ffffff;
+        border: none;
+        margin-top: 5px;
+        border-radius: initial
+      }
+
+    }
+
+
+
+
+
+
+    .topic-background {
+      min-height: 400px;
+
+
+
+
+      padding: 30px 0;
+
+
+
+
+
+    }
+  }
+
+}

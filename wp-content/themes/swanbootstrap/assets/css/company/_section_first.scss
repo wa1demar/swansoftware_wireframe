@@ -1,0 +1,24 @@
+#sliderFirst {
+  background: url("../../pics/technology.png") repeat-x top;
+  padding:  10px 0 40px 0;
+
+  .darck-background {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 0 0;
+    width: 100%;
+    padding: 30px 0;
+    h1{
+      color: #ffffff;
+      padding-bottom: 20px;
+      font-size: getSize(45);                                     //TODO
+    }
+    .text{
+        p {
+          color: #ffffff;
+          font-size: getSize(15);
+        }
+
+    }
+
+  }
+}

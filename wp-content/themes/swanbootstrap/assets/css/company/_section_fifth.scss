@@ -1,0 +1,23 @@
+#sectionFifth{
+  padding: 40px 0;
+  .superheroes{
+
+    font-size: getSize(13);                   //TODO
+    h1{
+      padding-bottom: 40px ;
+    }
+    .col-xs-2{
+      min-height: 250px;
+      margin:  10px 0;
+      span{
+        color: #87A3D3;
+        font-size: getSize(14);                   //TODO
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+
+}

@@ -165,7 +165,14 @@ ul {
 
 ul.yellow {
   li {
-    background: url("../../img/marker_yellow.png") left top no-repeat;
+      background: url("../../img/marker_yellow.png") left top no-repeat;
+    padding-left: 20px;
+  }
+}
+
+ul.blue {
+  li {
+    background: url("../../img/marker_blue.png") left top no-repeat;
     padding-left: 20px;
   }
 }

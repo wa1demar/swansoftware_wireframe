@@ -36,3 +36,7 @@ function addSocials($bgImage = "/pics/mobile.png") {
     require("_social.php");
 }
 
+function addImages($c) {
+    $company = $c;
+    require("_company_people.php");
+}

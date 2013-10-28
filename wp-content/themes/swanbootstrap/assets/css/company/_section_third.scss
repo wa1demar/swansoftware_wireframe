@@ -1,0 +1,19 @@
+#sectionThird{
+  border-top: 2px solid #C4D1D1;
+  padding:  20px 0;
+  background: #DFEDEE;
+  h1{
+    padding-bottom: 20px;
+  }
+
+  .managers{
+    img{
+      width: 100%;
+
+    }
+    span{
+      color: #87A3D3;
+      font-size: getSize(14);                   //TODO
+    }
+  }
+}
