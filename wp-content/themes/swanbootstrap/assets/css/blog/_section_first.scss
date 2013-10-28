@@ -1,7 +1,5 @@
 #sliderFirst {
 
-  background: url("../../pics/technology.png") center ;
-
   padding: 10px 0 40px 0;
 
 
@@ -17,7 +15,7 @@
     }
     .img-background{
       min-height: 400px;
-      background: url("../../img/blog-1.png") center no-repeat;
+
 
 
       font-size: getSize(16);                         // TODO
@@ -41,16 +39,27 @@
         font-size: getSize(13);                     // TODO
       }
       .white-footer{
-        color: #647678;
-        height: 40%;
-       margin-right:  8px;
-       margin-left:  2px;
-        background: #ffffff  ;
-        position: absolute;
-        bottom: 5%;
-        padding: 10px 0;
+
+          color: #647678;
+          height: 40%;
+          margin-right:  8px;
+          margin-left:  2px;
+          background: rgba(255, 255, 255, 0.8);
+          position: absolute;
+          bottom: 5%;
+          padding: 10px 0;
+        font-size: getSize(9);
+
+        b {
+          font-size: getSize(14);                     // TODO
+          width: 100%;
+          font-family: "Open Sans";
+          font-weight: normal;
+        }
+
         a{
           margin-top: 10px;
+          font-size: getSize(14);
         }
 
         }
@@ -93,10 +102,6 @@
     }
 
 
-
-
-
-
   .topic-background {
     min-height: 400px;
 
@@ -104,9 +109,6 @@
 
 
     padding: 30px 0;
-
-
-
 
 
   }

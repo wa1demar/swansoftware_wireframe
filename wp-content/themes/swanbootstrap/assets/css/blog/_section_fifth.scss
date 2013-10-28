@@ -19,4 +19,19 @@
 
     }
   }
+
+  .prev {
+    a {
+      padding-left: 25px;
+      background: url("../../img/prev.png") left center no-repeat;
+    }
+  }
+
+  .next {
+    a {
+      padding-right: 25px;
+      background: url("../../img/next.png") right center no-repeat;
+    }
+  }
+
 }
