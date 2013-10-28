@@ -153,12 +153,16 @@
         width: 7.9%; }
     #sectionFifth .col-xs-8 a {
       font-size: 171.42857%; }
-  #sectionFifth .prev a {
-    padding-left: 25px;
-    background: url("../../img/prev.png") left center no-repeat; }
-  #sectionFifth .next a {
-    padding-right: 25px;
-    background: url("../../img/next.png") right center no-repeat; }
+  #sectionFifth .prev {
+    margin-bottom: 20px; }
+    #sectionFifth .prev a {
+      padding-left: 25px;
+      background: url("../../img/prev.png") left center no-repeat; }
+  #sectionFifth .next {
+    margin-bottom: 20px; }
+    #sectionFifth .next a {
+      padding-right: 25px;
+      background: url("../../img/next.png") right center no-repeat; }
 
 .shadow {
   position: absolute;

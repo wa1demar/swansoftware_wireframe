@@ -11,20 +11,22 @@
  */
 ?>
 <?php $default_img = get_bloginfo('template_directory') . '/assets/img/blog-1.png' ?>
+<?php $last_post_ID = 0; ?>
 <?php $c = 1;
 if (have_posts()) : ?>
     <?php
     $args = array(
         // Change these category SLUGS to suit your use.
         'category_name' => 'News',
-        'paged' => $paged
+        'posts_per_page' => 1
     );
 
-    $list_of_posts = new WP_Query( $args );
+    $last_post = new WP_Query($args);
     ?>
-    ?>
+    <?php if ($last_post->have_posts()) : ?>
+        <?php while ($last_post->have_posts()) : $last_post->the_post(); ?>
+            <?php $last_post_ID = get_the_ID()?>
 
-        <?php if ($c == 1): ?>
             <?php $bg = get_bloginfo('template_directory') . '/assets/pics/technology.png' ?>
             <div id='sliderFirst' style="background: url('<?= $bg ?>') center top;">
                 <?php addSocials($bg) ?>
@@ -33,7 +35,7 @@ if (have_posts()) : ?>
                 <div class='row  darck-background'>
                     <div class='container'>
                         <div class='col-sm-8 img-background '
-                             style="background: url('<?php echo get_field('image') != "" ? get_field('image') : $default_img ?>') center no-repeat;">
+                             style="background: url('<?php echo get_field('image') != "" ? get_field('image') : $default_img ?>') center no-repeat; background-size: 97% 100%"">
                             <div class='col-xs-4 round-sign text-center'>
                                 <?= get_the_date('M') ?>
                                 <h1 class='roud'><?= get_the_date('d') ?></h1>
@@ -89,13 +91,15 @@ if (have_posts()) : ?>
                 </div>
 
             </div>
-
-        <?php while (have_posts()) : the_post(); ?>
+        <?php endwhile ?>
+    <?php endif ?>
+    <?php while (have_posts()) : the_post(); ?>
+        <?php if ($last_post_ID != get_the_ID()): ?>
             <div id='sliderTried'>
                 <div class='row'>
                     <div class='container'>
                         <div class='col-sm-8 img-container'
-                             style="background: url('<?php echo get_field('image') != "" ? get_field('image') : $default_img ?>') center no-repeat;">
+                             style="background: url('<?php echo get_field('image') != "" ? get_field('image') : $default_img ?>') center no-repeat; background-size: 97% 100%">
                             <div class='col-xs-4 round-sign text-center'>
                                 <?= get_the_date('M') ?>
                                 <h1 class='roud'><?= get_the_date('d') ?></h1>
@@ -124,7 +128,7 @@ if (have_posts()) : ?>
 
                         </div>
                         <div class='col-sm-4 menu'>
-                            <?php if ($c == 2): ?>
+                            <?php if ($c == 1): ?>
                                 <p class='tags'>Browser by Tag</p>
                                 <ul>
                                     <li><a>Mobile App</a></li>
@@ -146,50 +150,51 @@ if (have_posts()) : ?>
                     </div>
                 </div>
             </div>
-        <?php $c++; ?>
+            <?php $c++; ?>
+        <?php endif ?>
     <?php endwhile; ?>
-<div id='sectionFifth'>
-    <div class='row'>
-        <div class='container'>
-            <div class='col-xs-8'>
-                <div class='row'>
-                    <div class='col-xs-6 text-left '>
-                        <div class="prev"><?=get_next_posts_link("Older") ?></div>
+    <div id='sectionFifth'>
+        <div class='row'>
+            <div class='container'>
+                <div class='col-xs-8'>
+                    <div class="row">
+                        <div class='col-xs-6 text-left '>
+                            <div class="prev"><?= get_next_posts_link("Older") ?></div>
 
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <a href='#' class='year'>2012 </a>
-                    </div>
-                    <div class='col-xs-6 text-right '>
-                        <div class="next"><?=get_previous_posts_link("New Posts") ?></div>
+                        </div>
+                        <div class='col-xs-6 text-right '>
+                            <div class="next"><?= get_previous_posts_link("New Posts") ?></div>
 
-                        <br/>
-                        <br/>
-                        <br/>
-                        <br/>
-                        <a href='#' class='year'>2013 </a>
+                        </div>
+                        </div>
+                    <div class='row'>
+                        <div class='col-xs-6 text-left '>
+
+                            <a href='#' class='year'>2012 </a>
+                        </div>
+                        <div class='col-xs-6 text-right '>
+
+                            <a href='#' class='year'>2013 </a>
+                        </div>
                     </div>
-                </div>
-                <div class='row'>
-                    <div class='col-xs-12 text-center alf-link'>
-                        <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                        <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                        <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                        <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                        <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                        <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                        <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                        <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                        <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                        <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                        <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                        <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
+                    <div class='row'>
+                        <div class='col-xs-12 text-center alf-link'>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 <?php endif ?>
