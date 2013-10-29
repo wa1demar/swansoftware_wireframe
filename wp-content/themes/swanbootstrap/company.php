@@ -44,13 +44,14 @@
                 <h1>Services</h1>
                 <ul class="secondSidebarMenu">
                     <li class="mobile">
-                        <a href="#">Mobile Development</a></li>
-                    <li class="staf"><a href="#">Staf
+                        <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Mobile Application Development' ) ) ); ?>">Mobile Development</a></li>
+                    <li class="staf"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Staff Augmentation' ) ) ); ?>">Staf
                             Augmentation</a></li>
-                    <li class="app"><a href="#">Custom
+                    <li class="app"><a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Custom
+                            Application Development' ) ) ); ?>">Custom
                             Application Development</a></li>
                     <li class="design" ><a
-                            href="#">Design</a>
+                            href="<?php echo esc_url( get_permalink( get_page_by_title( 'Design' ) ) ); ?>">Design</a>
                     </li>
                 </ul>
 

@@ -19,7 +19,7 @@
     <link href="<?php bloginfo('template_directory') ?>/assets/css/libs/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/globals/global.css"/>
 
-    <?php if (is_page_template('home.php')): ?>
+    <?php if (is_home()): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/home/main.css"/>
     <?php elseif (is_page_template('services.php')): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/services/main.css"/>
@@ -27,15 +27,14 @@
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/contact_us/main.css"/>
     <?php elseif (is_page_template('technologies.php')): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/technologies/main.css"/>
-    <?php elseif (is_category('testimonials')): ?>
+    <?php elseif (is_category('Clients')): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/testimonials/main.css"/>
     <?php elseif (is_page_template('company.php')): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/company/main.css"/>
     <?php elseif (is_page_template('media.php')): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/welcome/main.css"/>
-    <?php
-    elseif (is_home()): ?>
-        <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/home/main.css"/>
+    <?php else: ?>
+        <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/blog/main.css"/>
     <?php endif ?>
 
     <meta charset="<?php bloginfo('charset')?>"/>
