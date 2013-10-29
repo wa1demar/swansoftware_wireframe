@@ -37,7 +37,7 @@
     }
 
     .mobile {
-      background: #ffffff url("../../img/icon_s_1_45.png") left center no-repeat;
+      background: $white url("../../img/icon_s_1_45.png") left center no-repeat;
 
       &:hover,
       &.active {
@@ -50,7 +50,7 @@
     }
 
     .staf {
-      background: #ffffff url("../../img/icon_s_2_45.png") left center no-repeat;
+      background: $white url("../../img/icon_s_2_45.png") left center no-repeat;
 
       &:hover,
       &.active {
@@ -63,7 +63,7 @@
     }
 
     .app {
-      background: #ffffff url("../../img/icon_s_3_45.png") left center no-repeat;
+      background: $white url("../../img/icon_s_3_45.png") left center no-repeat;
 
       &:hover,
       &.active {
@@ -76,7 +76,7 @@
     }
 
     .design {
-      background: #ffffff url("../../img/icon_s_4_45.png") left center no-repeat;
+      background: $white url("../../img/icon_s_4_45.png") left center no-repeat;
 
       &:hover,
       &.active {
@@ -89,7 +89,7 @@
     }
 
     .marketing {
-      background: #ffffff url("../../img/icon_s_5_45.png") left center no-repeat;
+      background: $white url("../../img/icon_s_5_45.png") left center no-repeat;
 
       &:hover {
         background: $blue url("../../img/service5_25x25.png") left center no-repeat;

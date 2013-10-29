@@ -12,11 +12,11 @@
 ?>
 
 <?php get_header() ?>
-<?php if (is_category("testimonials")): ?>
+<?php if (is_category("Clients")): ?>
 
    <?php require("_testimonials.php") ?>
 
 <?php else: ?>
-    News
+    <?php require("_news.php"); ?>
 <?php endif ?>
 <?php get_footer() ?>

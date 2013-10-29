@@ -13,7 +13,7 @@
 <?php get_header() ?>
     <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/blog/main.css"/>
     <div id='sliderFirst'>
-        <?php $bg_image = "../'assets/pics/technology.png" ?>
+        <?php $bg_image = "/'assets/pics/technology.png" ?>
         <?php require "_social.php" ?>
 
         <div class='row  darck-background'>
