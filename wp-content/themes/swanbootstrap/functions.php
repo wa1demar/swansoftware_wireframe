@@ -58,3 +58,8 @@ function the_my_excerpt($post, $count = 25) {
 
 }
 
+function getCategory($categoryName) {
+    $cName = $categoryName;
+    $id = get_cat_ID($cName);
+    return get_category_link($id);
+}

@@ -96,8 +96,9 @@ if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
         <?php if ($last_post_ID != get_the_ID()): ?>
             <div id='sliderTried'>
+                <div class='container'>
                 <div class='row'>
-                    <div class='container'>
+
                         <div class='col-sm-8 img-container'
                              style="background: url('<?php echo get_field('image') != "" ? get_field('image') : $default_img ?>') center no-repeat; background-size: 97% 100%">
                             <div class='col-xs-4 round-sign text-center'>
@@ -154,8 +155,9 @@ if (have_posts()) : ?>
         <?php endif ?>
     <?php endwhile; ?>
     <div id='sectionFifth'>
+        <div class='container'>
         <div class='row'>
-            <div class='container'>
+
                 <div class='col-xs-8'>
                     <div class="row">
                         <div class='col-xs-6 text-left '>

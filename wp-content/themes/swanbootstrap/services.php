@@ -93,7 +93,8 @@
                     <div class="col-lg-12 text-center" >
                         <span class="title">
                             <h1>Our Clients</h1>
-                            <a href="">View All +</a>
+
+                            <a href="<?=getCategory('Clients'); ?>">View All +</a>
                         </span>
                         <ul class="nav nav-tabs" id="myTab">
                         <?php query_posts("cat=5&posts_per_page=100"); ?>
@@ -130,7 +131,7 @@
                 <div class="col-lg-12 text-center">
                    <span class="title">
                             <h1>Technologies what are used</h1>
-                            <a href="<?=get_permalink('4, false') ?>">View All +</a> <?php //TODO: Get permalink to technologies ?>
+                            <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Technologies' ) ) ); ?>">View All +</a> <?php //TODO: Get permalink to technologies ?>
                    </span>
                     <?= $tech ?>
                 </div>

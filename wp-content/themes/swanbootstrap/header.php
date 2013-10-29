@@ -27,7 +27,7 @@
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/contact_us/main.css"/>
     <?php elseif (is_page_template('technologies.php')): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/technologies/main.css"/>
-    <?php elseif (is_category('testimonials')): ?>
+    <?php elseif (is_category('Clients')): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/testimonials/main.css"/>
     <?php elseif (is_page_template('company.php')): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/company/main.css"/>

@@ -66,31 +66,31 @@
         text-decoration: none;
         line-height: 100%; }
     #sectionSecond ul.secondSidebarMenu .mobile {
-      background: white url("../../img/icon_s_1_45.png") left center no-repeat; }
+      background: #f4feff url("../../img/icon_s_1_45.png") left center no-repeat; }
       #sectionSecond ul.secondSidebarMenu .mobile:hover, #sectionSecond ul.secondSidebarMenu .mobile.active {
         background: #6699ff url("../../img/service1_25x25.png") left center no-repeat; }
         #sectionSecond ul.secondSidebarMenu .mobile:hover a, #sectionSecond ul.secondSidebarMenu .mobile.active a {
           color: #ffffff; }
     #sectionSecond ul.secondSidebarMenu .staf {
-      background: white url("../../img/icon_s_2_45.png") left center no-repeat; }
+      background: #f4feff url("../../img/icon_s_2_45.png") left center no-repeat; }
       #sectionSecond ul.secondSidebarMenu .staf:hover, #sectionSecond ul.secondSidebarMenu .staf.active {
         background: #6699ff url("../../img/service2_25x25.png") left center no-repeat; }
         #sectionSecond ul.secondSidebarMenu .staf:hover a, #sectionSecond ul.secondSidebarMenu .staf.active a {
           color: #ffffff; }
     #sectionSecond ul.secondSidebarMenu .app {
-      background: white url("../../img/icon_s_3_45.png") left center no-repeat; }
+      background: #f4feff url("../../img/icon_s_3_45.png") left center no-repeat; }
       #sectionSecond ul.secondSidebarMenu .app:hover, #sectionSecond ul.secondSidebarMenu .app.active {
         background: #6699ff url("../../img/service3_25x25.png") left center no-repeat; }
         #sectionSecond ul.secondSidebarMenu .app:hover a, #sectionSecond ul.secondSidebarMenu .app.active a {
           color: #ffffff; }
     #sectionSecond ul.secondSidebarMenu .design {
-      background: white url("../../img/icon_s_4_45.png") left center no-repeat; }
+      background: #f4feff url("../../img/icon_s_4_45.png") left center no-repeat; }
       #sectionSecond ul.secondSidebarMenu .design:hover, #sectionSecond ul.secondSidebarMenu .design.active {
         background: #6699ff url("../../img/service4_25x25.png") left center no-repeat; }
         #sectionSecond ul.secondSidebarMenu .design:hover a, #sectionSecond ul.secondSidebarMenu .design.active a {
           color: #ffffff; }
     #sectionSecond ul.secondSidebarMenu .marketing {
-      background: white url("../../img/icon_s_5_45.png") left center no-repeat; }
+      background: #f4feff url("../../img/icon_s_5_45.png") left center no-repeat; }
       #sectionSecond ul.secondSidebarMenu .marketing:hover {
         background: #6699ff url("../../img/service5_25x25.png") left center no-repeat; }
         #sectionSecond ul.secondSidebarMenu .marketing:hover a {

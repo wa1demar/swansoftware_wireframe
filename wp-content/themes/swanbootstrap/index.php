@@ -12,7 +12,7 @@
 ?>
 
 <?php get_header() ?>
-<?php if (is_category("testimonials")): ?>
+<?php if (is_category("Clients")): ?>
 
    <?php require("_testimonials.php") ?>
 
