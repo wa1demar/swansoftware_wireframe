@@ -40,3 +40,30 @@ function addImages($c) {
     $company = $c;
     require("_company_people.php");
 }
+
+function the_my_excerpt($post, $count = 25) {
+    if(empty($post)) {
+        the_content();
+        return false;
+    }
+
+
+    $content = trim(strip_tags($post->post_content));
+    $content = explode(' ', $content);
+    $content = array_slice($content, 0, $count);
+    $content = implode(' ', $content);
+
+    echo $content."...";
+    return true;
+
+}
+
+function getCategory($categoryName) {
+    $cName = $categoryName;
+    $id = get_cat_ID($cName);
+    return get_category_link($id);
+}
+
+function getDefaultBG() {
+    return get_bloginfo('template_directory') . "/assets/pics/technology.png";
+}

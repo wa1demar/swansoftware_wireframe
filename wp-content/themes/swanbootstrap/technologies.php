@@ -57,7 +57,7 @@
             </div>
             <div class="row topBannerLinks">
                 <div class="box col-sm-3 col-xs-6 text-center">
-                    <a href="<?= get_permalink(33, false) ?>">
+                    <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Mobile Application Development' ) ) ); ?>">
                         <div class="round_image text-center">
                             <img src="<?php bloginfo('template_directory') ?>/assets/img/service1_115x100.png">
                         </div>
@@ -66,7 +66,7 @@
                     </a>
                 </div>
                 <div class="box col-sm-3 col-xs-6 text-center">
-                    <a href="<?= get_permalink(56, false) ?>">
+                    <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Staff Augmentation' ) ) ); ?>">
                         <div class="round_image">
                             <img src="<?php bloginfo('template_directory') ?>/assets/img/service2_115x100.png">
                         </div>
@@ -75,7 +75,7 @@
                     </a>
                 </div>
                 <div class="box col-sm-3 col-xs-6 text-center">
-                    <a href="<?= get_permalink(58, false) ?>">
+                    <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Custom Application Development' ) ) ); ?>">
                         <div class="round_image">
                             <img src="<?php bloginfo('template_directory') ?>/assets/img/service3_115x100.png">
                         </div>
@@ -84,7 +84,7 @@
                     </a>
                 </div>
                 <div class="box col-sm-3 col-xs-6 text-center">
-                    <a href="<?= get_permalink(38, false) ?>">
+                    <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Design' ) ) ); ?>">
                         <div class="round_image">
                             <img src="<?php bloginfo('template_directory') ?>/assets/img/service4_115x100.png">
                         </div>
