@@ -11,7 +11,7 @@
  */ ?>
 <?php get_header()?>
 <?php while (have_posts()) : the_post(); ?>
-    <?php $bg = get_field('background'); ?>
+    <?php $bg = get_field('background') != "" ? get_field('background') : getDefaultBG(); ?>
 <div id='wrap'>
     <div id="sliderFirst" style="background: url('<?= $bg ?>') center top repeat-x;">
         <div class="info-section">

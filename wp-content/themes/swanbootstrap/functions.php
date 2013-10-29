@@ -63,3 +63,7 @@ function getCategory($categoryName) {
     $id = get_cat_ID($cName);
     return get_category_link($id);
 }
+
+function getDefaultBG() {
+    return get_bloginfo('template_directory') . "/assets/pics/technology.png";
+}
