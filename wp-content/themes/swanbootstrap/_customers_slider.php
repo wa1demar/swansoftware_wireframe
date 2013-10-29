@@ -36,7 +36,7 @@
 
 
 
-    <div id="carousel-example-generic" class="carousel slide">
+    <div id="carousel-example-1-1" class="carousel slide">
 
 
         <div class="carousel-inner">
@@ -180,12 +180,12 @@
         </div>
     </div>
 <!--     Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <a class="left carousel-control" href="#carousel-example-1-1" data-slide="prev">
                     <img src="<?php bloginfo('template_directory') ?>/assets/img/left-arrow.png"
                          style="top: 50%; position: absolute; left: 2%">
 
         </a>
-        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <a class="right carousel-control" href="#carousel-example-1-1" data-slide="next">
             <img src="<?php bloginfo('template_directory') ?>/assets/img/right-arrow.png"
                  style="top: 50%; position: absolute; left: 2%">
 

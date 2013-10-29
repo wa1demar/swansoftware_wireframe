@@ -1,6 +1,9 @@
 #sliderSecond {
-  position: relative;
 
+  position: relative;
+  .row.phoneBG.item{
+    width: 100%;
+  }
   .sliderSecondInner {
     //padding: 50px 0;
 
@@ -30,7 +33,7 @@
         }
 
         .mobile {
-          background: #ffffff url("../../img/icon_s_1_45.png") left center no-repeat;
+          background: $white url("../../img/icon_s_1_45.png") left center no-repeat;
 
           &:hover,
           &.active {
@@ -45,7 +48,7 @@
         }
 
         .staff {
-          background: #ffffff url("../../img/icon_s_2_45.png") left center no-repeat;
+          background: $white url("../../img/icon_s_2_45.png") left center no-repeat;
 
           &:hover,
           &.active {
@@ -60,7 +63,7 @@
         }
 
         .app {
-          background: #ffffff url("../../img/icon_s_3_45.png") left center no-repeat;
+          background: $white url("../../img/icon_s_3_45.png") left center no-repeat;
 
           &:hover,
           &.active {
@@ -75,7 +78,7 @@
         }
 
         .design {
-          background: #ffffff url("../../img/icon_s_4_45.png") left center no-repeat;
+          background: $white url("../../img/icon_s_4_45.png") left center no-repeat;
 
           &:hover,
           &.active {
@@ -90,7 +93,7 @@
         }
 
         .marketing {
-          background: #ffffff url("../../img/icon_s_5_45.png") left center no-repeat;
+          background: $white url("../../img/icon_s_5_45.png") left center no-repeat;
 
           &:hover {
             background: $blue url("../../img/service5_25x25.png") left center no-repeat;
@@ -108,7 +111,7 @@
     }
 
     .phoneBG {
-      background: #fff url("../../img/phone_bg.png") right center no-repeat;
+      background: $white url("../../img/phone_bg.png") right center no-repeat;
       background-size: contain;
     }
 
