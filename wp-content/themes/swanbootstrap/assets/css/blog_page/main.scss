@@ -3,3 +3,12 @@
 @import "section_first";
 @import "section_second";
 //@import "section_tried";
+
+.shadow {
+  position: absolute;
+  left: 2px;
+  bottom: 3.5%;
+  height: 119px;
+  width: 8px;
+  background: url("../../img/shadow.png") bottom left no-repeat;
+}

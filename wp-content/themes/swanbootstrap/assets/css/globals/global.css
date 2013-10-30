@@ -260,3 +260,7 @@ footer#mainFooter {
   display: table-cell;
   vertical-align: middle;
   float: none; }
+
+footer#mainFooter ul#wp-admin-bar-root-default li,
+footer#mainFooter ul#wp-admin-bar-top-secondary li {
+  padding: 0; }

@@ -79,8 +79,7 @@ if (have_posts()) : ?>
 
                                     <div class="col-xs-12">
 
-                                        <input type='input' class="form-control" name='input1'
-                                               placeholder='What are you searching for?'>
+                                        <?php get_search_form()?>
 
                                     </div>
                                 </div>
@@ -132,18 +131,10 @@ if (have_posts()) : ?>
                             <?php if ($c == 1): ?>
                                 <p class='tags'>Browser by Tag</p>
                                 <ul>
-                                    <li><a>Mobile App</a></li>
-                                    <li><a>Custom Application</a></li>
-                                    <li><a>Development</a></li>
-                                    <li><a>IOS</a></li>
-                                    <li><a>Android</a></li>
-                                    <li><a>Responsive layout</a></li>
-                                    <li><a>Design</a></li>
-                                    <li><a>Wed design</a></li>
-                                    <li><a>UX/UI design</a></li>
-                                    <li><a>Internet Marketing</a></li>
-                                    <li><a>SEO</a></li>
-                                    <li><a>SMM</a></li>
+                                    <?php $tags = get_tags(array('number' => 15)); ?>
+                                    <?php foreach ( $tags as $tag ): ?>
+                                        <li><a href="<?=get_tag_link( $tag->term_id );?>"><?=$tag->name?></a></li>
+                                    <?php endforeach?>
 
                                 </ul>
                             <?php endif ?>

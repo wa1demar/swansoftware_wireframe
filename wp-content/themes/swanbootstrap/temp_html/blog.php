@@ -1,6 +1,5 @@
 <?php
 /**
- * Template Name: Blog
  *
  * Created by PhpStorm.
  * @author: viktor
@@ -11,7 +10,7 @@
  */
 ?>
 <?php get_header() ?>
-    <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/blog/main.css"/>
+    <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/css/blog/main.css"/>
     <div id='sliderFirst'>
         <?php $bg_image = "/'assets/pics/technology.png" ?>
         <?php require "_social.php" ?>
@@ -207,7 +206,7 @@
                 <div class='col-xs-8'>
                     <div class='row'>
                         <div class='col-xs-6 text-left '>
-                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/older.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/img/older.png"></a>
                             <br/>
                             <br/>
                             <br/>
@@ -215,7 +214,7 @@
                             <a href='#' class = 'year'>2012 </a>
                         </div>
                         <div class='col-xs-6 text-right '>
-                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/new_post.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/img/new_post.png"></a>
                             <br/>
                             <br/>
                             <br/>
@@ -225,18 +224,18 @@
                     </div>
                     <div class='row'>
                         <div class='col-xs-12 text-center alf-link'>
-                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
-                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/assets/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/img/alfabet.png"></a>
+                            <a href='#'><img src="<?php bloginfo('template_directory') ?>/img/alfabet.png"></a>
                         </div>
                     </div>
                 </div>

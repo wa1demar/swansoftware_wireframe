@@ -33,6 +33,8 @@
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/company/main.css"/>
     <?php elseif (is_page_template('media.php')): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/welcome/main.css"/>
+     <?php elseif (is_single()): ?>
+        <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/blog_page/main.css"/>
     <?php else: ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/blog/main.css"/>
     <?php endif ?>
@@ -42,6 +44,9 @@
     <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/assets/css/globals/global.css"/>
 <!--    <link rel="stylesheet" href="--><?php //bloginfo('template_directory')?><!--/assets/css/home/main.css"/>-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 
     <?php wp_head() ?>
 </head>

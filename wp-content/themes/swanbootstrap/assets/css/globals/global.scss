@@ -17,7 +17,7 @@ section {
 
 body {
   width: 100%;
-  font-size:  getSize(12);
+  font-size: getSize(12);
   font-family: $default_font;
   background: $white;
 }
@@ -38,7 +38,7 @@ hgroup {
 h1 {
   color: $gray;
   font-weight: normal;
-  font-size:  getSize(36);
+  font-size: getSize(36);
   margin: 0;
   padding: 0;
   font-family: $default_font;
@@ -46,7 +46,7 @@ h1 {
 
 h2 {
   @extend h1;
-  font-size:  getSize(24);
+  font-size: getSize(24);
   font-family: $default_font;
 }
 
@@ -90,7 +90,7 @@ blockquote {
   h3 {
     color: $gray;
     font-weight: bold;
-    font-size:  getSize(20);
+    font-size: getSize(20);
     font-family: $default_font;
     text-align: right;
   }
@@ -123,7 +123,6 @@ span.title {
   text-align: right;
   margin: 20px auto !important;
   float: none !important;
-
 
   a {
     font-size: getSize(16); // TODO: ???
@@ -165,7 +164,7 @@ ul {
 
 ul.yellow {
   li {
-      background: url("../../img/marker_yellow.png") left top no-repeat;
+    background: url("../../img/marker_yellow.png") left top no-repeat;
     padding-left: 20px;
   }
 }
@@ -179,12 +178,22 @@ ul.blue {
 
 @import "footer";
 
-.center{
-  display : table-cell;
-  vertical-align : middle;
+.center {
+  display: table-cell;
+  vertical-align: middle;
   float: none;
 }
 
+footer#mainFooter {
+  ul#wp-admin-bar-root-default,
+  ul#wp-admin-bar-top-secondary {
+    li {
+      padding: 0;
+    }
+
+  }
+
+}
 
 
 
