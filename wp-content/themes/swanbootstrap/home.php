@@ -11,73 +11,17 @@
  */
 ?>
 <?php get_header() ?>
-    <div id="sliderFirst">
-        <?php $bg_image = "../assets/pics/mobile.png" ?>
-        <?php require "_social.php" ?>
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12 topBanner">
-                    <div class="row sliderPopups">
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <div class="getStartedButton">
-                                <a href="#">Get Started</a>
-                            </div>
-                        </div>
-                        <div class="col-lg-12">
-                            <h1>Make your business better with us</h1>
-
-                            <div class="row topBannerLinks">
-                                <div class="box col-sm-3">
-                                    <div class="round_image">
-                                        <img
-                                            src="<?php bloginfo('template_directory') ?>/assets/img/service1_115x100.png">
-                                    </div>
-
-                                    <p>Mobile Development</p>
-                                </div>
-                                <div class="box col-sm-3">
-                                    <div class="round_image">
-                                        <img
-                                            src="<?php bloginfo('template_directory') ?>/assets/img/service2_115x100.png">
-                                    </div>
-
-                                    <p>Staff Augmentation</p>
-                                </div>
-                                <div class="box col-sm-3">
-                                    <div class="round_image">
-                                        <img
-                                            src="<?php bloginfo('template_directory') ?>/assets/img/service3_115x100.png">
-                                    </div>
-
-                                    <p>Custom Application Development</p>
-                                </div>
-                                <div class="box col-sm-3">
-                                    <div class="round_image">
-                                        <img
-                                            src="<?php bloginfo('template_directory') ?>/assets/img/service4_115x100.png">
-                                    </div>
-
-                                    <p>Design</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
+<?php //while (have_posts()) : the_post(); ?>
+    <?php $bg = get_bloginfo('template_directory') . "/assets/img/home_background.png" ?>
+    <div id="sliderFirst" style="background:  url('<?= $bg ?>') center ;">
+    <?php require('_home_page_section_first.php'); ?>
+  </div>
     <!--  ================================ Second Section ================================== -->
-
-<?php require('_customers_slider.php'); ?>
+    <?php require('_customers_slider.php'); ?>
     <!--  ================================ Third Section ================================== -->
     <div id="sliderThird">
 
-<!--        // carousel-->
+        <!--        // carousel-->
 
         <div id="carousel5" class="carousel5 slide">
             <div class="carousel-inner">
@@ -97,7 +41,7 @@
         </div>
 
 
- <!--        // end carousel-->
+        <!--        // end carousel-->
         <div class="news_line">
             <div class="container">
                 <div class="row">
@@ -135,14 +79,14 @@
                     <section class="sec">
                         <span class="title">
                             <h1>Our Clients</h1>
-                            <a href="">View All +</a>
+                            <a href=" <?php echo getCategory('Client') ?>">View All +</a>
                         </span>
                         <img src="<?php bloginfo('template_directory') ?>/assets/img/clients_0.png"/>
                     </section>
                     <section>
                         <span class="title">
                             <h1 class="text-center">Area of Expertise</h1>
-                            <a href="<?= get_permalink(51, false) ?>">View All +</a>
+                            <a href=" <?php echo esc_url( get_permalink( get_page_by_title( 'Technologies' ) ) ); ?>">View All +</a>
 
                         </span>
                         <img src="<?php bloginfo('template_directory') ?>/assets/img/tech_0.png"/>
@@ -166,5 +110,6 @@
     </div>
 
     </div>
+<?php //endwhile; ?>
 
 <?php get_footer() ?>

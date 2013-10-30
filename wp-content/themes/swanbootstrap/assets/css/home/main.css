@@ -23,54 +23,63 @@
   src: url("../../fonts/BARAKB.TTF"); }
 
 #sliderFirst {
-  background: url("../../img/slider_navigation_bg.png") repeat-x top;
   height: 785px;
-  padding: 0; }
+  padding: 0;
+  position: relative; }
+  #sliderFirst .topBannerLinks {
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    right: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff; }
+    #sliderFirst .topBannerLinks h1 {
+      color: #ffffff;
+      padding: 60px 0 30px 0; }
+    #sliderFirst .topBannerLinks p {
+      color: #ffffff; }
+    #sliderFirst .topBannerLinks a {
+      text-decoration: none; }
+    #sliderFirst .topBannerLinks .col-sm-3.col-xs-6.text-center {
+      min-width: 140px;
+      min-height: 200px;
+      font-size: 152.38095%; }
+      #sliderFirst .topBannerLinks .col-sm-3.col-xs-6.text-center .round_image {
+        width: 120px;
+        height: 120px;
+        padding-top: 20px;
+        margin: 0 auto;
+        background: url("../../img/link_hover_bg_blue_round_transparent.png") no-repeat top center;
+        background-position: center;
+        background-size: 100%; }
+        #sliderFirst .topBannerLinks .col-sm-3.col-xs-6.text-center .round_image img {
+          width: 80px;
+          height: 80px; }
+    #sliderFirst .topBannerLinks .col-sm-3.col-xs-6.text-center:hover .round_image {
+      background: url("../../img/link_bg_blue_round.png") no-repeat top center;
+      background-position: center;
+      background-size: 100%; }
   #sliderFirst .container {
     padding: 0; }
     #sliderFirst .container .topBanner {
       background: url("../../img/banner_temp.png") center top no-repeat;
       height: 665px; }
-      #sliderFirst .container .topBanner .sliderPopups {
-        height: 280px; }
       #sliderFirst .container .topBanner .getStartedButton {
-        text-align: center; }
+        text-align: center;
+        position: absolute;
+        top: 275px;
+        left: 43%; }
         #sliderFirst .container .topBanner .getStartedButton a {
           color: #ffffff;
           font-size: 228.57143%;
           font-family: "Open Sans Light";
-          font-weight: normal;
-          padding: 20px 100px; }
-      #sliderFirst .container .topBanner h1 {
-        color: #ffffff;
-        text-align: center;
-        font-size: 342.85714%;
-        font-family: "Open Sans Light";
-        padding: 30px 0 30px 0;
-        font-weight: normal; }
-      #sliderFirst .container .topBanner .topBannerLinks {
-        text-align: center; }
-        #sliderFirst .container .topBanner .topBannerLinks .box {
-          cursor: pointer;
-          padding: 0; }
-          #sliderFirst .container .topBanner .topBannerLinks .box:hover .round_image {
-            background: #6699ff; }
-          #sliderFirst .container .topBanner .topBannerLinks .box .round_image {
-            margin: 0 auto;
-            padding: 40px;
-            background: url("../../img/bg-blue-transparent.png") repeat;
-            border-radius: 80px;
-            width: 65%; }
-            #sliderFirst .container .topBanner .topBannerLinks .box .round_image img {
-              width: 80px; }
-          #sliderFirst .container .topBanner .topBannerLinks .box p {
-            color: #ffffff;
-            padding: 20px 5px;
-            font-size: 228.57143%;
-            font-family: "Open Sans Light"; }
+          font-weight: normal; }
 
 #sliderSecond {
   position: relative; }
+  #sliderSecond .row.phoneBG.item {
+    width: 100%; }
   #sliderSecond .sliderSecondInner div ul.secondSidebarMenu {
     list-style: none; }
     #sliderSecond .sliderSecondInner div ul.secondSidebarMenu li {
@@ -89,42 +98,42 @@
         text-decoration: none;
         line-height: 100%; }
     #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .mobile {
-      background: white url("../../img/icon_s_1_45.png") left center no-repeat; }
+      background: #f4feff url("../../img/icon_s_1_45.png") left center no-repeat; }
       #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .mobile:hover, #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .mobile.active {
         background: #6699ff url("../../img/service1_25x25.png") left center no-repeat; }
         #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .mobile:hover a, #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .mobile.active a {
           background: none;
           color: #ffffff; }
     #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .staff {
-      background: white url("../../img/icon_s_2_45.png") left center no-repeat; }
+      background: #f4feff url("../../img/icon_s_2_45.png") left center no-repeat; }
       #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .staff:hover, #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .staff.active {
         background: #6699ff url("../../img/service2_25x25.png") left center no-repeat; }
         #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .staff:hover a, #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .staff.active a {
           background: none;
           color: #ffffff; }
     #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .app {
-      background: white url("../../img/icon_s_3_45.png") left center no-repeat; }
+      background: #f4feff url("../../img/icon_s_3_45.png") left center no-repeat; }
       #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .app:hover, #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .app.active {
         background: #6699ff url("../../img/service3_25x25.png") left center no-repeat; }
         #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .app:hover a, #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .app.active a {
           background: none;
           color: #ffffff; }
     #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .design {
-      background: white url("../../img/icon_s_4_45.png") left center no-repeat; }
+      background: #f4feff url("../../img/icon_s_4_45.png") left center no-repeat; }
       #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .design:hover, #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .design.active {
         background: #6699ff url("../../img/service4_25x25.png") left center no-repeat; }
         #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .design:hover a, #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .design.active a {
           background: none;
           color: #ffffff; }
     #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .marketing {
-      background: white url("../../img/icon_s_5_45.png") left center no-repeat; }
+      background: #f4feff url("../../img/icon_s_5_45.png") left center no-repeat; }
       #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .marketing:hover {
         background: #6699ff url("../../img/service5_25x25.png") left center no-repeat; }
         #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .marketing:hover a {
           background: none;
           color: #ffffff; }
   #sliderSecond .sliderSecondInner .phoneBG {
-    background: white url("../../img/phone_bg.png") right center no-repeat;
+    background: #f4feff url("../../img/phone_bg.png") right center no-repeat;
     background-size: contain; }
   #sliderSecond #mobile .carousel-control, #sliderSecond #staff .carousel-control, #sliderSecond #app .carousel-control, #sliderSecond #design .carousel-control {
     background: none; }
