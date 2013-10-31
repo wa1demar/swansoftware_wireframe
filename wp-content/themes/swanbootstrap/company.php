@@ -166,7 +166,7 @@
                 <h1>Managers</h1>
 
                 <div class='row managers'>
-                    <?php addImages(get_cat_ID( 'Managers' ))?>
+                    <?php addImages(get_cat_ID( 'Manager' ))?>
 
                 </div>
             </div>
@@ -196,7 +196,7 @@
             <div class='col-xs-12 text-center '>
                 <h1>Our Team of Superheroes</h1>
             </div>
-            <?php addImages(get_cat_ID( 'Developers' ))?>
+            <?php addImages(get_cat_ID( 'Developer' ))?>
     </div>
 </div>
 

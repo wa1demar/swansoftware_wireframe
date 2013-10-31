@@ -6,14 +6,15 @@
   img {
     width: 100%;
     max-width: 1366px;
+    margin: 0 auto;
   }
-  .col-lg-6.text{
-    font-size: getSize(14);                                         //TODO
+  .col-lg-6.text {
+    font-size: getSize(14); //TODO
   }
-  .col-lg-4.link{
-    font-size: getSize(14);                                         //TODO
-    h3{
-      font-size: getSize(10);                                         //TODO
+  .col-lg-4.link {
+    font-size: getSize(14); //TODO
+    h3 {
+      font-size: getSize(10); //TODO
       font-weight: bold;
     }
   }
@@ -31,7 +32,6 @@
       text-align: justify;
       color: #ffffff;
 
-
     }
 
     ul {
@@ -40,8 +40,10 @@
         list-style: url("../../img/marker_blue.png");
 
         h3 {
-          font: getSize(14) bold "Open Sans Bold";
-          color: #ffffff;
+          a {
+            font: getSize(14) bold "Open Sans Bold";
+            color: #ffffff;
+          }
         }
         footer {
           color: #ffffff;

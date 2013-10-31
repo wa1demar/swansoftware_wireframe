@@ -144,7 +144,8 @@
   text-align: center; }
   #sliderThird img {
     width: 100%;
-    max-width: 1366px; }
+    max-width: 1366px;
+    margin: 0 auto; }
   #sliderThird .col-lg-6.text {
     font-size: 133.33333%; }
   #sliderThird .col-lg-4.link {
@@ -167,7 +168,7 @@
       padding: 0; }
       #sliderThird .news_line ul li {
         list-style: url("../../img/marker_blue.png"); }
-        #sliderThird .news_line ul li h3 {
+        #sliderThird .news_line ul li h3 a {
           font: 133.33333% bold "Open Sans Bold";
           color: #ffffff; }
         #sliderThird .news_line ul li footer {

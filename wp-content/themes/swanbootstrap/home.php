@@ -59,7 +59,7 @@
                             <?php foreach ($postslist as $post) : setup_postdata($post); ?>
                                 <li>
                                     <header>
-                                        <h3><?php the_title() ?></h3>
+                                        <h3><a href="<?php the_permalink()?>"><?php the_title() ?></a></h3>
                                     </header>
                                     <footer><?php the_time("m / d / Y") ?></footer>
                                 </li>
