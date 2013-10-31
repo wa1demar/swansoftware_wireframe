@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * Template Name: Service Form Template
+ * Template Name: Get Started
  *
  * Created by JetBrains PhpStorm.
  * @author: Viktor
@@ -98,7 +98,7 @@
                             <img src="<?php bloginfo('template_directory') ?>/assets/img/email.png">
                         </div>
                         <div class="col-xs-9">
-                            <input type="text"
+                            <input type="email"
                                    placeholder="  johndoe@jahoo.com">
                         </div>
                     </div>
@@ -108,7 +108,7 @@
                             <img src="<?php bloginfo('template_directory') ?>/assets/img/phone.png">
                         </div>
                         <div class="col-xs-9">
-                            <input type="text"
+                            <input type=""
                                    placeholder="  +7 (987) 654-32-10">
                         </div>
                     </div>
