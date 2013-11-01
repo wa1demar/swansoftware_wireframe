@@ -4,12 +4,108 @@
 
   .dark-background {
     background: rgba(0, 0, 0, 0.5);
+    padding: 20px 0;
 
     h1 {
       color: #ffffff;
-      font-size: getSize(20);
+      font-size: getRSize(25);
       font-weight: bold;
       margin-bottom: 20px;
+    }
+
+    article {
+      p {
+        font-size: getRSize(20);
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+#sectionSecond {
+  .rounded {
+    background: $white;
+    padding: 40px 0;
+    overflow: hidden;
+    img {
+
+      &.left {
+        float: left;
+        padding: 0 20px 0 0;
+      }
+
+      &.right {
+        float: right;
+        padding: 0 0px 0 20px;
+      }
+
+    }
+
+    section {
+      padding: 50px 0;
+
+      &.left {
+        text-align: left;
+      }
+
+      &.right {
+        text-align: right;
+      }
+
+      h1 {
+        font-size: getRSize(28);
+        padding: 10px 0;
+      }
+    }
+
+
+  }
+
+}
+
+#sectionThird {
+  background: $green_bg;
+  padding: 25px 0;
+
+  h1 {
+    color: #ffffff;
+  }
+
+  section {
+    padding: 20px 0;
+
+    &.mobile {
+      background: url("../../img/service1_115x100.png") left center no-repeat;
+//      background-size: 12% 50%;
+       background-size: 14% ;
+    }
+
+    &.staff {
+      background: url("../../img/service2_115x100.png") left center no-repeat;
+      background-size: 14%;
+    }
+
+    &.custom {
+      background: url("../../img/service3_115x100.png") left center no-repeat;
+      background-size: 14%;
+    }
+
+    &.design {
+      background: url("../../img/service4_115x100.png") left center no-repeat;
+      background-size: 14%;
+    }
+
+
+    & {
+      padding-left:  70px;
+//      margin: 10px 0;
+      line-height: 200%;
+
+      a {
+        color: #ffffff;
+        font-size: getRSize(30);
+//        padding: 0 0 0 100px;
+      }
     }
   }
 }

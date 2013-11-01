@@ -23,9 +23,59 @@
   src: url("../../fonts/BARAKB.TTF"); }
 
 #sectionFirst .dark-background {
-  background: rgba(0, 0, 0, 0.5); }
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 0; }
   #sectionFirst .dark-background h1 {
     color: #ffffff;
-    font-size: 190.47619%;
+    font-size: 2.1875rem;
     font-weight: bold;
     margin-bottom: 20px; }
+  #sectionFirst .dark-background article p {
+    font-size: 1.75rem;
+    color: #ffffff; }
+
+#sectionSecond .rounded {
+  background: #f4feff;
+  padding: 40px 0;
+  overflow: hidden; }
+  #sectionSecond .rounded img.left {
+    float: left;
+    padding: 0 20px 0 0; }
+  #sectionSecond .rounded img.right {
+    float: right;
+    padding: 0 0px 0 20px; }
+  #sectionSecond .rounded section {
+    padding: 50px 0; }
+    #sectionSecond .rounded section.left {
+      text-align: left; }
+    #sectionSecond .rounded section.right {
+      text-align: right; }
+    #sectionSecond .rounded section h1 {
+      font-size: 2.45rem;
+      padding: 10px 0; }
+
+#sectionThird {
+  background: #64898c;
+  padding: 25px 0; }
+  #sectionThird h1 {
+    color: #ffffff; }
+  #sectionThird section {
+    padding: 20px 0; }
+    #sectionThird section.mobile {
+      background: url("../../img/service1_115x100.png") left center no-repeat;
+      background-size: 14%; }
+    #sectionThird section.staff {
+      background: url("../../img/service2_115x100.png") left center no-repeat;
+      background-size: 14%; }
+    #sectionThird section.custom {
+      background: url("../../img/service3_115x100.png") left center no-repeat;
+      background-size: 14%; }
+    #sectionThird section.design {
+      background: url("../../img/service4_115x100.png") left center no-repeat;
+      background-size: 14%; }
+    #sectionThird section {
+      padding-left: 70px;
+      line-height: 200%; }
+      #sectionThird section a {
+        color: #ffffff;
+        font-size: 2.625rem; }
