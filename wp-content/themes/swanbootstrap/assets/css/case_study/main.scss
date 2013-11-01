@@ -1,0 +1,15 @@
+@import "../globals/constants";
+
+#sectionFirst {
+
+  .dark-background {
+    background: rgba(0, 0, 0, 0.5);
+
+    h1 {
+      color: #ffffff;
+      font-size: getSize(20);
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  }
+}

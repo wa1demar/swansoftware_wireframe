@@ -12,7 +12,7 @@
 ?>
 
 <?php get_header() ?>
-<?php while (have_posts()) : the_post(); ?>
+<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 <?php $bg = get_field('background'); ?>
 <div id='sliderFirst' style="background: url('<?= $bg ?>') center top repeat-x;">
     <?php addSocials($bg) ?>
@@ -158,7 +158,7 @@
         </div>
     </div>
 </div>
-<?php endwhile ?>
+<?php endwhile; endif; ?>
 <div id='sectionThird'>
     <div class='container'>
         <div class='row'>
