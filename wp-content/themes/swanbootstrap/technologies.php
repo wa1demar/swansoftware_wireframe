@@ -122,78 +122,86 @@
     <div class="tab-pane active" id="java">
         <div class='col-sm-4 col-xs-6 '>
             <ul>
-                <li>Code analysis</li>
-                <li>JavaScriptLint</li>
-                <li>JSHint</li>
-                <li>JSLint</li>
+                <li>Java platform </li>
+                <li>Java language</li>
+                <li>JVM</li>
+                <li>Standard Edition</li>
+                <li>Enterprise Edition</li>
             </ul>
             <ul>
-                <li>Compilers</li>
-                <li>CoffeeScript</li>
-                <li>Google Closure Compiler</li>
-                <li>Google Web Toolkit</li>
-                <li>Morfik</li>
-                <li>Script#</li>
+                <li>Sun technologies</li>
+                <li>Squawk</li>
+                <li>Java Development Kit</li>
+                <li>OpenJDK</li>
+                <li>Java virtual machine  </li>
+                <li>JavaFX</li>
+                <li>Maxine VM</li>
             </ul>
             <ul>
-                <li>Doc generators</li>
-                <li>JSDoc</li>
+
+                <li>Platform technologies</li>
+                <li>Applets</li>
+                <li>Servlets</li>
+                <li>jsp</li>
+                <li>Web Start (jnlp)</li>
             </ul>
-            <ul>
-                <li>Unit testing</li>
-                <li>JSUnit</li>
-            </ul>
-            <ul>
-                <li>Server-side</li>
-                <li>Active Server Pages</li>
-                <li>CommonJS</li>
-                <li>Node.js</li>
-            </ul>
+
         </div>
         <div class='col-sm-4 col-xs-6'>
             <ul>
-                <li>Debuggers</li>
-                <li>Firebug</li>
-                <li>Opera Dragonfly</li>
-                <li>Microsoft Script Editor</li>
-                <li>Microsoft Script Debugger</li>
-                <li>Microsoft Visual Studio</li>
-                <li>Microsoft Visual Web</li>
-                <li>Developer Express</li>
-                <li>Venkman</li>
-                <li>Web Inspector</li>
+                <li>Web Frameworks</li>
+                <li>Apache Struts</li>
+                <li>AppFuse</li>
+                <li>Flexive</li>
+                <li>GWT</li>
+                <li>Grails</li>
+                <li>Vaadin</li>
+                <li>ItsNat</li>
+                <li>JavaServer Faces</li>
+                <li>Jspx</li>
+                <li>Makumba</li>
+                <li>OpenXava</li>
+                <li>Play</li>
+                <li>Eclipse RAP</li>
+                <li>Reasonable Server Faces</li>
+                <li>RIFE</li>
+                <li>Seam</li>
+                <li>Spring</li>
+                <li>Stripes</li>
+                <li>Tapestry</li>
+                <li>WebWork</li>
+                <li>Wicket</li>
+                <li>ZK</li>
+                <li>ICEfaces</li>
+                <li>WaveMaker</li>
             </ul>
-            <ul>
-                <li>Concepts</li>
-                <li>Ajax</li>
-                <li>Client-side</li>
-                <li>JavaScript library</li>
-                <li>Dynamic HTML</li>
-                <li>JavaScript syntax</li>
-                <li>Unobtrusive JavaScript</li>
-            </ul>
-            <ul>
-                <li>Related technologies</li>
-                <li>Cascading Style Sheets</li>
-                <li>Document Object</li>
-                <li>Model</li>
-                <li>HTML</li>
-                <li>JSON</li>
-            </ul>
-        </div>
-        <div class='col-sm-4 col-xs-6'>
-            <ul>
-                <li>Web Framework</li>
-                <li>Ample SDK</li>
-                <li>Prototype JavaScript</li>
-                <li>Framework</li>
-                <li>Rico</li>
-                <li>script.aculo.us</li>
-                <li>SproutCore</li>
-                <li>jQuery</li>
-                <li>Dojo</li>
-                <li>Toolkit</li>
-            </ul>
+         </div>
+       <div class='col-sm-4 col-xs-6'>
+           <ul>
+
+               <li>Major third-party technologies</li>
+               <li>JRockit</li>
+               <li>GNU Classpath</li>
+               <li>Kaffe</li>
+               <li>TopLink</li>
+               <li>Apache Harmony</li>
+               <li>Apache Struts</li>
+               <li>Spring framework</li>
+               <li>Hibernate</li>
+               <li>JBoss application server</li>
+               <li>Tapestry</li>
+               <li>Jazelle</li>
+           </ul>
+           <ul>
+               <li>Major programming languages</li>
+               <li>BeanShell</li>
+               <li>Clojure</li>
+               <li>Groovy</li>
+               <li>Java Tcl</li>
+               <li>JRuby</li>
+               <li>Jython</li>
+               <li>AspectJ</li>
+           </ul>
         </div>
     </div>
     <div class="tab-pane" id="ruby">
