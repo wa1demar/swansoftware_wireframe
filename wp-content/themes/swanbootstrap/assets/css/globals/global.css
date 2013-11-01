@@ -126,6 +126,9 @@ body {
     min-width: 160px; }
   #mainHeader .logo-sign {
     min-width: 280px; }
+  #mainHeader .link-list {
+    width: 60%;
+    margin-left: 40%; }
 
 @media (min-width: 800px) and (max-width: 1000px) {
   .header-row {
@@ -139,7 +142,9 @@ body {
     position: absolute;
     right: 0px; }
 
-  .link-list {
+  #mainHeader .link-list {
+    width: 100%;
+    margin-left: 0%;
     position: absolute;
     bottom: 0px; } }
 @media (min-width: 680px) and (max-width: 870px) {
@@ -156,9 +161,11 @@ body {
     top: 20px;
     right: 0px; }
 
-  .link-list {
+  #mainHeader .link-list {
     position: absolute;
-    bottom: 0px; } }
+    bottom: 0px;
+    width: 100%;
+    margin-left: 0%; } }
 @media (min-width: 520px) and (max-width: 680px) {
   #mainHeader ul.mainMenu {
     text-align: center; }
@@ -199,9 +206,11 @@ body {
       width: auto;
       padding-left: 22px; }
 
-  .link-list {
+  #mainHeader .link-list {
     position: absolute;
-    bottom: 0px; } }
+    bottom: 0px;
+    width: 100%;
+    margin-left: 0%; } }
 @media (min-width: 480px) and (max-width: 520px) {
   #mainHeader ul.mainMenu {
     text-align: center; }
@@ -243,9 +252,11 @@ body {
       width: auto;
       padding-left: 22px; }
 
-  .link-list {
+  #mainHeader .link-list {
     position: absolute;
-    bottom: 0px; } }
+    bottom: 0px;
+    width: 100%;
+    margin-left: 0%; } }
 @media (min-width: 350px) and (max-width: 480px) {
   #mainHeader ul.mainMenu {
     text-align: center; }
@@ -295,9 +306,11 @@ body {
       #mainHeader .header-contacts ul li.phone p {
         font-size: 110%; }
 
-  .link-list {
+  #mainHeader .link-list {
     position: absolute;
-    bottom: 0px; } }
+    top: 130px;
+    width: 100%;
+    margin-left: 0%; } }
 @media (min-width: 100px) and (max-width: 350px) {
   #mainHeader ul.mainMenu {
     text-align: center; }
@@ -330,7 +343,7 @@ body {
     width: auto;
     position: absolute;
     left: 25%;
-    top: 120px; }
+    top: 110px; }
 
   .link-list {
     position: absolute;

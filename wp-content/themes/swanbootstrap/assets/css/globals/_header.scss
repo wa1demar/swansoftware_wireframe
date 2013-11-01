@@ -100,6 +100,10 @@
   .logo-sign{
     min-width: 280px;
   }
+  .link-list{
+    width: 60%;
+    margin-left: 40%;
+  }
 
 }
 
@@ -119,7 +123,9 @@
     right: 0px;
 
   }
-  .link-list{
+  #mainHeader .link-list{
+    width: 100%;
+    margin-left: 0%;
     position:absolute;
     bottom: 0px;
 
@@ -149,9 +155,11 @@
     right: 0px;
 
   }
-  .link-list{
+  #mainHeader .link-list{
     position:absolute;
     bottom: 0px;
+    width: 100%;
+    margin-left: 0%;
   }
 
 }
@@ -213,9 +221,11 @@
      }
 
   }
-  .link-list{
+  #mainHeader .link-list{
     position:absolute;
     bottom: 0px;
+    width: 100%;
+    margin-left: 0%;
   }
 
 }
@@ -280,9 +290,11 @@
     }
 
   }
-  .link-list{
+   #mainHeader  .link-list{
     position:absolute;
     bottom: 0px;
+    width: 100%;
+    margin-left: 0%;
   }
 
 }
@@ -361,9 +373,11 @@
     }
 
   }
-  .link-list{
+  #mainHeader .link-list{
     position:absolute;
-    bottom: 0px;
+    top: 130px;
+    width: 100%;
+    margin-left: 0%;
   }
 
 }
@@ -411,7 +425,7 @@
 
     position:absolute;
     left: 25%;
-    top: 120px;
+    top: 110px;
     //right: 0px;
 
   }
