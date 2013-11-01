@@ -15,7 +15,6 @@
     <?php $bg = get_field('background'); ?>
     <div class="servicesHeader" style="background: url('<?= $bg ?>') center top repeat-x;">
         <?php addSocials($bg) ?>
-        <?php $tech = get_field('technologies') ?>
         <div class="headerContent blackTransparent">
             <div class="container">
                 <div class="row">
@@ -146,19 +145,31 @@
         </div>
         <?php endif ?>
     </div>
+    <?php $tec = get_posts(
+        array(
+            'category__in' => get_cat_ID('Technologies'),
+            'numberposts' => 100,
+        )
+    );?>
+    <?php if (count($tec) > 0): ?>
     <section id="technologies">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                    <span class="title">
                             <h1>Technologies what are used</h1>
-                            <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Technologies' ) ) ); ?>">View All +</a> <?php //TODO: Get permalink to technologies ?>
+                            <a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Technologies' ) ) ); ?>">View All +</a>
                    </span>
-                    <?= $tech ?>
+                    <?php if( $tec ): foreach( $tec as $post ):  ?>
+                        <?php setup_postdata($post);?>
+                        <img src="<?=get_field('logo') ?>">
+                    <?php endforeach; endif; ?>
+                    <?php wp_reset_postdata(); ?>
                 </div>
             </div>
         </div>
     </section>
+        <?php endif; ?>
     <script>
         $(function () {
             $('#myTab a:first').tab('show')

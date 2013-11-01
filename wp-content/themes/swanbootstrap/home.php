@@ -11,7 +11,7 @@
  */
 ?>
 <?php get_header() ?>
-<?php //while (have_posts()) : the_post(); ?>
+<?php //if (have_posts()): while (have_posts()) : the_post(); ?>
     <?php $bg = get_bloginfo('template_directory') . "/assets/img/b_bg.png" ?>
     <div id="sliderFirst" style="background:  url('<?= $bg ?>') center ;">
     <?php require('_home_page_section_first.php'); ?>
@@ -72,25 +72,50 @@
 
     </div>
     <!-- =============================================================-->
+
     <div id="sliderFourth">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+                    <?php $cli = get_posts(
+                        array(
+                            'category__in' => get_cat_ID('Clients'),
+                            'numberposts' => 100,
+                        )
+                    );?>
+                    <?php if (count($cli) > 0): ?>
                     <section class="sec">
                         <span class="title">
                             <h1>Our Clients</h1>
                             <a href=" <?php echo getCategory('Client') ?>">View All +</a>
                         </span>
-                        <img src="<?php bloginfo('template_directory') ?>/assets/img/clients_0.png"/>
+                        <?php if( $cli ): foreach( $cli as $post ):  ?>
+                            <?php setup_postdata($post);?>
+                            <img src="<?=get_field('logo') ?>">
+                        <?php endforeach; endif; ?>
+                        <?php wp_reset_postdata(); ?>
                     </section>
-                    <section>
+                    <?php endif; ?>
+                    <?php $tec = get_posts(
+                        array(
+                            'category__in' => get_cat_ID('Technologies'),
+                            'numberposts' => 100,
+                        )
+                    );?>
+                    <?php if (count($tec) > 0): ?>
+                    <section style="text-align: center">
                         <span class="title">
                             <h1 class="text-center">Area of Expertise</h1>
                             <a href=" <?php echo esc_url( get_permalink( get_page_by_title( 'Technologies' ) ) ); ?>">View All +</a>
 
                         </span>
-                        <img src="<?php bloginfo('template_directory') ?>/assets/img/tech_0.png"/>
+                        <?php if( $tec ): foreach( $tec as $post ):  ?>
+                        <?php setup_postdata($post);?>
+                            <img src="<?=get_field('logo') ?>">
+                        <?php endforeach; endif; ?>
+                        <?php wp_reset_postdata(); ?>
                     </section>
+                    <?php endif; ?>
 
                 </div>
             </div>
@@ -103,14 +128,14 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="text-center">Have a project we can help with?</h1>
-                    <a href="<?=get_permalink('Get Started') ?>" class="blue_btn">Get Started</a>
+                    <a href="<?= get_permalink( get_page_by_title( 'Get Started' ) )?>" class="blue_btn">Get Started</a>
                 </div>
             </div>
         </div>
     </div>
 
     </div>
-<?php //endwhile; ?>
+<?php //endwhile; endif; ?>
 
 <?php get_footer() ?>
 

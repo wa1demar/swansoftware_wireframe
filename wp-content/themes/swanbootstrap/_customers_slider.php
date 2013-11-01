@@ -669,7 +669,7 @@
 
 
 </section>
-<!--<script>-->
+<script>
 <!--    $('.carousel1').carousel({-->
 <!--        interval: 5000-->
 <!--    })-->
@@ -686,10 +686,10 @@
 <!--        interval: 5000-->
 <!--    })-->
 <!---->
-<!--    $('.carousel5').carousel({-->
-<!--        interval: 40000-->
-<!--    })-->
-<!--</script>-->
+    $('.carousel5').carousel({
+        interval: 5000
+    })
+</script>
 
 
 <script>

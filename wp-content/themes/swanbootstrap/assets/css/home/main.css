@@ -67,8 +67,9 @@
       #sliderFirst .container .topBanner .getStartedButton {
         text-align: center;
         position: absolute;
-        top: 275px;
-        left: 43%; }
+        top: 240px;
+        left: 31.815%;
+        z-index: 1000; }
         #sliderFirst .container .topBanner .getStartedButton a {
           color: #ffffff;
           font-size: 228.57143%;
@@ -177,7 +178,8 @@
 #sliderFourth {
   background: url("../../img/gray_equals.png") bottom repeat-x; }
   #sliderFourth section.sec {
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    text-align: center; }
 
 #sliderFifth {
   background: url("../../img/swan-bg.png") top center no-repeat;
