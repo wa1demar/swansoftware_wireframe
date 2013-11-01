@@ -8,7 +8,8 @@ footer#mainFooter {
 
     h1 {
       color: #ffffff;
-      font-size: getSize(60); //TODO: ???
+      font-size: getSize(60);
+      //TODO: ???
       background: url("../../img/swan_90x60.png") no-repeat left center;
       padding-left: 100px;
       float: left;
@@ -17,8 +18,8 @@ footer#mainFooter {
     .title-item {
       //float: left;
       overflow: hidden;
-      display:table-cell !important;
-      vertical-align:middle;
+      display: table-cell !important;
+      vertical-align: middle;
 
       h2 {
         background: none;
@@ -47,8 +48,70 @@ footer#mainFooter {
       }
     }
 
-
   }
 
+}
 
+@media (min-width: 200px) and(max-width: 1200px) {
+  .logo-footer {
+    margin: 0 0;
+    width: 100%;
+
+    .logo-container {
+      width: 420px;
+      margin: 0 auto;
+      .title-item {
+        padding-top: 8px;
+        max-width: 145px;
+      }
+    }
+  }
+
+  .direct-contact-footer {
+    address {
+      text-align: center;
+      ul {
+        li {
+          //display: inline-block;
+        }
+      }
+    }
+
+  }
+  .direct-lines-footer {
+    text-align: center;
+    ul {
+      li {
+        display: inline-block;
+      }
+    }
+  }
+  .main-menu-footer {
+    text-align: center;
+  }
+
+}
+
+@media (min-width: 100px) and(max-width: 500px) {
+  #mainFooter .logo-footer {
+
+    .logo-container {
+      width: 260px;
+       h1{
+         padding-left: 72px;
+        font-size: getSize(32);                       // TODO
+         background-size: 70px 100%;
+
+       }
+      .title-item {
+        width: 88px;
+        h2{
+          font-size: getSize(15);                       // TODO
+
+
+        }
+
+      }
+    }
+  }
 }

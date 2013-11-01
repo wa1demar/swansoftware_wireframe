@@ -14,7 +14,8 @@
     <?php wp_footer()?>
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 title">
+            <div class="col-lg-6 title logo-footer">
+            <div class="logo-container">
                 <h1>SWAN</h1>
 
                 <div class="title-item">
@@ -23,7 +24,8 @@
                     <h2>SOLUTIONS</h2>
                 </div>
             </div>
-            <div class="col-lg-4">
+            </div>
+            <div class="col-lg-4 direct-contact-footer">
                 <address>
                     <ul>
                         <li>Direct Contacts:</li>
@@ -34,7 +36,7 @@
                     </ul>
                 </address>
             </div>
-            <div class="col-lg-2">
+            <div class="col-lg-2 direct-lines-footer">
                 <ul>
                     <li>Direct Lines:</li>
                     <li><b>317-691-3806</b></li>
@@ -44,7 +46,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6 main-menu-footer">
                 <?php wp_nav_menu(getArgsForMainMenu())?>
             </div>
         </div>
