@@ -178,14 +178,14 @@
 <div id='sectionFouth'>
     <div class='row sliders'>
         <div class='col-xs-4'>
-            <img src='<?php bloginfo('template_directory') ?>/assets/img/company1.png'>
+            <img src='<?php bloginfo('template_directory') ?>/assets/img/left_image.jpg'>
         </div>
         <div class='col-xs-4'>
 
             <img src='<?php bloginfo('template_directory') ?>/assets/img/company2.png'>
         </div>
         <div class='col-xs-4'>
-            <img src='<?php bloginfo('template_directory') ?>/assets/img/company3.png'>
+            <img src='<?php bloginfo('template_directory') ?>/assets/img/right_image.jpg'>
         </div>
     </div>
 </div>
