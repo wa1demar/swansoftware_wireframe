@@ -52,30 +52,5 @@
 
 </footer>
 
-<script src="<?php bloginfo('template_directory')?>/assets/js/bootstrap.min.js"></script>
-<script src="<?php bloginfo('template_directory')?>/assets/js/carousel.js"></script>
-<script src="<?php bloginfo('template_directory')?>/assets/js/tab.js"></script>
-<script>
-    $('.carousel1').carousel({
-        interval: 5000
-    })
-
-    $('.carousel2').carousel({
-        interval: 5000
-    })
-
-    $('.carousel3').carousel({
-        interval: 5000
-    })
-
-    $('.carousel4').carousel({
-        interval: 5000
-    })
-
-   $('.carousel5').carousel({
-        interval: 40000
-    })
-</script>
-
 </body>
 </html>

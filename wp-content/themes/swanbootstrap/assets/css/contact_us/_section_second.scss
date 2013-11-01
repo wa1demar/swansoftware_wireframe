@@ -1,7 +1,7 @@
 @import "../globals/constants";
 
 #sliderSecond .section{
-  background: #50d1ec url('../../img/map.png') center  no-repeat;
+  background: $gray_bg url('../../img/map.png') center  no-repeat;
   min-height: 500px;
   min-width: 900px;
   background-size: 100% 100%;

@@ -221,7 +221,7 @@
 
     <script>
         $(function () {
-            $('#myTab a:first').tab('show')
+            $("#myTab a:first").tab('show')
         })
     </script>
 

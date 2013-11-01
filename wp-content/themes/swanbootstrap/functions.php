@@ -67,3 +67,10 @@ function getCategory($categoryName) {
 function getDefaultBG() {
     return get_bloginfo('template_directory') . "/assets/pics/technology.png";
 }
+
+function wds_get_ID_by_page_name($page_name)
+{
+    global $wpdb;
+    $page_name_id = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name ='".$page_name."'");
+    return $page_name_id;
+}

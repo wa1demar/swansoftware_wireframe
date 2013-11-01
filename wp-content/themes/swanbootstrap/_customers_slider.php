@@ -17,7 +17,7 @@
 <div class="row sliderSecondInner ">
 <div class="col-lg-3">
     <div class="row ">
-        <ul class="secondSidebarMenu nav nav-tabs" id='myTab'>
+        <ul class="secondSidebarMenu nav nav-tabs" id='mynewTab'>
             <li class="mobile active">
                 <a href="#mobile" data-toggle="tab">Mobile Development</a></li>
             <li class="staff"><a href="#staff" data-toggle="tab">Staf
@@ -36,7 +36,7 @@
 
 
 
-    <div id="carousel-example-1-1" class="carousel slide">
+    <div id="carousel-example-1-1" class="carousel1 slide">
 
 
         <div class="carousel-inner">
@@ -669,23 +669,25 @@
 
 
 </section>
-<!--<ul class="nav nav-tabs" id="myNewTab">-->
-<!--    <li class="active"><a href="#home">Home</a></li>-->
-<!--    <li><a href="#profile" data-toggle="tab">Profile</a></li>-->
-<!--    <li><a href="#messages" data-toggle="tab">Messages</a></li>-->
-<!--    <li><a href="#settings" data-toggle="tab">Settings</a></li>-->
-<!--</ul>-->
-<!---->
-<!--<div class="tab-content">-->
-<!--    <div class="tab-pane active" id="home">home</div>-->
-<!--    <div class="tab-pane" id="profile">profile</div>-->
-<!--    <div class="tab-pane" id="messages">mess</div>-->
-<!--    <div class="tab-pane" id="settings">sett</div>-->
-<!--</div>-->
-<!---->
 <!--<script>-->
-<!--    $(function () {-->
-<!--        $('#mynewTab a:last').tab('show')-->
+<!--    $('.carousel1').carousel({-->
+<!--        interval: 5000-->
+<!--    })-->
+<!---->
+<!--    $('.carousel2').carousel({-->
+<!--        interval: 5000-->
+<!--    })-->
+<!---->
+<!--    $('.carousel3').carousel({-->
+<!--        interval: 5000-->
+<!--    })-->
+<!---->
+<!--    $('.carousel4').carousel({-->
+<!--        interval: 5000-->
+<!--    })-->
+<!---->
+<!--    $('.carousel5').carousel({-->
+<!--        interval: 40000-->
 <!--    })-->
 <!--</script>-->
 

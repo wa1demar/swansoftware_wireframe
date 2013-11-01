@@ -63,7 +63,6 @@
   #sliderFirst .container {
     padding: 0; }
     #sliderFirst .container .topBanner {
-      background: url("../../img/banner_temp.png") center top no-repeat;
       height: 665px; }
       #sliderFirst .container .topBanner .getStartedButton {
         text-align: center;

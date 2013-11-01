@@ -54,7 +54,7 @@
     <div class="container">
 
         <div class="row carousel-inner">
-            <div class="col-lg-12 topBanner item active">
+            <div class="col-lg-12 topBanner item active" style="background: url('<?php bloginfo('template_directory') ?>/assets/img/all_m.png') center top no-repeat;">
 
                 <div class="row ">
                     <div class="col-lg-12 text-center">
@@ -66,48 +66,48 @@
                 </div>
 
             </div>
-            <div class="col-lg-12 topBanner item ">
+            <div class="col-lg-12 topBanner item " style="background: url('<?php bloginfo('template_directory') ?>/assets/img/mobile_m.png') center top no-repeat;">
 
                 <div class="row ">
                     <div class="col-lg-12 text-center">
                         <div class="getStartedButton">
-                            <a href="#">Get Started</a>
+<!--                            <a href="#">Get Started</a>-->
                         </div>
                     </div>
 
                 </div>
 
             </div>
-            <div class="col-lg-12 topBanner item ">
+            <div class="col-lg-12 topBanner item " style="background: url('<?php bloginfo('template_directory') ?>/assets/img/staff_m.png') center top no-repeat;">
 
                 <div class="row ">
                     <div class="col-lg-12 text-center">
                         <div class="getStartedButton">
-                            <a href="#">Get Started</a>
+<!--                            <a href="#">Get Started</a>-->
                         </div>
                     </div>
 
                 </div>
 
             </div>
-            <div class="col-lg-12 topBanner item">
+            <div class="col-lg-12 topBanner item" style="background: url('<?php bloginfo('template_directory') ?>/assets/img/ios_m.png') center top no-repeat;">
 
                 <div class="row ">
                     <div class="col-lg-12 text-center">
                         <div class="getStartedButton">
-                            <a href="#">Get Started</a>
+<!--                            <a href="#">Get Started</a>-->
                         </div>
                     </div>
 
                 </div>
 
             </div>
-            <div class="col-lg-12 topBanner item ">
+            <div class="col-lg-12 topBanner item " style="background: url('<?php bloginfo('template_directory') ?>/assets/img/design_m.png') center top no-repeat;" >
 
                 <div class="row ">
                     <div class="col-lg-12 text-center">
                         <div class="getStartedButton">
-                            <a href="#">Get Started</a>
+<!--                            <a href="#">Get Started</a>-->
                         </div>
                     </div>
 

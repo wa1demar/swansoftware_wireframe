@@ -112,5 +112,7 @@
   src: url("../../fonts/BARAKB.TTF"); }
 
 #sliderSecond .section {
-  background: #50d1ec url("../../img/map.png") center center no-repeat;
-  min-height: 500px; }
+  background: #2f3738 url("../../img/map.png") center no-repeat;
+  min-height: 500px;
+  min-width: 900px;
+  background-size: 100% 100%; }
