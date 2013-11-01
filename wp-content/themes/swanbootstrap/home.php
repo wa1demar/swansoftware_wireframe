@@ -12,7 +12,7 @@
 ?>
 <?php get_header() ?>
 <?php //while (have_posts()) : the_post(); ?>
-    <?php $bg = get_bloginfo('template_directory') . "/assets/img/home_background.png" ?>
+    <?php $bg = get_bloginfo('template_directory') . "/assets/img/b_bg.png" ?>
     <div id="sliderFirst" style="background:  url('<?= $bg ?>') center ;">
     <?php require('_home_page_section_first.php'); ?>
   </div>
@@ -103,7 +103,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="text-center">Have a project we can help with?</h1>
-                    <a href="#" class="blue_btn">Get Started</a>
+                    <a href="<?=get_permalink('Get Started') ?>" class="blue_btn">Get Started</a>
                 </div>
             </div>
         </div>
@@ -113,3 +113,4 @@
 <?php //endwhile; ?>
 
 <?php get_footer() ?>
+

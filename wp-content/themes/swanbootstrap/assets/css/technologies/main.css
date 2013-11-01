@@ -119,6 +119,9 @@
     border: none; }
     #sliderFour ul a {
       font-weight: bold; }
+  #sliderFour ul li:first-child {
+    font-weight: bold;
+    color: #74A3FF; }
   #sliderFour ul.link-list li {
     color: blue;
     padding-top: 6px;
@@ -149,3 +152,11 @@
       color: #ffffff;
       border: none;
       border-radius: 0; }
+  #sliderFour ul #weight-li {
+    font-weight: 800;
+    color: #000DFF; }
+  #sliderFour #phone p {
+    font-weight: bold;
+    color: #000dff; }
+  #sliderFour #phone ul li.sub-topic {
+    font-weight: 800; }

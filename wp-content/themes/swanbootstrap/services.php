@@ -10,9 +10,8 @@
  * компенсирующих друг друга, заставляет программу работать
  */
 ?>
-
 <?php get_header() ?>
-<?php while (have_posts()) : the_post(); ?>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <?php $bg = get_field('background'); ?>
     <div class="servicesHeader" style="background: url('<?= $bg ?>') center top repeat-x;">
         <?php addSocials($bg) ?>
@@ -71,7 +70,8 @@
         </div>
 
     </div>
-<?php endwhile; ?>
+
+<?php if (get_field('why_do_you_need') != ""): ?>
     <section id="info">
         <div class="container">
             <div class="row">
@@ -81,12 +81,14 @@
             </div>
         </div>
     </section>
+<?php endif; ?>
     <section id="separator">
         <div class="container">
             <h1>You can order the service by <a href="#">filling the form</a> or just <a href="#">cull us</a></h1>
         </div>
     </section>
     <div class="tab1">
+        <?php if (get_cat_ID(get_the_title()) > 0): ?>
         <section id="clients">
             <div class="container">
                 <div class="row">
@@ -96,34 +98,53 @@
 
                             <a href="<?=getCategory('Clients'); ?>">View All +</a>
                         </span>
+
                         <ul class="nav nav-tabs" id="myTab">
-                        <?php query_posts("cat=5&posts_per_page=100"); ?>
-                        <?php $c = 1; if (have_posts()) : while (have_posts()) : the_post(); ?>
-                            <li class="<?php if ($c == 1) echo("active")?>"><a href="#<?=get_field('label') ?>" data-toggle="tab"><img src="<?php the_field('logo') ?>"/></a> </li>
+                            <?php $logos = get_posts(
+                                array(
+                                    'category__in' => get_cat_ID(get_the_title()),
+                                    'numberposts' => 100,
+                                    )
+                                );?>
+<!--                        --><?php //$clients = get_posts("cat=".get_cat_ID($cat)."&posts_per_page=100"); ?>
+                            <?php $c = 1; if( $logos ): foreach( $logos as $post ):  ?>
+                                <?php setup_postdata($post);?>
+                                <li class="<?php if ($c == 1) echo("active")?>"><a href="#<?=get_field('label') ?>" data-toggle="tab"><img src="<?php the_field('logo') ?>"/></a> </li>
                             <?php $c++?>
-                        <?php endwhile; endif ?>
+                            <?php endforeach; endif ?>
+                            <?php wp_reset_postdata(); ?>
                             </ul>
+
                     </div>
                 </div>
             </div>
         </section>
+
         <div id="quotes">
             <div class="container">
                 <div class="row tab-content">
-                    <?php query_posts("cat=5&posts_per_page=100"); ?>
-                    <?php $c = 1; if (have_posts()) : while (have_posts()) : the_post(); ?>
-
+                    <?php $test = get_posts(
+                        array(
+                            'category__in' => get_cat_ID(get_the_title()),
+                            'numberposts' => 100,
+                        )
+                    );?>
+<!--                    --><?php //query_posts("cat=".get_cat_ID($cat)."&posts_per_page=100"); ?>
+                    <?php $c = 1; if( $test ): foreach( $test as $post ):  ?>
+                        <?php setup_postdata($post);?>
                     <blockquote class="tab-pane <?php if ($c == 1) echo("active") ?>" id="<?=get_field('label') ?>">
                         <p><?php the_content() ?></p>
                         <h3><?=get_field('name')?></h3>
                         <?php $c++;?>
                     </blockquote>
 
-                    <?php endwhile; endif ?>
+                    <?php endforeach; endif ?>
+                    <?php wp_reset_postdata(); ?>
 
                 </div>
             </div>
         </div>
+        <?php endif ?>
     </div>
     <section id="technologies">
         <div class="container">
@@ -143,5 +164,7 @@
             $('#myTab a:first').tab('show')
         })
     </script>
-
+<?php endwhile; else: ?>
+    <p> <?php _e('Sorry, no posts matched your criteria.'); ?> </p>
+<?php endif; ?>
 <?php get_footer() ?>

@@ -46,7 +46,10 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
-    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
+
+    <script src="<?php bloginfo('template_directory')?>/assets/js/bootstrap.min.js"></script>
+    <script src="<?php bloginfo('template_directory')?>/assets/js/carousel.js"></script>
+    <script src="<?php bloginfo('template_directory')?>/assets/js/tab.js"></script>
 
     <?php wp_head() ?>
 </head>
