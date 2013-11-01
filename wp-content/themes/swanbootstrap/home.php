@@ -10,6 +10,7 @@
  * компенсирующих друг друга, заставляет программу работать
  */
 ?>
+
 <?php get_header() ?>
 <?php //if (have_posts()): while (have_posts()) : the_post(); ?>
     <?php $bg = get_bloginfo('template_directory') . "/assets/img/b_bg.png" ?>
@@ -27,15 +28,27 @@
             <div class="carousel-inner">
                 <div class="item active">
 
-                    <img src="<?php bloginfo('template_directory') ?>/assets/img/team.png"/>
+                    <img src="<?php bloginfo('template_directory') ?>/assets/img/1sm.jpg"/>
+                </div>
+                <div class="item">
+
+                    <img src="<?php bloginfo('template_directory') ?>/assets/img/2sm.jpg"/>
                 </div>
                 <div class="item">
 
                     <img src="<?php bloginfo('template_directory') ?>/assets/img/team.png"/>
                 </div>
-                <div class="item">
+               <div class="item">
 
-                    <img src="<?php bloginfo('template_directory') ?>/assets/img/team.png"/>
+                    <img src="<?php bloginfo('template_directory') ?>/assets/img/4sm.jpg"/>
+                </div>
+               <div class="item">
+
+                    <img src="<?php bloginfo('template_directory') ?>/assets/img/5sm.jpg"/>
+                </div>
+               <div class="item">
+
+                    <img src="<?php bloginfo('template_directory') ?>/assets/img/6sm.jpg"/>
                 </div>
             </div>
         </div>
@@ -139,3 +152,8 @@
 
 <?php get_footer() ?>
 
+<script>
+    $('.carousel5').carousel({
+        interval: 40000
+    })
+</script>
