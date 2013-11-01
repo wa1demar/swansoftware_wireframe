@@ -154,6 +154,6 @@
 
 <script>
     $('.carousel5').carousel({
-        interval: 40000
+        interval: 10000
     })
 </script>
