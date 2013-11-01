@@ -94,4 +94,344 @@
       }
     }
   }
+  .logo{
+    min-width: 160px;
+  }
+  .logo-sign{
+    min-width: 280px;
+  }
+  .link-list{
+    width: 60%;
+    margin-left: 40%;
+  }
+
+}
+
+@media(min-width:800px)and(max-width:1000px){
+  .header-row{
+   position: relative;
+  }
+
+  .logo-sign{
+    width: 280px;
+  }
+
+  .header-contacts{
+    width: auto;
+    //margin-left:15%;
+    position:absolute;
+    right: 0px;
+
+  }
+  #mainHeader .link-list{
+    width: 100%;
+    margin-left: 0%;
+    position:absolute;
+    bottom: 0px;
+
+  }
+}
+@media(min-width:680px)and(max-width:870px){
+  #mainHeader ul.mainMenu{
+    text-align: center;
+  }
+
+  .header-row{
+   position: relative;
+    padding-bottom: 40px;
+  }
+  .logo{
+    //width: 40%;
+    //text-align: right;
+  }
+
+
+  .header-contacts{
+    width: auto;
+
+    position:absolute;
+    //left: 25%;
+    top: 20px;
+    right: 0px;
+
+  }
+  #mainHeader .link-list{
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+    margin-left: 0%;
+  }
+
+}
+
+@media(min-width:520px)and(max-width:680px){
+  #mainHeader ul.mainMenu{
+    text-align: center;
+  }
+
+  .header-row{
+   position: relative;
+    padding-bottom: 90px;
+  }
+  .logo{
+    margin-left: 12.5%;
+    width: 25%;
+    text-align: right;
+  }
+
+  #mainHeader hgroup h1{
+    font-size: 400%;
+  }
+ #mainHeader hgroup h2{
+    font-size: 190%;
+  }
+
+ .logo-sign{
+    width: 50%;
+
+
+  }
+
+
+  #mainHeader .header-contacts{
+    width: 80%;
+
+    position:absolute;
+    left: 10%;
+    top: 105px;
+    .address{
+      text-align: center;
+    }
+    ul{
+
+
+      li.address{
+        display: inline-block;
+        width: auto;
+        margin-left: 10px;
+        padding-left: 22px;
+        height: 60px;
+      }
+      li.phone{
+        display: inline-block;
+        width: auto;
+        padding-left: 22px;
+
+      }
+     }
+
+  }
+  #mainHeader .link-list{
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+    margin-left: 0%;
+  }
+
+}
+@media(min-width:480px)and(max-width:520px){
+  #mainHeader ul.mainMenu{
+    text-align: center;
+  }
+
+  .header-row{
+   position: relative;
+    padding-bottom: 100px;
+  }
+  .logo{
+    margin-left: 5%;
+    width: 30%;
+    text-align: right;
+  }
+
+  #mainHeader hgroup h1{
+    font-size: 400%;
+  }
+ #mainHeader hgroup h2{
+    font-size: 190%;
+  }
+
+ .logo-sign{
+    width: 60%;
+    min-width: 0%;
+   h1 a{
+
+   }
+    //text-align: right;
+  }
+
+
+  #mainHeader .header-contacts{
+    width: 90%;
+
+    position:absolute;
+    left: 5%;
+    top: 100px;
+    //right: 0px;
+    .address{
+      text-align: center;
+    }
+    ul{
+
+
+      li.address{
+        display: inline-block;
+        width: auto;
+        margin-left: 10px;
+        padding-left: 22px;
+        height: 60px;
+      }
+      li.phone{
+        display: inline-block;
+        width: auto;
+        padding-left: 22px;
+
+      }
+    }
+
+  }
+   #mainHeader  .link-list{
+    position:absolute;
+    bottom: 0px;
+    width: 100%;
+    margin-left: 0%;
+  }
+
+}
+@media(min-width:350px)and(max-width:480px){
+  #mainHeader ul.mainMenu{
+    text-align: center;
+  }
+
+  .header-row{
+   position: relative;
+    padding-bottom: 100px;
+  }
+  #mainHeader .logo{
+
+    margin-left: 5%;
+    min-width: 0px;
+    width: 40%;
+    text-align: right;
+    img{
+      width: 100%;
+    }
+  }
+
+  #mainHeader hgroup h1{
+    font-size: 300%;
+  }
+
+
+  #mainHeader .logo-sign{
+    padding-left: 0px;
+    min-width: 0px;
+    width: 50%;
+    min-width: 0%;
+   h1 a{
+
+   }
+    h2{
+      font-size: 120%;
+    }
+    //text-align: right;
+  }
+
+
+  #mainHeader .header-contacts{
+    width: 98%;
+
+    position:absolute;
+    left: 1%;
+    top: 90px;
+    //right: 0px;
+    .address{
+      text-align: center;
+    }
+    ul{
+
+
+      li.address{
+        display: inline-block;
+        width: auto;
+        margin-left: 10px;
+        padding-left: 22px;
+        height: 60px;
+        p{
+          font-size: 110%;
+        }
+      }
+      li.phone{
+        display: inline-block;
+        width: auto;
+        padding-left: 22px;
+        p{
+          font-size: 110%;
+        }
+
+      }
+    }
+
+  }
+  #mainHeader .link-list{
+    position:absolute;
+    top: 130px;
+    width: 100%;
+    margin-left: 0%;
+  }
+
+}
+@media(min-width:100px)and(max-width:350px){
+  #mainHeader ul.mainMenu{
+    text-align: center;
+  }
+
+  .header-row{
+   position: relative;
+    padding-bottom: 120px;
+  }
+  #mainHeader .logo{
+
+    margin-top: 0.5%;
+    margin-left: 5%;
+    min-width: 0px;
+    width: 40%;
+    text-align: right;
+    img{
+      width: 100%;
+    }
+  }
+
+  #mainHeader hgroup h1{
+    font-size: 200%;
+  }
+
+
+  #mainHeader .logo-sign{
+    padding-left: 0px;
+    min-width: 0px;
+    width: 50%;
+    min-width: 0%;
+    h1 a{
+
+    }
+    h2{
+      font-size: 90%;
+    }
+    //text-align: right;
+  }
+  .header-contacts{
+    width: auto;
+
+    position:absolute;
+    left: 25%;
+    top: 110px;
+    //right: 0px;
+
+  }
+  .link-list{
+    position:absolute;
+    bottom: 0px;
+  }
+
 }

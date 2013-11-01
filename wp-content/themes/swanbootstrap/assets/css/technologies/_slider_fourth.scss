@@ -10,13 +10,19 @@
   background-size: cover;
   ul{
 
+
     font-size: getSize(14);  //TODO
     padding-bottom: 30px;
     border: none;
+
     a{
 
       font-weight: bold;
     }
+  }
+  ul li:first-child{
+    font-weight: bold;
+    color: #74A3FF;
   }
   ul.link-list li{
     color: blue;
@@ -62,6 +68,21 @@
     }
 
   }
+  ul #weight-li{
+
+    font-weight: 800;
+    color: #000DFF;
+  }
+  #phone{
+    p{
+      font-weight: bold;
+      color: #000DFF ;
+    }
+    ul li.sub-topic{
+      font-weight: 800;
+    }
+  }
+
   //njibgyfvtyfvgyjm
 
 }

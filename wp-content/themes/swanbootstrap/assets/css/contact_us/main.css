@@ -47,7 +47,8 @@
   src: url("../../fonts/BARAKB.TTF"); }
 
 #sliderFirst .info-section .row.dark-background {
-  width: 100%; }
+  width: 100%;
+  margin: 0 0 0 0; }
   #sliderFirst .info-section .row.dark-background .text-center.background {
     padding: 0 0 30px 0; }
     #sliderFirst .info-section .row.dark-background .text-center.background .contact-text-phone {
@@ -112,7 +113,11 @@
   src: url("../../fonts/BARAKB.TTF"); }
 
 #sliderSecond .section {
+<<<<<<< HEAD
+  background: #50d1ec url("../../img/map.png") center no-repeat;
+=======
   background: #2f3738 url("../../img/map.png") center no-repeat;
+>>>>>>> master
   min-height: 500px;
   min-width: 900px;
   background-size: 100% 100%; }

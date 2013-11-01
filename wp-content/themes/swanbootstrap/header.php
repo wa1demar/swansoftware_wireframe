@@ -33,16 +33,16 @@
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/company/main.css"/>
     <?php elseif (is_page_template('media.php')): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/welcome/main.css"/>
-     <?php elseif (is_single()): ?>
+    <?php elseif (is_single()): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/blog_page/main.css"/>
     <?php else: ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/blog/main.css"/>
     <?php endif ?>
 
-    <meta charset="<?php bloginfo('charset')?>"/>
-    <link href="<?php bloginfo('template_directory')?>/assets/css/libs/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/assets/css/globals/global.css"/>
-<!--    <link rel="stylesheet" href="--><?php //bloginfo('template_directory')?><!--/assets/css/home/main.css"/>-->
+    <meta charset="<?php bloginfo('charset') ?>"/>
+    <link href="<?php bloginfo('template_directory') ?>/assets/css/libs/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/globals/global.css"/>
+    <!--    <link rel="stylesheet" href="--><?php //bloginfo('template_directory')?><!--/assets/css/home/main.css"/>-->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
@@ -57,42 +57,56 @@
 
 <header id="mainHeader">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-7">
+        <div class="row header-row">
+            <div class="col-xs-2 logo">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-4">
+                    <div class="col-xs-12 ">
                         <img src="<?php bloginfo('template_directory') ?>/assets/img/swan_150x100.png">
                     </div>
-                    <div class="col-lg-8 col-md-8 col-sm-8">
-                        <hgroup>
-                            <h1><a href="<?=  get_home_url()?>">SWAN</a></h1>
+                </div>
+            </div>
 
-                            <h2><a href="<?= get_home_url()?>">SOFTWARE SOLUTIONS</a></h2>
+            <div class="col-xs-4 logo-sign">
+                <div class="row">
+
+                    <div class="col-xs-12 ">
+                        <hgroup>
+                            <h1><a href="<?= get_home_url() ?>">SWAN</a></h1>
+
+                            <h2><a href="
+                            <?= get_home_url() ?>">SOFTWARE SOLUTIONS</a></h2>
                         </hgroup>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-6 col-md-6 col-sm-5">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-lg-offset-6 col-md-offset-6">
+            <div class="col-sm-6 col-xs-12  header-contacts">
+                <div class="row  ">
+                    <div class="col-md-6  col-md-offset-6  ">
                         <div class="address">
                             <ul>
-                                <li class="phone"><p>317-691-3806</p></li>
+                                <li class="phone "><p>317-691-3806</p></li>
                                 <li class="address"><p>698 Pro-Med Ln, <br/>
                                         Ste 200 Carmel IN 46032;</p></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="row ">
-                    <div class="col-lg-12 col-md-12">
+
+            </div>
+
+            <div class="col-xs-12 text-center link-list">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
                         <?php wp_nav_menu(getArgsForMainMenu()) ?>
                     </div>
                 </div>
-
             </div>
+
+
         </div>
+
+
     </div>
 </header>
 <div id="mainContent">
