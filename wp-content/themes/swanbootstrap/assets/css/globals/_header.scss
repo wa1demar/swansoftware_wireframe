@@ -299,6 +299,9 @@
 
 }
 @media(min-width:350px)and(max-width:480px){
+  #mainHeader{
+    height: 210px;
+  }
   #mainHeader ul.mainMenu{
     text-align: center;
   }
@@ -382,17 +385,19 @@
 
 }
 @media(min-width:100px)and(max-width:350px){
+  #mainHeader{
+    height: 250px;
+  }
   #mainHeader ul.mainMenu{
     text-align: center;
   }
 
   .header-row{
-   position: relative;
-    padding-bottom: 120px;
+    position: relative;
+    padding-bottom: 100px;
   }
   #mainHeader .logo{
 
-    margin-top: 0.5%;
     margin-left: 5%;
     min-width: 0px;
     width: 40%;
@@ -403,7 +408,7 @@
   }
 
   #mainHeader hgroup h1{
-    font-size: 200%;
+    font-size: 300%;
   }
 
 
@@ -416,22 +421,66 @@
 
     }
     h2{
-      font-size: 90%;
+      font-size: 120%;
     }
     //text-align: right;
   }
-  .header-contacts{
-    width: auto;
+
+
+  #mainHeader .header-contacts{
+    width: 98%;
 
     position:absolute;
-    left: 25%;
-    top: 110px;
+    left: 1%;
+    top: 90px;
     //right: 0px;
+    .address{
+      text-align: center;
+    }
+    ul{
+
+
+      li.address{
+        display: inline-block;
+        width: auto;
+        margin-left: 10px;
+        padding-left: 22px;
+
+        p{
+          font-size: 110%;
+        }
+      }
+      li.phone{
+        display: inline-block;
+        width: auto;
+        padding-left: 22px;
+        p{
+          font-size: 110%;
+        }
+
+      }
+    }
 
   }
-  .link-list{
+  #mainHeader .link-list{
     position:absolute;
-    bottom: 0px;
+    top: 155px;
+    width: 100%;
+    margin-left: 0%;
+    a{
+
+      font-size: 150%;
+    }
+  }
+  #mainHeader .link-list ul.mainMenu li a{
+    font-size: 150%;
+
+  }
+  #mainHeader .logo-sign h2{
+    min-width: 150px;
+  }
+  #mainHeader .logo img {
+    width: 100px;
   }
 
-}
+  }
