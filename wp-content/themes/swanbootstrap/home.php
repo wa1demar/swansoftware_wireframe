@@ -26,22 +26,22 @@
 
         <div id="carousel5" class="carousel5 slide">
             <div class="carousel-inner">
+<!--                <div class="item active">-->
+<!---->
+<!--                    <img src="--><?php //bloginfo('template_directory') ?><!--/assets/img/1sm.jpg"/>-->
+<!--                </div>-->
                 <div class="item active">
-
-                    <img src="<?php bloginfo('template_directory') ?>/assets/img/1sm.jpg"/>
-                </div>
-                <div class="item">
 
                     <img src="<?php bloginfo('template_directory') ?>/assets/img/2sm.jpg"/>
                 </div>
-                <div class="item">
+<!--                <div class="item">-->
+<!---->
+<!--                    <img src="--><?php //bloginfo('template_directory') ?><!--/assets/img/team.png"/>-->
+<!--                </div>-->
+<!--               <div class="item">-->
 
-                    <img src="<?php bloginfo('template_directory') ?>/assets/img/team.png"/>
-                </div>
-               <div class="item">
-
-                    <img src="<?php bloginfo('template_directory') ?>/assets/img/4sm.jpg"/>
-                </div>
+<!--                    <img src="--><?php //bloginfo('template_directory') ?><!--/assets/img/4sm.jpg"/>-->
+<!--                </div>-->
                <div class="item">
 
                     <img src="<?php bloginfo('template_directory') ?>/assets/img/5sm.jpg"/>

@@ -98,6 +98,7 @@
     </div>
     <div id="sliderSecond">
         <div class='section'>
+
         </div>
     </div>
 <?php endwhile; ?>
