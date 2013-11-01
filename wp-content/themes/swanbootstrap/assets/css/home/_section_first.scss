@@ -7,28 +7,29 @@
   position: relative;
 
   .topBannerLinks {
-    width:100%;
-    position:  absolute;
-    bottom: 5%;
+    width: 100%;
+    position: absolute;
+    bottom: 2%;
     right: 0;
     z-index: 1000;
+    padding: 10px 0 20px 0;
 
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
     color: #ffffff;
-    h1{
+    h1 {
       color: #ffffff;
-      padding: 60px 0 30px 0;
+      padding: 70px 0 30px 0;
     }
-    p{
+    p {
       color: #ffffff;
     }
-    a{
+    a {
       text-decoration: none;
     }
     .col-sm-3.col-xs-6.text-center {
       min-width: 140px;
       min-height: 200px;
-      font-size: getSize(16);                             //TODO
+      font-size: getSize(16); //TODO
       .round_image {
         width: 120px;
         height: 120px;
@@ -37,7 +38,6 @@
         background: url("../../img/link_hover_bg_blue_round_transparent.png") no-repeat top center;
         background-position: center;
         background-size: 100%;
-
 
         img {
           width: 80px;
@@ -55,17 +55,25 @@
       }
     }
 
+    a.active {
+      .col-sm-3.col-xs-6.text-center {
+
+        .round_image {
+          background: url("../../img/link_bg_blue_round.png") no-repeat top center;
+          background-position: center;
+          background-size: 100%;
+        }
+      }
+    }
+
   }
 
   .container {
     padding: 0;
 
     .topBanner {
-//      background: url("../../img/banner_temp.png") center top no-repeat;
+      //      background: url("../../img/banner_temp.png") center top no-repeat;
       height: 665px;
-
-
-
 
       .getStartedButton {
         text-align: center;
@@ -86,9 +94,6 @@
           }
         }
       }
-
-
-
 
     }
   }

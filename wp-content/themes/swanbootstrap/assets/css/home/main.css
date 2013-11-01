@@ -29,14 +29,15 @@
   #sliderFirst .topBannerLinks {
     width: 100%;
     position: absolute;
-    bottom: 5%;
+    bottom: 2%;
     right: 0;
     z-index: 1000;
+    padding: 10px 0 20px 0;
     background: rgba(0, 0, 0, 0.5);
     color: #ffffff; }
     #sliderFirst .topBannerLinks h1 {
       color: #ffffff;
-      padding: 60px 0 30px 0; }
+      padding: 70px 0 30px 0; }
     #sliderFirst .topBannerLinks p {
       color: #ffffff; }
     #sliderFirst .topBannerLinks a {
@@ -57,6 +58,10 @@
           width: 80px;
           height: 80px; }
     #sliderFirst .topBannerLinks .col-sm-3.col-xs-6.text-center:hover .round_image {
+      background: url("../../img/link_bg_blue_round.png") no-repeat top center;
+      background-position: center;
+      background-size: 100%; }
+    #sliderFirst .topBannerLinks a.active .col-sm-3.col-xs-6.text-center .round_image {
       background: url("../../img/link_bg_blue_round.png") no-repeat top center;
       background-position: center;
       background-size: 100%; }

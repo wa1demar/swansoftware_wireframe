@@ -61,7 +61,7 @@
             <div class="col-xs-2 logo">
                 <div class="row">
                     <div class="col-xs-12 ">
-                        <img src="<?php bloginfo('template_directory') ?>/assets/img/swan_150x100.png">
+                        <a href="<?= get_home_url() ?>"><img src="<?php bloginfo('template_directory') ?>/assets/img/swan_150x100.png"></a>
                     </div>
                 </div>
             </div>
