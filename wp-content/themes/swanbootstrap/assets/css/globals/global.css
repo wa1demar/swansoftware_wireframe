@@ -172,43 +172,51 @@ body {
 
   .header-row {
     position: relative;
-    padding-bottom: 90px; }
+    padding-bottom: 100px; }
 
-  .logo {
-    margin-left: 12.5%;
-    width: 25%;
-    text-align: right; }
+  #mainHeader .logo {
+    margin-left: 0%;
+    padding: 0px;
+    width: 0px;
+    min-width: 0px; }
+    #mainHeader .logo img {
+      display: none; }
 
   #mainHeader hgroup h1, #mainHeader hgroup h2 {
     font-size: 400%; }
 
   #mainHeader hgroup h2 {
-    font-size: 190%; }
+    font-size: 190%;
+    padding-top: 10px;
+    padding-left: 10px; }
 
-  .logo-sign {
+  #mainHeader .logo-sign {
+    margin-left: 25%;
     width: 50%; }
+    #mainHeader .logo-sign #sign-with-logo {
+      padding-left: 80px;
+      padding-top: 10px;
+      background: url("../../img/swan_150x100.png") no-repeat left;
+      background-size: 78px 100%; }
 
   #mainHeader .header-contacts {
     width: 80%;
     position: absolute;
     left: 10%;
-    top: 105px; }
+    top: 110px; }
     #mainHeader .header-contacts .address {
-      text-align: center; }
+      width: 200px;
+      margin: 0 auto; }
     #mainHeader .header-contacts ul li.address {
-      display: inline-block;
       width: auto;
-      margin-left: 10px;
-      padding-left: 22px;
-      height: 60px; }
+      padding-left: 22px; }
     #mainHeader .header-contacts ul li.phone {
-      display: inline-block;
       width: auto;
       padding-left: 22px; }
 
   #mainHeader .link-list {
     position: absolute;
-    bottom: 0px;
+    top: 190px;
     width: 100%;
     margin-left: 0%; } }
 @media (min-width: 480px) and (max-width: 520px) {
@@ -238,17 +246,14 @@ body {
     width: 90%;
     position: absolute;
     left: 5%;
-    top: 100px; }
+    top: 110px; }
     #mainHeader .header-contacts .address {
-      text-align: center; }
+      width: 200px;
+      margin: 0 auto; }
     #mainHeader .header-contacts ul li.address {
-      display: inline-block;
       width: auto;
-      margin-left: 10px;
-      padding-left: 22px;
-      height: 60px; }
+      padding-left: 22px; }
     #mainHeader .header-contacts ul li.phone {
-      display: inline-block;
       width: auto;
       padding-left: 22px; }
 
@@ -256,10 +261,32 @@ body {
     position: absolute;
     bottom: 0px;
     width: 100%;
-    margin-left: 0%; } }
+    margin-left: 0%; }
+
+  #mainHeader .logo {
+    margin-left: 0%;
+    padding: 0px;
+    width: 0px;
+    min-width: 0px; }
+    #mainHeader .logo img {
+      display: none; }
+
+  #mainHeader hgroup h2 {
+    font-size: 190%;
+    padding-top: 10px;
+    padding-left: 5px; }
+
+  #mainHeader .logo-sign {
+    margin-left: 25%;
+    width: 50%; }
+    #mainHeader .logo-sign #sign-with-logo {
+      padding-left: 80px;
+      padding-top: 10px;
+      background: url("../../img/swan_150x100.png") no-repeat left;
+      background-size: 78px 100%; } }
 @media (min-width: 350px) and (max-width: 480px) {
   #mainHeader {
-    height: 210px; }
+    height: 260px; }
 
   #mainHeader ul.mainMenu {
     text-align: center; }
@@ -285,38 +312,59 @@ body {
     width: 50%;
     min-width: 0%; }
     #mainHeader .logo-sign h2 {
-      font-size: 120%; }
+      font-size: 150%; }
 
   #mainHeader .header-contacts {
     width: 98%;
     position: absolute;
     left: 1%;
-    top: 90px; }
+    top: 100px; }
     #mainHeader .header-contacts .address {
-      text-align: center; }
+      width: 230px;
+      margin: 0 auto; }
     #mainHeader .header-contacts ul li.address {
-      display: inline-block;
       width: auto;
-      margin-left: 10px;
       padding-left: 22px;
-      height: 60px; }
+      padding-top: 10px; }
       #mainHeader .header-contacts ul li.address p {
-        font-size: 110%; }
+        font-size: 140%; }
     #mainHeader .header-contacts ul li.phone {
-      display: inline-block;
       width: auto;
-      padding-left: 22px; }
+      padding-left: 22px;
+      padding-top: 10px; }
       #mainHeader .header-contacts ul li.phone p {
-        font-size: 110%; }
+        font-size: 140%; }
 
   #mainHeader .link-list {
     position: absolute;
-    top: 130px;
+    top: 180px;
     width: 100%;
-    margin-left: 0%; } }
+    margin-left: 0%; }
+
+  #mainHeader .logo {
+    margin-left: 0%;
+    padding: 0px;
+    width: 0px;
+    min-width: 0px; }
+    #mainHeader .logo img {
+      display: none; }
+
+  #mainHeader hgroup h2 {
+    font-size: 190%;
+    padding-top: 10px;
+    padding-left: 12px; }
+
+  #mainHeader .logo-sign {
+    margin-left: 20%;
+    width: 60%; }
+    #mainHeader .logo-sign #sign-with-logo {
+      padding-left: 80px;
+      padding-top: 10px;
+      background: url("../../img/swan_150x100.png") no-repeat left;
+      background-size: 78px 100%; } }
 @media (min-width: 100px) and (max-width: 350px) {
   #mainHeader {
-    height: 250px; }
+    height: 270px; }
 
   #mainHeader ul.mainMenu {
     text-align: center; }
@@ -350,24 +398,22 @@ body {
     left: 1%;
     top: 90px; }
     #mainHeader .header-contacts .address {
-      text-align: center; }
+      width: 200px;
+      margin: 0 auto; }
     #mainHeader .header-contacts ul li.address {
-      display: inline-block;
       width: auto;
-      margin-left: 10px;
       padding-left: 22px; }
       #mainHeader .header-contacts ul li.address p {
-        font-size: 110%; }
+        font-size: 140%; }
     #mainHeader .header-contacts ul li.phone {
-      display: inline-block;
       width: auto;
       padding-left: 22px; }
       #mainHeader .header-contacts ul li.phone p {
-        font-size: 110%; }
+        font-size: 140%; }
 
   #mainHeader .link-list {
     position: absolute;
-    top: 155px;
+    top: 179px;
     width: 100%;
     margin-left: 0%; }
     #mainHeader .link-list a {
@@ -380,7 +426,29 @@ body {
     min-width: 150px; }
 
   #mainHeader .logo img {
-    width: 100px; } }
+    width: 100px; }
+
+  #mainHeader .logo {
+    margin-left: 0%;
+    padding: 0px;
+    width: 0px;
+    min-width: 0px; }
+    #mainHeader .logo img {
+      display: none; }
+
+  #mainHeader hgroup h2 {
+    font-size: 190%;
+    padding-top: 10px;
+    padding-left: 30px; }
+
+  #mainHeader .logo-sign {
+    margin-left: 15%;
+    width: 70%; }
+    #mainHeader .logo-sign #sign-with-logo {
+      padding-left: 80px;
+      padding-top: 10px;
+      background: url("../../img/swan_150x100.png") no-repeat left;
+      background-size: 78px 100%; } }
 hgroup {
   line-height: 100%;
   padding: 0 0 50px 0;
@@ -503,7 +571,8 @@ footer#mainFooter {
       footer#mainFooter .title .title-item h2 {
         background: none;
         font-size: 228.57143%;
-        padding: 0; }
+        padding: 0;
+        padding-top: 5px; }
   footer#mainFooter ul {
     margin: 0;
     font: 133.33333% normal "Open Sans Light"; }
@@ -514,7 +583,17 @@ footer#mainFooter {
       color: #ffffff;
       font-family: "Open Sans Light"; }
 
-@media (min-width: 200px) and (max-width: 1200px) {
+@media (min-width: 100px) and (max-width: 945px) {
+  .direct-lines-footer {
+    width: 22%;
+    float: right; } }
+@media (min-width: 100px) and (max-width: 990px) {
+  #second-h {
+    margin-left: 8px; } }
+@media (min-width: 500px) and (max-width: 770px) {
+  #second-h {
+    margin-left: 0px; }
+
   .logo-footer {
     margin: 0 0;
     width: 100%; }
@@ -522,20 +601,69 @@ footer#mainFooter {
       width: 420px;
       margin: 0 auto; }
       .logo-footer .logo-container .title-item {
-        padding-top: 8px;
+        padding-top: 1px;
         max-width: 145px; }
 
-  .direct-contact-footer address {
-    text-align: center; }
+  .direct-contact-footer {
+    display: inline-block;
+    width: 100%;
+    min-width: 0px;
+    padding-bottom: 20px; }
+    .direct-contact-footer address {
+      width: 280px;
+      margin: 0 auto; }
 
   .direct-lines-footer {
-    text-align: center; }
+    width: 100%;
+    min-width: 0px;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px; }
     .direct-lines-footer ul li {
       display: inline-block; }
 
   .main-menu-footer {
     text-align: center; } }
 @media (min-width: 100px) and (max-width: 500px) {
+  #second-h {
+    margin-left: 0px; }
+
+  .logo-footer {
+    margin: 0 0;
+    width: 100%; }
+    .logo-footer .logo-container {
+      width: 420px;
+      margin: 0 auto; }
+      .logo-footer .logo-container #first-h {
+        margin-top: 6px; }
+      .logo-footer .logo-container .title-item {
+        padding-top: 0px;
+        max-width: 145px; }
+
+  .direct-contact-footer {
+    display: inline-block;
+    width: 100%;
+    min-width: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px; }
+    .direct-contact-footer address {
+      width: 280px;
+      margin: 0 auto; }
+
+  .direct-lines-footer {
+    width: 100%;
+    min-width: 0px;
+    display: inline-block;
+    padding-bottom: 10px; }
+    .direct-lines-footer ul li {
+      display: inline-block; }
+    .direct-lines-footer ul li:first {
+      display: none;
+      width: 100%; }
+
+  .main-menu-footer {
+    text-align: center; }
+
   #mainFooter .logo-footer .logo-container {
     width: 260px; }
     #mainFooter .logo-footer .logo-container h1, #mainFooter .logo-footer .logo-container h2 {
@@ -543,9 +671,15 @@ footer#mainFooter {
       font-size: 304.7619%;
       background-size: 70px 100%; }
     #mainFooter .logo-footer .logo-container .title-item {
+      padding-top: 2px;
       width: 88px; }
       #mainFooter .logo-footer .logo-container .title-item h2 {
-        font-size: 142.85714%; } }
+        font-size: 142.85714%; }
+
+  #mainFooter .direct-lines-footer ul li:first-child {
+    display: block;
+    width: 100%;
+    padding-bottom: 10px; } }
 .center {
   display: table-cell;
   vertical-align: middle;

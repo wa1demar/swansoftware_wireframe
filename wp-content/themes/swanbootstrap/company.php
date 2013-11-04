@@ -14,7 +14,7 @@
 <?php get_header() ?>
 <?php while (have_posts()) : the_post(); ?>
 <?php $bg = get_field('background'); ?>
-<div id='sliderFirst' style="background: url('<?= $bg ?>') center top repeat-x;">
+<div id='sliderFirst' style="background: url('<?= $bg ?>') center top ;">
     <?php addSocials($bg) ?>
 
     <div class='row darck-background'>
@@ -38,7 +38,7 @@
 </div>
 <div id='sectionSecond'>
     <div class='container'>
-        <div class='row'>
+        <div class='row first-row'>
 
             <div class='services col-xs-5'>
                 <h1>Services</h1>
@@ -101,8 +101,8 @@
             <div class='services col-xs-5'>
 
 
-                <div class='row '>
-                    <div class='col-xs-6'>
+                <div class='row  '>
+                    <div class='col-xs-6  president-photo'>
                         <img src='<?php bloginfo('template_directory') ?>/assets/pics/al.png' class="img-circle">
 
                     </div>

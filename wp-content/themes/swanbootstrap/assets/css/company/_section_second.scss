@@ -120,12 +120,17 @@
     }
   }
   .main-staff {
-    img{
+
+    img {
       width: 100%;
     }
 
     margin: 40px 0;
     .partners {
+      .col-xs-4 {
+        min-width: 150px;
+      }
+
       span {
 
         color: #87A3D3;
@@ -136,7 +141,18 @@
 
     .services {
       padding-top: 50px;
-      img{
+      .col-xs-6 {
+
+        text-align: center;
+        img {
+          min-width: 120px;
+        }
+      }
+      .sign {
+        min-width: 120px;
+      }
+
+      img {
         width: 90%;
       }
 
@@ -154,5 +170,128 @@
       }
     }
   }
+}
+
+@media (min-width: 850px) and(max-width: 880px) {
+  #sectionSecond {
+    .container {
+      .main-staff {
+        .services {
+          width: 100%;
+          min-width: 355px;
+          .president-photo{
+            width: 100%;
+            img{
+              width: 120px
+            }
+          }
+          .sign {
+            width: 100%;
+            min-width: 180px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 500px) and(max-width: 850px) {
+  #sectionSecond {
+    .container {
+      .first-row {
+        .col-xs-1 {
+          width: 0px;
+        }
+      }
+    }
+  }
+  #sectionSecond {
+    .container {
+      .main-staff {
+        .services {
+          .president-photo{
+            width: 100%;
+            img{
+              width: 120px
+            }
+          }
+          .sign {
+            width: 100%;
+            min-width: 180px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 100px) and(max-width: 500px) {
+  #sectionSecond {
+    .first-row {
+      width: 100%;
+      margin: 0px;
+      .services {
+
+        margin: 0 auto;
+        width: 100%;
+        min-width: 251px;
+        background: url("../../img/marker_blue.png") bottom repeat-x;
+        h1 {
+          text-align: center;
+        }
+        ul {
+          width: 250px;
+          margin: 0 auto;
+        }
+      }
+      .customers {
+        width: 100%;
+      }
+
+    }
+    #greensection {
+      .col-xs-6 {
+        min-width: 251px;
+        width: 100%;
+        padding-bottom: 30px;
+        h1 {
+          font-size: getSize(24);
+          text-align: center;
+        }
+      }
+    }
+    .main-staff {
+      .services {
+        min-width: 251px;
+        width: 100%;
+        background: url("../../img/marker_blue.png") bottom repeat-x;
+      }
+      .col-xs-7 {
+        width: 100%;
+      }
+
+    }
+
+  }
+  #sectionSecond {
+    .container {
+      .main-staff {
+        .services {
+          .president-photo{
+            width: 100%;
+            img{
+              width: 120px
+            }
+          }
+          .sign {
+            width: 100%;
+            min-width: 180px;
+          }
+        }
+      }
+    }
+  }
+
 }
 

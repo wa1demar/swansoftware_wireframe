@@ -13,19 +13,19 @@
 <footer id="mainFooter">
     <?php wp_footer()?>
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6 title logo-footer">
+        <div class="row footer-row">
+            <div class="col-sm-4 col-md-6 col-lg-6 title logo-footer">
             <div class="logo-container">
-                <h1>SWAN</h1>
+                <h1 id= 'first-h'>SWAN</h1>
 
                 <div class="title-item">
                     <h2>SOFTWARE</h2>
 
-                    <h2>SOLUTIONS</h2>
+                    <h2 id= 'second-h'>SOLUTIONS</h2>
                 </div>
             </div>
             </div>
-            <div class="col-lg-4 direct-contact-footer">
+            <div class="col-md-4 col-sm-4 col-lg-4 direct-contact-footer">
                 <address>
                     <ul>
                         <li>Direct Contacts:</li>
@@ -36,7 +36,7 @@
                     </ul>
                 </address>
             </div>
-            <div class="col-lg-2 direct-lines-footer">
+            <div class="col-sm-3 col-md-2 col-lg-2  direct-lines-footer">
                 <ul>
                     <li>Direct Lines:</li>
                     <li><b>317-691-3806</b></li>
