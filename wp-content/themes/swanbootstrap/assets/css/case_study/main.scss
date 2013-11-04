@@ -95,6 +95,22 @@
 #sectionThird {
   background: $green_bg;
   padding: 25px 0;
+  position: relative;
+  min-height: 400px;
+
+  .ipad_screen {
+    background: url("../../img/ipad_frame.PNG") left top no-repeat;
+    height: 550px;
+    width: 100%;
+    position: absolute;
+    top: -110px;
+
+    img {
+      position: absolute;
+      top: 83px;
+      left: 81px;
+    }
+  }
 
   h1 {
     color: #ffffff;
@@ -140,7 +156,7 @@
 }
 
 #sectionFourth {
-  padding: 50px 0;
+  padding: 100px 0 50px 0;
   background: url("../../img/marker_blue.png") top center repeat-y;
 
   .tech {

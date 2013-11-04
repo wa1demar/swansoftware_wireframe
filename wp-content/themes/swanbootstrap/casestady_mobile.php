@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Case Study Mobile
+ * Template Name: Case Study IOS
  *
  * Created by PhpStorm.
  * @author: waldemar
@@ -20,38 +20,56 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <img class="logo" src="<?php bloginfo('template_directory') ?>/assets/pics/just1word.png">
+                        <?php if (get_field('logo') != ""):?>
+                            <img class="logo" src="<?=get_field('logo') ?>">
+                        <?php else: ?>
+                            <h1><?php the_title()?></h1>
+                        <?php endif; ?>
 
-                        <h1>Free Bible App for iPhone</h1>
+                        <h1><?=get_field('description')?></h1>
                         <article>
                             <p>Just1Word's Bible app now has 1.5 million downloads. Its Catolic Bible is #4 and its NIV
                                 translation is the #1 online version of the most popular Bible translation among nearly
                                 1000 competitors!</p>
                         </article>
                     </div>
+                    <?php if (get_field('phone_images') != ""): ?>
+                        <?php
+                        $imgs = array();
+                        $dom = new domDocument;
+                        $dom->loadHTML(get_field('phone_images'));
+                        $dom->preserveWhiteSpace = false;
+                        $images = $dom->getElementsByTagName('img');
+                        foreach ($images as $image) {
+                            array_push($imgs, $image->getAttribute('src'));
+                        }
+                        ?>
                     <div class="col-lg-6">
                         <div class="phone_screen">
-                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <div id="carousel-example-generic" class="carousel slide" >
                                 <ol class="carousel-indicators">
-                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                    <?php if (count($imgs) > 0): ?>
+                                       <?php for ($i = 0; $i < count($imgs); $i++): ?>
+                                            <li data-target="#carousel-example-generic" data-slide-to="<?=$i ?>" class="<?php if ($i == 0) echo("active")?>"></li>
+                                        <?php endfor ?>
+
+                                    <?php endif ?>
                                 </ol>
                                 <div class="carousel-inner">
-                                    <div class="item active">
-                                        <img src="<?php bloginfo('template_directory') ?>/assets/pics/j1w.png">
+                                    <?php if (count($imgs) > 0): ?>
+                                        <?php for ($i = 0; $i < count($imgs); $i++): ?>
+                                    <div class="item <?php if ($i == 0) echo("active")?>">
+                                        <img src="<?= $imgs[$i]?>">
                                     </div>
-                                    <div class="item ">
-                                        <img src="<?php bloginfo('template_directory') ?>/assets/pics/j1w.png">
-                                    </div>
-                                    <div class="item ">
-                                        <img src="<?php bloginfo('template_directory') ?>/assets/pics/j1w.png">
-                                    </div>
+                                        <?php endfor ?>
+
+                                    <?php endif ?>
                                 </div>
 
                             </div>
                         </div>
                     </div>
+                    <?php endif ?>
                 </div>
             </div>
         </div>
@@ -60,24 +78,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 rounded">
-
-                    <img class="left" src="<?php bloginfo('template_directory') ?>/assets/pics/jr1.png">
+                    <?php if (get_field('customer_need_image') != ""): ?>
+                    <img class="left" src="<?=get_field("customer_need_image")?>">
+                    <?php endif ?>
                     <article>
                         <section class="left">
                             <h1>Customer Need</h1>
-
-                            <p>Customer wanted a customized Bible app for both phone and tablet, as well as a responsive
-                                website. They also wanted a site that was simple, intuitive, and very clean.</p>
+                            <?php if (get_field('customer_need_text') != ""): ?>
+                                <?=get_field("customer_need_text")?>
+                            <?php endif ?>
                         </section>
 
                     </article>
-                    <img src="<?php bloginfo('template_directory') ?>/assets/pics/jr1.png" class="right">
+                    <?php if (get_field('solution_image') != ""): ?>
+                        <img class="right" src="<?=get_field("solution_image")?>">
+                    <?php endif ?>
                     <section class="right">
                         <h1>Solution</h1>
 
-                        <p>Solution Swan designed a responsive, a unicue UI and mobile applications for both iOS and
-                            Android Then we designed, tested, and successfully completed the QA Apple approval and
-                            customer support process for Just1Word's mobile app</p>
+                        <?php if (get_field('solution_text') != ""): ?>
+                            <?=get_field("solution_text")?>
+                        <?php endif ?>
                     </section>
 
                 </div>
@@ -88,25 +109,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-
+                    <div class="ipad_screen">
+                        <img src="<?=get_field('ipad_screen') ?>">
+                    </div>
                 </div>
+
                 <div class="col-lg-6">
                     <h1>Related Services</h1>
-                    <section class="mobile">
+                    <?php
+                        $serv = array(
+                            "mobile" => "Mobile Development",
+                            "staff" => "Staff Augmentation",
+                            "custom" => "Custom Application Development",
+                            "design" => "Design"
+                        );
+                    ?>
+                    <?php foreach (get_field('services') as $key => $value):?>
+                    <section class="<?=$value ?>">
                         <a href="#">
-                            Mobile Development
+                            <?= $serv[$value]?>
                         </a>
                     </section>
-                    <section class="custom">
-                        <a href="#">
-                            Custom Application Development
-                        </a>
-                    </section>
-                    <section class="design">
-                        <a href="#">
-                            Design
-                        </a>
-                    </section>
+                    <?php endforeach ?>
+
                 </div>
             </div>
         </div>
@@ -116,22 +141,13 @@
             <div class="row">
                 <div class="col-lg-6 tech">
                     <h1>Used technologies</h1>
-                    <img src="<?php bloginfo('template_directory') ?>/assets/pics/tech_6.png">
-                    <img src="<?php bloginfo('template_directory') ?>/assets/pics/tech_5.png">
-                    <img src="<?php bloginfo('template_directory') ?>/assets/pics/tech_4.png">
-                    <img src="<?php bloginfo('template_directory') ?>/assets/pics/tech_3.png">
+                    <?=get_field('technologies') ?>
                 </div>
                 <div class="col-lg-6 test">
                     <h1>Testimonials</h1>
                     <blockquote>
-                        <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                            mobile
-                            device.
-                            Download the Bible app or go to the mobile site to explore the Bible
-                            with
-                            fully
-                            formatted text, red letters and SmartSearch</p>
-                        <h3>John DOE, J1W</h3>
+                        <?=get_field('testimonials') ?>
+                        <h3><?=get_field('name') ?></h3>
                     </blockquote>
                 </div>
             </div>

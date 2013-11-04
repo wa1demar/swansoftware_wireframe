@@ -76,7 +76,19 @@
 
 #sectionThird {
   background: #64898c;
-  padding: 25px 0; }
+  padding: 25px 0;
+  position: relative;
+  min-height: 400px; }
+  #sectionThird .ipad_screen {
+    background: url("../../img/ipad_frame.PNG") left top no-repeat;
+    height: 550px;
+    width: 100%;
+    position: absolute;
+    top: -110px; }
+    #sectionThird .ipad_screen img {
+      position: absolute;
+      top: 83px;
+      left: 81px; }
   #sectionThird h1 {
     color: #ffffff; }
   #sectionThird section {
@@ -101,7 +113,7 @@
         font-size: 2.625rem; }
 
 #sectionFourth {
-  padding: 50px 0;
+  padding: 100px 0 50px 0;
   background: url("../../img/marker_blue.png") top center repeat-y; }
   #sectionFourth .tech {
     padding: 0 5% 0; }
