@@ -3,6 +3,7 @@ $gray_bg: #2f3738;
 $blue_soft: #98b1da;
 $blue: #6699FF;
 $white: #f4feff;
+$green_bg: #64898c;
 
 @font-face {
   font-family: "Open Sans";
@@ -38,4 +39,8 @@ $default_font: "Open Sans Light";
 
 @function getSize($pt) {
   @return (($pt * 100%) / 10.5%) + 0%;
+}
+
+@function getRSize($px) {
+  @return (($px * 1.4rem) / 16) + 0rem;
 }

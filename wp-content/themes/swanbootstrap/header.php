@@ -33,6 +33,8 @@
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/company/main.css"/>
     <?php elseif (is_page_template('media.php')): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/welcome/main.css"/>
+    <?php elseif (is_page_template('casestady_mobile.php')): ?>
+        <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/case_study/main.css"/>
     <?php elseif (is_single()): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/blog_page/main.css"/>
     <?php else: ?>

@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../../fonts/OpenSans-Light.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../../fonts/OpenSans-Bold.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Italic";
+  src: url("../../fonts/OpenSans-Italic.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Semibold";
+  src: url("../../fonts/OpenSans-Semibold.ttf"); }
+
+@font-face {
+  font-family: "Recetrac Bold";
+  src: url("../../fonts/BARAKB.TTF"); }
+
+#sectionFirst {
+  padding: 0 0 40px 0; }
+  #sectionFirst .dark-background {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 0; }
+    #sectionFirst .dark-background h1 {
+      color: #ffffff;
+      font-size: 2.1875rem;
+      font-weight: bold;
+      margin-bottom: 20px; }
+    #sectionFirst .dark-background article p {
+      font-size: 1.75rem;
+      color: #ffffff; }
+    #sectionFirst .dark-background .phone_screen {
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      height: 600px;
+      top: -70px;
+      background: url("../../img/iphone_bg.png") top no-repeat; }
+      #sectionFirst .dark-background .phone_screen .carousel-indicators {
+        bottom: -200px; }
+        #sectionFirst .dark-background .phone_screen .carousel-indicators li {
+          background: #98b1da;
+          border: 1px solid #6699ff; }
+          #sectionFirst .dark-background .phone_screen .carousel-indicators li.active {
+            background: #455664; }
+      #sectionFirst .dark-background .phone_screen .carousel-inner {
+        top: 90px;
+        left: 170px;
+        width: 195px; }
+
+#sectionSecond .rounded {
+  background: #f4feff;
+  padding: 120px 0 50px 0;
+  overflow: hidden; }
+  #sectionSecond .rounded img.left {
+    float: left;
+    padding: 0 20px 0 0; }
+  #sectionSecond .rounded img.right {
+    float: right;
+    padding: 0 0px 0 20px; }
+  #sectionSecond .rounded section {
+    padding: 50px 0; }
+    #sectionSecond .rounded section.left {
+      text-align: left; }
+    #sectionSecond .rounded section.right {
+      text-align: right; }
+    #sectionSecond .rounded section h1 {
+      font-size: 2.45rem;
+      padding: 10px 0; }
+
+#sectionThird {
+  background: #64898c;
+  padding: 25px 0;
+  position: relative;
+  min-height: 400px; }
+  #sectionThird .ipad_screen {
+    background: url("../../img/ipad_frame.PNG") left top no-repeat;
+    height: 550px;
+    width: 100%;
+    position: absolute;
+    top: -110px; }
+    #sectionThird .ipad_screen img {
+      position: absolute;
+      top: 83px;
+      left: 81px; }
+  #sectionThird h1 {
+    color: #ffffff; }
+  #sectionThird section {
+    padding: 20px 0; }
+    #sectionThird section.mobile {
+      background: url("../../img/service1_115x100.png") left center no-repeat;
+      background-size: 14%; }
+    #sectionThird section.staff {
+      background: url("../../img/service2_115x100.png") left center no-repeat;
+      background-size: 14%; }
+    #sectionThird section.custom {
+      background: url("../../img/service3_115x100.png") left center no-repeat;
+      background-size: 14%; }
+    #sectionThird section.design {
+      background: url("../../img/service4_115x100.png") left center no-repeat;
+      background-size: 14%; }
+    #sectionThird section {
+      padding-left: 70px;
+      line-height: 200%; }
+      #sectionThird section a {
+        color: #ffffff;
+        font-size: 2.625rem; }
+
+#sectionFourth {
+  padding: 100px 0 50px 0;
+  background: url("../../img/marker_blue.png") top center repeat-y; }
+  #sectionFourth .tech {
+    padding: 0 5% 0; }
+    #sectionFourth .tech img {
+      padding: 10px; }
+  #sectionFourth .test {
+    padding: 0 0 0 5%; }
+    #sectionFourth .test h1 {
+      margin: 0 auto; }
+  #sectionFourth blockquote p {
+    font-style: italic; }

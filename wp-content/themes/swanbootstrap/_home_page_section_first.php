@@ -136,4 +136,11 @@
 
     </div>
 </div>
-<div class="team text-center" ><a style='color: #ffffff; font-size: 270%;background-size: contain;background: url("<?php bloginfo('template_directory') ?>/assets/img/right-arrow2.png") right center no-repeat; padding-right: 55px ' href="<?= get_permalink( get_page_by_title( 'Company' ) )?>">Meet Our Superhero Team</a> </div>
+<div class="team text-center" >
+    <a style='color: #ffffff;
+        font-size: 270%;
+        background-size: contain;
+        background: url("<?php bloginfo('template_directory') ?>/assets/img/right-arrow2.png") right center no-repeat;
+        padding-right: 55px '
+       href="<?= get_permalink( get_page_by_title( 'Company' ) )?>">Meet Our Superhero Team</a>
+</div>

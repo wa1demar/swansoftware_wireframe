@@ -93,7 +93,7 @@
                     <?php $cli = get_posts(
                         array(
                             'category__in' => get_cat_ID('Clients'),
-                            'numberposts' => 100,
+                            'numberposts' => 12,
                         )
                     );?>
                     <?php if (count($cli) > 0): ?>
@@ -112,7 +112,7 @@
                     <?php $tec = get_posts(
                         array(
                             'category__in' => get_cat_ID('Technologies'),
-                            'numberposts' => 100,
+                            'numberposts' => 12,
                         )
                     );?>
                     <?php if (count($tec) > 0): ?>
