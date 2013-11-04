@@ -55,18 +55,18 @@
         <div class="container">
             <div class='row'>
                <div class='col-sm-12 text-center'>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_1.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_2.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_3.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_4.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_1.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_2.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_3.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_4.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_1.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_2.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_3.png"/></a>
-                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/tech_4.png"/></a>
+                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/pics/tech_1.png"/></a>
+                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/pics/tech_2.png"/></a>
+                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/pics/tech_3.png"/></a>
+                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/pics/tech_4.png"/></a>
+                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/pics/tech_1.png"/></a>
+                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/pics/tech_2.png"/></a>
+                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/pics/tech_3.png"/></a>
+                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/pics/tech_4.png"/></a>
+                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/pics/tech_1.png"/></a>
+                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/pics/tech_2.png"/></a>
+                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/pics/tech_3.png"/></a>
+                    <a href="#"><img src="<?php bloginfo('template_directory') ?>/pics/tech_4.png"/></a>
                     <!--<a href="#"><img src="assets/img/tech_5.png"/></a><-->
                     <!--<a href="#"><img src="assets/img/tech_6.png"/></a>-->
                 </div>

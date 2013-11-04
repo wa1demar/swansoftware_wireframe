@@ -29,6 +29,29 @@
                                 1000 competitors!</p>
                         </article>
                     </div>
+                    <div class="col-lg-6">
+                        <div class="phone_screen">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="<?php bloginfo('template_directory') ?>/assets/pics/j1w.png">
+                                    </div>
+                                    <div class="item ">
+                                        <img src="<?php bloginfo('template_directory') ?>/assets/pics/j1w.png">
+                                    </div>
+                                    <div class="item ">
+                                        <img src="<?php bloginfo('template_directory') ?>/assets/pics/j1w.png">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -62,29 +85,62 @@
         </div>
     </div>
     <div id="sectionThird">
-        <div class="row">
-            <div class="col-lg-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
 
+                </div>
+                <div class="col-lg-6">
+                    <h1>Related Services</h1>
+                    <section class="mobile">
+                        <a href="#">
+                            Mobile Development
+                        </a>
+                    </section>
+                    <section class="custom">
+                        <a href="#">
+                            Custom Application Development
+                        </a>
+                    </section>
+                    <section class="design">
+                        <a href="#">
+                            Design
+                        </a>
+                    </section>
+                </div>
             </div>
-            <div class="col-lg-4">
-                <h1>Related Services</h1>
-                <section class="mobile">
-                    <a href="#">
-                        Mobile Development
-                    </a>
-                </section>
-                <section class="custom">
-                    <a href="#">
-                        Custom Application Development
-                    </a>
-                </section>
-                <section class="design">
-                    <a href="#">
-                        Design
-                    </a>
-                </section>
+        </div>
+    </div>
+    <div id="sectionFourth">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 tech">
+                    <h1>Used technologies</h1>
+                    <img src="<?php bloginfo('template_directory') ?>/assets/pics/tech_6.png">
+                    <img src="<?php bloginfo('template_directory') ?>/assets/pics/tech_5.png">
+                    <img src="<?php bloginfo('template_directory') ?>/assets/pics/tech_4.png">
+                    <img src="<?php bloginfo('template_directory') ?>/assets/pics/tech_3.png">
+                </div>
+                <div class="col-lg-6 test">
+                    <h1>Testimonials</h1>
+                    <blockquote>
+                        <p>Now you can get Bible anytime, anywhere on your iPhone or other
+                            mobile
+                            device.
+                            Download the Bible app or go to the mobile site to explore the Bible
+                            with
+                            fully
+                            formatted text, red letters and SmartSearch</p>
+                        <h3>John DOE, J1W</h3>
+                    </blockquote>
+                </div>
             </div>
         </div>
     </div>
 <?php endwhile; endif; ?>
 <?php get_footer() ?>
+<script>
+$('.carousel').carousel({
+interval: 5000
+})
+</script>
