@@ -21,7 +21,7 @@
       }
     }
 
-    .phone_screen {
+    .ios_phone_screen {
       position: absolute;
       z-index: 10;
       width: 100%;
@@ -48,6 +48,40 @@
         width: 195px;
       }
     }
+
+    .android_phone_screen {
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      height: 500px;
+      top: -40px;
+      background: url("../../img/android_phone.png") top no-repeat;
+      background-size: contain;
+
+      .carousel-indicators {
+        bottom: -150px;
+
+        li {
+          background: $blue_soft;
+          border: 1px solid $blue;
+
+          &.active {
+            background: #455664;
+          }
+        }
+      }
+
+      .carousel-inner {
+        top: 28px;
+        left: 120px;
+        width: 245px;
+
+        img {
+          width: 245px;
+          height: 400px;
+        }
+      }
+    }
   }
 }
 
@@ -61,11 +95,13 @@
       &.left {
         float: left;
         padding: 0 20px 0 0;
+        width: 254px;
       }
 
       &.right {
         float: right;
         padding: 0 0px 0 20px;
+        width: 254px;
       }
 
     }
@@ -75,9 +111,11 @@
 
       &.left {
         text-align: left;
+
       }
 
       &.right {
+
         text-align: right;
       }
 
@@ -109,6 +147,24 @@
       position: absolute;
       top: 83px;
       left: 81px;
+    }
+
+
+  }
+
+  .tablet_screen {
+    background: url("../../img/android_tablet.png") left top no-repeat;
+    height: 550px;
+    width: 100%;
+    position: absolute;
+    top: -70px;
+
+    img {
+      position: absolute;
+      top: 35px;
+      left: 98px;
+      width: 238px;
+      height: 417px;
     }
   }
 

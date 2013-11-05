@@ -35,24 +35,46 @@
     #sectionFirst .dark-background article p {
       font-size: 1.75rem;
       color: #ffffff; }
-    #sectionFirst .dark-background .phone_screen {
+    #sectionFirst .dark-background .ios_phone_screen {
       position: absolute;
       z-index: 10;
       width: 100%;
       height: 600px;
       top: -70px;
       background: url("../../img/iphone_bg.png") top no-repeat; }
-      #sectionFirst .dark-background .phone_screen .carousel-indicators {
+      #sectionFirst .dark-background .ios_phone_screen .carousel-indicators {
         bottom: -200px; }
-        #sectionFirst .dark-background .phone_screen .carousel-indicators li {
+        #sectionFirst .dark-background .ios_phone_screen .carousel-indicators li {
           background: #98b1da;
           border: 1px solid #6699ff; }
-          #sectionFirst .dark-background .phone_screen .carousel-indicators li.active {
+          #sectionFirst .dark-background .ios_phone_screen .carousel-indicators li.active {
             background: #455664; }
-      #sectionFirst .dark-background .phone_screen .carousel-inner {
+      #sectionFirst .dark-background .ios_phone_screen .carousel-inner {
         top: 90px;
         left: 170px;
         width: 195px; }
+    #sectionFirst .dark-background .android_phone_screen {
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      height: 500px;
+      top: -40px;
+      background: url("../../img/android_phone.png") top no-repeat;
+      background-size: contain; }
+      #sectionFirst .dark-background .android_phone_screen .carousel-indicators {
+        bottom: -150px; }
+        #sectionFirst .dark-background .android_phone_screen .carousel-indicators li {
+          background: #98b1da;
+          border: 1px solid #6699ff; }
+          #sectionFirst .dark-background .android_phone_screen .carousel-indicators li.active {
+            background: #455664; }
+      #sectionFirst .dark-background .android_phone_screen .carousel-inner {
+        top: 28px;
+        left: 120px;
+        width: 245px; }
+        #sectionFirst .dark-background .android_phone_screen .carousel-inner img {
+          width: 245px;
+          height: 400px; }
 
 #sectionSecond .rounded {
   background: #f4feff;
@@ -60,10 +82,12 @@
   overflow: hidden; }
   #sectionSecond .rounded img.left {
     float: left;
-    padding: 0 20px 0 0; }
+    padding: 0 20px 0 0;
+    width: 254px; }
   #sectionSecond .rounded img.right {
     float: right;
-    padding: 0 0px 0 20px; }
+    padding: 0 0px 0 20px;
+    width: 254px; }
   #sectionSecond .rounded section {
     padding: 50px 0; }
     #sectionSecond .rounded section.left {
@@ -89,6 +113,18 @@
       position: absolute;
       top: 83px;
       left: 81px; }
+  #sectionThird .tablet_screen {
+    background: url("../../img/android_tablet.png") left top no-repeat;
+    height: 550px;
+    width: 100%;
+    position: absolute;
+    top: -70px; }
+    #sectionThird .tablet_screen img {
+      position: absolute;
+      top: 35px;
+      left: 98px;
+      width: 238px;
+      height: 417px; }
   #sectionThird h1 {
     color: #ffffff; }
   #sectionThird section {
