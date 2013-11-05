@@ -45,7 +45,7 @@
                         <div class="col-lg-6">
                             <div class="android_phone_screen">
                                 <div id="myCarousel" class="carousel slide" >
-                                    <ol class="carousel-indicators">
+                                    <ol class="carousel-indicators myIndicators">
                                         <?php if (count($imgs) > 0): ?>
                                             <?php for ($i = 0; $i < count($imgs); $i++): ?>
                                                 <li data-target="#myCarousel" data-slide-to="<?=$i ?>" class="<?php if ($i == 0) echo("active")?>"></li>

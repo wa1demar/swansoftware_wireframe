@@ -45,7 +45,7 @@
                     <div class="col-lg-6">
                         <div class="ios_phone_screen">
                             <div id="carousel-example-generic" class="carousel slide" >
-                                <ol class="carousel-indicators">
+                                <ol class="carousel-indicators myIndicators">
                                     <?php if (count($imgs) > 0): ?>
                                        <?php for ($i = 0; $i < count($imgs); $i++): ?>
                                             <li data-target="#carousel-example-generic" data-slide-to="<?=$i ?>" class="<?php if ($i == 0) echo("active")?>"></li>

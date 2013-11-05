@@ -227,14 +227,29 @@
         #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .marketing:hover a {
           background: none;
           color: #ffffff; }
-  #sliderSecond .android {
+  #sliderSecond #mobile .android {
     background: url("../../img/android_phone.png") top center no-repeat;
     height: 700px;
     position: relative; }
-    #sliderSecond .android img {
-      top: 30px;
-      left: 30px;
-      position: absolute; }
+    #sliderSecond #mobile .android img {
+      top: 25px;
+      left: 61px;
+      position: absolute;
+      width: 183px;
+      height: 300px; }
+  #sliderSecond #mobile .iphone {
+    background: url("../../img/iphone_bg.png") top center no-repeat;
+    height: 700px;
+    position: absolute;
+    right: 10px;
+    z-index: 1000;
+    width: 240px; }
+    #sliderSecond #mobile .iphone img {
+      top: 25px;
+      left: 61px;
+      position: absolute;
+      width: 183px;
+      height: 300px; }
   #sliderSecond #mobile .carousel-control, #sliderSecond #staff .carousel-control, #sliderSecond #app .carousel-control, #sliderSecond #design .carousel-control {
     background: none; }
 

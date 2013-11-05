@@ -76,7 +76,7 @@
 
                 </div>
             </div>
-            <div class="row ">
+            <div class="row myIndicators">
 
                 <div class="box col-sm-3 col-xs-6 text-center">
                     <a href="#" data-target="#carousel-example-generic" data-slide-to="1" class="active">
