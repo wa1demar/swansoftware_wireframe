@@ -117,11 +117,11 @@
 
             </div>
 
-            <div class=' col-xs-7'>
+            <div class=' col-xs-7  partners-container'>
                 <div class='row'>
-                    <div class='col-xs-1'>
+                    <div class='col-xs-1 blank-coll'>
                     </div>
-                    <div class='col-xs-11'>
+                    <div class='col-xs-11 full-coll '>
                         <div class='row partners'>
                             <div class='col-xs-12'>
                                 <h1>Partners</h1>
@@ -130,13 +130,13 @@
 
                                 <img src='<?php bloginfo('template_directory') ?>/assets/pics/fel.png'
                                      class="img-circle">
-
+                                <br />
                                 <span>Felix Shalit</span>
                             </div>
                             <div class='col-xs-4 text-center'>
                                 <img src='<?php bloginfo('template_directory') ?>/assets/pics/anker.png'
                                      class="img-circle">
-
+                                <br />
                                 <span>Terry Anker</span>
 
 
@@ -144,6 +144,7 @@
                             <div class='col-xs-4 text-center'>
                                 <img src='<?php bloginfo('template_directory') ?>/assets/pics/alla.png'
                                      class="img-circle">
+                                <br />
 
                                 <span>Alla Morozov</span>
 
@@ -196,7 +197,10 @@
             <div class='col-xs-12 text-center '>
                 <h1>Our Team of Superheroes</h1>
             </div>
-            <?php addImages(get_cat_ID( 'Developer' ))?>
+
+                <?php addImages(get_cat_ID( 'Developer' ))?>
+
+
     </div>
 </div>
 

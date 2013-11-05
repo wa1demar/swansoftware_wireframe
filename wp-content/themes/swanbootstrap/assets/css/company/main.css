@@ -139,26 +139,67 @@
 
 @media (min-width: 850px) and (max-width: 880px) {
   #sectionSecond .container .main-staff .services {
+    min-width: 200px;
     width: 100%;
-    min-width: 355px; }
+    padding-top: 0px;
+    padding-bottom: 20px;
+    background: url("../../img/marker_blue.png") bottom repeat-x; }
     #sectionSecond .container .main-staff .services .president-photo {
       width: 100%; }
       #sectionSecond .container .main-staff .services .president-photo img {
         width: 120px; }
     #sectionSecond .container .main-staff .services .sign {
       width: 100%;
-      min-width: 180px; } }
+      min-width: 180px; }
+  #sectionSecond .container .main-staff .partners-container {
+    padding-top: 20px;
+    width: 100%; }
+    #sectionSecond .container .main-staff .partners-container .blank-coll {
+      width: 0px; }
+    #sectionSecond .container .main-staff .partners-container .partners {
+      text-align: center; }
+      #sectionSecond .container .main-staff .partners-container .partners h1 {
+        text-align: center; }
+      #sectionSecond .container .main-staff .partners-container .partners .col-xs-4.text-center {
+        float: none;
+        display: inline-block;
+        vertical-align: top; }
+        #sectionSecond .container .main-staff .partners-container .partners .col-xs-4.text-center img {
+          width: 120px; } }
 @media (min-width: 500px) and (max-width: 850px) {
   #sectionSecond .container .first-row .col-xs-1 {
     width: 0px; }
 
-  #sectionSecond .container .main-staff .services .president-photo {
-    width: 100%; }
-    #sectionSecond .container .main-staff .services .president-photo img {
-      width: 120px; }
-  #sectionSecond .container .main-staff .services .sign {
+  #sectionSecond .container .main-staff .services {
+    min-width: 200px;
     width: 100%;
-    min-width: 180px; } }
+    padding-top: 0px;
+    padding-bottom: 20px;
+    background: url("../../img/marker_blue.png") bottom repeat-x; }
+    #sectionSecond .container .main-staff .services .president-photo {
+      width: 100%; }
+      #sectionSecond .container .main-staff .services .president-photo img {
+        width: 120px; }
+    #sectionSecond .container .main-staff .services .sign {
+      width: 100%;
+      min-width: 180px; }
+  #sectionSecond .container .main-staff .partners-container {
+    padding-top: 20px;
+    width: 100%; }
+    #sectionSecond .container .main-staff .partners-container .blank-coll {
+      width: 0px; }
+    #sectionSecond .container .main-staff .partners-container .full-coll {
+      width: 100%; }
+    #sectionSecond .container .main-staff .partners-container .partners {
+      text-align: center; }
+      #sectionSecond .container .main-staff .partners-container .partners h1 {
+        text-align: center; }
+      #sectionSecond .container .main-staff .partners-container .partners .col-xs-4.text-center {
+        float: none;
+        display: inline-block;
+        vertical-align: top; }
+        #sectionSecond .container .main-staff .partners-container .partners .col-xs-4.text-center img {
+          width: 120px; } }
 @media (min-width: 100px) and (max-width: 500px) {
   #sectionSecond .first-row {
     width: 100%;
@@ -174,7 +215,10 @@
         width: 250px;
         margin: 0 auto; }
     #sectionSecond .first-row .customers {
+      padding-top: 20px;
       width: 100%; }
+      #sectionSecond .first-row .customers h1 {
+        text-align: center; }
   #sectionSecond #greensection .col-xs-6 {
     min-width: 251px;
     width: 100%;
@@ -189,13 +233,37 @@
   #sectionSecond .main-staff .col-xs-7 {
     width: 100%; }
 
-  #sectionSecond .container .main-staff .services .president-photo {
-    width: 100%; }
-    #sectionSecond .container .main-staff .services .president-photo img {
-      width: 120px; }
-  #sectionSecond .container .main-staff .services .sign {
+  #sectionSecond .container .main-staff .services {
+    min-width: 200px;
     width: 100%;
-    min-width: 180px; } }
+    padding-top: 0px;
+    padding-bottom: 20px;
+    background: url("../../img/marker_blue.png") bottom repeat-x; }
+    #sectionSecond .container .main-staff .services .president-photo {
+      width: 100%; }
+      #sectionSecond .container .main-staff .services .president-photo img {
+        width: 120px; }
+    #sectionSecond .container .main-staff .services .sign {
+      width: 100%;
+      min-width: 180px; }
+  #sectionSecond .container .main-staff .partners-container {
+    padding-top: 20px;
+    width: 100%; }
+    #sectionSecond .container .main-staff .partners-container .blank-coll {
+      width: 0px; }
+    #sectionSecond .container .main-staff .partners-container .full-coll {
+      width: 100%;
+      padding: 0px; }
+    #sectionSecond .container .main-staff .partners-container .partners {
+      text-align: center; }
+      #sectionSecond .container .main-staff .partners-container .partners h1 {
+        text-align: center; }
+      #sectionSecond .container .main-staff .partners-container .partners .col-xs-4.text-center {
+        float: none;
+        display: inline-block;
+        vertical-align: top; }
+        #sectionSecond .container .main-staff .partners-container .partners .col-xs-4.text-center img {
+          width: 120px; } }
 #sectionThird {
   border-top: 2px solid #C4D1D1;
   padding: 20px 0;
@@ -207,9 +275,17 @@
   #sectionThird .managers span {
     color: #87A3D3;
     font-size: 133.33333%; }
-  #sectionThird .row.managers .col-xs-2.text-center {
-    min-width: 150px; }
+  #sectionThird .row.managers {
+    text-align: center; }
+    #sectionThird .row.managers .col-xs-2.text-center {
+      float: none;
+      display: inline-block;
+      vertical-align: top;
+      min-width: 150px; }
 
+@media (min-width: 100px) and (max-width: 880px) {
+  #sectionThird h1 {
+    text-align: center; } }
 #sectionFouth .sliders {
   margin: 0 0; }
   #sectionFouth .sliders .col-xs-4 {
@@ -220,15 +296,29 @@
 #sectionFifth {
   padding: 40px 0; }
   #sectionFifth .superheroes {
+    text-align: center;
     font-size: 123.80952%; }
     #sectionFifth .superheroes h1 {
       padding-bottom: 40px; }
     #sectionFifth .superheroes .col-xs-2 {
       min-width: 150px;
       min-height: 250px;
-      margin: 10px 0; }
+      margin: 10px 0;
+      float: none;
+      display: inline-block;
+      vertical-align: top; }
       #sectionFifth .superheroes .col-xs-2 span {
         color: #87A3D3;
         font-size: 133.33333%; }
       #sectionFifth .superheroes .col-xs-2 img {
         width: 100%; }
+
+@media (min-width: 100px) and (max-width: 650px) {
+  #sectionFifth .superheroes h1 {
+    font-size: 266.66667%; } }
+@media (min-width: 370px) and (max-width: 500px) {
+  #sectionFifth .superheroes h1 {
+    font-size: 190.47619%; } }
+@media (min-width: 200px) and (max-width: 370px) {
+  #sectionFifth .superheroes h1 {
+    font-size: 161.90476%; } }

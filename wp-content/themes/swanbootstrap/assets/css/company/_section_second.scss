@@ -177,17 +177,45 @@
     .container {
       .main-staff {
         .services {
+          min-width: 200px;
           width: 100%;
-          min-width: 355px;
-          .president-photo{
+
+          padding-top: 0px;
+          padding-bottom: 20px;
+          background: url("../../img/marker_blue.png") bottom repeat-x;
+          .president-photo {
+
             width: 100%;
-            img{
-              width: 120px
+            img {
+              width: 120px;
             }
           }
           .sign {
             width: 100%;
             min-width: 180px;
+          }
+        }
+        .partners-container {
+          padding-top: 20px;
+          width: 100%;
+          .blank-coll {
+            width: 0px;
+          }
+          .partners {
+            text-align: center;
+            h1 {
+              text-align: center;
+            }
+            .col-xs-4.text-center {
+              float: none;
+              display: inline-block;
+              vertical-align: top;
+
+              img {
+                width: 120px;
+              }
+            }
+
           }
         }
       }
@@ -210,15 +238,48 @@
     .container {
       .main-staff {
         .services {
-          .president-photo{
+          min-width: 200px;
+          width: 100%;
+
+          padding-top: 0px;
+          padding-bottom: 20px;
+          background: url("../../img/marker_blue.png") bottom repeat-x;
+          .president-photo {
+
             width: 100%;
-            img{
-              width: 120px
+            img {
+              width: 120px;
             }
           }
           .sign {
             width: 100%;
             min-width: 180px;
+          }
+        }
+        .partners-container {
+          padding-top: 20px;
+          width: 100%;
+          .blank-coll {
+            width: 0px;
+          }
+          .full-coll {
+            width: 100%;
+          }
+          .partners {
+            text-align: center;
+            h1 {
+              text-align: center;
+            }
+            .col-xs-4.text-center {
+              float: none;
+              display: inline-block;
+              vertical-align: top;
+
+              img {
+                width: 120px;
+              }
+            }
+
           }
         }
       }
@@ -246,7 +307,11 @@
         }
       }
       .customers {
+        padding-top: 20px;
         width: 100%;
+        h1 {
+          text-align: center;
+        }
       }
 
     }
@@ -278,15 +343,49 @@
     .container {
       .main-staff {
         .services {
-          .president-photo{
+          min-width: 200px;
+          width: 100%;
+
+          padding-top: 0px;
+          padding-bottom: 20px;
+          background: url("../../img/marker_blue.png") bottom repeat-x;
+          .president-photo {
+
             width: 100%;
-            img{
-              width: 120px
+            img {
+              width: 120px;
             }
           }
           .sign {
             width: 100%;
             min-width: 180px;
+          }
+        }
+        .partners-container {
+          padding-top: 20px;
+          width: 100%;
+          .blank-coll {
+            width: 0px;
+          }
+          .full-coll {
+            width: 100%;
+            padding: 0px;
+          }
+          .partners {
+            text-align: center;
+            h1 {
+              text-align: center;
+            }
+            .col-xs-4.text-center {
+              float: none;
+              display: inline-block;
+              vertical-align: top;
+
+              img {
+                width: 120px;
+              }
+            }
+
           }
         }
       }

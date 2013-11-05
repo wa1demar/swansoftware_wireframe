@@ -1,6 +1,7 @@
 #sectionFifth{
   padding: 40px 0;
   .superheroes{
+    text-align: center;
 
     font-size: getSize(13);                   //TODO
     h1{
@@ -10,6 +11,9 @@
       min-width: 150px;
       min-height: 250px;
       margin:  10px 0;
+      float: none;
+      display: inline-block;
+      vertical-align: top;
       span{
         color: #87A3D3;
         font-size: getSize(14);                   //TODO
@@ -22,4 +26,35 @@
   }
 
 
+}
+@media (min-width: 100px) and(max-width: 650px) {
+  #sectionFifth{
+    .superheroes{
+      h1{
+        font-size: getSize(28);
+      }
+    }
+
+
+  }
+
+
+}
+@media (min-width: 370px) and(max-width: 500px) {
+  #sectionFifth{
+    .superheroes{
+      h1{
+        font-size: getSize(20);
+      }
+    }
+  }
+}
+@media (min-width: 200px) and(max-width: 370px) {
+  #sectionFifth{
+    .superheroes{
+      h1{
+        font-size: getSize(17);
+      }
+    }
+  }
 }
