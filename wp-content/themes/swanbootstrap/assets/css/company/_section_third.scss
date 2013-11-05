@@ -17,9 +17,24 @@
     }
   }
   .row.managers{
+    text-align: center;
     .col-xs-2.text-center{
+      float: none;
+      display: inline-block;
+      vertical-align: top;
       min-width: 150px;
     }
 
   }
+}
+@media (min-width: 100px) and(max-width: 880px) {
+  #sectionThird{
+    h1{
+     text-align: center;
+    }
+
+
+  }
+
+
 }
