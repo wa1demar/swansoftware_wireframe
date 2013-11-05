@@ -227,29 +227,60 @@
         #sliderSecond .sliderSecondInner div ul.secondSidebarMenu .marketing:hover a {
           background: none;
           color: #ffffff; }
+  #sliderSecond .sliderSecondInner a.blue_btn {
+    z-index: 500; }
   #sliderSecond #mobile .android {
     background: url("../../img/android_phone.png") top center no-repeat;
     height: 700px;
-    position: relative; }
-    #sliderSecond #mobile .android img {
+    position: absolute;
+    width: 370px;
+    right: 10px; }
+    #sliderSecond #mobile .android img.screen {
       top: 25px;
-      left: 61px;
+      left: 95px;
       position: absolute;
       width: 183px;
       height: 300px; }
+    #sliderSecond #mobile .android img.c1 {
+      position: absolute;
+      top: 5%;
+      right: -5%;
+      z-index: -200;
+      width: 200px;
+      height: 200px; }
+    #sliderSecond #mobile .android img.c2 {
+      position: absolute;
+      top: 20%;
+      right: -5%;
+      z-index: -300;
+      width: 200px;
+      height: 200px; }
   #sliderSecond #mobile .iphone {
     background: url("../../img/iphone_bg.png") top center no-repeat;
-    height: 700px;
+    height: 800px;
     position: absolute;
-    right: 10px;
-    z-index: 1000;
-    width: 240px; }
+    right: 15px;
+    width: 400px; }
     #sliderSecond #mobile .iphone img {
-      top: 25px;
-      left: 61px;
+      top: 90px;
+      left: 127px;
       position: absolute;
-      width: 183px;
-      height: 300px; }
+      width: 197px;
+      height: 345px; }
+    #sliderSecond #mobile .iphone img.c1 {
+      position: absolute;
+      top: 15%;
+      left: 60%;
+      z-index: -300;
+      width: 200px;
+      height: 200px; }
+    #sliderSecond #mobile .iphone img.c2 {
+      position: absolute;
+      top: 30%;
+      left: 60%;
+      z-index: -200;
+      width: 200px;
+      height: 200px; }
   #sliderSecond #mobile .carousel-control, #sliderSecond #staff .carousel-control, #sliderSecond #app .carousel-control, #sliderSecond #design .carousel-control {
     background: none; }
 

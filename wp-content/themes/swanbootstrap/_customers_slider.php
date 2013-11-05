@@ -34,117 +34,119 @@
 <div class="col-lg-9 tab-content">
 <div class="tab-pane active" id="mobile">
 
-<?php
-$args = array(
-    'category__in' => get_cat_ID("Mobile Development"),
-    'posts_per_page' => '10',
-);
-$the_query = new WP_Query( $args );
-?>
+    <?php
+    $args = array(
+        'category__in' => get_cat_ID("Case Study Mobile"),
+        'posts_per_page' => '10',
+    );
+    $the_query = new WP_Query($args);
+    ?>
 
     <div id="carousel-example-1-1" class="carousel1 slide">
 
 
         <div class="carousel-inner">
-            <?php $i = 0;?>
+            <?php $i = 0; ?>
             <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
-            <div class="row  item <?php if ($i == 0) echo("active")?>">
-                <div class="col-lg-7">
-                    <article>
-                        <header>
-                            <hgroup>
-                                <h1><?php the_title()?></h1>
+                <div class="row  phoneBG item <?php if ($i == 0) echo("active") ?>">
+                    <div class="col-lg-7">
+                        <article>
+                            <header>
+                                <hgroup>
+                                    <h1><?php the_title() ?></h1>
 
-                                <h2><?=get_field('description')?></h2>
-                            </hgroup>
-                            <article>
-                                <?php the_content()?>
-                            </article>
-                            <blockquote>
-                                <?=get_field('testimonials')?>
+                                    <h2><?= get_field('description') ?></h2>
+                                </hgroup>
+                                <article>
+                                    <?php the_content() ?>
+                                </article>
+                                <blockquote>
+                                    <?= get_field('testimonials') ?>
 
-                                <h3><?=get_field('name')?></h3>
-                            </blockquote>
+                                    <h3><?= get_field('name') ?></h3>
+                                </blockquote>
 
-                        </header>
+                            </header>
 
-                        <a href="<?=get_permalink() ?>" class="blue_btn">Case Study</a>
+                            <a href="<?= get_permalink() ?>" class="blue_btn">Case Study</a>
 
-                    </article>
+                        </article>
 
-                </div>
-                <?php
-                $c = "";
-                if (in_category('Case Study Android')) {
-                    $c = 'android';
-                } elseif (in_category('Case Study IOS')) {
-                    $c = 'iphone';
-                }
-                ?>
-                <div class="col-lg-5 <?=$c?>">
+                    </div>
                     <?php
+                    $c = "";
+                    if (in_category('Case Study Android')) {
+                        $c = 'android';
+                    } elseif (in_category('Case Study IOS')) {
+                        $c = 'iphone';
+                    }
+                    ?>
+                    <div class="col-lg-5 <?= $c ?>">
+                        <?php
                         $dom = new domDocument;
                         $dom->loadHTML(get_field('phone_images'));
                         $dom->preserveWhiteSpace = false;
                         $images = $dom->getElementsByTagName('img');
                         $img = $images->item(0)->getAttribute('src');
                         ?>
-                    <img src="<?=$img?>">
+                        <img class="screen" src="<?= $img ?>">
+                        <img class="c1 img-circle" src="<?= get_field('customer_need_image') ?>">
+                        <img class="c2 img-circle" src="<?= get_field('solution_image') ?>">
+                    </div>
                 </div>
-            </div>
                 <?php $i++; ?>
             <?php endwhile; endif; ?>
 
         </div>
     </div>
-<!--     Controls -->
-        <a class="left carousel-control" href="#carousel-example-1-1" data-slide="prev">
-                    <img src="<?php bloginfo('template_directory') ?>/assets/img/left-arrow.png"
-                         style="top: 50%; position: absolute; left: 2%">
+    <!--     Controls -->
+    <a class="left carousel-control" href="#carousel-example-1-1" data-slide="prev">
+        <img src="<?php bloginfo('template_directory') ?>/assets/img/left-arrow.png"
+             style="top: 50%; position: absolute; left: 2%">
 
-        </a>
-        <a class="right carousel-control" href="#carousel-example-1-1" data-slide="next">
-            <img src="<?php bloginfo('template_directory') ?>/assets/img/right-arrow.png"
-                 style="top: 50%; position: absolute; left: 2%">
+    </a>
+    <a class="right carousel-control" href="#carousel-example-1-1" data-slide="next">
+        <img src="<?php bloginfo('template_directory') ?>/assets/img/right-arrow.png"
+             style="top: 50%; position: absolute; left: 2%">
 
-        </a>
+    </a>
 </div>
 <div class="tab-pane " id="staff">
 
     <?php
     $args2 = array(
-        'category__in' => get_cat_ID("Staff Augmentation"),
+        'category__in' => get_cat_ID("Case Study Staff"),
         'posts_per_page' => '100',
     );
-    $the_query2 = new WP_Query( $args2 );
+    $the_query2 = new WP_Query($args2);
     ?>
     <div id="carousel2-generic" class="carousel2 slide">
 
 
         <div class="carousel-inner">
-            <?php $i = 0;?>
+            <?php $i = 0; ?>
             <?php if ($the_query2->have_posts()) : while ($the_query2->have_posts()) : $the_query2->the_post(); ?>
-                <div class="row phoneBG item <?php if ($i == 0) echo("active")?>">
+                <div class="row phoneBG item <?php if ($i == 0) echo("active") ?>">
                     <div class="col-lg-7">
                         <article>
                             <header>
                                 <hgroup>
-                                    <h1><?php the_title()?></h1>
+                                    <h1><?php the_title() ?></h1>
 
-                                    <h2><?=get_field('description')?></h2>
+                                    <h2><?= get_field('description') ?></h2>
                                 </hgroup>
                                 <article>
-                                    <?php the_content()?>
+                                    <?php the_content() ?>
                                 </article>
                                 <blockquote>
-                                    <?=get_field('testimonials')?>
+                                    <?= get_field('testimonials') ?>
 
-                                    <h3><?=get_field('name')?></h3>
+                                    <h3><?= get_field('name') ?></h3>
                                 </blockquote>
 
                             </header>
 
-                            <a href="<?=get_permalink() ?>" class="blue_btn">Case Study</a>
+                            <a href="<?= get_permalink() ?>" class="blue_btn">Case Study</a>
 
                         </article>
 
@@ -170,38 +172,38 @@ $the_query = new WP_Query( $args );
 <div class="tab-pane " id="app">
     <?php
     $args2 = array(
-        'category__in' => get_cat_ID("Custom Application Development"),
+        'category__in' => get_cat_ID("Case Study Custom"),
         'posts_per_page' => '100',
     );
-    $the_query2 = new WP_Query( $args2 );
+    $the_query2 = new WP_Query($args2);
     ?>
 
     <div id="carousel3" class="carousel3 slide">
 
         <div class="carousel-inner">
-            <?php $i = 0;?>
+            <?php $i = 0; ?>
             <?php if ($the_query2->have_posts()) : while ($the_query2->have_posts()) : $the_query2->the_post(); ?>
-                <div class="row phoneBG item <?php if ($i == 0) echo("active")?>">
+                <div class="row phoneBG item <?php if ($i == 0) echo("active") ?>">
                     <div class="col-lg-7">
                         <article>
                             <header>
                                 <hgroup>
-                                    <h1><?php the_title()?></h1>
+                                    <h1><?php the_title() ?></h1>
 
-                                    <h2><?=get_field('description')?></h2>
+                                    <h2><?= get_field('description') ?></h2>
                                 </hgroup>
                                 <article>
-                                    <?php the_content()?>
+                                    <?php the_content() ?>
                                 </article>
                                 <blockquote>
-                                    <?=get_field('testimonials')?>
+                                    <?= get_field('testimonials') ?>
 
-                                    <h3><?=get_field('name')?></h3>
+                                    <h3><?= get_field('name') ?></h3>
                                 </blockquote>
 
                             </header>
 
-                            <a href="<?=get_permalink() ?>" class="blue_btn">Case Study</a>
+                            <a href="<?= get_permalink() ?>" class="blue_btn">Case Study</a>
 
                         </article>
 
@@ -228,38 +230,38 @@ $the_query = new WP_Query( $args );
 <div class="tab-pane " id="design">
     <?php
     $args2 = array(
-        'category__in' => get_cat_ID("Design"),
+        'category__in' => get_cat_ID("Case Study Design"),
         'posts_per_page' => '100',
     );
-    $the_query2 = new WP_Query( $args2 );
+    $the_query2 = new WP_Query($args2);
     ?>
 
     <div id="carousel4" class="carousel4 slide">
 
         <div class="carousel-inner">
-            <?php $i = 0;?>
+            <?php $i = 0; ?>
             <?php if ($the_query2->have_posts()) : while ($the_query2->have_posts()) : $the_query2->the_post(); ?>
-                <div class="row phoneBG item <?php if ($i == 0) echo("active")?>">
+                <div class="row phoneBG item <?php if ($i == 0) echo("active") ?>">
                     <div class="col-lg-7">
                         <article>
                             <header>
                                 <hgroup>
-                                    <h1><?php the_title()?></h1>
+                                    <h1><?php the_title() ?></h1>
 
-                                    <h2><?=get_field('description')?></h2>
+                                    <h2><?= get_field('description') ?></h2>
                                 </hgroup>
                                 <article>
-                                    <?php the_content()?>
+                                    <?php the_content() ?>
                                 </article>
                                 <blockquote>
-                                    <?=get_field('testimonials')?>
+                                    <?= get_field('testimonials') ?>
 
-                                    <h3><?=get_field('name')?></h3>
+                                    <h3><?= get_field('name') ?></h3>
                                 </blockquote>
 
                             </header>
 
-                            <a href="<?=get_permalink() ?>" class="blue_btn">Case Study</a>
+                            <a href="<?= get_permalink() ?>" class="blue_btn">Case Study</a>
 
                         </article>
 
@@ -270,17 +272,17 @@ $the_query = new WP_Query( $args );
 
         </div>
     </div>
-        <!--     Controls -->
-        <a class="left carousel-control" href="#carousel4" data-slide="prev">
-            <img src="<?php bloginfo('template_directory') ?>/assets/img/left-arrow.png"
-                 style="top: 50%; position: absolute; left: 2%">
+    <!--     Controls -->
+    <a class="left carousel-control" href="#carousel4" data-slide="prev">
+        <img src="<?php bloginfo('template_directory') ?>/assets/img/left-arrow.png"
+             style="top: 50%; position: absolute; left: 2%">
 
-        </a>
-        <a class="right carousel-control" href="#carousel4" data-slide="next">
-            <img src="<?php bloginfo('template_directory') ?>/assets/img/right-arrow.png"
-                 style="top: 50%; position: absolute; left: 2%">
+    </a>
+    <a class="right carousel-control" href="#carousel4" data-slide="next">
+        <img src="<?php bloginfo('template_directory') ?>/assets/img/right-arrow.png"
+             style="top: 50%; position: absolute; left: 2%">
 
-        </a>
+    </a>
 </div>
 </div>
 </div>
@@ -288,25 +290,24 @@ $the_query = new WP_Query( $args );
 
 </section>
 <script>
-<!--    $('.carousel1').carousel({-->
-<!--        interval: 5000-->
-<!--    })-->
-<!---->
-<!--    $('.carousel2').carousel({-->
-<!--        interval: 5000-->
-<!--    })-->
-<!---->
-<!--    $('.carousel3').carousel({-->
-<!--        interval: 5000-->
-<!--    })-->
-<!---->
-<!--    $('.carousel4').carousel({-->
-<!--        interval: 5000-->
-<!--    })-->
-<!---->
-    $('.carousel5').carousel({
-        interval: 5000
-    })
+//    $('.carousel1').carousel({
+//        interval: 5000
+//    })
+
+//    $('.carousel2').carousel({
+//        interval: 5000
+//    })
+
+//    $('.carousel3').carousel({
+//        interval: 5000
+//    })
+
+//    $('.carousel4').carousel({
+//        interval: 5000
+//    })
+    //    $('.carousel5').carousel({
+    //        interval: 5000
+    //    })
 </script>
 
 

@@ -77,7 +77,7 @@
             <div class="row">
                 <div class="col-lg-12 rounded">
                     <?php if (get_field('customer_need_image') != ""): ?>
-                    <img class="left" src="<?=get_field("customer_need_image")?>">
+                    <img class="left img-circle" src="<?=get_field("customer_need_image")?>">
                     <?php endif ?>
                     <article>
                         <section class="left">
@@ -89,7 +89,7 @@
 
                     </article>
                     <?php if (get_field('solution_image') != ""): ?>
-                        <img class="right" src="<?=get_field("solution_image")?>">
+                        <img class="right img-circle" src="<?=get_field("solution_image")?>">
                     <?php endif ?>
                     <section class="right">
                         <h1>Solution</h1>

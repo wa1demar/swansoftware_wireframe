@@ -82,12 +82,16 @@
   overflow: hidden; }
   #sectionSecond .rounded img.left {
     float: left;
-    padding: 0 20px 0 0;
-    width: 254px; }
+    margin: 0 20px 0 0;
+    width: 254px;
+    height: 254px;
+    border: 5px #64898c solid; }
   #sectionSecond .rounded img.right {
     float: right;
-    padding: 0 0px 0 20px;
-    width: 254px; }
+    margin: 0 0px 0 20px;
+    width: 254px;
+    height: 254px;
+    border: 5px #64898c solid; }
   #sectionSecond .rounded section {
     padding: 50px 0; }
     #sectionSecond .rounded section.left {
