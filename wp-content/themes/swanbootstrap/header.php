@@ -73,9 +73,9 @@
 
                     <div class="col-xs-12 ">
                         <hgroup>
-                            <h1><a href="<?= get_home_url() ?>">SWAN</a></h1>
+                            <h1 id = 'sign-with-logo'><a href="<?= get_home_url() ?>">SWAN</a></h1>
 
-                            <h2><a href="
+                            <h2 idv = "central-sign"><a href="
                             <?= get_home_url() ?>">SOFTWARE SOLUTIONS</a></h2>
                         </hgroup>
                     </div>

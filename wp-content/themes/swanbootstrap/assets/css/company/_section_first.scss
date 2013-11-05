@@ -1,5 +1,5 @@
 #sliderFirst {
-  background: url("../../pics/technology.png") repeat-x top;
+
   padding:  10px 0 40px 0;
 
   .darck-background {
@@ -21,4 +21,21 @@
     }
 
   }
+}
+@media (min-width: 100px) and(max-width: 850px){
+  #sliderFirst {
+    .darck-background {
+      h1{
+        font-size: getSize(30);
+
+      }
+
+
+    }
+
+
+
+  }
+
+
 }
