@@ -9,7 +9,9 @@
   .topBannerLinks {
     width: 100%;
     position: absolute;
+
     bottom: 2%;
+
     right: 0;
     z-index: 1000;
     padding: 10px 0 20px 0;
@@ -29,7 +31,9 @@
     .col-sm-3.col-xs-6.text-center {
       min-width: 140px;
       min-height: 200px;
+
       font-size: getSize(16); //TODO
+
       .round_image {
         width: 120px;
         height: 120px;
@@ -89,12 +93,133 @@
           font-family: $default_font;
           font-weight: normal;
 
-          image {
 
-          }
         }
       }
 
     }
   }
+  p.speech {
+    //z-index: 1000;
+    padding: 5px;
+    position: relative;
+    width: 300px;
+    height: 90px;
+    text-align: left;
+    font-size: 152%;
+    background-color: #fff;
+    //border: 8px solid #666;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 8px #888;
+    -moz-box-shadow: 4px 4px 8px #888;
+    box-shadow: 4px 4px 8px #888;
+    span{
+      font-size: 120%;
+      font-weight:  bold;
+      color: #7793C0;
+
+    }
+
+  }
+  p.speech:before {
+    background: url("../../img/cloud_tail.png") center top no-repeat;
+    content: ' ';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    top: 90px;
+
+  }
+
+  // design speech
+  #design_link {
+    position: absolute;
+    right: 30%;
+    top: 15%;
+  }
+  #design-container {
+    display: none;
+    position: absolute;
+    right: 28%;
+    top: 0%;
+    p.speech {
+      padding: 5px 2px 5px 15px;
+      width: 280px;
+      height: 90px;
+    }
+
+  }
+  // app speech
+  #app_link {
+    position: absolute;
+    right: 35%;
+    top: 22.6%;
+  }
+  #app-container {
+    display: none;
+    position: absolute;
+    right: 7%;
+    top: 5.8%;
+    p.speech {
+      padding: 10px 2px 10px 15px;
+      width: 300px;
+      height: 100px;
+    }
+    p.speech:before {
+      background: url("../../img/cloud_tail_left.png") center top no-repeat;
+      left: 2px;
+      top: 100px;
+
+    }
+
+  }
+  // staff speech
+  #staff_link {
+    position: absolute;
+    right: 57%;
+    top: 15%;
+  }
+  #staff-container {
+    display: none;
+    position: absolute;
+    left: 16.5%;
+    top: 0%;
+    p.speech {
+      padding: 5px 2px 5px 15px;
+      width: 300px;
+      height: 90px;
+    }
+    p.speech:before {
+      background: url("../../img/cloud_tail_left.png") center top no-repeat;
+      right: 30px;
+      top: 90px;
+   }
+  }
+  // mobile speech
+  #mobile_link {
+    position: absolute;
+    left: 22%;
+    top: 15%;
+  }
+  #mobile-container {
+    display: none;
+    position: absolute;
+    left: 21%;
+    top: 0%;
+    p.speech {
+      padding: 5px 2px 5px 15px;
+      width: 350px;
+      height: 90px;
+    }
+    p.speech:before {
+      background: url("../../img/cloud_tail_left.png") center top no-repeat;
+      left: 8px;
+      top: 90px;
+
+    }
+  }
+
 }

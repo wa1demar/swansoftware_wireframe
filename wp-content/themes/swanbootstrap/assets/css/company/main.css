@@ -23,7 +23,6 @@
   src: url("../../fonts/BARAKB.TTF"); }
 
 #sliderFirst {
-  background: url("../../pics/technology.png") repeat-x top;
   padding: 10px 0 40px 0; }
   #sliderFirst .darck-background {
     background: rgba(0, 0, 0, 0.5);
@@ -38,6 +37,9 @@
       color: #ffffff;
       font-size: 142.85714%; }
 
+@media (min-width: 100px) and (max-width: 850px) {
+  #sliderFirst .darck-background h1 {
+    font-size: 285.71429%; } }
 #sectionSecond {
   padding: 40px 0; }
   #sectionSecond h1 {
@@ -111,11 +113,19 @@
     margin: 40px 0; }
     #sectionSecond .main-staff img {
       width: 100%; }
+    #sectionSecond .main-staff .partners .col-xs-4 {
+      min-width: 150px; }
     #sectionSecond .main-staff .partners span {
       color: #87A3D3;
       font-size: 171.42857%; }
     #sectionSecond .main-staff .services {
       padding-top: 50px; }
+      #sectionSecond .main-staff .services .col-xs-6 {
+        text-align: center; }
+        #sectionSecond .main-staff .services .col-xs-6 img {
+          min-width: 120px; }
+      #sectionSecond .main-staff .services .sign {
+        min-width: 120px; }
       #sectionSecond .main-staff .services img {
         width: 90%; }
       #sectionSecond .main-staff .services .sign {
@@ -127,6 +137,65 @@
           color: #87A3D3;
           font-size: 171.42857%; }
 
+@media (min-width: 850px) and (max-width: 880px) {
+  #sectionSecond .container .main-staff .services {
+    width: 100%;
+    min-width: 355px; }
+    #sectionSecond .container .main-staff .services .president-photo {
+      width: 100%; }
+      #sectionSecond .container .main-staff .services .president-photo img {
+        width: 120px; }
+    #sectionSecond .container .main-staff .services .sign {
+      width: 100%;
+      min-width: 180px; } }
+@media (min-width: 500px) and (max-width: 850px) {
+  #sectionSecond .container .first-row .col-xs-1 {
+    width: 0px; }
+
+  #sectionSecond .container .main-staff .services .president-photo {
+    width: 100%; }
+    #sectionSecond .container .main-staff .services .president-photo img {
+      width: 120px; }
+  #sectionSecond .container .main-staff .services .sign {
+    width: 100%;
+    min-width: 180px; } }
+@media (min-width: 100px) and (max-width: 500px) {
+  #sectionSecond .first-row {
+    width: 100%;
+    margin: 0px; }
+    #sectionSecond .first-row .services {
+      margin: 0 auto;
+      width: 100%;
+      min-width: 251px;
+      background: url("../../img/marker_blue.png") bottom repeat-x; }
+      #sectionSecond .first-row .services h1 {
+        text-align: center; }
+      #sectionSecond .first-row .services ul {
+        width: 250px;
+        margin: 0 auto; }
+    #sectionSecond .first-row .customers {
+      width: 100%; }
+  #sectionSecond #greensection .col-xs-6 {
+    min-width: 251px;
+    width: 100%;
+    padding-bottom: 30px; }
+    #sectionSecond #greensection .col-xs-6 h1 {
+      font-size: 228.57143%;
+      text-align: center; }
+  #sectionSecond .main-staff .services {
+    min-width: 251px;
+    width: 100%;
+    background: url("../../img/marker_blue.png") bottom repeat-x; }
+  #sectionSecond .main-staff .col-xs-7 {
+    width: 100%; }
+
+  #sectionSecond .container .main-staff .services .president-photo {
+    width: 100%; }
+    #sectionSecond .container .main-staff .services .president-photo img {
+      width: 120px; }
+  #sectionSecond .container .main-staff .services .sign {
+    width: 100%;
+    min-width: 180px; } }
 #sectionThird {
   border-top: 2px solid #C4D1D1;
   padding: 20px 0;
@@ -138,14 +207,15 @@
   #sectionThird .managers span {
     color: #87A3D3;
     font-size: 133.33333%; }
+  #sectionThird .row.managers .col-xs-2.text-center {
+    min-width: 150px; }
 
 #sectionFouth .sliders {
   margin: 0 0; }
   #sectionFouth .sliders .col-xs-4 {
     padding: 0 0; }
     #sectionFouth .sliders .col-xs-4 img {
-      width: 100%;
-      height: 300px; }
+      width: 100%; }
 
 #sectionFifth {
   padding: 40px 0; }
@@ -154,6 +224,7 @@
     #sectionFifth .superheroes h1 {
       padding-bottom: 40px; }
     #sectionFifth .superheroes .col-xs-2 {
+      min-width: 150px;
       min-height: 250px;
       margin: 10px 0; }
       #sectionFifth .superheroes .col-xs-2 span {
