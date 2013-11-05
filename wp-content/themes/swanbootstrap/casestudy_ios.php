@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Case Study IOS
+ * Template Name Posts: Case Study IOS
  *
  * Created by PhpStorm.
  * @author: waldemar
@@ -28,9 +28,7 @@
 
                         <h1><?=get_field('description')?></h1>
                         <article>
-                            <p>Just1Word's Bible app now has 1.5 million downloads. Its Catolic Bible is #4 and its NIV
-                                translation is the #1 online version of the most popular Bible translation among nearly
-                                1000 competitors!</p>
+                            <?php the_content()?>
                         </article>
                     </div>
                     <?php if (get_field('phone_images') != ""): ?>
@@ -45,9 +43,9 @@
                         }
                         ?>
                     <div class="col-lg-6">
-                        <div class="phone_screen">
+                        <div class="ios_phone_screen">
                             <div id="carousel-example-generic" class="carousel slide" >
-                                <ol class="carousel-indicators">
+                                <ol class="carousel-indicators myIndicators">
                                     <?php if (count($imgs) > 0): ?>
                                        <?php for ($i = 0; $i < count($imgs); $i++): ?>
                                             <li data-target="#carousel-example-generic" data-slide-to="<?=$i ?>" class="<?php if ($i == 0) echo("active")?>"></li>

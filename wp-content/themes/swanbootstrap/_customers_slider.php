@@ -34,149 +34,67 @@
 <div class="col-lg-9 tab-content">
 <div class="tab-pane active" id="mobile">
 
-
+<?php
+$args = array(
+    'category__in' => get_cat_ID("Mobile Development"),
+    'posts_per_page' => '10',
+);
+$the_query = new WP_Query( $args );
+?>
 
     <div id="carousel-example-1-1" class="carousel1 slide">
 
 
         <div class="carousel-inner">
-            <div class="row phoneBG item active">
+            <?php $i = 0;?>
+            <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
+            <div class="row  item <?php if ($i == 0) echo("active")?>">
                 <div class="col-lg-7">
                     <article>
                         <header>
                             <hgroup>
-                                <h1>JUST1.1WORD</h1>
+                                <h1><?php the_title()?></h1>
 
-                                <h2>Free Bible App for iPhone</h2>
+                                <h2><?=get_field('description')?></h2>
                             </hgroup>
-                            <section>
-                                <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                    mobile
-                                    device.
-                                    Download the Bible app or go to the mobile site to explore the Bible
-                                    with
-                                    fully
-                                    formatted text, red letters and SmartSearch</p>
-                            </section>
+                            <article>
+                                <?php the_content()?>
+                            </article>
                             <blockquote>
-                                <p>We are very impressed with the quality of the Swan development team.
-                                    It
-                                    is
-                                    loyal, dedicated, and stellar in delivery.</p>
+                                <?=get_field('testimonials')?>
 
-                                <h3>John DOE, J1W</h3>
+                                <h3><?=get_field('name')?></h3>
                             </blockquote>
 
                         </header>
 
-                        <a href="#" class="blue_btn">Case Study</a>
+                        <a href="<?=get_permalink() ?>" class="blue_btn">Case Study</a>
 
                     </article>
 
                 </div>
-            </div>
-
-            <div class="row phoneBG item ">
-                <div class="col-lg-7">
-                    <article>
-                        <header>
-                            <hgroup>
-                                <h1>JUST1.2WORD</h1>
-
-                                <h2>Free Bible App for iPhone</h2>
-                            </hgroup>
-                            <section>
-                                <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                    mobile
-                                    device.
-                                    Download the Bible app or go to the mobile site to explore the Bible
-                                    with
-                                    fully
-                                    formatted text, red letters and SmartSearch</p>
-                            </section>
-                            <blockquote>
-                                <p>We are very impressed with the quality of the Swan development team.
-                                    It
-                                    is
-                                    loyal, dedicated, and stellar in delivery.</p>
-
-                                <h3>John DOE, J1W</h3>
-                            </blockquote>
-
-                        </header>
-                        <a href="#" class="blue_btn">Case Study</a>
-                    </article>
-
+                <?php
+                $c = "";
+                if (in_category('Case Study Android')) {
+                    $c = 'android';
+                } elseif (in_category('Case Study IOS')) {
+                    $c = 'iphone';
+                }
+                ?>
+                <div class="col-lg-5 <?=$c?>">
+                    <?php
+                        $dom = new domDocument;
+                        $dom->loadHTML(get_field('phone_images'));
+                        $dom->preserveWhiteSpace = false;
+                        $images = $dom->getElementsByTagName('img');
+                        $img = $images->item(0)->getAttribute('src');
+                        ?>
+                    <img src="<?=$img?>">
                 </div>
             </div>
+                <?php $i++; ?>
+            <?php endwhile; endif; ?>
 
-            <div class="row phoneBG item ">
-                <div class="col-lg-7">
-                    <article>
-                        <header>
-                            <hgroup>
-                                <h1>JUST1.3WORD</h1>
-
-                                <h2>Free Bible App for iPhone</h2>
-                            </hgroup>
-                            <section>
-                                <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                    mobile
-                                    device.
-                                    Download the Bible app or go to the mobile site to explore the Bible
-                                    with
-                                    fully
-                                    formatted text, red letters and SmartSearch</p>
-                            </section>
-                            <blockquote>
-                                <p>We are very impressed with the quality of the Swan development team.
-                                    It
-                                    is
-                                    loyal, dedicated, and stellar in delivery.</p>
-
-                                <h3>John DOE, J1W</h3>
-                            </blockquote>
-
-                        </header>
-                        <a href="#" class="blue_btn">Case Study</a>
-                    </article>
-
-                </div>
-            </div>
-
-            <div class="row phoneBG item ">
-                <div class="col-lg-7">
-                    <article>
-                        <header>
-                            <hgroup>
-                                <h1>JUST1.4WORD</h1>
-
-                                <h2>Free Bible App for iPhone</h2>
-                            </hgroup>
-                            <section>
-                                <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                    mobile
-                                    device.
-                                    Download the Bible app or go to the mobile site to explore the Bible
-                                    with
-                                    fully
-                                    formatted text, red letters and SmartSearch</p>
-                            </section>
-                            <blockquote>
-                                <p>We are very impressed with the quality of the Swan development team.
-                                    It
-                                    is
-                                    loyal, dedicated, and stellar in delivery.</p>
-
-                                <h3>John DOE, J1W</h3>
-                            </blockquote>
-
-                        </header>
-                        <a href="#" class="blue_btn">Case Study</a>
-                    </article>
-
-                </div>
-            </div>
         </div>
     </div>
 <!--     Controls -->
@@ -193,148 +111,48 @@
 </div>
 <div class="tab-pane " id="staff">
 
-
+    <?php
+    $args2 = array(
+        'category__in' => get_cat_ID("Staff Augmentation"),
+        'posts_per_page' => '100',
+    );
+    $the_query2 = new WP_Query( $args2 );
+    ?>
     <div id="carousel2-generic" class="carousel2 slide">
 
 
         <div class="carousel-inner">
-            <div class="row phoneBG item active">
-                <div class="col-lg-7">
-                    <article>
-                        <header>
-                            <hgroup>
-                                <h1>JUST2.1WORD</h1>
+            <?php $i = 0;?>
+            <?php if ($the_query2->have_posts()) : while ($the_query2->have_posts()) : $the_query2->the_post(); ?>
+                <div class="row phoneBG item <?php if ($i == 0) echo("active")?>">
+                    <div class="col-lg-7">
+                        <article>
+                            <header>
+                                <hgroup>
+                                    <h1><?php the_title()?></h1>
 
-                                <h2>Free Bible App for iPhone</h2>
-                            </hgroup>
-                            <section>
-                                <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                    mobile
-                                    device.
-                                    Download the Bible app or go to the mobile site to explore the Bible
-                                    with
-                                    fully
-                                    formatted text, red letters and SmartSearch</p>
-                            </section>
-                            <blockquote>
-                                <p>We are very impressed with the quality of the Swan development team.
-                                    It
-                                    is
-                                    loyal, dedicated, and stellar in delivery.</p>
+                                    <h2><?=get_field('description')?></h2>
+                                </hgroup>
+                                <article>
+                                    <?php the_content()?>
+                                </article>
+                                <blockquote>
+                                    <?=get_field('testimonials')?>
 
-                                <h3>John DOE, J1W</h3>
-                            </blockquote>
+                                    <h3><?=get_field('name')?></h3>
+                                </blockquote>
 
-                        </header>
+                            </header>
 
-                        <a href="#" class="blue_btn">Case Study</a>
+                            <a href="<?=get_permalink() ?>" class="blue_btn">Case Study</a>
 
-                    </article>
+                        </article>
 
+                    </div>
                 </div>
-            </div>
+                <?php $i++; ?>
+            <?php endwhile; endif; ?>
 
-            <div class="row phoneBG item ">
-                <div class="col-lg-7">
-                    <article>
-                        <header>
-                            <hgroup>
-                                <h1>JUST2.2WORD</h1>
-
-                                <h2>Free Bible App for iPhone</h2>
-                            </hgroup>
-                            <section>
-                                <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                    mobile
-                                    device.
-                                    Download the Bible app or go to the mobile site to explore the Bible
-                                    with
-                                    fully
-                                    formatted text, red letters and SmartSearch</p>
-                            </section>
-                            <blockquote>
-                                <p>We are very impressed with the quality of the Swan development team.
-                                    It
-                                    is
-                                    loyal, dedicated, and stellar in delivery.</p>
-
-                                <h3>John DOE, J1W</h3>
-                            </blockquote>
-
-                        </header>
-                        <a href="#" class="blue_btn">Case Study</a>
-                    </article>
-
-                </div>
-            </div>
-
-            <div class="row phoneBG item ">
-                <div class="col-lg-7">
-                    <article>
-                        <header>
-                            <hgroup>
-                                <h1>JUST2.3WORD</h1>
-
-                                <h2>Free Bible App for iPhone</h2>
-                            </hgroup>
-                            <section>
-                                <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                    mobile
-                                    device.
-                                    Download the Bible app or go to the mobile site to explore the Bible
-                                    with
-                                    fully
-                                    formatted text, red letters and SmartSearch</p>
-                            </section>
-                            <blockquote>
-                                <p>We are very impressed with the quality of the Swan development team.
-                                    It
-                                    is
-                                    loyal, dedicated, and stellar in delivery.</p>
-
-                                <h3>John DOE, J1W</h3>
-                            </blockquote>
-
-                        </header>
-                        <a href="#" class="blue_btn">Case Study</a>
-                    </article>
-
-                </div>
-            </div>
-
-            <div class="row phoneBG item">
-                <div class="col-lg-7">
-                    <article>
-                        <header>
-                            <hgroup>
-                                <h1>JUST2.4WORD</h1>
-
-                                <h2>Free Bible App for iPhone</h2>
-                            </hgroup>
-                            <section>
-                                <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                    mobile
-                                    device.
-                                    Download the Bible app or go to the mobile site to explore the Bible
-                                    with
-                                    fully
-                                    formatted text, red letters and SmartSearch</p>
-                            </section>
-                            <blockquote>
-                                <p>We are very impressed with the quality of the Swan development team.
-                                    It
-                                    is
-                                    loyal, dedicated, and stellar in delivery.</p>
-
-                                <h3>John DOE, J1W</h3>
-                            </blockquote>
-
-                        </header>
-                        <a href="#" class="blue_btn">Case Study</a>
-                    </article>
-
-                </div>
-            </div>
         </div>
     </div>
     <!--     Controls -->
@@ -350,149 +168,48 @@
     </a>
 </div>
 <div class="tab-pane " id="app">
-
+    <?php
+    $args2 = array(
+        'category__in' => get_cat_ID("Custom Application Development"),
+        'posts_per_page' => '100',
+    );
+    $the_query2 = new WP_Query( $args2 );
+    ?>
 
     <div id="carousel3" class="carousel3 slide">
 
-
         <div class="carousel-inner">
-            <div class="row phoneBG item active">
-                <div class="col-lg-7">
-                    <article>
-                        <header>
-                            <hgroup>
-                                <h1>JUST3.1WORD</h1>
+            <?php $i = 0;?>
+            <?php if ($the_query2->have_posts()) : while ($the_query2->have_posts()) : $the_query2->the_post(); ?>
+                <div class="row phoneBG item <?php if ($i == 0) echo("active")?>">
+                    <div class="col-lg-7">
+                        <article>
+                            <header>
+                                <hgroup>
+                                    <h1><?php the_title()?></h1>
 
-                                <h2>Free Bible App for iPhone</h2>
-                            </hgroup>
-                            <section>
-                                <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                    mobile
-                                    device.
-                                    Download the Bible app or go to the mobile site to explore the Bible
-                                    with
-                                    fully
-                                    formatted text, red letters and SmartSearch</p>
-                            </section>
-                            <blockquote>
-                                <p>We are very impressed with the quality of the Swan development team.
-                                    It
-                                    is
-                                    loyal, dedicated, and stellar in delivery.</p>
+                                    <h2><?=get_field('description')?></h2>
+                                </hgroup>
+                                <article>
+                                    <?php the_content()?>
+                                </article>
+                                <blockquote>
+                                    <?=get_field('testimonials')?>
 
-                                <h3>John DOE, J1W</h3>
-                            </blockquote>
+                                    <h3><?=get_field('name')?></h3>
+                                </blockquote>
 
-                        </header>
+                            </header>
 
-                        <a href="#" class="blue_btn">Case Study</a>
+                            <a href="<?=get_permalink() ?>" class="blue_btn">Case Study</a>
 
-                    </article>
+                        </article>
 
+                    </div>
                 </div>
-            </div>
+                <?php $i++; ?>
+            <?php endwhile; endif; ?>
 
-            <div class="row phoneBG item  ">
-                <div class="col-lg-7">
-                    <article>
-                        <header>
-                            <hgroup>
-                                <h1>JUST3.2WORD</h1>
-
-                                <h2>Free Bible App for iPhone</h2>
-                            </hgroup>
-                            <section>
-                                <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                    mobile
-                                    device.
-                                    Download the Bible app or go to the mobile site to explore the Bible
-                                    with
-                                    fully
-                                    formatted text, red letters and SmartSearch</p>
-                            </section>
-                            <blockquote>
-                                <p>We are very impressed with the quality of the Swan development team.
-                                    It
-                                    is
-                                    loyal, dedicated, and stellar in delivery.</p>
-
-                                <h3>John DOE, J1W</h3>
-                            </blockquote>
-
-                        </header>
-                        <a href="#" class="blue_btn">Case Study</a>
-                    </article>
-
-                </div>
-            </div>
-
-            <div class="row phoneBG item ">
-                <div class="col-lg-7">
-                    <article>
-                        <header>
-                            <hgroup>
-                                <h1>JUST3.3WORD</h1>
-
-                                <h2>Free Bible App for iPhone</h2>
-                            </hgroup>
-                            <section>
-                                <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                    mobile
-                                    device.
-                                    Download the Bible app or go to the mobile site to explore the Bible
-                                    with
-                                    fully
-                                    formatted text, red letters and SmartSearch</p>
-                            </section>
-                            <blockquote>
-                                <p>We are very impressed with the quality of the Swan development team.
-                                    It
-                                    is
-                                    loyal, dedicated, and stellar in delivery.</p>
-
-                                <h3>John DOE, J1W</h3>
-                            </blockquote>
-
-                        </header>
-                        <a href="#" class="blue_btn">Case Study</a>
-                    </article>
-
-                </div>
-            </div>
-
-            <div class="row phoneBG item ">
-                <div class="col-lg-7">
-                    <article>
-                        <header>
-                            <hgroup>
-                                <h1>JUST3.4WORD</h1>
-
-                                <h2>Free Bible App for iPhone</h2>
-                            </hgroup>
-                            <section>
-                                <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                    mobile
-                                    device.
-                                    Download the Bible app or go to the mobile site to explore the Bible
-                                    with
-                                    fully
-                                    formatted text, red letters and SmartSearch</p>
-                            </section>
-                            <blockquote>
-                                <p>We are very impressed with the quality of the Swan development team.
-                                    It
-                                    is
-                                    loyal, dedicated, and stellar in delivery.</p>
-
-                                <h3>John DOE, J1W</h3>
-                            </blockquote>
-
-                        </header>
-                        <a href="#" class="blue_btn">Case Study</a>
-                    </article>
-
-                </div>
-            </div>
         </div>
     </div>
     <!--     Controls -->
@@ -509,147 +226,48 @@
 
 </div>
 <div class="tab-pane " id="design">
-
+    <?php
+    $args2 = array(
+        'category__in' => get_cat_ID("Design"),
+        'posts_per_page' => '100',
+    );
+    $the_query2 = new WP_Query( $args2 );
+    ?>
 
     <div id="carousel4" class="carousel4 slide">
 
-    <div class="carousel-inner">
-        <div class="row phoneBG item active ">
-            <div class="col-lg-7">
-                <article>
-                    <header>
-                        <hgroup>
-                            <h1>JUST4.1WORD</h1>
+        <div class="carousel-inner">
+            <?php $i = 0;?>
+            <?php if ($the_query2->have_posts()) : while ($the_query2->have_posts()) : $the_query2->the_post(); ?>
+                <div class="row phoneBG item <?php if ($i == 0) echo("active")?>">
+                    <div class="col-lg-7">
+                        <article>
+                            <header>
+                                <hgroup>
+                                    <h1><?php the_title()?></h1>
 
-                            <h2>Free Bible App for iPhone</h2>
-                        </hgroup>
-                        <section>
-                            <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                mobile
-                                device.
-                                Download the Bible app or go to the mobile site to explore the Bible
-                                with
-                                fully
-                                formatted text, red letters and SmartSearch</p>
-                        </section>
-                        <blockquote>
-                            <p>We are very impressed with the quality of the Swan development team.
-                                It
-                                is
-                                loyal, dedicated, and stellar in delivery.</p>
+                                    <h2><?=get_field('description')?></h2>
+                                </hgroup>
+                                <article>
+                                    <?php the_content()?>
+                                </article>
+                                <blockquote>
+                                    <?=get_field('testimonials')?>
 
-                            <h3>John DOE, J1W</h3>
-                        </blockquote>
+                                    <h3><?=get_field('name')?></h3>
+                                </blockquote>
 
-                    </header>
+                            </header>
 
-                    <a href="#" class="blue_btn">Case Study</a>
+                            <a href="<?=get_permalink() ?>" class="blue_btn">Case Study</a>
 
-                </article>
+                        </article>
 
-            </div>
-        </div>
+                    </div>
+                </div>
+                <?php $i++; ?>
+            <?php endwhile; endif; ?>
 
-        <div class="row phoneBG item  ">
-            <div class="col-lg-7">
-                <article>
-                    <header>
-                        <hgroup>
-                            <h1>JUST4.2WORD</h1>
-
-                            <h2>Free Bible App for iPhone</h2>
-                        </hgroup>
-                        <section>
-                            <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                mobile
-                                device.
-                                Download the Bible app or go to the mobile site to explore the Bible
-                                with
-                                fully
-                                formatted text, red letters and SmartSearch</p>
-                        </section>
-                        <blockquote>
-                            <p>We are very impressed with the quality of the Swan development team.
-                                It
-                                is
-                                loyal, dedicated, and stellar in delivery.</p>
-
-                            <h3>John DOE, J1W</h3>
-                        </blockquote>
-
-                    </header>
-                    <a href="#" class="blue_btn">Case Study</a>
-                </article>
-
-            </div>
-        </div>
-
-        <div class="row phoneBG item  ">
-            <div class="col-lg-7">
-                <article>
-                    <header>
-                        <hgroup>
-                            <h1>JUST4.3WORD</h1>
-
-                            <h2>Free Bible App for iPhone</h2>
-                        </hgroup>
-                        <section>
-                            <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                mobile
-                                device.
-                                Download the Bible app or go to the mobile site to explore the Bible
-                                with
-                                fully
-                                formatted text, red letters and SmartSearch</p>
-                        </section>
-                        <blockquote>
-                            <p>We are very impressed with the quality of the Swan development team.
-                                It
-                                is
-                                loyal, dedicated, and stellar in delivery.</p>
-
-                            <h3>John DOE, J1W</h3>
-                        </blockquote>
-
-                    </header>
-                    <a href="#" class="blue_btn">Case Study</a>
-                </article>
-
-            </div>
-        </div>
-
-        <div class="row phoneBG item ">
-            <div class="col-lg-7">
-                <article>
-                    <header>
-                        <hgroup>
-                            <h1>JUST4.4WORD</h1>
-
-                            <h2>Free Bible App for iPhone</h2>
-                        </hgroup>
-                        <section>
-                            <p>Now you can get Bible anytime, anywhere on your iPhone or other
-                                mobile
-                                device.
-                                Download the Bible app or go to the mobile site to explore the Bible
-                                with
-                                fully
-                                formatted text, red letters and SmartSearch</p>
-                        </section>
-                        <blockquote>
-                            <p>We are very impressed with the quality of the Swan development team.
-                                It
-                                is
-                                loyal, dedicated, and stellar in delivery.</p>
-
-                            <h3>John DOE, J1W</h3>
-                        </blockquote>
-
-                    </header>
-                    <a href="#" class="blue_btn">Case Study</a>
-                </article>
-
-            </div>
         </div>
     </div>
         <!--     Controls -->
