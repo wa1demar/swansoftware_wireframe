@@ -37,7 +37,7 @@
 <?php
 $args = array(
     'category__in' => get_cat_ID("Mobile Development"),
-    'posts_per_page' => '100',
+    'posts_per_page' => '10',
 );
 $the_query = new WP_Query( $args );
 ?>
@@ -48,7 +48,7 @@ $the_query = new WP_Query( $args );
         <div class="carousel-inner">
             <?php $i = 0;?>
             <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
-            <div class="row phoneBG item <?php if ($i == 0) echo("active")?>">
+            <div class="row  item <?php if ($i == 0) echo("active")?>">
                 <div class="col-lg-7">
                     <article>
                         <header>
@@ -72,6 +72,24 @@ $the_query = new WP_Query( $args );
 
                     </article>
 
+                </div>
+                <?php
+                $c = "";
+                if (in_category('Case Study Android')) {
+                    $c = 'android';
+                } elseif (in_category('Case Study IOS')) {
+                    $c = 'iphone';
+                }
+                ?>
+                <div class="col-lg-5 <?=$c?>">
+                    <?php
+                        $dom = new domDocument;
+                        $dom->loadHTML(get_field('phone_images'));
+                        $dom->preserveWhiteSpace = false;
+                        $images = $dom->getElementsByTagName('img');
+                        $img = $images->item(0)->getAttribute('src');
+                        ?>
+                    <img src="<?=$img?>">
                 </div>
             </div>
                 <?php $i++; ?>
