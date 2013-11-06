@@ -110,12 +110,16 @@
 
     }
 
+
+
     a.blue_btn {
       z-index: 500;
     }
+
   }
 
   #mobile {
+    position: relative;
 
     .android {
       background: url("../../img/android_phone.png") top center no-repeat;
@@ -137,7 +141,7 @@
         position: absolute;
         top: 5%;
         right: -5%;
-        z-index: -200;
+        z-index: -3;
         width: 200px;
         height: 200px;
 
@@ -147,7 +151,7 @@
         position: absolute;
         top: 20%;
         right: -5%;
-        z-index: -300;
+        z-index: -4;
         width: 200px;
         height: 200px;
       }
@@ -159,7 +163,6 @@
       height: 800px;
       position: absolute;
       right: 15px;
-//      z-index: 500;
       width: 400px;
 
       img {
@@ -174,7 +177,7 @@
         position: absolute;
         top: 15%;
         left: 60%;
-        z-index: -300;
+        z-index: -2;
         width: 200px;
         height: 200px;
 
@@ -184,7 +187,7 @@
         position: absolute;
         top: 30%;
         left: 60%;
-        z-index: -200;
+        z-index: -3;
         width: 200px;
         height: 200px;
       }

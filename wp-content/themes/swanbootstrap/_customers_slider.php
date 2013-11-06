@@ -9,7 +9,7 @@
  */
 ?>
 
-<section id="sliderSecond" class="left" data-slide="prev">
+<section id="sliderSecond" >
 
 
 <div class="container sec">

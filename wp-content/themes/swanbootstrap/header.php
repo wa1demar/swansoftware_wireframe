@@ -75,7 +75,7 @@
                         <hgroup>
                             <h1 id = 'sign-with-logo'><a href="<?= get_home_url() ?>">SWAN</a></h1>
 
-                            <h2 idv = "central-sign"><a href="
+                            <h2 id = "central-sign"><a href="
                             <?= get_home_url() ?>">SOFTWARE SOLUTIONS</a></h2>
                         </hgroup>
                     </div>
