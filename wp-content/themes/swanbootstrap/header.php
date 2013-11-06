@@ -33,7 +33,8 @@
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/company/main.css"/>
     <?php elseif (is_page_template('media.php')): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/welcome/main.css"/>
-    <?php elseif (is_post_template('casestudy_ios.php') || is_post_template('casestudy_android.php')): ?>
+    <?php elseif (is_post_template('casestudy_ios.php') || is_post_template('casestudy_android.php')
+        || is_post_template('case_study_staff.php') || is_post_template('casestudy_design.php')): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/case_study/main.css"/>
     <?php elseif (is_single()): ?>
         <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/blog_page/main.css"/>
