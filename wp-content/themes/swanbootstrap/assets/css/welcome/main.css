@@ -87,16 +87,10 @@
         #wrap #sliderFirst .info-section .row.darck-background .text-center.background .welcome-text-phone .title {
           color: #ffffff;
           font-size: 761.90476%;
-          min-height: 110px;
-          padding-top: 10px;
-          padding-right: 0px;
-          width: 53.8%; }
+          min-height: 110px; }
         #wrap #sliderFirst .info-section .row.darck-background .text-center.background .welcome-text-phone .description {
           color: white;
-          font-size: 238.09524%;
-          min-height: 100px;
-          padding-top: 37px;
-          padding-left: 4px; }
+          font-size: 238.09524%; }
         #wrap #sliderFirst .info-section .row.darck-background .text-center.background .welcome-text-phone ul.links li {
           display: inline;
           border-left: 2px solid #269abc; }
@@ -113,6 +107,31 @@
         #wrap #sliderFirst .info-section .row.darck-background .text-center.background .welcome-text-phone ul.links li:first-child {
           border-left: none; }
 
+@media (min-width: 500px) {
+  #wrap #sliderFirst .col-xs-5.description.text-left {
+    padding-top: 37px;
+    padding-left: 4px;
+    min-height: 53.8%; }
+
+  #wrap #sliderFirst .welcome-text-phone .title {
+    padding-top: 10px;
+    padding-right: 0px; } }
+@media (min-width: 320px) and (max-width: 500px) {
+  #wrap #sliderFirst .col-xs-5.description.text-left {
+    width: 100%;
+    padding: 0;
+    min-height: 60px;
+    text-align: center; }
+    #wrap #sliderFirst .col-xs-5.description.text-left br {
+      display: none; }
+
+  #wrap #sliderFirst .welcome-text-phone .title {
+    width: 100%;
+    text-align: center;
+    padding: 0; }
+
+  #wrap #sliderFirst {
+    height: 460px; } }
 #slidersecond {
   padding: 30px 0; }
   #slidersecond .text-section-2 p {
