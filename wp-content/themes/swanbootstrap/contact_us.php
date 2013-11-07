@@ -73,7 +73,7 @@
 
                                             <img src="<?php bloginfo('template_directory') ?>/assets/img/name.png">
                                         </div>
-                                        <div class="col-xs-8"><input type="text" name = 'name_c'
+                                        <div class="col-xs-8"><input type="text" name = 'name_c' required = 'required'
                                                          placeholder="  John Doe...">
                                         </div>
                                     </div>
@@ -84,7 +84,7 @@
                                             <img src="<?php bloginfo('template_directory') ?>/assets/img/email.png">
                                         </div>
                                         <div class="col-xs-8">
-                                            <input type="text" name = 'email_c'
+                                            <input type="email" name = 'email_c' required="required"
                                                    placeholder="johndoe@jahoo.com">
                                         </div>
                                     </div>
@@ -95,7 +95,7 @@
 
                                             <img src="<?php bloginfo('template_directory') ?>/assets/img/comment.png">
                                         </div>
-                                        <div class="col-xs-8"><textarea name = 'comment_c'
+                                        <div class="col-xs-8"><textarea name = 'comment_c' required = 'required'
                                                 placeholder="  Type your messahe here..."></textarea>
                                         </div>
                                     </div>

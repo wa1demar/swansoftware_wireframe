@@ -3,9 +3,54 @@
 <head>
     <title>{{subject}}</title>
 </head>
-<body>
-    {{comment}}
+<body style='width: 100%; margin: 0;'>
+<div class='main-div' style='width: 100%; background: #2F3738; '>
+    <table style="width: 100%">
+        <tr>
+            <td style="width: 70%; padding-left: 3%;"><img src = '{{logo}}'></td>
+            <td style="width: 30%">
+                <div >
+                    <ul style = "list-style: none">
+                        <li ><p style = "color: white; font-weight: bold;  ">317-691-3806</p></li>
+                        <li ><p style = "color: white;">698 Pro-Med Ln, <br/>
+                            Ste 200 Carmel IN 46032;</p></li>
+                    </ul>
+                </div>
+            </td>
 
-    <img src="<?php echo $message->embed('assets/img/children.png'); ?>">
+        </tr>
+    </table>
+</div>
+<div class='main-div' style='width: 100%; background: #99B2DB url("{{blue_bg}}"); '>
+    <div class="social">
+        <ul class="socialLinks horizontal"  style = 'text-align: center; margin: 0px; padding: 10px 0px;' >
+            <li style = 'display: inline; padding: 0px 2px;' ><a href="#"><img src="{{fb}}"/></a></li>
+            <li style = 'display: inline; padding: 0px 2px;' ><a href="#"><img src="{{tw}}"/></a></li>
+            <li style = 'display: inline; padding: 0px 2px;' ><a href="#"><img src="{{gp}}"/></a></li>
+            <li style = 'display: inline; padding: 0px 2px;' ><a href="#"><img src="{{ln}}"/></a></li>
+        </ul>
+    </div>
+    <div class='black-div' style=' background: #2D3441 url("{{gray_bg}}");  margin: 0px 0px;'>
+        <div class='black-div' style=' text-align: center;  padding: 20px 0px;'>
+            <table style="width: 100%; color: white">
+                <tr>
+                    <td >
+                        <sapn style= "font-weight: bold;  "> {{user_name}}(user_email)</sapn> left a message for you:
+                    </td>
+
+                </tr>
+                <tr>
+                    <td style = 'float: left; padding-left: 40px'>{{text}}</td>
+                </tr>
+             </table>
+
+        </div>
+
+    </div>
+    <div class='main-div' style='width: 98%; padding:1% 1%; text-align: right; background: #99B2DB url("{{blue_bg}}"); '>
+        <a style= 'color:white;' href = 'http://www.swansoftwaresolutions.com/'>http://www.swansoftwaresolutions.com/</a>
+    </div>
+
+</div>
 </body>
 </html>
