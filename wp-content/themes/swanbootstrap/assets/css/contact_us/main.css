@@ -70,7 +70,6 @@
       #sliderFirst .info-section .row.dark-background .text-center.background .contact-text-phone .container {
         color: #ffffff; }
         #sliderFirst .info-section .row.dark-background .text-center.background .contact-text-phone .container .text-section .text-left {
-          margin: 0 auto;
           max-width: 300px;
           font-size: 133.33333%; }
           #sliderFirst .info-section .row.dark-background .text-center.background .contact-text-phone .container .text-section .text-left .text {
@@ -97,18 +96,48 @@
             margin-bottom: 15px; }
             #sliderFirst .info-section .row.dark-background .text-center.background .contact-text-phone .container .form-section .row .label {
               font-size: 152.38095%;
-              text-align: right;
               font-weight: normal; }
               #sliderFirst .info-section .row.dark-background .text-center.background .contact-text-phone .container .form-section .row .label img {
                 margin-left: 10px; }
             #sliderFirst .info-section .row.dark-background .text-center.background .contact-text-phone .container .form-section .row input {
               font-size: 152.38095%;
-              width: 100%;
               height: 30px; }
             #sliderFirst .info-section .row.dark-background .text-center.background .contact-text-phone .container .form-section .row textarea {
               font-size: 152.38095%;
-              width: 100%;
               height: 80px; }
+@media (min-width: 605px) {
+  #sliderFirst .col-xs-3.label {
+    text-align: right; }
+  #sliderFirst .col-xs-8 input {
+    width: 100%; }
+  #sliderFirst .col-xs-8 textarea {
+    width: 100%; } }
+@media (min-width: 320px) and (max-width: 837px) {
+  #sliderFirst .col-sm-5.text-section {
+    width: 100%; }
+  #sliderFirst .col-sm-7.form-section {
+    width: 100%; } }
+@media (min-width: 320px) and (max-width: 605px) {
+  #sliderFirst .col-xs-3.label {
+    width: 100%;
+    text-align: left;
+    margin-left: 15%; }
+  #sliderFirst .col-xs-8 {
+    width: 100%; }
+    #sliderFirst .col-xs-8 input {
+      width: 70%;
+      margin: 0 auto; }
+    #sliderFirst .col-xs-8 textarea {
+      width: 70%; } }
+@media (max-width: 510px) {
+  #sliderFirst .col-xs-3.label {
+    margin-left: 1%; }
+  #sliderFirst .col-xs-8 {
+    width: 100%; }
+    #sliderFirst .col-xs-8 input {
+      width: 100%; }
+    #sliderFirst .col-xs-8 textarea {
+      width: 100%; } }
 
 @font-face {
   font-family: "Open Sans";
@@ -137,5 +166,5 @@
 #sliderSecond .section {
   background: #2f3738 url("../../img/map.png") center no-repeat;
   min-height: 500px;
-  min-width: 900px;
+  min-width: 320px;
   background-size: cover; }
