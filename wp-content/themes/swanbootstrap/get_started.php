@@ -13,16 +13,16 @@
 <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/service_form/main.css"/>
 <script>
     $(function(){
-//        $(".check-box-container-form input").attr("checked","checked");
-//        $(".check-box-container-form input").removeAttr('checked');
+        $(".check-box-container-form input").attr("checked","checked");
+        $(".check-box-container-form input").removeAttr('checked');
 
 
-       $(".check-box-container-form input").click(function(){
-           $(".check-box-container-form input").removeAttr('checked');
-           $(this).prop('checked', true);
-
-
-       });
+//       $(".check-box-container-form input").click(function(){
+//           $(".check-box-container-form input").removeAttr('checked');
+//           $(this).prop('checked', true);
+//
+//
+//       });
 
     });
 </script>
@@ -62,24 +62,25 @@
 
 
                         <div class='label-block col-sm-2'>
-                            <input id="demo_box_1" name="service" value="mobile"  value="ie" class="css-checkbox"  checked type="checkbox"/>
+                            <input id="demo_box_1" name="service[0]" value="Mobile Aplication"  value="ie" class="css-checkbox"  checked type="checkbox"/>
                             <label for="demo_box_1" name="demo_lbl_1" class="css-label"> Mobile Aplication</label>
                         </div>
                         <div class='label-block col-sm-2'>
-                            <input id="demo_box_2" name="service" value="staff" class="css-checkbox" type="checkbox"/>
+                            <input id="demo_box_2" name="service[1]" value="Staff Augmentation" class="css-checkbox" type="checkbox"/>
                             <label for="demo_box_2" name="demo_lbl_2" class="css-label"> Staff Augmentation</label>
                         </div>
                         <div class='label-block col-sm-2'>
-                            <input id="demo_box_3" name="service" value="application" class="css-checkbox" type="checkbox"/>
+                            <input id="demo_box_3" name="service[3]" value="Custom Application
+                                Development" class="css-checkbox" type="checkbox"/>
                             <label for="demo_box_3" name="demo_lbl_3" class="css-label"> Custom Application
                                 Development</label>
                         </div>
                         <div class='label-block col-sm-2'>
-                            <input id="demo_box_4" name="service" value="design" class="css-checkbox " type="checkbox"/>
+                            <input id="demo_box_4" name="service[4]" value="Design" class="css-checkbox " type="checkbox"/>
                             <label for="demo_box_4" name="demo_lbl_4" class="css-label design"> Design</label>
                         </div>
                         <div class='label-block col-sm-2'>
-                            <input id="demo_box_5" name="service" value="marketing" class="css-checkbox" type="checkbox"/>
+                            <input id="demo_box_5" name="service[5]" value="Internet Marketing" class="css-checkbox" type="checkbox"/>
                             <label for="demo_box_5" name="demo_lbl_5" class="css-label"> Internet Marketing</label>
 
 

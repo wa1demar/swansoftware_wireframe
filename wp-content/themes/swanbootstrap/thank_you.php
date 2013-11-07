@@ -27,7 +27,7 @@ if (isset($_POST['submit_contact_us'])) {
         $message = Swift_Message::newInstance()
             ->setSubject($name.' left a message for you!')
             ->setFrom(array($email => $name))
-            ->setTo(array('zehelloworld@gmail.com'));
+            ->setTo(array('zehelloworld@gmail.com', 'raskrytisite@gmail.com'));
 
         $tpl = file_get_contents(get_bloginfo('template_directory').'/assets/vendors/contact_us_template.html');
         $tpl = str_replace('{{comment}}', $comment, $tpl);
@@ -73,7 +73,8 @@ if (isset($_POST['submit_contact_us'])) {
     $name = addslashes(strip_tags($_POST['name_n']));
     $email = addslashes(strip_tags($_POST['email_n']));
     $comment = addslashes(strip_tags($_POST['comment_n']));
-    $service = addslashes(strip_tags($_POST['service']));
+    $services = addslashes(strip_tags(implode(", ", $_POST['service'])));
+    $phone = addslashes(strip_tags($_POST['phone_n']));
 
 
     $pattern = '/@/';
@@ -83,13 +84,13 @@ if (isset($_POST['submit_contact_us'])) {
         $message = Swift_Message::newInstance()
             ->setSubject($name.' left a message for you!')
             ->setFrom(array($email => $name))
-            ->setTo(array('zehelloworld@gmail.com'));
+            ->setTo(array('zehelloworld@gmail.com', 'raskrytisite@gmail.com'));
 
-        $tpl = file_get_contents(get_bloginfo('template_directory').'/assets/vendors/services_template.html');
+        $tpl = file_get_contents(get_bloginfo('template_directory').'/assets/vendors/get_started_template.html');
         $tpl = str_replace('{{comment}}', $comment, $tpl);
         $tpl = str_replace('{{user_name}}', $name, $tpl);
         $tpl = str_replace('{{user_email}}', $email, $tpl);
-        $tpl = str_replace('{{service}}', $service, $tpl);
+        $tpl = str_replace('{{service}}', $services, $tpl);
 
         $cid_logo = $message->embed(Swift_Image::fromPath(get_bloginfo('template_directory').'/assets/vendors/images/logo.png'));
         $cid_gray_bg = $message->embed(Swift_Image::fromPath(get_bloginfo('template_directory').'/assets/vendors/images/gray_kocka.png'));
@@ -106,6 +107,7 @@ if (isset($_POST['submit_contact_us'])) {
         $tpl = str_replace('{{tw}}', $cid_tw, $tpl);
         $tpl = str_replace('{{gp}}', $cid_gp, $tpl);
         $tpl = str_replace('{{ln}}', $cid_ln, $tpl);
+        $tpl = str_replace('{{phone}}', $phone, $tpl);
 
 
         $message->setBody($tpl, "text/html");
@@ -142,7 +144,7 @@ if (isset($_POST['submit_contact_us'])) {
         $message = Swift_Message::newInstance()
             ->setSubject($name.' left a message for you!')
             ->setFrom(array($email => $name))
-            ->setTo(array('zehelloworld@gmail.com'));
+            ->setTo(array('zehelloworld@gmail.com', 'raskrytisite@gmail.com'));
 
         $tpl = file_get_contents(get_bloginfo('template_directory').'/assets/vendors/services_template.html');
         $tpl = str_replace('{{comment}}', $comment, $tpl);
@@ -217,7 +219,7 @@ if (isset($_POST['submit_contact_us'])) {
     <div class="row body-row">
         <div class="container">
             <div class="col-lg-12">
-                <h3>Thank you for living massage</h3>
+                <?php the_content()?>
             </div>
         </div>
     </div>
