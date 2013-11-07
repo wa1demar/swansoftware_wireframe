@@ -31,7 +31,10 @@
                     <div class="col-lg-5 headerForm blackTransparent">
                         <h2>Tell us about your <span>Project</span></h2> <!-- TODO: ???-->
 
+
+
                         <form action="<?=esc_url(get_permalink(get_page_by_title('Thank you')))?>"  method = 'POST'>
+                            <input hidden="hidden"  name= 'service_p' type="text" value = <?= the_title() ?>>
                             <div class="row">
                                 <div class="col-lg-4"><label>Name</label></div>
                                 <div class="col-lg-8"><input required="required" name= 'name_p' type="text" placeholder="John Doe..."></div>
