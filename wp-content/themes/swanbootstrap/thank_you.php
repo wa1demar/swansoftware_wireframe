@@ -12,6 +12,8 @@
 <?php
 include 'flash.php';
 
+$tpl = "";
+
 if (isset($_POST['submit_contact_us'])) {
 
     $name = addslashes(strip_tags($_POST['name_c']));
@@ -49,10 +51,10 @@ if (isset($_POST['submit_contact_us'])) {
         $tpl = str_replace('{{ln}}', $cid_ln, $tpl);
 
 
-        $message->setBody(  $tpl);
+        $message->setBody($tpl, "text/html");
 
-        $type = $message->getHeaders()->get('Content-Type');
-        $type->setValue('multipart/mixed');
+//        $type = $message->getHeaders()->get('Content-Type');
+//        $type->setValue('multipart/mixed');
 
         $transport = Swift_MailTransport::newInstance();
 
@@ -178,7 +180,7 @@ if (isset($_POST['submit_contact_us'])) {
     <div class="row">
         <div class="container">
             <div class="col-lg-12">
-                <?php  ?>
+                <?=$tpl ?>
             </div>
         </div>
     </div>

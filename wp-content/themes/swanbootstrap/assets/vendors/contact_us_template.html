@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{subject}}</title>
+<style>
+    a {
+        color: #ffffff;
+    }
+</style>
 </head>
 <body style='width: 100%; margin: 0;'>
 <div class='main-div' style='width: 100%; background: #2F3738; '>
@@ -35,12 +39,12 @@
             <table style="width: 100%; color: white">
                 <tr>
                     <td >
-                        <sapn style= "font-weight: bold;  "> {{user_name}}(user_email)</sapn> left a message for you:
+                        <sapn style= "font-weight: bold;  "> {{user_name}}<{{user_email}}></sapn> left a message for you:
                     </td>
 
                 </tr>
                 <tr>
-                    <td style = 'float: left; padding-left: 40px'>{{text}}</td>
+                    <td style = 'float: left; padding-left: 40px'>{{comment}}</td>
                 </tr>
              </table>
 

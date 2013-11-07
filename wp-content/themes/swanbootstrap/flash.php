@@ -1,17 +1,4 @@
 <?php
-/**
- *
- * Template Name: Flash
- *
- * Created by JetBrains PhpStorm.
- * @author: Viktor
- * @date: 11/6/13
- * 
- */
-?>
-
-<?php
-// make sure sessions work on the page
 session_start();
 
 class Flash {
