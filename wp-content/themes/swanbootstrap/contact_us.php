@@ -33,11 +33,13 @@
                                     <div class='text'>
                                         698 Pro-med Ln, Ste 200 Carmel IN 46032
                                     </div>
-                                    <b>Drect Lines </b>
+                                    <b>Direct Lines </b>
 
                                     <div class='text'>
                                         317-691-3806
                                         <br/>
+                                        317-985-2622
+                                        <br />
                                         317-362-9017
                                     </div>
                                     <b>Email addresses </b>
@@ -77,7 +79,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-xs-3 label">
-                                            Comment
+                                            Comments
 
 
                                             <img src="<?php bloginfo('template_directory') ?>/assets/img/comment.png">
