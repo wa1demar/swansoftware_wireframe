@@ -31,7 +31,9 @@
     </div>
 </div>
 
+
 <div class="col-lg-9 tab-content">
+
 <div class="tab-pane active" id="mobile">
 
     <?php
