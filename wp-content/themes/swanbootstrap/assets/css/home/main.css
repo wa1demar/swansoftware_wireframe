@@ -283,6 +283,32 @@
         z-index: -3;
         width: 200px;
         height: 200px; }
+  #sliderSecond .staff_image {
+    background: url("../../img/mac.png") top center no-repeat;
+    height: 800px;
+    position: absolute;
+    right: 1px;
+    width: 350px;
+    background-size: contain; }
+    #sliderSecond .staff_image img {
+      position: absolute;
+      left: 47px;
+      top: 18px;
+      height: 160px;
+      width: 290px; }
+  #sliderSecond .custom_image {
+    background: url("../../img/macbook.png") top center no-repeat;
+    height: 800px;
+    position: absolute;
+    right: 1px;
+    width: 350px;
+    background-size: contain; }
+    #sliderSecond .custom_image img {
+      position: absolute;
+      left: 42px;
+      top: 12px;
+      height: 165px;
+      width: 266px; }
   #sliderSecond #mobile .carousel-control, #sliderSecond #staff .carousel-control, #sliderSecond #app .carousel-control, #sliderSecond #design .carousel-control {
     background: none; }
 
