@@ -65,8 +65,8 @@ if (isset($_POST['submit_contact_us'])) {
 //
     $message = Swift_Message::newInstance()
         ->setSubject('Your subject')
-        ->setFrom(array('john@doe.com' => 'John Doe'))
-        ->setTo(array('receiver@domain.org', 'other@domain.org' => 'A name'));
+        ->setFrom(array('windwdm@gmail.com' => 'John Doe'))
+        ->setTo(array('zehelloworld@gmail.com', 'viktor.danch@gmail.com' => 'A name'));
        $cid = $message->embed(Swift_Image::fromPath(get_bloginfo('template_directory').'/assets/img/children.png'));
         $message->setBody(
         '<html>' .
@@ -84,10 +84,10 @@ if (isset($_POST['submit_contact_us'])) {
     $type = $message->getHeaders()->get('Content-Type');
     $type->setValue('multipart/mixed');
 
-    $transport = Swift_MailTransport::newInstance();
-//    $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 587)
-//        ->setUsername('viktor.danch')
-//        ->setPassword('a22111989a')
+//    $transport = Swift_MailTransport::newInstance();
+    $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 587)
+        ->setUsername('viktor.danch')
+        ->setPassword('a22111989a');
 
 
 //    $transport = Swift_SendmailTransport::newInstance('/usr/bin/send.sh');
@@ -101,7 +101,7 @@ if (isset($_POST['submit_contact_us'])) {
 
 
 } else {
-    header("Location: " . get_home_url());
+    //header("Location: " . get_home_url());
 }
 
 
