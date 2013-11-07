@@ -1,6 +1,17 @@
 @import "../globals/constants";
 
 #sliderFirst {
+  #contact_us_alert{
+    position: fixed;
+    top: 30px;
+    right: 100px;
+    width: 250px;
+    padding: 20px;
+    background-color: #FCC;
+    border: solid 2px #C66;
+    &:first-letter { text-transform: uppercase; }
+
+  }
 
 
   .info-section {
@@ -40,6 +51,23 @@
             }
             .form-section {
               padding: 10px;
+              input.submit{
+                margin: 0 auto;
+                width: 200px;
+                padding: 7px 20px;
+                font-size: 171.42857%;
+                color: #ffffff;
+
+                font-family: "Open Sans Light";
+                background: #98b1da;
+                font-weight: bold;
+                border: none;
+
+                &:hover {
+                  background: $blue;
+                }
+
+              }
               .row {
                 margin-bottom: 15px;
                 .label {
@@ -60,6 +88,7 @@
                   width: 100%;
                   height: 80px;
                 }
+
               }
             }
           }

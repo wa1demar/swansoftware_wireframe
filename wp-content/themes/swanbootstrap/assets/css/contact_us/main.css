@@ -46,6 +46,16 @@
   font-family: "Recetrac Bold";
   src: url("../../fonts/BARAKB.TTF"); }
 
+#sliderFirst #contact_us_alert {
+  position: fixed;
+  top: 30px;
+  right: 100px;
+  width: 250px;
+  padding: 20px;
+  background-color: #FCC;
+  border: solid 2px #C66; }
+  #sliderFirst #contact_us_alert:first-letter {
+    text-transform: uppercase; }
 #sliderFirst .info-section .row.dark-background {
   width: 100%;
   margin: 0 0 0 0; }
@@ -71,6 +81,18 @@
             font-size: 152.38095%; }
         #sliderFirst .info-section .row.dark-background .text-center.background .contact-text-phone .container .form-section {
           padding: 10px; }
+          #sliderFirst .info-section .row.dark-background .text-center.background .contact-text-phone .container .form-section input.submit {
+            margin: 0 auto;
+            width: 200px;
+            padding: 7px 20px;
+            font-size: 171.42857%;
+            color: #ffffff;
+            font-family: "Open Sans Light";
+            background: #98b1da;
+            font-weight: bold;
+            border: none; }
+            #sliderFirst .info-section .row.dark-background .text-center.background .contact-text-phone .container .form-section input.submit:hover {
+              background: #6699ff; }
           #sliderFirst .info-section .row.dark-background .text-center.background .contact-text-phone .container .form-section .row {
             margin-bottom: 15px; }
             #sliderFirst .info-section .row.dark-background .text-center.background .contact-text-phone .container .form-section .row .label {
