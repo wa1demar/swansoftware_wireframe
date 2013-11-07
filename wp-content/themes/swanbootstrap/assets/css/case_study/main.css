@@ -53,6 +53,49 @@
         top: 90px;
         left: 170px;
         width: 195px; }
+    #sectionFirst .dark-background .mackbook_screen {
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      height: 600px;
+      top: -40px;
+      background: url("../../img/macbook.png") top no-repeat; }
+      #sectionFirst .dark-background .mackbook_screen .carousel-indicators {
+        bottom: -120px; }
+        #sectionFirst .dark-background .mackbook_screen .carousel-indicators li {
+          background: #98b1da;
+          border: 1px solid #6699ff; }
+          #sectionFirst .dark-background .mackbook_screen .carousel-indicators li.active {
+            background: #455664; }
+      #sectionFirst .dark-background .mackbook_screen .carousel-inner {
+        top: 15px;
+        left: 100px;
+        width: 365px; }
+        #sectionFirst .dark-background .mackbook_screen .carousel-inner img {
+          width: 365px;
+          height: 228px; }
+    #sectionFirst .dark-background .mac_screen {
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      height: 600px;
+      top: -40px;
+      background: url("../../img/mac.png") top no-repeat; }
+      #sectionFirst .dark-background .mac_screen .carousel-indicators {
+        bottom: -180px;
+        left: 310px; }
+        #sectionFirst .dark-background .mac_screen .carousel-indicators li {
+          background: #98b1da;
+          border: 1px solid #6699ff; }
+          #sectionFirst .dark-background .mac_screen .carousel-indicators li.active {
+            background: #455664; }
+      #sectionFirst .dark-background .mac_screen .carousel-inner {
+        top: 25px;
+        left: 85px;
+        width: 450px; }
+        #sectionFirst .dark-background .mac_screen .carousel-inner img {
+          width: 100%;
+          height: 255px; }
     #sectionFirst .dark-background .android_phone_screen {
       position: absolute;
       z-index: 10;
@@ -107,6 +150,18 @@
   padding: 25px 0;
   position: relative;
   min-height: 400px; }
+  #sectionThird .people {
+    background: #64898c url("../../img/staff_people.png") bottom left no-repeat;
+    width: 100%;
+    height: 400px; }
+  #sectionThird .design_canvas {
+    width: 456px;
+    height: 304px;
+    background-size: contain; }
+    #sectionThird .design_canvas img {
+      position: absolute;
+      left: -53px;
+      top: -18px; }
   #sectionThird .ipad_screen {
     background: url("../../img/ipad_frame.PNG") left top no-repeat;
     height: 550px;
@@ -117,6 +172,18 @@
       position: absolute;
       top: 83px;
       left: 81px; }
+  #sectionThird .mac_screen {
+    background: url("../../img/mac.png") left top no-repeat;
+    height: 400px;
+    width: 550px;
+    position: absolute;
+    top: -25px; }
+    #sectionThird .mac_screen img {
+      position: absolute;
+      top: 25px;
+      left: 75px;
+      height: 253px;
+      width: 450px; }
   #sectionThird .tablet_screen {
     background: url("../../img/android_tablet.png") left top no-repeat;
     height: 550px;

@@ -118,7 +118,7 @@
     <?php
     $args2 = array(
         'category__in' => get_cat_ID("Case Study Staff"),
-        'posts_per_page' => '100',
+        'posts_per_page' => '10',
     );
     $the_query2 = new WP_Query($args2);
     ?>
@@ -152,6 +152,17 @@
 
                         </article>
 
+                    </div>
+
+                    <div class="col-lg-5 staff_image">
+                        <?php
+                        $dom = new domDocument;
+                        $dom->loadHTML(get_field('phone_images'));
+                        $dom->preserveWhiteSpace = false;
+                        $images = $dom->getElementsByTagName('img');
+                        $img = $images->item(0)->getAttribute('src');
+                        ?>
+                        <img class="screen" src="<?= $img ?>">
                     </div>
                 </div>
                 <?php $i++; ?>
@@ -210,6 +221,16 @@
                         </article>
 
                     </div>
+                    <div class="col-lg-5 custom_image">
+                        <?php
+                        $dom = new domDocument;
+                        $dom->loadHTML(get_field('phone_images'));
+                        $dom->preserveWhiteSpace = false;
+                        $images = $dom->getElementsByTagName('img');
+                        $img = $images->item(0)->getAttribute('src');
+                        ?>
+                        <img class="screen" src="<?= $img ?>">
+                    </div>
                 </div>
                 <?php $i++; ?>
             <?php endwhile; endif; ?>
@@ -267,6 +288,16 @@
 
                         </article>
 
+                    </div>
+                    <div class="col-lg-5 design_image" >
+                        <?php
+                        $dom = new domDocument;
+                        $dom->loadHTML(get_field('phone_images'));
+                        $dom->preserveWhiteSpace = false;
+                        $images = $dom->getElementsByTagName('img');
+                        $img = $images->item(0)->getAttribute('src');
+                        ?>
+                        <img class="screen" src="<?= $img ?>">
                     </div>
                 </div>
                 <?php $i++; ?>
