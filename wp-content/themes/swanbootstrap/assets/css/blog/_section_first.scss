@@ -2,28 +2,26 @@
 
   padding: 10px 0 40px 0;
 
-
   .darck-background {
-    background:  url('../../img/bg-black-transparent.png') no-repeat center  ;
+    background: url('../../img/bg-black-transparent.png') no-repeat center;
     background-position: 99% 50%;
     background-size: 100% 90%;
     margin: 0 0;
     //width: 100%;
     padding: 0 0 0 0;
-    img{
+    img {
       width: 100%;
     }
-    .img-background{
+    .img-background {
       min-height: 400px;
 
-
-
-      font-size: getSize(16);                         // TODO
-      padding-left:  0;
+      font-size: getSize(16);
+      // TODO
+      padding-left: 0;
 
       position: relative;
-      .round-sign{
-        background: url("../../img/link_bg_blue_round.png") no-repeat center ;
+      .round-sign {
+        background: url("../../img/link_bg_blue_round.png") no-repeat center;
         background-size: cover;
         width: 150px;;
         min-height: 150px;
@@ -33,85 +31,117 @@
         z-index: 1000;
         opacity: 0.7;
         color: #ffffff;
-        h1{
+        h1 {
           color: #ffffff;
         }
-        font-size: getSize(13);                     // TODO
+        font-size: getSize(13);
+        // TODO
       }
-      .white-footer{
+      .white-footer {
 
-          color: #647678;
-          height: 40%;
-          margin-right:  8px;
-          margin-left:  2px;
-          background: rgba(255, 255, 255, 0.8);
-          position: absolute;
-          bottom: 5%;
-          padding: 10px 0;
+        color: #647678;
+        height: 40%;
+        margin-right: 8px;
+        margin-left: 2px;
+        background: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        bottom: 5%;
+        padding: 10px 0;
         font-size: getSize(9);
 
         b {
-          font-size: getSize(14);                     // TODO
+          font-size: getSize(14);
+          // TODO
           width: 100%;
           font-family: "Open Sans";
           font-weight: normal;
         }
 
-        a{
+        a {
           margin-top: 10px;
           font-size: getSize(14);
         }
 
-        }
+      }
 
     }
-    h1.title{
+    h1.title {
       margin: 20px 0;
       color: #ffffff;
       padding-bottom: 20px;
-      background: url("../../img/gray_equals.png") bottom repeat-x   ;
+      background: url("../../img/gray_equals.png") bottom repeat-x;
     }
-    .inputs{
+    .inputs {
 
-     b{
-       color: #ffffff;
-       font-size: getSize(20);                    //TODO
-       font-weight: 100;
-       margin-left: 15px ;
+      b {
+        color: #ffffff;
+        font-size: getSize(20);
+        //TODO
+        font-weight: 100;
+        margin-left: 15px;
 
-    }
-      input{
+      }
+      input {
         border-radius: initial;
         background-color: #3D4955;
-        color: #566E96;
+        color: $blue_soft;
+
         border: none;
         margin-top: 5px;
         margin-bottom: 30px;
+
       }
-      .input1{
+      .input1 {
         padding-right: 0px;
       }
-      .input_submit{
+      .input_submit {
         background-color: #6699FF;
         color: #ffffff;
+
         border: none;
         margin-top: 5px;
         border-radius: initial
+
+      }
+      #serch-form{
+        margin-top:3px;
+        display: inline-block;
+        width: 80%;
+        float: left;
+
+      }
+      button.submit {
+        height: 34px;
+        margin-top: 3px;
+        width: 19%;
+        padding: 7px 20px;
+        font-size: 171.42857%;
+        color: #ffffff;
+        display: inline-block;
+        vertical-align: top;
+
+        font-family: "Open Sans Light";
+        background: #3D4955;
+        font-weight: bold;
+        border: none;
+        //
+        img{
+          margin-bottom: 4px;
+        }
+        &:hover {
+          background: #98b1da;
+        }
+
       }
 
     }
 
+    .topic-background {
+      min-height: 400px;
 
-  .topic-background {
-    min-height: 400px;
+      padding: 30px 0;
 
-
-
-
-    padding: 30px 0;
-
-
+    }
   }
+
 }
-
-  }
