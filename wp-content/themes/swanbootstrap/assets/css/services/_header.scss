@@ -82,6 +82,25 @@
           @extend input;
           height: 60px;
         }
+        input.submit{
+          margin: 0 auto;
+          width: 150px;
+          height: 40px;
+          padding: 7px 20px;
+          font-size: 171.42857%;
+          color: #ffffff;
+
+          font-family: "Open Sans Light";
+          background: #98b1da;
+          font-weight: bold;
+          border: none;
+          margin-left: 36%;
+
+          &:hover {
+            background: $blue;
+          }
+
+        }
       }
 
 

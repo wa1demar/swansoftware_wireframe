@@ -14,90 +14,150 @@ include 'flash.php';
 
 if (isset($_POST['submit_contact_us'])) {
 
-
-    $name = $_POST['name_c'];
-    $email = $_POST['email_c'];
-    $comment = $_POST['comment_c'];
+    $name = addslashes(strip_tags($_POST['name_c']));
+    $email = addslashes(strip_tags($_POST['email_c']));
+    $comment = addslashes(strip_tags($_POST['comment_c']));
 
     $pattern = '/@/';
     preg_match($pattern, $email, $matches, PREG_OFFSET_CAPTURE, 3);
-//
 
-//    if ($name != "" and  $comment != "" and  $name != "" and $matches[0] != "") {
-//
-//        $headers =  "From: " . strip_tags($_POST['email_c']) . "\r\n";
-////    $headers .= "Reply-To: ". strip_tags($_POST['req-email']) . "\r\n";
-//    $headers .= "CC: susan@example.com\r\n";
-//    $headers .= "MIME-Version: 1.0\r\n";
-//    $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-//
-//    //attache img
-//        $sep = sha1(date('r', time()));
-//
-//
-//        $img = chunk_split(base64_encode(file_get_contents('assets/img/children.png')));
-//
-//
-//        $tpl = file_get_contents(get_bloginfo('template_directory').'/assets/vendors/contact_us_template.html');
-//
-//        $tpl = str_replace('{{subject}}', "Contact Us", $tpl);
-//        $tpl = str_replace('{{comment}}', $comment, $tpl);
-//        $tpl = str_replace('{{img}}', $img, $tpl);
-//
-//
-//
-//        if (!mail($email, "the subject", $tpl,
-//            $headers)
-//        ) {
-//            Flash::alert('lol, you can\'t do that!');
-//            header("Location:  " . $_SERVER['HTTP_REFERER']);
-//
-//        }
-//
-//
-//    } else {
-//        Flash::alert('lol, you can\'t do that!');
-//        header("Location:  " . $_SERVER['HTTP_REFERER']);
-//
-//    }
+    if ($name != "" and  $comment != "" and  $name != "" and $matches[0] != "") {
+        $message = Swift_Message::newInstance()
+            ->setSubject($name.' left a message for you!')
+            ->setFrom(array($email => $name))
+            ->setTo(array('viktor.danch@gmail.com'));
 
-//    echo $name . " " . $email . " " . $comment;
-//
-    $message = Swift_Message::newInstance()
-        ->setSubject('Your subject')
-        ->setFrom(array('john@doe.com' => 'John Doe'))
-        ->setTo(array('receiver@domain.org', 'other@domain.org' => 'A name'));
-       $cid = $message->embed(Swift_Image::fromPath(get_bloginfo('template_directory').'/assets/img/children.png'));
-        $message->setBody(
-        '<html>' .
-        ' <head></head>' .
-        ' <body>' .
-        '  Here is an image <img src="' . // Embed the file
-        $cid .
-        '" alt="Image" />' .
-        '  Rest of message' .
-        ' </body>' .
-        '</html>',
-        'text/html' // Mark the content-type as HTML
-    );
+        $tpl = file_get_contents(get_bloginfo('template_directory').'/assets/vendors/contact_us_template.html');
+        $tpl = str_replace('{{comment}}', $comment, $tpl);
+        $tpl = str_replace('{{user_name}}', $name, $tpl);
+        $tpl = str_replace('{{user_email}}', $email, $tpl);
 
-    $type = $message->getHeaders()->get('Content-Type');
-    $type->setValue('multipart/mixed');
+        $cid_logo = $message->embed(Swift_Image::fromPath(get_bloginfo('template_directory').'/assets/vendors/images/logo.png'));
+        $cid_gray_bg = $message->embed(Swift_Image::fromPath(get_bloginfo('template_directory').'/assets/vendors/images/gray_kocka.png'));
+        $cid_blue_bg = $message->embed(Swift_Image::fromPath(get_bloginfo('template_directory').'/assets/vendors/images/blue_kocka.png'));
+        $cid_fb = $message->embed(Swift_Image::fromPath(get_bloginfo('template_directory').'/assets/img/fb_25x25.png'));
+        $cid_tw = $message->embed(Swift_Image::fromPath(get_bloginfo('template_directory').'/assets/img/twitter_25x25.png'));
+        $cid_gp = $message->embed(Swift_Image::fromPath(get_bloginfo('template_directory').'/assets/img/g+_25x25.png'));
+        $cid_ln = $message->embed(Swift_Image::fromPath(get_bloginfo('template_directory').'/assets/img/linkedin_25x25.png'));
 
-    $transport = Swift_MailTransport::newInstance();
-//    $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 587)
-//        ->setUsername('viktor.danch')
-//        ->setPassword('a22111989a')
+        $tpl = str_replace('{{logo}}',  $cid_logo, $tpl);
+        $tpl = str_replace('{{blue_bg}}',  $cid_blue_bg, $tpl);
+        $tpl = str_replace('{{gray_bg}}',  $cid_gray_bg, $tpl);
+        $tpl = str_replace('{{fb}}', $cid_fb, $tpl);
+        $tpl = str_replace('{{tw}}', $cid_tw, $tpl);
+        $tpl = str_replace('{{gp}}', $cid_gp, $tpl);
+        $tpl = str_replace('{{ln}}', $cid_ln, $tpl);
 
 
-//    $transport = Swift_SendmailTransport::newInstance('/usr/bin/send.sh');
-    $mailer = Swift_Mailer::newInstance($transport);
-    $result = $mailer->send($message);
+        $message->setBody(  $tpl);
+
+        $type = $message->getHeaders()->get('Content-Type');
+        $type->setValue('multipart/mixed');
+
+        $transport = Swift_MailTransport::newInstance();
+
+        $mailer = Swift_Mailer::newInstance($transport);
+        $result = $mailer->send($message);
 
 
-    echo $result;
+        echo $message;
+    } else {
+        Flash::alert('lol, you can\'t do that!');
+        header("Location:  " . $_SERVER['HTTP_REFERER']);
 
+    }
 } elseif (isset($_POST[''])) {
+
+
+
+} elseif (isset($_POST['submit_service_form'])) {
+    $name = addslashes(strip_tags($_POST['name_n']));
+    $email = addslashes(strip_tags($_POST['email_n']));
+    $comment = addslashes(strip_tags($_POST['comment_n']));
+    $service = addslashes(strip_tags($_POST['service']));
+
+    $pattern = '/@/';
+    preg_match($pattern, $email, $matches, PREG_OFFSET_CAPTURE, 3);
+
+    echo $email . ' ' . $name, ' ' . $comment . " " . $service;
+
+    if ($name != "" and  $comment != "" and  $name != "" and $matches[0] != "") {
+        $message = Swift_Message::newInstance()
+            ->setSubject('Your subject')
+            ->setFrom(array('viktor.danch@gmail.com' => 'John Doe'))
+            ->setTo(array($email));
+        $message->setBody(
+            '<html>' .
+            ' <head></head>' .
+            ' <body>' .
+
+            '  Rest of message' .
+            ' </body>' .
+            '</html>',
+            'text/html' // Mark the content-type as HTML
+        );
+
+        $type = $message->getHeaders()->get('Content-Type');
+        $type->setValue('multipart/mixed');
+
+        $transport = Swift_MailTransport::newInstance();
+
+        $mailer = Swift_Mailer::newInstance($transport);
+        $result = $mailer->send($message);
+
+
+        echo $message;
+    } else {
+        Flash::alert('lol, you can\'t do that!');
+        header("Location:  " . $_SERVER['HTTP_REFERER']);
+
+    }
+
+
+}  elseif (isset($_POST['submit_project_template'])) {
+    $name = addslashes(strip_tags($_POST['name_p']));
+    $email = addslashes(strip_tags($_POST['email_p']));
+    $comment = addslashes(strip_tags($_POST['comment_p']));
+
+
+    $pattern = '/@/';
+    preg_match($pattern, $email, $matches, PREG_OFFSET_CAPTURE, 3);
+
+    echo $email . ' ' . $name, ' ' . $comment . " " . $service;
+
+    if ($name != "" and  $comment != "" and  $name != "" and $matches[0] != "") {
+        $message = Swift_Message::newInstance()
+            ->setSubject('Your subject')
+            ->setFrom(array('viktor.danch@gmail.com' => 'John Doe'))
+            ->setTo(array($email));
+        $message->setBody(
+            '<html>' .
+            ' <head></head>' .
+            ' <body>' .
+            ' <h1> Here is an image</h1> <img src="' . // Embed the file
+
+            '" alt="Image" />' .
+            '  Rest of message' .
+            ' </body>' .
+            '</html>',
+            'text/html' // Mark the content-type as HTML
+        );
+
+        $type = $message->getHeaders()->get('Content-Type');
+        $type->setValue('multipart/mixed');
+
+        $transport = Swift_MailTransport::newInstance();
+
+        $mailer = Swift_Mailer::newInstance($transport);
+        $result = $mailer->send($message);
+
+
+        echo $message;
+    } else {
+        Flash::alert('lol, you can\'t do that!');
+        header("Location:  " . $_SERVER['HTTP_REFERER']);
+
+    }
 
 
 } else {
@@ -106,13 +166,19 @@ if (isset($_POST['submit_contact_us'])) {
 
 
 ?>
+
+
+
+
+
+
 <?php get_header() ?>
 
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
     <div class="row">
         <div class="container">
             <div class="col-lg-12">
-                <?php the_content() ?>
+                <?php  ?>
             </div>
         </div>
     </div>

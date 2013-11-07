@@ -72,6 +72,20 @@ section {
         margin-bottom: 12px; }
       .servicesHeader .headerContent .headerForm form textarea {
         height: 60px; }
+      .servicesHeader .headerContent .headerForm form input.submit, .servicesHeader .headerContent .headerForm form textarea.submit {
+        margin: 0 auto;
+        width: 150px;
+        height: 40px;
+        padding: 7px 20px;
+        font-size: 171.42857%;
+        color: #ffffff;
+        font-family: "Open Sans Light";
+        background: #98b1da;
+        font-weight: bold;
+        border: none;
+        margin-left: 36%; }
+        .servicesHeader .headerContent .headerForm form input.submit:hover, .servicesHeader .headerContent .headerForm form textarea.submit:hover {
+          background: #6699ff; }
 
 #serviceContent {
   padding: 10px 0;

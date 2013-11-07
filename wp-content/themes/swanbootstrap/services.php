@@ -31,21 +31,22 @@
                     <div class="col-lg-5 headerForm blackTransparent">
                         <h2>Tell us about your <span>Project</span></h2> <!-- TODO: ???-->
 
-                        <form>
+                        <form action="<?=esc_url(get_permalink(get_page_by_title('Thank you')))?>"  method = 'POST'>
                             <div class="row">
                                 <div class="col-lg-4"><label>Name</label></div>
-                                <div class="col-lg-8"><input type="text" placeholder="John Doe..."></div>
+                                <div class="col-lg-8"><input required="required" name= 'name_p' type="text" placeholder="John Doe..."></div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-4"><label>Email</label></div>
-                                <div class="col-lg-8"><input type="text" placeholder="johndoe@jahoo.com"></div>
+                                <div class="col-lg-8"><input required="required" type="email" name = 'email_p' placeholder="johndoe@jahoo.com"></div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-4"><label>Comment</label></div>
-                                <div class="col-lg-8"><textarea placeholder="Tape your messahe here..."></textarea>
+                                <div class="col-lg-8"><textarea name = 'comment_p' placeholder="Tape your messahe here..."></textarea>
                                 </div>
                             </div>
-                            <a href="#" class="blue_btn small">Send</a>
+                            <input type = 'submit' class="blue_btn small submit" name = 'submit_project_template' value = 'Send'>
+
                         </form>
                     </div>
                 </div>
