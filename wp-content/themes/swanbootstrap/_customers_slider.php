@@ -287,6 +287,16 @@
                         </article>
 
                     </div>
+                    <div class="col-lg-5 design_image" >
+                        <?php
+                        $dom = new domDocument;
+                        $dom->loadHTML(get_field('phone_images'));
+                        $dom->preserveWhiteSpace = false;
+                        $images = $dom->getElementsByTagName('img');
+                        $img = $images->item(0)->getAttribute('src');
+                        ?>
+                        <img class="screen" src="<?= $img ?>">
+                    </div>
                 </div>
                 <?php $i++; ?>
             <?php endwhile; endif; ?>

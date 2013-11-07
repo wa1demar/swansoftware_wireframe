@@ -233,7 +233,7 @@
     position: relative; }
     #sliderSecond #mobile .android {
       background: url("../../img/android_phone.png") top center no-repeat;
-      height: 700px;
+      height: 415px;
       position: absolute;
       width: 370px;
       right: 10px; }
@@ -252,14 +252,14 @@
         height: 200px; }
       #sliderSecond #mobile .android img.c2 {
         position: absolute;
-        top: 20%;
+        top: 30%;
         right: -5%;
         z-index: -4;
         width: 200px;
         height: 200px; }
     #sliderSecond #mobile .iphone {
       background: url("../../img/iphone_bg.png") top center no-repeat;
-      height: 800px;
+      height: 580px;
       position: absolute;
       right: 15px;
       width: 400px; }
@@ -285,7 +285,7 @@
         height: 200px; }
   #sliderSecond .staff_image {
     background: url("../../img/mac.png") top center no-repeat;
-    height: 800px;
+    height: 270px;
     position: absolute;
     right: 1px;
     width: 350px;
@@ -298,7 +298,7 @@
       width: 290px; }
   #sliderSecond .custom_image {
     background: url("../../img/macbook.png") top center no-repeat;
-    height: 800px;
+    height: 210px;
     position: absolute;
     right: 1px;
     width: 350px;
@@ -309,6 +309,19 @@
       top: 12px;
       height: 165px;
       width: 266px; }
+  #sliderSecond .design_image {
+    background: url("../../img/mac.png") top center no-repeat;
+    height: 270px;
+    position: absolute;
+    right: 1px;
+    width: 350px;
+    background-size: contain; }
+    #sliderSecond .design_image img {
+      position: absolute;
+      left: 47px;
+      top: 18px;
+      height: 160px;
+      width: 290px; }
   #sliderSecond #mobile .carousel-control, #sliderSecond #staff .carousel-control, #sliderSecond #app .carousel-control, #sliderSecond #design .carousel-control {
     background: none; }
 
