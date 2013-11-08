@@ -82,7 +82,7 @@
     #sliderFirst .darck-background .inputs input {
       border-radius: initial;
       background-color: #3D4955;
-      color: #566E96;
+      color: #98b1da;
       border: none;
       margin-top: 5px;
       margin-bottom: 30px; }
@@ -94,6 +94,26 @@
       border: none;
       margin-top: 5px;
       border-radius: initial; }
+    #sliderFirst .darck-background .inputs #serch-form {
+      margin-top: 3px;
+      display: inline-block;
+      width: 100%;
+      float: left; }
+    #sliderFirst .darck-background .inputs button.submit {
+      height: 34px;
+      margin-top: 3px;
+      margin-left: -30px;
+      padding-top: 1px;
+      font-size: 171.42857%;
+      color: #ffffff;
+      display: inline-block;
+      vertical-align: top;
+      font-family: "Open Sans Light";
+      background: #3D4955;
+      font-weight: bold;
+      border: none; }
+      #sliderFirst .darck-background .inputs button.submit img {
+        margin-bottom: 4px; }
     #sliderFirst .darck-background .topic-background {
       min-height: 400px;
       padding: 30px 0; }
