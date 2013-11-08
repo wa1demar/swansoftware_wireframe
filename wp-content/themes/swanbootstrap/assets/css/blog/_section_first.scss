@@ -106,15 +106,16 @@
       #serch-form{
         margin-top:3px;
         display: inline-block;
-        width: 80%;
+        width: 100%;
         float: left;
 
       }
       button.submit {
         height: 34px;
         margin-top: 3px;
-        width: 19%;
-        padding: 7px 20px;
+        margin-left: -30px;
+
+        padding-top: 1px;
         font-size: 171.42857%;
         color: #ffffff;
         display: inline-block;
@@ -127,9 +128,6 @@
         //
         img{
           margin-bottom: 4px;
-        }
-        &:hover {
-          background: #98b1da;
         }
 
       }
