@@ -62,18 +62,23 @@ if (have_posts()) : ?>
                         <div class='col-sm-4'>
                             <h1 class='title'>Blog & News</h1>
 
-                            <form>
+                            <form action="http://feedburner.google.com/fb/a/mailverify"
+                                  method="post" target="popupwindow"
+                                  onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=swansowttest', 'popupwindow', 'scrollbars=yes,width=550,height=520');
+                                  return true">
                                 <div class='inputs row'>
                                     <b>Join our Newsletter</b>
                                     <br/>
 
                                     <div class="col-xs-9 input1">
-                                        <input type='text' class="form-control " name='input1'
+                                        <input type='text' class="form-control " name='email'
                                                placeholder='Enter your Email address'>
+                                        <input type="hidden" value="swansowttest" name="uri"/><input type="hidden" name="loc" value="en_US"/>
                                     </div>
                                     <div class="col-xs-3">
-                                        <button type="button" class="form-control input_submit" name='submit1'>Go
-                                        </button>
+<!--                                        <button type="button" class="form-control input_submit" name='submit'>Go-->
+<!--                                        </button>-->
+                                        <input type="SUBMIT" class="form-control input_submit" value="Go">
                                     </div>
                                     <b>Search</b>
 

@@ -188,44 +188,7 @@
         wp_reset_postdata(); ?>
     </div>
     <div class="col-xs-12  text-center form-content">
-        <h2>Don't forget to leave a comment</h2>
-
-        <form>
-            <div class="row">
-                <div class="col-xs-4 label">
-                    Name
-                    <img src="<?php bloginfo('template_directory') ?>/assets/img/name.png">
-                </div>
-                <div class="col-xs-8"><input type="text" placeholder="  John Doe...">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-4 label">
-                    Email
-                    <img src="<?php bloginfo('template_directory') ?>/assets/img/email.png">
-                </div>
-                <div class="col-xs-8">
-                    <input type="text" type='text' placeholder="  johndoe@jahoo.com">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-4 label">
-                    Comment
-                    <img src="<?php bloginfo('template_directory') ?>/assets/img/comment.png">
-                </div>
-                <div class="col-xs-8">
-                    <textarea placeholder="  Type your messahe here..."></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-4 ">
-                </div>
-                <div class="col-xs-8 tex-left">
-                    <a href="#" class="blue_btn small">Send</a></div>
-            </div>
-
-        </form>
-
+        <?php comments_template(); ?>
 
     </div>
     <div class="row next-sign">
