@@ -103,6 +103,10 @@
 
   // form style
   .form-content {
+
+    #reply-title, .comment-notes{
+      display: none;
+    }
     h2 {
       font-weight: 800;
       padding-bottom: 20px;

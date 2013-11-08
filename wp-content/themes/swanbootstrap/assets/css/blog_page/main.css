@@ -194,6 +194,8 @@
       font-size: 171.42857%; }
     #sectionSecond .next-sign img {
       margin-bottom: 10px; }
+  #sectionSecond .form-content #reply-title, #sectionSecond .form-content .comment-notes {
+    display: none; }
   #sectionSecond .form-content h2 {
     font-weight: 800;
     padding-bottom: 20px; }
