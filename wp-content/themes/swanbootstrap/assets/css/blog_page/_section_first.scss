@@ -91,6 +91,35 @@
         margin-top: 5px;
         border-radius: initial
       }
+      button.submit {
+        height: 34px;
+        margin-top: 3px;
+        margin-left: -30px;
+
+        padding-top: 1px;
+        font-size: 171.42857%;
+        color: #ffffff;
+        display: inline-block;
+        vertical-align: top;
+
+        font-family: "Open Sans Light";
+        background: #3D4955;
+        font-weight: bold;
+
+        border: none;
+        //
+        img{
+          margin-bottom: 4px;
+        }
+
+      }
+      #serch-form{
+        margin-top:3px;
+        display: inline-block;
+        width: 100%;
+        float: left;
+
+      }
 
     }
 

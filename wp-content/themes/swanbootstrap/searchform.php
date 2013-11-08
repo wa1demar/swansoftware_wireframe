@@ -14,7 +14,7 @@
     <input type="hidden" value="post" name="post_type" id="post_type"/>
     <input type="hidden" value="News" name="post_cathegory" id="post_cathegory"/>
 
-            <input type='input' required="required" class="form-control" name='s' id="serch-form"
+            <input type='input' required="required" class="form-control " name='s' id="serch-form"
                    placeholder='What are you searching for?' value="<?php the_search_query(); ?>">
 
 
