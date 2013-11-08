@@ -9,11 +9,9 @@
   .topBannerLinks {
     width: 100%;
     position: absolute;
-
     bottom: 2%;
-
     right: 0;
-    z-index: 1000;
+    z-index: 1;
     padding: 10px 0 20px 0;
 
     background: rgba(0, 0, 0, 0.5);
@@ -28,29 +26,19 @@
     a {
       text-decoration: none;
     }
-    .col-sm-3.col-xs-6.text-center {
+    .box {
       min-width: 140px;
-      min-height: 200px;
-
-      font-size: getSize(16); //TODO
+      font-size: getSize(16);
 
       .round_image {
-        width: 120px;
-        height: 120px;
-        padding-top: 20px;
         margin: 0 auto;
         background: url("../../img/link_hover_bg_blue_round_transparent.png") no-repeat top center;
         background-position: center;
         background-size: 100%;
 
-        img {
-          width: 80px;
-          height: 80px;
-
-        }
       }
     }
-    .col-sm-3.col-xs-6.text-center:hover {
+    .box:hover {
 
       .round_image {
         background: url("../../img/link_bg_blue_round.png") no-repeat top center;
@@ -60,7 +48,7 @@
     }
 
     a.active {
-      .col-sm-3.col-xs-6.text-center {
+      .box {
 
         .round_image {
           background: url("../../img/link_bg_blue_round.png") no-repeat top center;
@@ -76,24 +64,48 @@
     padding: 0;
 
     .topBanner {
-      //      background: url("../../img/banner_temp.png") center top no-repeat;
       height: 665px;
+
+      &.all {
+        background-image: url('../../img/all_m.png');
+      }
+
+      &.mobile {
+        background-image: url('../../img/mobile_m.png');
+      }
+
+      &.staff {
+        background-image: url('../../img/staff_m.png');
+      }
+
+      &.custom {
+        background-image: url('../../img/ios_m.png');
+      }
+
+      &.design {
+        background-image: url('../../img/mobile_m.png');
+      }
 
       .getStartedButton {
         text-align: center;
         position: absolute;
-        top: 240px;
-        left: 31.815%;
-        z-index: 1000;
+        z-index: 1;
 
         a {
 
           color: #ffffff;
           font-size: getSize(24);
           font-family: $default_font;
-          font-weight: normal;
+          font-weight: bold;
+          background: $blue_soft;
+          padding: 20px 0;
+          display: block;
 
+        }
 
+        a:hover {
+          background: $blue;
+          text-decoration: none;
         }
       }
 
@@ -115,9 +127,9 @@
     -webkit-box-shadow: 4px 4px 8px #888;
     -moz-box-shadow: 4px 4px 8px #888;
     box-shadow: 4px 4px 8px #888;
-    span{
+    span {
       font-size: 120%;
-      font-weight:  bold;
+      font-weight: bold;
       color: #7793C0;
 
     }
@@ -196,7 +208,7 @@
       background: url("../../img/cloud_tail_left.png") center top no-repeat;
       right: 30px;
       top: 90px;
-   }
+    }
   }
   // mobile speech
   #mobile_link {
@@ -222,4 +234,295 @@
     }
   }
 
+}
+
+@media screen {
+  #sliderFirst {
+
+    .topBanner {
+      background-position: center top;
+      background-repeat: no-repeat;
+
+      .getStartedButton {
+        top: 240px;
+        left: 33%;
+        width: 34%;
+      }
+    }
+
+    .topBannerLinks {
+      .myIndicators {
+        ul {
+          display: none;
+        }
+      }
+    }
+
+    .box {
+      min-height: 200px;
+
+      .round_image {
+        width: 120px;
+        height: 120px;
+        padding-top: 20px;
+
+        img {
+          width: 80px;
+          height: 80px;
+
+        }
+      }
+    }
+
+  }
+}
+
+@media (max-width: 800px) {
+  #sliderFirst {
+
+    #mobile-container {
+      left: 19%;
+    }
+
+    #staff-container {
+      left: 11.5%;
+    }
+
+    #app-container {
+      right: 10px;
+      top: 1%;
+
+      p.speech:before {
+        background: url("../../img/cloud_tail_left.png") center top no-repeat;
+        left: 68px;
+        top: 99px;
+      }
+    }
+
+    #design-container {
+      right: 18%;
+      top: 2%;
+    }
+
+    .topBanner {
+      background-position: initial;
+      background-repeat: no-repeat;
+
+      &.all {
+        img {
+          &#mobile_link {
+            left: 20%;
+          }
+          &#staff_link {
+            right: 55%;
+          }
+          &#app_link {
+            right: 27%;
+            top: 17.5%;
+          }
+          &#design_link {
+            right: 20%;
+            top: 17%;
+          }
+        }
+      }
+
+      .getStartedButton {
+        top: 240px;
+        width: 40%;
+        left: 33%;
+      }
+    }
+    .topBannerLinks {
+      p {
+        font-size: getRSize(20);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #sliderFirst {
+
+    #staff-container {
+      left: 12.5%;
+    }
+
+    #app-container {
+      right: 47%;
+      top: 0.8%;
+
+      p.speech:before {
+        background: url("../../img/cloud_tail.png") center top no-repeat;
+        left: 250px;
+        top: 99px;
+      }
+    }
+
+    #design-container {
+      right: 14%;
+    }
+
+    .topBanner {
+      background-size: contain;
+      height: 625px;
+      &.all {
+
+
+        img {
+          &#staff_link {
+            right: 53%;
+          }
+          &#app_link {
+          left: 48%;
+            top: 17.5%;
+          }
+          &#design_link {
+            right: 17%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+  #sliderFirst {
+    .topBanner {
+      display: none;
+    }
+
+    .topBannerLinks {
+      position: relative;
+
+      .box {
+        width: 50%;
+        min-height: 0;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 400px) {
+  #sliderFirst {
+    height: auto;
+    .topBannerLinks {
+      h1 {
+        padding: 30px 0;
+      }
+
+      .myIndicators {
+        ul {
+          display: block;
+
+          li {
+            padding: 0;
+//            background: #ffffff;
+            line-height: 120%;
+            width: 100%;
+
+            a {
+              width: 100%;
+              height: 100%;
+              display: block;
+              padding: 15px 5px 15px 60px;
+              font-family: $default_font;
+              font-size: getSize(16);
+              color: #ffffff;
+              text-decoration: none;
+              line-height: 100%;
+            }
+
+            &.mobile {
+              background: url("../../img/service1_25x25.png") left center no-repeat;
+
+              &:hover {
+                background-color: $blue;
+
+                a {
+                  background: none;
+                  color: #ffffff;
+                }
+              }
+
+            }
+
+            &.staff {
+              background: url("../../img/service2_25x25.png") left center no-repeat;
+
+              &:hover {
+                background-color: $blue;
+
+                a {
+                  background: none;
+
+                  color: #ffffff;
+                }
+              }
+            }
+
+            &.app {
+              background: url("../../img/service3_25x25.png") left center no-repeat;
+
+              &:hover,
+              &.active {
+                background-color: $blue;
+
+                a {
+                  background: none;
+
+                  color: #ffffff;
+                }
+              }
+            }
+
+            &.design {
+              background: url("../../img/service4_25x25.png") left center no-repeat;
+
+              &:hover {
+                background-color: $blue;
+
+                a {
+                  background: none;
+
+                  color: #ffffff;
+                }
+              }
+            }
+
+            .marketing {
+              background: $white url("../../img/icon_s_5_45.png") left center no-repeat;
+
+              &:hover {
+                background: $blue url("../../img/service5_25x25.png") left center no-repeat;
+
+                a {
+                  background: none;
+
+                  color: #ffffff;
+                }
+              }
+            }
+          }
+        }
+        .box {
+          display: none;
+        }
+      }
+    }
+
+    .team {
+      a {
+        span {
+          display: none;
+        }
+        &:after {
+          content: "Meet Our Team";
+        }
+
+      }
+    }
+  }
 }

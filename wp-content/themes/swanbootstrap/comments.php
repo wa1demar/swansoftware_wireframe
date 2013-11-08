@@ -35,6 +35,6 @@
         );
         wp_list_comments($args); ?>
     </ol>
-    <?php else: ?>
+    <?php else : ?>
   <h3>Обсуждения закрыты для данной страницы</h3>
 <?php endif ?>
