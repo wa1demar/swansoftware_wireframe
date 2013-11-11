@@ -22,7 +22,6 @@
   .news_line {
     background: url("../../img/bg-black-transparent.png") repeat;
     padding: 20px 0;
-    position: absolute;
     bottom: 10%;
     width: 100%;
     text-align: justify;
@@ -50,6 +49,44 @@
           font: getSize(14) normal "Open Sans Light";
         }
       }
+    }
+  }
+
+  @media screen {
+    .news_line {
+      position: absolute;
+    }
+  }
+
+  @media(max-width: 950px) {
+    .news_line {
+      bottom: 0;
+    }
+  }
+
+  @media(max-width: 950px) {
+    .news_line {
+      .text {
+        display: none;
+      }
+
+      .link {
+        ul {
+          margin-left: 2%;
+        }
+      }
+
+    }
+  }
+
+  @media(max-width: 750px) {
+    .news_line {
+      position: relative;
+      background: $gray_bg;
+      .text {
+        display: block;
+      }
+
     }
   }
 }

@@ -20,6 +20,9 @@
       color: #ffffff;
       padding: 70px 0 30px 0;
     }
+    a.st {
+      display: none;
+    }
     p {
       color: #ffffff;
     }
@@ -149,13 +152,13 @@
   // design speech
   #design_link {
     position: absolute;
-    right: 30%;
+    left: 86%;
     top: 15%;
   }
   #design-container {
     display: none;
     position: absolute;
-    right: 28%;
+    left: 62%;
     top: 0%;
     p.speech {
       padding: 5px 2px 5px 15px;
@@ -167,13 +170,13 @@
   // app speech
   #app_link {
     position: absolute;
-    right: 35%;
+    left: 62%;
     top: 22.6%;
   }
   #app-container {
     display: none;
     position: absolute;
-    right: 7%;
+    left: 62%;
     top: 5.8%;
     p.speech {
       padding: 10px 2px 10px 15px;
@@ -191,13 +194,13 @@
   // staff speech
   #staff_link {
     position: absolute;
-    right: 57%;
+    left: 40%;
     top: 15%;
   }
   #staff-container {
     display: none;
     position: absolute;
-    left: 16.5%;
+    left: 16%;
     top: 0%;
     p.speech {
       padding: 5px 2px 5px 15px;
@@ -250,6 +253,75 @@
       }
     }
 
+    .mobile {
+      .cloud {
+        top: 45px;
+        width: 600px;
+        left: 230px;
+        position: absolute;
+
+        h3 {
+          margin-bottom: 30px;
+          font: 250% normal 'Open Sans Light';
+        }
+
+        p {
+          font-size: 152%;
+        }
+      }
+    }
+
+    .staff {
+      .cloud {
+        top: 65px;
+        width: 600px;
+        left: 260px;
+        position: absolute;
+
+        h3 {
+          margin-bottom: 18px;
+          font: 250% normal 'Open Sans Light';
+        }
+        p {
+          font-size: 152%;
+        }
+      }
+    }
+
+    .custom {
+      .cloud {
+        top: 41px;
+        width: 600px;
+        left: 270px;
+        position: absolute;
+
+        h3 {
+          margin-bottom: 18px;
+          font: 250% normal 'Open Sans Light';
+        }
+        p {
+          font-size: 152%;
+        }
+      }
+    }
+
+    .design {
+      .cloud {
+        top: 45px;
+        width: 600px;
+        left: 25%;
+        position: absolute;
+
+        h3 {
+          margin-bottom: 30px;
+          font: 250% normal 'Open Sans Light';
+        }
+        p {
+          font-size: 152%;
+        }
+      }
+    }
+
     .topBannerLinks {
       .myIndicators {
         ul {
@@ -277,30 +349,61 @@
   }
 }
 
+@media (max-width: 950px) {
+  #sliderFirst {
+    .mobile {
+      .cloud {
+        left: 21%;
+      }
+    }
+
+    .staff {
+      .cloud {
+        left: 25%;
+        width: 69%;
+      }
+    }
+
+    .custom {
+      .cloud {
+        left: 25%;
+        width: 67%;
+      }
+    }
+
+    .design {
+      .cloud {
+        left: 25%;
+        width: 67%;
+      }
+    }
+  }
+}
+
 @media (max-width: 800px) {
   #sliderFirst {
 
     #mobile-container {
-      left: 19%;
+      //      left: 19%;
     }
 
     #staff-container {
-      left: 11.5%;
+      left: 16%;
     }
 
     #app-container {
-      right: 10px;
-      top: 1%;
+      //      right: 10px;
+      //      top: 1%;
 
       p.speech:before {
-        background: url("../../img/cloud_tail_left.png") center top no-repeat;
-        left: 68px;
-        top: 99px;
+        //        background: url("../../img/cloud_tail_left.png") center top no-repeat;
+        //        left: 68px;
+        //        top: 99px;
       }
     }
 
     #design-container {
-      right: 18%;
+      left: 62%;
       top: 2%;
     }
 
@@ -311,18 +414,18 @@
       &.all {
         img {
           &#mobile_link {
-            left: 20%;
+            //            left: 20%;
           }
           &#staff_link {
-            right: 55%;
+            //            right: 55%;
           }
           &#app_link {
-            right: 27%;
-            top: 17.5%;
+            //            right: 27%;
+            //            top: 17.5%;
           }
           &#design_link {
-            right: 20%;
-            top: 17%;
+            left: 91%;
+            //            top: 17%;
           }
         }
       }
@@ -345,22 +448,22 @@
   #sliderFirst {
 
     #staff-container {
-      left: 12.5%;
+      //      left: 12.5%;
     }
 
     #app-container {
-      right: 47%;
-      top: 0.8%;
+      //      right: 47%;
+      //      top: 0.8%;
 
       p.speech:before {
-        background: url("../../img/cloud_tail.png") center top no-repeat;
-        left: 250px;
-        top: 99px;
+        //        background: url("../../img/cloud_tail.png") center top no-repeat;
+        //        left: 250px;
+        //        top: 99px;
       }
     }
 
     #design-container {
-      right: 14%;
+      //      right: 14%;
     }
 
     .topBanner {
@@ -368,19 +471,59 @@
       height: 625px;
       &.all {
 
-
         img {
           &#staff_link {
-            right: 53%;
+            //            right: 53%;
           }
           &#app_link {
-          left: 48%;
-            top: 17.5%;
+            //          left: 48%;
+            //            top: 17.5%;
           }
           &#design_link {
-            right: 17%;
+            //            right: 17%;
           }
         }
+      }
+    }
+
+    .mobile {
+      .cloud {
+        top: 21px;
+        width: 69%;
+        left: 20%;
+      }
+    }
+
+    .staff {
+      .cloud {
+        top: 34px;
+        width: 70%;
+        left: 23%;
+      }
+    }
+
+    .custom {
+      .cloud {
+        top: 25px;
+        width: 71%;
+      }
+    }
+
+    .design {
+      .cloud {
+        left: 20%;
+        width: 72%;
+        top: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  #sliderFirst {
+    .mobile {
+      .cloud {
+        top: 0px;
       }
     }
   }
@@ -395,7 +538,9 @@
 
     .topBannerLinks {
       position: relative;
-
+      a.st {
+        display: block;
+      }
       .box {
         width: 50%;
         min-height: 0;
@@ -419,7 +564,7 @@
 
           li {
             padding: 0;
-//            background: #ffffff;
+            //            background: #ffffff;
             line-height: 120%;
             width: 100%;
 

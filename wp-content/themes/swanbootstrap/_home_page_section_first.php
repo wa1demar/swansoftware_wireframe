@@ -61,7 +61,7 @@
                     <div class="row ">
                         <div class='col-xs-12 text-center'>
                             <h1>Make your business better with us</h1>
-
+                            <a href="<?= get_permalink(get_page_by_title('Get Started')) ?>" class="blue_btn st">Get Started</a>
 
                         </div>
                     </div>
@@ -184,12 +184,12 @@
 
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="cloud" style="top: 45px; width: 600px; left: 230px; position: absolute; ">
-                        <h3 style="margin-bottom: 30px; font: 250% normal 'Open Sans Light'; "><a
+                    <div class="cloud" style="">
+                        <h3 style=""><a
                                 href="<?php echo esc_url(get_permalink(get_page_by_title('Mobile Application Development'))); ?>"
                                 style="color: #ffffff;">Mobile Development</a></h3>
 
-                        <p style="font-size: 152%">Swan has expertise in both older and current versions of Android
+                        <p style="">Swan has expertise in both older and current versions of Android
                             and iOS. We can help
                             bring your idea, brand, or information to consumers on the go.</p>
                         <!--                            <div class="more" style="font-size: 120%; text-align: right"><a href="#">Read more about this service</a></div>-->
@@ -205,12 +205,12 @@
 
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="cloud" style="top: 65px; width: 600px; left: 260px; position: absolute;">
-                        <h3 style="margin-bottom: 18px; font: 250% normal 'Open Sans Light'; "><a
+                    <div class="cloud" style="">
+                        <h3 style=""><a
                                 href="<?php echo esc_url(get_permalink(get_page_by_title('Staff Augmentation'))); ?>"
                                 style="color: #ffffff;">Staff Augmentation</a></h3>
 
-                        <p style="font-size: 152%">You and Swan match your requirements to our extensive team. Then
+                        <p style="">You and Swan match your requirements to our extensive team. Then
                             we manage the employees and workflow, while giving you dedicated employees that add
                             knowledge yet flexibility to your business.
                         </p>
@@ -225,12 +225,12 @@
 
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="cloud" style="top: 41px; width: 600px; left: 270px; position: absolute;">
-                        <h3 style="margin-bottom: 18px; font: 250% normal 'Open Sans Light'; "><a
+                    <div class="cloud" style="">
+                        <h3 style=""><a
                                 href="<?php echo esc_url(get_permalink(get_page_by_title('Custom Application Development'))); ?>"
                                 style="color: #ffffff;">Custom Application Development</a></h3>
 
-                        <p style="font-size: 152%">When you need a SaaS or platform built from scratch, or have
+                        <p style="">When you need a SaaS or platform built from scratch, or have
                             multiple systems that don’t communicate, Swan engineers can develop the customizations
                             needed to launch your product or improve your user
                             experience.
@@ -247,8 +247,8 @@
 
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="cloud" style="top: 45px; width: 600px; left: 295px; position: absolute;">
-                        <h3 style="margin-bottom: 30px; font: 250% normal 'Open Sans Light'; "><a
+                    <div class="cloud" style="">
+                        <h3 style=""><a
                                 href="<?php echo esc_url(get_permalink(get_page_by_title('Design'))); ?>"
                                 style="color: #ffffff;">Design</a></h3>
 
@@ -275,7 +275,7 @@
        href="<?= get_permalink(get_page_by_title('Company')) ?>"><span>Meet Our Superhero Team</span></a>
 </div>
 <script>
-s_width = $('window').width;
+s_width = $('body').width();
     if (s_width <= 600) {
         $('.box a').removeAttr('data-target');
     }

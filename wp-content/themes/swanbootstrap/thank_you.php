@@ -26,7 +26,7 @@ if (isset($_POST['submit_contact_us'])) {
     if ($name != "" and  $comment != "" and  $name != "" and $matches[0] != "") {
         $message = Swift_Message::newInstance()
             ->setSubject($name.' left a message for you!')
-            ->setFrom(array($email => $name))
+            ->setFrom(array('info@swansoftwaresolutions.com' => 'Swan Software Solutions'))
             ->setTo(array('zehelloworld@gmail.com', 'raskrytisite@gmail.com'));
 
         $tpl = file_get_contents(get_bloginfo('template_directory').'/assets/vendors/contact_us_template.html');
@@ -83,7 +83,7 @@ if (isset($_POST['submit_contact_us'])) {
     if ($name != "" and  $comment != "" and  $name != "" and $matches[0] != "") {
         $message = Swift_Message::newInstance()
             ->setSubject($name.' left a message for you!')
-            ->setFrom(array($email => $name))
+            ->setFrom(array('info@swansoftwaresolutions.com' => 'Swan Software Solutions'))
             ->setTo(array('zehelloworld@gmail.com', 'raskrytisite@gmail.com'));
 
         $tpl = file_get_contents(get_bloginfo('template_directory').'/assets/vendors/get_started_template.html');
@@ -143,7 +143,7 @@ if (isset($_POST['submit_contact_us'])) {
     if ($name != "" and  $comment != "" and  $name != "" and $matches[0] != "") {
         $message = Swift_Message::newInstance()
             ->setSubject($name.' left a message for you!')
-            ->setFrom(array($email => $name))
+            ->setFrom(array('info@swansoftwaresolutions.com' => 'Swan Software Solutions'))
             ->setTo(array('zehelloworld@gmail.com', 'raskrytisite@gmail.com'));
 
         $tpl = file_get_contents(get_bloginfo('template_directory').'/assets/vendors/services_template.html');

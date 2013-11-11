@@ -1,7 +1,7 @@
 #sliderSecond {
 
   position: relative;
-  .row.phoneBG.item{
+  .row.phoneBG.item {
     width: 100%;
   }
   .sliderSecondInner {
@@ -110,8 +110,6 @@
 
     }
 
-
-
     a.blue_btn {
       z-index: 500;
     }
@@ -126,8 +124,6 @@
       height: 415px;
       position: absolute;
       width: 370px;
-      right: 10px;
-
 
       img.screen {
         top: 25px;
@@ -193,7 +189,6 @@
       }
     }
 
-
   }
 
   .staff_image {
@@ -247,12 +242,64 @@
     }
   }
 
-
   #mobile, #staff, #app, #design {
-  .carousel-control {
-   background: none;
+    .carousel-control {
+      background: none;
+
+    }
+  }
+
+  @media screen {
+    .android {
+      right: 10px;
+    }
+
 
   }
+  @media(max-width: 950px) {
+    ul#mynewTab {
+      border-bottom: none;
+      width: 100%;
+      margin-bottom: 10px;
+
+      li {
+        display: inline;
+        width: 25%;
+      }
+    }
+
+
+
   }
 
+  @media(max-width: 850px) {
+    ul#mynewTab {
+      li {
+        width: 50%;
+      }
+    }
+  }
+
+  @media(max-width: 700px) {
+    .android, .iphone,
+    .staff_image, .custom_image,
+    .design_image {
+      display: none;
+    }
+
+    .phoneBG {
+      div {
+        width: 100%;
+      }
+    }
+  }
+
+  @media(max-width: 463px) {
+    ul#mynewTab {
+      li {
+        width: 100%;
+      }
+    }
+  }
 }
+

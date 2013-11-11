@@ -15,7 +15,7 @@
 <div class="container sec">
 
 <div class="row sliderSecondInner ">
-<div class="col-lg-3">
+<div class="col-md-3">
     <div class="row ">
         <ul class="secondSidebarMenu nav nav-tabs" id='mynewTab'>
             <li class="mobile active">
@@ -32,7 +32,7 @@
 </div>
 
 
-<div class="col-lg-9 tab-content">
+<div class="col-md-9 tab-content">
 
 <div class="tab-pane active" id="mobile">
 
@@ -51,7 +51,7 @@
             <?php $i = 0; ?>
             <?php if ($the_query->have_posts()) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
                 <div class="row  phoneBG item <?php if ($i == 0) echo("active") ?>">
-                    <div class="col-lg-7">
+                    <div class="col-xs-7">
                         <article>
                             <header>
                                 <hgroup>
@@ -83,7 +83,7 @@
                         $c = 'iphone';
                     }
                     ?>
-                    <div class="col-lg-5 <?= $c ?>">
+                    <div class="col-xs-5 <?= $c ?>">
                         <?php
                         $dom = new domDocument;
                         $dom->loadHTML(get_field('phone_images'));
@@ -129,7 +129,7 @@
             <?php $i = 0; ?>
             <?php if ($the_query2->have_posts()) : while ($the_query2->have_posts()) : $the_query2->the_post(); ?>
                 <div class="row phoneBG item <?php if ($i == 0) echo("active") ?>">
-                    <div class="col-lg-7">
+                    <div class="col-xs-7">
                         <article>
                             <header>
                                 <hgroup>
@@ -154,7 +154,7 @@
 
                     </div>
 
-                    <div class="col-lg-5 staff_image">
+                    <div class="col-xs-5 staff_image">
                         <?php
                         $dom = new domDocument;
                         $dom->loadHTML(get_field('phone_images'));
@@ -197,7 +197,7 @@
             <?php $i = 0; ?>
             <?php if ($the_query2->have_posts()) : while ($the_query2->have_posts()) : $the_query2->the_post(); ?>
                 <div class="row phoneBG item <?php if ($i == 0) echo("active") ?>">
-                    <div class="col-lg-7">
+                    <div class="col-xs-7">
                         <article>
                             <header>
                                 <hgroup>
@@ -221,7 +221,7 @@
                         </article>
 
                     </div>
-                    <div class="col-lg-5 custom_image">
+                    <div class="col-xs-5 custom_image">
                         <?php
                         $dom = new domDocument;
                         $dom->loadHTML(get_field('phone_images'));
@@ -265,7 +265,7 @@
             <?php $i = 0; ?>
             <?php if ($the_query2->have_posts()) : while ($the_query2->have_posts()) : $the_query2->the_post(); ?>
                 <div class="row phoneBG item <?php if ($i == 0) echo("active") ?>">
-                    <div class="col-lg-7">
+                    <div class="col-xs-7">
                         <article>
                             <header>
                                 <hgroup>
@@ -289,7 +289,7 @@
                         </article>
 
                     </div>
-                    <div class="col-lg-5 design_image" >
+                    <div class="col-xs-5 design_image" >
                         <?php
                         $dom = new domDocument;
                         $dom->loadHTML(get_field('phone_images'));
