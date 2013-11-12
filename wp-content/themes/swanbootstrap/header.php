@@ -115,4 +115,31 @@
 
     </div>
 </header>
+
+
+<div class="col-xs-12" id = "small-menu">
+<div id="accordion" class="panel-group  " stule = 'background-color: #23292A;'>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a class="collapsed" href="#collapseOne" data-parent="#accordion" data-toggle="collapse"> MENU </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse" style="height: auto;">
+            <div class="panel-body">
+
+
+                <?php wp_nav_menu(getArgsForMainMenu()) ?>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</div>
+
+
+
 <div id="mainContent">
