@@ -26,9 +26,10 @@
 
     });
 </script>
-<div id='sliderFirst'>
-    <?php $bg_image = "../'assets/pics/technology.png" ?>
-    <?php require "_social.php" ?>
+<?php $bg = get_field('background') != "" ? get_field('background') : getDefaultBG(); ?>
+<div id='sliderFirst' style="background: url('<?= $bg ?>') center top ;">
+
+    <?php addSocials($bg) ?>
 
     <div class='row darck-background'>
         <div class="container text-center">

@@ -100,7 +100,7 @@
                     <section class="sec">
                         <span class="title">
                             <h1>Our Clients</h1>
-                            <a href=" <?php echo getCategory('Client') ?>">View All +</a>
+                            <a href="<?=getCategory('Clients'); ?>">View All +</a>
                         </span>
                         <?php if( $cli ): foreach( $cli as $post ):  ?>
                             <?php setup_postdata($post);?>

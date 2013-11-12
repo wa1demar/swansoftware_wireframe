@@ -504,14 +504,14 @@
     height: 270px;
     position: absolute;
     right: 1px;
-    width: 350px;
+    width: 335px;
     background-size: contain; }
     #sliderSecond .design_image img {
       position: absolute;
       left: 47px;
-      top: 18px;
-      height: 160px;
-      width: 290px; }
+      top: 16px;
+      height: 156px;
+      width: 274px; }
   #sliderSecond #mobile .carousel-control, #sliderSecond #staff .carousel-control, #sliderSecond #app .carousel-control, #sliderSecond #design .carousel-control {
     background: none; }
   @media screen {

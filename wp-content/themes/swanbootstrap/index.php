@@ -17,6 +17,6 @@
    <?php require("_testimonials.php") ?>
 
 <?php else: ?>
-    <?php require("_news.php"); ?>
+    <?php require("_news2.php"); ?>
 <?php endif ?>
 <?php get_footer() ?>

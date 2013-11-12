@@ -1,0 +1,42 @@
+#sliderTried {
+  padding: 20px 0; }
+  #sliderTried .img-container {
+    min-height: 400px;
+    font-size: getSize(16);
+    padding-left: 0;
+    position: relative; }
+    #sliderTried .img-container .round-sign {
+      background: url("../../img/link_bg_blue_round.png") no-repeat center;
+      background-size: cover;
+      width: 150px;
+      min-height: 150px;
+      position: absolute;
+      bottom: 24%;
+      left: 2%;
+      z-index: 1000;
+      opacity: 0.7;
+      color: #ffffff; }
+      #sliderTried .img-container .round-sign h1 {
+        color: #ffffff;
+        font-size: getSize(45); }
+    #sliderTried .img-container .white-footer {
+      color: #647678;
+      height: 40%;
+      margin-right: 8px;
+      margin-left: 2px;
+      background: rgba(255, 255, 255, 0.8);
+      position: absolute;
+      bottom: 5%;
+      padding: 3px 0; }
+      #sliderTried .img-container .white-footer b.topic-sign {
+        font-size: getSize(12);
+        width: 100%;
+        font-family: "Open Sans"; }
+      #sliderTried .img-container .white-footer .img-text {
+        font-size: getSize(9); }
+  #sliderTried .tags {
+    font-size: getSize(25); }
+  #sliderTried ul {
+    font-size: getSize(12);
+    font-weight: bold;
+    line-height: 1.5; }

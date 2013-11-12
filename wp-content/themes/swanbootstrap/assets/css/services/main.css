@@ -33,12 +33,10 @@ section {
     padding: 10px 0; }
     .servicesHeader .headerContent .headerList .image {
       float: left;
-      display: table-cell;
       vertical-align: middle; }
       .servicesHeader .headerContent .headerList .image img {
         padding: 25px; }
     .servicesHeader .headerContent .headerList .text {
-      display: table-cell;
       vertical-align: middle;
       width: 100%; }
       .servicesHeader .headerContent .headerList .text h1, .servicesHeader .headerContent .headerList .text h3 {
@@ -86,6 +84,32 @@ section {
         margin-left: 36%; }
         .servicesHeader .headerContent .headerForm form input.submit:hover, .servicesHeader .headerContent .headerForm form textarea.submit:hover {
           background: #6699ff; }
+  @media screen {
+    .servicesHeader .headerContent .text {
+      display: table-cell; }
+    .servicesHeader .headerContent .image {
+      display: table-cell; } }
+  @media (max-width: 900px) {
+    .servicesHeader .headerContent .headerForm,
+    .servicesHeader .headerContent .headerList {
+      width: 100%; }
+    .servicesHeader .headerContent .headerForm .col-sm-4 {
+      width: 100%;
+      text-align: left; } }
+  @media (max-width: 550px) {
+    .servicesHeader .headerContent .text {
+      display: block;
+      width: 100%;
+      clear: both;
+      padding: 0 5%; }
+    .servicesHeader .headerContent .image {
+      width: 100%;
+      display: block;
+      clear: both;
+      text-align: center; } }
+  @media (max-width: 550px) {
+    .servicesHeader .headerContent .text h1 {
+      font-size: 3.15rem; } }
 
 #serviceContent {
   padding: 10px 0;
@@ -96,23 +120,60 @@ section {
       display: -webkit-box;
       display: -moz-box; }
     #serviceContent .content .article {
-      display: -webkit-box;
       -webkit-box-align: center;
       -moz-box-align: center;
       font-size: 114.28571%; }
-    #serviceContent .content .articleList {
+    #serviceContent .content .articleList h1 {
+      color: #ffffff;
+      margin-bottom: 10px; }
+    #serviceContent .content .articleList li {
+      background: url("../../img/marker_yellow_big.png") left top no-repeat;
+      padding-left: 20px;
+      font-size: 133.33333%;
+      color: #ffffff; }
+    #serviceContent .content .articleList p {
+      color: #ffffff; }
+  @media screen {
+    #serviceContent .articleList {
       padding: 55px;
       height: 410px; }
-      #serviceContent .content .articleList h1 {
-        color: #ffffff;
-        margin-bottom: 10px; }
-      #serviceContent .content .articleList li {
-        background: url("../../img/marker_yellow_big.png") left top no-repeat;
-        padding-left: 20px;
-        font-size: 133.33333%;
-        color: #ffffff; }
-      #serviceContent .content .articleList p {
-        color: #ffffff; }
+    #serviceContent .article {
+      display: -webkit-box;
+      display: -moz-box; } }
+  @media (max-width: 970px) {
+    #serviceContent .articleList {
+      padding: 40px 30px 0px 140px; }
+      #serviceContent .articleList h1 {
+        font-size: 2.625rem; } }
+  @media (max-width: 850px) {
+    #serviceContent .articleList {
+      padding: 40px 30px 0px 100px; } }
+  @media (max-width: 768px) {
+    #serviceContent .content {
+      background-position: bottom; }
+      #serviceContent .content .row {
+        display: block; }
+    #serviceContent .articleList {
+      padding: 40px 30px 0px 50px;
+      width: 100%;
+      min-height: 410px; }
+      #serviceContent .articleList h1 {
+        text-align: center;
+        width: 278px;
+        margin: 0 auto; }
+      #serviceContent .articleList p {
+        width: 300px;
+        margin: 0 auto; }
+      #serviceContent .articleList ul {
+        width: 300px;
+        margin: 0 auto; }
+    #serviceContent .article {
+      width: 100%;
+      display: block;
+      clear: both; } }
+  @media (max-width: 375px) {
+    #serviceContent .articleList ul {
+      width: 95%; } }
 
 #info {
   background: #a4bdbf; }
@@ -155,6 +216,11 @@ section {
         background: #f4feff url("../../img/hover_active.png") center center no-repeat; }
         #clients ul li.active a:hover {
           background: #f4feff url("../../img/hover_active.png") center center no-repeat; }
+  @media (max-width: 750px) {
+    #clients ul li.active a {
+      background: #f4feff; }
+      #clients ul li.active a:hover {
+        background: #f4feff; } }
 
 #clients p img,
 #technologies p img {
@@ -163,3 +229,6 @@ section {
 #quotes {
   background: #eef8eb;
   font-size: 133.33333%; }
+  @media (max-width: 750px) {
+    #quotes {
+      display: none; } }

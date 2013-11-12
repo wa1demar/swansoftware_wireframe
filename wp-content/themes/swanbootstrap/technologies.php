@@ -13,7 +13,7 @@
 <?php get_header() ?>
 <?php while (have_posts()) : the_post(); ?>
     <?php $bg = get_field('background'); ?>
-    <div id="sliderFirst" style="background:  url('<?= $bg ?>') center top repeat-x;">
+    <div id="sliderFirst" style="background:  url('<?= $bg ?>') center top;">
         <div class="info-section">
             <?php addSocials($bg) ?>
 

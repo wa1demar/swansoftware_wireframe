@@ -1,4 +1,9 @@
 #quotes {
   background: #eef8eb;
   font-size: getSize(14);
+
+  @media (max-width: 750px) {
+    display: none;
+  }
+
 }

@@ -1,0 +1,133 @@
+#sliderThird{
+  padding: 20px 0;
+
+  &.first {
+    display: none;
+  }
+
+  .img-container{
+    min-height: 400px;
+    margin-bottom: 20px;
+
+
+    font-size: getSize(16);                         // TODO
+    padding-left:  0;
+
+    position: relative;
+    .round-sign{
+      background: url("../../img/link_bg_blue_round.png") no-repeat center ;
+      background-size: cover;
+      width: 150px;;
+      min-height: 150px;
+      position: absolute;
+      bottom: 24%;
+      left: 2%;
+      z-index: 1000;
+      opacity: 0.7;
+      color: #ffffff;
+      h1{
+        color: #ffffff;
+        font-size: getSize(45);                     // TODO
+
+      }
+
+    }
+
+
+  }
+
+  .white-footer{
+    color: #647678;
+    height: 40%;
+    margin-right:  0px;
+    margin-left:  -9px;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 5%;
+
+    padding: 3px 0;
+    b.topic-sign{
+      font-size: getRSize(22);
+      width: 100%;
+      font-family: "Open Sans";
+      font-weight: normal;
+    }
+    .img-text{
+      font-size: getRSize(18);
+    }
+
+    a {
+      font-size: getRSize(22);
+    }
+
+
+
+
+  }
+
+  .tags{
+    font-size: getSize(25);                     // TODO
+  }
+  ul{
+    font-size: getSize(12);                     // TODO
+    font-weight: bold;                     // TODO
+    line-height: 1.5;
+
+
+
+
+  }
+
+  @media (max-width: 500px) {
+    .img-container {
+      .shadow {
+        bottom: 0.5%;
+      }
+      .round-sign {
+        top: 0;
+        left: 0;
+        bottom: auto;
+      }
+    }
+
+    .white-footer {
+      height: 45%;
+      bottom: 2%;
+      .img-text {
+        font-size: getRSize(16);
+      }
+
+      .topic-sign {
+        a {
+          font-size: getRSize(18);
+        }
+      }
+      div {
+        width: 100%;
+
+        a {
+          &.all {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .topic-background {
+      min-height: 366px;
+
+    }
+
+  }
+
+  @media (max-width: 500px) {
+    .img-container {
+      .round-sign {
+        top: 0;
+        left: 0;
+        bottom: auto;
+      }
+    }
+  }
+
+}

@@ -61,7 +61,7 @@
                     <div class="row ">
                         <div class='col-xs-12 text-center'>
                             <h1>Make your business better with us</h1>
-                            <a href="<?= get_permalink(get_page_by_title('Get Started')) ?>" class="blue_btn st">Get Started</a>
+                            <a style="width: auto" href="<?= get_permalink(get_page_by_title('Get Started')) ?>" class="blue_btn st">Get Started</a>
 
                         </div>
                     </div>

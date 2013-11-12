@@ -39,6 +39,21 @@
 
     }
   }
+  @media (max-width: 750px) {
+    ul {
+      li {
+        &.active {
+          a {
+            background: $white;
+            &:hover {
+              background: $white;
+            }
+          }
+        }
+
+      }
+    }
+  }
 
 }
 

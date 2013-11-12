@@ -13,12 +13,12 @@
 <?php get_header() ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <?php $bg = get_field('background'); ?>
-    <div class="servicesHeader" style="background: url('<?= $bg ?>') center top repeat-x;">
+    <div class="servicesHeader" style="background: url('<?= $bg ?>') center top ;">
         <?php addSocials($bg) ?>
         <div class="headerContent blackTransparent">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-7 headerList">
+                    <div class="col-sm-7 headerList">
                         <div class="image">
                             <img src="<?php the_field("service_icon") ?>">
                         </div>
@@ -28,7 +28,7 @@
                         </div>
 
                     </div>
-                    <div class="col-lg-5 headerForm blackTransparent">
+                    <div class="col-sm-5 headerForm blackTransparent">
                         <h2>Tell us about your <span>Project</span></h2> <!-- TODO: ???-->
 
 
@@ -36,16 +36,16 @@
                         <form action="<?=esc_url(get_permalink(get_page_by_title('Thank you')))?>"  method = 'POST'>
                             <input hidden="hidden"  name= 'service_p' type="text" value = "<?= the_title() ?>">
                             <div class="row">
-                                <div class="col-lg-4"><label>Name</label></div>
-                                <div class="col-lg-8"><input required="required" name= 'name_p' type="text" placeholder="John Doe..."></div>
+                                <div class="col-sm-4"><label>Name</label></div>
+                                <div class="col-sm-8"><input required="required" name= 'name_p' type="text" placeholder="John Doe..."></div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-4"><label>Email</label></div>
-                                <div class="col-lg-8"><input required="required" type="email" name = 'email_p' placeholder="johndoe@jahoo.com"></div>
+                                <div class="col-sm-4"><label>Email</label></div>
+                                <div class="col-sm-8"><input required="required" type="email" name = 'email_p' placeholder="johndoe@jahoo.com"></div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-4"><label>Comment</label></div>
-                                <div class="col-lg-8"><textarea name = 'comment_p' placeholder="Tape your messahe here..."></textarea>
+                                <div class="col-sm-4"><label>Comment</label></div>
+                                <div class="col-sm-8"><textarea name = 'comment_p' placeholder="Tape your message here..."></textarea>
                                 </div>
                             </div>
                             <input type = 'submit' class="blue_btn small submit" name = 'submit_project_template' value = 'Send'>
@@ -60,12 +60,12 @@
     <div id="serviceContent">
         <div class="container content">
             <div class="row">
-                <div class="col-lg-7 article">
+                <div class="col-md-7 col-sm-6 article">
                     <article class="center">
                         <?php the_content() ?>
                     </article>
                 </div>
-                <div class="col-lg-5 articleList ">
+                <div class="col-md-5 col-sm-6 articleList ">
                     <?php the_field('our_approach') ?>
                 </div>
             </div>

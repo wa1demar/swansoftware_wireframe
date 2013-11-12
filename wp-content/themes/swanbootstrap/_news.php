@@ -32,11 +32,94 @@ if (have_posts()) : ?>
                 <?php addSocials($bg) ?>
 
 
-                <div class='row  darck-background'>
+                <div class='dark-background'>
+
                     <div class='container'>
-                        <div class='col-sm-8 img-background '
-                             style="background: url('<?php echo get_field('image') != "" ? get_field('image') : $default_img ?>') center no-repeat; background-size: 97% 100%"
-                        ">
+                        <div class="row">
+
+                            <div class='col-sm-8 img-background '
+                                 style="
+                                     background: url('<?php echo get_field('image') != "" ? get_field('image') : $default_img ?>') center no-repeat;
+                                     background-size: cover
+                                     ">
+                                <div class='col-xs-4 round-sign text-center'>
+                                    <?= get_the_date('M') ?>
+                                    <h1 class='roud'><?= get_the_date('d') ?></h1>
+                                    <?= get_the_date('Y') ?>
+                                </div>
+                                <div class="shadow">
+                                </div>
+                                <div class='white-footer row'>
+
+
+                                    <div class='col-xs-3'>
+
+                                    </div>
+                                    <div class='col-xs-9'>
+                                        <b><?php the_title() ?></b><br/>
+                                        <?php the_my_excerpt($post) ?>
+                                        <br/>
+                                        <a href="<?php the_permalink() ?>">View all +</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class='col-sm-4 form'>
+                                <h1 class='title'>Blog & News</h1>
+
+                                <div class='inputs row'>
+                                    <div class="col-xs-6 col-md-12 news">
+                                        <b>Join our Newsletter</b>
+                                        <br/>
+
+                                        <form action="http://feedburner.google.com/fb/a/mailverify"
+                                              method="post" target="popupwindow"
+                                              onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=swansowttest', 'popupwindow', 'scrollbars=yes,width=550,height=520');
+                                  return true">
+                                            <div class="col-xs-9 input1">
+                                                <input type='text' class="form-control " name='email'
+                                                       placeholder='Enter your Email address'>
+                                                <input type="hidden" value="swansowttest" name="uri"/><input
+                                                    type="hidden"
+                                                    name="loc"
+                                                    value="en_US"/>
+                                            </div>
+                                            <div class="col-xs-3 go">
+                                                <!--                                        <button type="button" class="form-control input_submit" name='submit'>Go-->
+                                                <!--                                        </button>-->
+                                                <input type="SUBMIT" class="form-control input_submit" value="Go">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-xs-6 col-md-12 search">
+                                        <form>
+                                            <b>Search</b>
+
+                                            <div class="col-xs-12">
+
+                                                <?php get_search_form() ?>
+
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php endwhile ?>
+    <?php endif ?>
+    <?php while (have_posts()) : the_post(); ?>
+        <!--        --><?php //if ($last_post_ID != get_the_ID()): ?>
+        <div id='sliderThird' class="<?php if ($last_post_ID == get_the_ID()) echo 'first'; ?>">
+            <div class='container'>
+                <div class='row'>
+
+
+                    <div class='col-sm-8 img-container'
+                         style="background: url('<?php echo get_field('image') != "" ? get_field('image') : $default_img ?>') center no-repeat; background-size: cover">
                         <div class='col-xs-4 round-sign text-center'>
                             <?= get_the_date('M') ?>
                             <h1 class='roud'><?= get_the_date('d') ?></h1>
@@ -46,115 +129,41 @@ if (have_posts()) : ?>
                         </div>
                         <div class='white-footer row'>
 
-
                             <div class='col-xs-3'>
 
                             </div>
                             <div class='col-xs-9'>
-                                <b><?php the_title() ?></b><br/>
-                                <?php the_my_excerpt($post) ?>
+                                <b class=topic-sign><?php the_title() ?></b>
                                 <br/>
+
+                                <div class='img-text'>
+                                    <?php the_my_excerpt($post) ?>
+                                </div>
+
                                 <a href="<?php the_permalink() ?>">View all +</a>
 
                             </div>
                         </div>
 
-                    </div>
-                    <div class='col-sm-4'>
-                        <h1 class='title'>Blog & News</h1>
-
-                        <div class='inputs row'>
-                            <b>Join our Newsletter</b>
-                            <br/>
-
-                            <form action="http://feedburner.google.com/fb/a/mailverify"
-                                  method="post" target="popupwindow"
-                                  onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=swansowttest', 'popupwindow', 'scrollbars=yes,width=550,height=520');
-                                  return true">
-                                <div class="col-xs-9 input1">
-                                    <input type='text' class="form-control " name='email'
-                                           placeholder='Enter your Email address'>
-                                    <input type="hidden" value="swansowttest" name="uri"/><input type="hidden"
-                                                                                                 name="loc"
-                                                                                                 value="en_US"/>
-                                </div>
-                                <div class="col-xs-3">
-                                    <!--                                        <button type="button" class="form-control input_submit" name='submit'>Go-->
-                                    <!--                                        </button>-->
-                                    <input type="SUBMIT" class="form-control input_submit" value="Go">
-                                </div>
-                            </form>
-                            <form>
-                                <b>Search</b>
-
-                                <div class="col-xs-12">
-
-                                    <?php get_search_form() ?>
-
-                                </div>
-                            </form>
-                        </div>
 
                     </div>
+                    <div class='col-sm-4 menu'>
+                        <?php if (($c == 1 && $last_post_ID != get_the_ID()) || $c == 2 ): ?>
+                            <p class='tags'>Browser by Tag</p>
+                            <ul>
+                                <?php $tags = get_tags(array('number' => 15)); ?>
+                                <?php foreach ($tags as $tag): ?>
+                                    <li><a href="<?= get_tag_link($tag->term_id); ?>"><?= $tag->name ?></a></li>
+                                <?php endforeach ?>
 
-                </div>
-            </div>
-
-            </div>
-        <?php endwhile ?>
-    <?php endif ?>
-    <?php while (have_posts()) : the_post(); ?>
-        <?php if ($last_post_ID != get_the_ID()): ?>
-            <div id='sliderTried'>
-                <div class='container'>
-                    <div class='row'>
-
-                        <div class='col-sm-8 img-container'
-                             style="background: url('<?php echo get_field('image') != "" ? get_field('image') : $default_img ?>') center no-repeat; background-size: 97% 100%">
-                            <div class='col-xs-4 round-sign text-center'>
-                                <?= get_the_date('M') ?>
-                                <h1 class='roud'><?= get_the_date('d') ?></h1>
-                                <?= get_the_date('Y') ?>
-                            </div>
-                            <div class="shadow">
-                            </div>
-                            <div class='white-footer row'>
-
-                                <div class='col-xs-3'>
-
-                                </div>
-                                <div class='col-xs-9'>
-                                    <b class=topic-sign><?php the_title() ?></b>
-                                    <br/>
-
-                                    <div class='img-text'>
-                                        <?php the_my_excerpt($post) ?>
-                                    </div>
-
-                                    <a href="<?php the_permalink() ?>">View all +</a>
-
-                                </div>
-                            </div>
-
-
-                        </div>
-                        <div class='col-sm-4 menu'>
-                            <?php if ($c == 1): ?>
-                                <p class='tags'>Browser by Tag</p>
-                                <ul>
-                                    <?php $tags = get_tags(array('number' => 15)); ?>
-                                    <?php foreach ($tags as $tag): ?>
-                                        <li><a href="<?= get_tag_link($tag->term_id); ?>"><?= $tag->name ?></a></li>
-                                    <?php endforeach ?>
-
-                                </ul>
-                            <?php endif ?>
-                        </div>
+                            </ul>
+                        <?php endif ?>
                     </div>
                 </div>
             </div>
-            <?php $c++; ?>
-        <?php endif ?>
+        </div>
+        <?php $c++; ?>
+        <!--        --><?php //endif ?>
     <?php endwhile; ?>
     <div id='sectionFifth'>
         <div class='container'>

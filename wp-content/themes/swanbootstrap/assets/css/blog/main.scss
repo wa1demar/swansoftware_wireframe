@@ -1,15 +1,75 @@
 @import "../globals/constants";
-
 @import "section_first";
-@import "section_tried";
+@import "section_third";
 @import "section_fifth";
-
 
 .shadow {
   position: absolute;
-  left: 2px;
+  left: -8px;
   bottom: 3.5%;
   height: 119px;
   width: 8px;
   background: url("../../img/shadow.png") bottom left no-repeat;
+}
+
+@media (max-width: 850px) {
+
+  #sliderFirst {
+    .dark-background {
+      .img-background {
+        display: none;
+      }
+
+      .form {
+        width: 100%;
+
+        .inputs {
+
+          .news,
+          .search{
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  #sliderThird {
+    &.first {
+      display: block;
+    }
+
+  }
+}
+
+@media (max-width: 650px) {
+  #sliderFirst {
+    .dark-background {
+      .form {
+        .inputs {
+
+          .news,
+          .search{
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #sliderFirst {
+    .dark-background {
+      .form {
+        .inputs {
+
+          .news,
+          .search{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
