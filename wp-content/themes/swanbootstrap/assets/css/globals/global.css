@@ -130,6 +130,9 @@ body {
     width: 60%;
     margin-left: 40%; }
 
+#small-menu {
+  display: none; }
+
 @media (min-width: 800px) and (max-width: 1000px) {
   .header-row {
     position: relative; }
@@ -172,7 +175,7 @@ body {
 
   .header-row {
     position: relative;
-    padding-bottom: 100px; }
+    padding-bottom: 40px; }
 
   #mainHeader .logo {
     margin-left: 0%;
@@ -200,23 +203,11 @@ body {
       background-size: 78px 100%; }
 
   #mainHeader .header-contacts {
-    width: 80%;
-    position: absolute;
-    left: 10%;
-    top: 110px; }
-    #mainHeader .header-contacts .address {
-      width: 200px;
-      margin: 0 auto; }
-    #mainHeader .header-contacts ul li.address {
-      width: auto;
-      padding-left: 22px; }
-    #mainHeader .header-contacts ul li.phone {
-      width: auto;
-      padding-left: 22px; }
+    display: none; }
 
   #mainHeader .link-list {
     position: absolute;
-    top: 190px;
+    top: 120px;
     width: 100%;
     margin-left: 0%; } }
 @media (min-width: 480px) and (max-width: 520px) {
@@ -225,7 +216,7 @@ body {
 
   .header-row {
     position: relative;
-    padding-bottom: 100px; }
+    padding-bottom: 40px; }
 
   .logo {
     margin-left: 5%;
@@ -243,19 +234,7 @@ body {
     min-width: 0%; }
 
   #mainHeader .header-contacts {
-    width: 90%;
-    position: absolute;
-    left: 5%;
-    top: 110px; }
-    #mainHeader .header-contacts .address {
-      width: 200px;
-      margin: 0 auto; }
-    #mainHeader .header-contacts ul li.address {
-      width: auto;
-      padding-left: 22px; }
-    #mainHeader .header-contacts ul li.phone {
-      width: auto;
-      padding-left: 22px; }
+    display: none; }
 
   #mainHeader .link-list {
     position: absolute;
@@ -284,16 +263,16 @@ body {
       padding-top: 10px;
       background: url("../../img/swan_150x100.png") no-repeat left;
       background-size: 78px 100%; } }
-@media (min-width: 350px) and (max-width: 480px) {
+@media (min-width: 460px) and (max-width: 480px) {
   #mainHeader {
-    height: 260px; }
+    height: 180px; }
 
   #mainHeader ul.mainMenu {
     text-align: center; }
 
   .header-row {
     position: relative;
-    padding-bottom: 100px; }
+    padding-bottom: 0px; }
 
   #mainHeader .logo {
     margin-left: 5%;
@@ -315,29 +294,11 @@ body {
       font-size: 150%; }
 
   #mainHeader .header-contacts {
-    width: 98%;
-    position: absolute;
-    left: 1%;
-    top: 100px; }
-    #mainHeader .header-contacts .address {
-      width: 230px;
-      margin: 0 auto; }
-    #mainHeader .header-contacts ul li.address {
-      width: auto;
-      padding-left: 22px;
-      padding-top: 10px; }
-      #mainHeader .header-contacts ul li.address p {
-        font-size: 140%; }
-    #mainHeader .header-contacts ul li.phone {
-      width: auto;
-      padding-left: 22px;
-      padding-top: 10px; }
-      #mainHeader .header-contacts ul li.phone p {
-        font-size: 140%; }
+    display: none; }
 
   #mainHeader .link-list {
     position: absolute;
-    top: 180px;
+    top: 110px;
     width: 100%;
     margin-left: 0%; }
 
@@ -355,28 +316,29 @@ body {
     padding-left: 12px; }
 
   #mainHeader .logo-sign {
-    margin-left: 20%;
+    margin-left: 25%;
     width: 60%; }
     #mainHeader .logo-sign #sign-with-logo {
       padding-left: 80px;
       padding-top: 10px;
       background: url("../../img/swan_150x100.png") no-repeat left;
       background-size: 78px 100%; } }
-@media (min-width: 100px) and (max-width: 350px) {
+@media (min-width: 350px) and (max-width: 460px) {
   #mainHeader {
-    height: 270px; }
+    height: 140px; }
 
   #mainHeader ul.mainMenu {
     text-align: center; }
 
   .header-row {
     position: relative;
-    padding-bottom: 100px; }
+    padding-bottom: 0px; }
 
   #mainHeader .logo {
+    padding-top: 10px;
     margin-left: 5%;
-    min-width: 0px;
-    width: 40%;
+    min-width: 150px;
+    width: 35%;
     text-align: right; }
     #mainHeader .logo img {
       width: 100%; }
@@ -386,69 +348,192 @@ body {
 
   #mainHeader .logo-sign {
     padding-left: 0px;
-    min-width: 0px;
-    width: 50%;
-    min-width: 0%; }
+    min-width: 205px;
+    width: 50%; }
+    #mainHeader .logo-sign h1#sign-with-logo, #mainHeader .logo-sign h2#sign-with-logo {
+      font-size: 400%; }
     #mainHeader .logo-sign h2 {
-      font-size: 120%; }
-
-  #mainHeader .header-contacts {
-    width: 98%;
-    position: absolute;
-    left: 1%;
-    top: 90px; }
-    #mainHeader .header-contacts .address {
-      width: 200px;
-      margin: 0 auto; }
-    #mainHeader .header-contacts ul li.address {
-      width: auto;
-      padding-left: 22px; }
-      #mainHeader .header-contacts ul li.address p {
-        font-size: 140%; }
-    #mainHeader .header-contacts ul li.phone {
-      width: auto;
-      padding-left: 22px; }
-      #mainHeader .header-contacts ul li.phone p {
-        font-size: 140%; }
-
-  #mainHeader .link-list {
-    position: absolute;
-    top: 179px;
-    width: 100%;
-    margin-left: 0%; }
-    #mainHeader .link-list a {
+      padding-left: 0px;
       font-size: 150%; }
 
-  #mainHeader .link-list ul.mainMenu li a {
-    font-size: 150%; }
+  #mainHeader .header-contacts {
+    display: none; }
 
-  #mainHeader .logo-sign h2 {
-    min-width: 150px; }
-
-  #mainHeader .logo img {
-    width: 100px; }
-
-  #mainHeader .logo {
-    margin-left: 0%;
-    padding: 0px;
-    width: 0px;
-    min-width: 0px; }
-    #mainHeader .logo img {
-      display: none; }
+  #mainHeader .link-list {
+    display: none; }
 
   #mainHeader hgroup h2 {
     font-size: 190%;
     padding-top: 10px;
+    padding-left: 12px; }
+
+  #small-menu {
+    display: block;
+    padding: 0px;
+    text-align: center;
+    background-color: #23292a; }
+    #small-menu #accordion .panel-default {
+      background-color: #23292a;
+      border: none;
+      border-radius: 0px; }
+      #small-menu #accordion .panel-default .panel-heading {
+        padding: 0px; }
+        #small-menu #accordion .panel-default .panel-heading a {
+          color: #ffffff;
+          background-color: #4c586d;
+          font: 130% normal "Open Sans Light";
+          text-decoration: none;
+          display: block;
+          padding: 10px 15px; }
+          #small-menu #accordion .panel-default .panel-heading a:hover {
+            background-color: #4c586d; }
+          #small-menu #accordion .panel-default .panel-heading a.collapsed {
+            background-color: #23292a; }
+      #small-menu #accordion .panel-default #collapseOne .panel-body {
+        border: none;
+        padding: 0px; }
+        #small-menu #accordion .panel-default #collapseOne .panel-body li {
+          display: block;
+          font-size: 120%; }
+          #small-menu #accordion .panel-default #collapseOne .panel-body li a {
+            color: #ffffff;
+            width: 100%;
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-align: left;
+            font-size: 130%;
+            border-top: 1px solid #647678; }
+            #small-menu #accordion .panel-default #collapseOne .panel-body li a:hover {
+              background-color: #4c586d; } }
+@media (min-width: 350px) and (max-width: 400px) {
+  #mainHeader {
+    height: 130px; }
+
+  #mainHeader ul.mainMenu {
+    text-align: center; }
+
+  .header-row {
+    position: relative;
+    padding-bottom: 0px; }
+
+  #mainHeader .logo {
+    padding-top: 10px;
+    margin-left: 5%;
+    min-width: 130px;
+    width: 35%;
+    text-align: right; }
+    #mainHeader .logo img {
+      width: 100%; }
+
+  #mainHeader hgroup h1, #mainHeader hgroup h2 {
+    font-size: 300%; }
+
+  #mainHeader .logo-sign {
+    padding-left: 0px;
+    min-width: 150px;
+    width: 50%; }
+    #mainHeader .logo-sign h1#sign-with-logo, #mainHeader .logo-sign h2#sign-with-logo {
+      font-size: 350%; }
+    #mainHeader .logo-sign h2 {
+      padding-left: 0px;
+      font-size: 120%; }
+
+  #mainHeader .header-contacts {
+    display: none; }
+
+  #mainHeader .link-list {
+    display: none; }
+
+  #mainHeader hgroup h2 {
+    font-size: 190%;
+    padding-top: 10px;
+    padding-left: 12px; } }
+@media (min-width: 100px) and (max-width: 350px) {
+  #mainHeader {
+    height: 110px; }
+
+  #mainHeader ul.mainMenu {
+    text-align: center; }
+
+  .header-row {
+    position: relative;
+    padding-bottom: 100px; }
+
+  #mainHeader .logo {
+    padding-top: 5px;
+    margin-left: 5%;
+    min-width: 0px;
+    width: 40%;
+    text-align: right; }
+    #mainHeader .logo img {
+      width: 95px; }
+
+  #mainHeader hgroup h1, #mainHeader hgroup h2 {
+    font-size: 300%; }
+
+  #mainHeader hgroup h2 {
+    font-size: 190%;
+    padding-top: 0px;
     padding-left: 30px; }
 
   #mainHeader .logo-sign {
-    margin-left: 15%;
-    width: 70%; }
-    #mainHeader .logo-sign #sign-with-logo {
-      padding-left: 80px;
-      padding-top: 10px;
-      background: url("../../img/swan_150x100.png") no-repeat left;
-      background-size: 78px 100%; } }
+    padding-left: 0px;
+    min-width: 0px;
+    width: 40%;
+    min-width: 0%; }
+    #mainHeader .logo-sign h2 {
+      font-size: 120%;
+      padding-left: 0px; }
+
+  #mainHeader .header-contacts {
+    display: none; }
+
+  #mainHeader .link-list {
+    display: none; }
+
+  #mainHeader .logo-sign h2 {
+    min-width: 150px; }
+
+  #small-menu {
+    display: block;
+    padding: 0px;
+    text-align: center;
+    background-color: #23292a; }
+    #small-menu #accordion .panel-default {
+      background-color: #23292a;
+      border: none;
+      border-radius: 0px; }
+      #small-menu #accordion .panel-default .panel-heading {
+        padding: 0px; }
+        #small-menu #accordion .panel-default .panel-heading a {
+          color: #ffffff;
+          background-color: #4c586d;
+          font: 130% normal "Open Sans Light";
+          text-decoration: none;
+          display: block;
+          padding: 10px 15px; }
+          #small-menu #accordion .panel-default .panel-heading a:hover {
+            background-color: #4c586d; }
+          #small-menu #accordion .panel-default .panel-heading a.collapsed {
+            background-color: #23292a; }
+      #small-menu #accordion .panel-default #collapseOne .panel-body {
+        border: none;
+        padding: 0px; }
+        #small-menu #accordion .panel-default #collapseOne .panel-body li {
+          display: block;
+          font-size: 120%; }
+          #small-menu #accordion .panel-default #collapseOne .panel-body li a {
+            color: #ffffff;
+            width: 100%;
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-align: left;
+            font-size: 130%;
+            border-top: 1px solid #647678; }
+            #small-menu #accordion .panel-default #collapseOne .panel-body li a:hover {
+              background-color: #4c586d; } }
 hgroup {
   line-height: 100%;
   padding: 0 0 50px 0;

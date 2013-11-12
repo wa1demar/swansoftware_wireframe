@@ -106,6 +106,9 @@
   }
 
 }
+#small-menu{
+  display: none;
+}
 
 @media(min-width:800px)and(max-width:1000px){
   .header-row{
@@ -171,7 +174,7 @@
 
   .header-row{
    position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
   }
   #mainHeader .logo{
     margin-left: 0%;
@@ -209,38 +212,39 @@
 
 
   #mainHeader .header-contacts{
-    width: 80%;
-
-    position:absolute;
-    left: 10%;
-    top: 110px;
-    .address{
-      //text-align: center;
-      width: 200px;
-      margin: 0 auto;
-    }
-    ul{
-
-
-      li.address{
-        //display: inline-block;
-        width: auto;
-
-        padding-left: 22px;
-        //height: 60px;
-      }
-      li.phone{
-        //display: block;
-        width: auto;
-        padding-left: 22px;
-
-      }
-     }
+    display: none;
+    //width: 80%;
+    //
+    //position:absolute;
+    //left: 10%;
+    //top: 110px;
+    //.address{
+    //  //text-align: center;
+    //  width: 200px;
+    //  margin: 0 auto;
+    //}
+    //ul{
+    //
+    //
+    //  li.address{
+    //    //display: inline-block;
+    //    width: auto;
+    //
+    //    padding-left: 22px;
+    //    //height: 60px;
+    //  }
+    //  li.phone{
+    //    //display: block;
+    //    width: auto;
+    //    padding-left: 22px;
+    //
+    //  }
+    // }
 
   }
   #mainHeader .link-list{
     position:absolute;
-    top: 190px;
+    top: 120px;
     width: 100%;
     margin-left: 0%;
   }
@@ -253,7 +257,7 @@
 
   .header-row{
    position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 40px;
   }
   .logo{
     margin-left: 5%;
@@ -279,33 +283,34 @@
 
 
   #mainHeader .header-contacts{
-    width: 90%;
+    display: none;
+    //width: 90%;
 
-    position:absolute;
-    left: 5%;
-    top: 110px;
-    //right: 0px;
-    .address{
-      width: 200px;
-      margin: 0 auto;
-    }
-    ul{
+    //position:absolute;
+    //left: 5%;
+    //top: 110px;
+    ////right: 0px;
+    //.address{
+    //  width: 200px;
+    //  margin: 0 auto;
+    //}
+    //ul{
 
 
-      li.address{
+      //li.address{
 
-        width: auto;
+        //width: auto;
 
-        padding-left: 22px;
+        //padding-left: 22px;
+      //
+      //}
+      //li.phone{
 
-      }
-      li.phone{
+        //width: auto;
+        //padding-left: 22px;
 
-        width: auto;
-        padding-left: 22px;
-
-      }
-    }
+      //}
+    //}
 
   }
    #mainHeader  .link-list{
@@ -347,9 +352,9 @@
   }
 
 }
-@media(min-width:350px)and(max-width:480px){
+@media(min-width:460px)and(max-width:480px){
   #mainHeader{
-    height: 260px;
+    height: 180px;
   }
   #mainHeader ul.mainMenu{
     text-align: center;
@@ -357,7 +362,7 @@
 
   .header-row{
    position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
   }
   #mainHeader .logo{
 
@@ -391,46 +396,47 @@
 
 
   #mainHeader .header-contacts{
-    width: 98%;
-
-    position:absolute;
-    left: 1%;
-    top: 100px;
-    //right: 0px;
-    .address{
-      width: 230px;
-      margin: 0 auto;
-    }
-    ul{
-
-
-      li.address{
-
-        width: auto;
-
-        padding-left: 22px;
-        padding-top: 10px;
-
-        p{
-          font-size: 140%;
-        }
-      }
-      li.phone{
-
-        width: auto;
-        padding-left: 22px;
-        padding-top: 10px;
-        p{
-          font-size: 140%;
-        }
-
-      }
-    }
+    display: none;
+    //width: 98%;
+    //
+    //position:absolute;
+    //left: 1%;
+    //top: 100px;
+    ////right: 0px;
+    //.address{
+    //  width: 230px;
+    //  margin: 0 auto;
+    //}
+    //ul{
+    //
+    //
+    //  li.address{
+    //
+    //    width: auto;
+    //
+    //    padding-left: 22px;
+    //    padding-top: 10px;
+    //
+    //    p{
+    //      font-size: 140%;
+    //    }
+    //  }
+    //  li.phone{
+    //
+    //    width: auto;
+    //    padding-left: 22px;
+    //    padding-top: 10px;
+    //    p{
+    //      font-size: 140%;
+    //    }
+    //
+    //  }
+    //}
 
   }
   #mainHeader .link-list{
     position:absolute;
-    top: 180px;
+    top: 110px;
     width: 100%;
     margin-left: 0%;
   }
@@ -454,7 +460,7 @@
   }
 
   #mainHeader  .logo-sign{
-    margin-left: 20%;
+    margin-left: 25%;
     width: 60%;
 
     #sign-with-logo{
@@ -466,24 +472,23 @@
     }
   }
 
-}
-@media(min-width:100px)and(max-width:350px){
+}@media(min-width:350px)and(max-width:460px){
   #mainHeader{
-    height: 270px;
+    height: 140px;
   }
   #mainHeader ul.mainMenu{
     text-align: center;
   }
 
   .header-row{
-    position: relative;
-    padding-bottom: 100px;
+   position: relative;
+    padding-bottom: 0px;
   }
   #mainHeader .logo{
-
+    padding-top: 10px;
     margin-left: 5%;
-    min-width: 0px;
-    width: 40%;
+    min-width: 150px;
+    width: 35%;
     text-align: right;
     img{
       width: 100%;
@@ -497,106 +502,308 @@
 
   #mainHeader .logo-sign{
     padding-left: 0px;
-    min-width: 0px;
-    width: 50%;
-    min-width: 0%;
-    h1 a{
 
+    min-width: 205px;
+    width: 50%;
+
+    h1#sign-with-logo{
+      font-size: 400%;
     }
+   h1 a{
+
+   }
     h2{
-      font-size: 120%;
+      padding-left: 0px;
+      font-size: 150%;
     }
     //text-align: right;
   }
 
 
   #mainHeader .header-contacts{
-    width: 98%;
-
-    position:absolute;
-    left: 1%;
-    top: 90px;
-    //right: 0px;
-    .address{
-      width: 200px;
-      margin: 0 auto;
-    }
-    ul{
-
-
-      li.address{
-
-        width: auto;
-
-        padding-left: 22px;
-
-        p{
-          font-size: 140%;
-        }
-      }
-      li.phone{
-
-        width: auto;
-        padding-left: 22px;
-        p{
-          font-size: 140%;
-        }
-
-      }
-    }
+    display: none;
 
 
   }
   #mainHeader .link-list{
-    position:absolute;
-    top: 179px;
-    width: 100%;
-    margin-left: 0%;
-    a{
+    display: none;
 
-      font-size: 150%;
-    }
-  }
-  #mainHeader .link-list ul.mainMenu li a{
-    font-size: 150%;
-
-  }
-  #mainHeader .logo-sign h2{
-    min-width: 150px;
-  }
-  #mainHeader .logo img {
-    width: 100px;
-  }
-  #mainHeader .logo{
-    margin-left: 0%;
-    padding: 0px;
-    width: 0px;
-
-    min-width: 0px;
-    img{
-      display: none;
-
-    }
   }
 
   #mainHeader hgroup h2{
     font-size: 190%;
     padding-top: 10px;
+    padding-left: 12px;
+
+  }
+  #small-menu{
+    display: block;
+    padding: 0px;
+    text-align: center;
+    background-color: #23292A ;
+    #accordion{
+
+      .panel-default{
+        background-color: #23292A ;
+        border: none;
+        border-radius: 0px;
+        .panel-heading{
+          padding: 0px;
+
+
+          a{
+          color: #ffffff;
+            background-color:#4C586D ;
+          font: 130% normal "Open Sans Light";
+           text-decoration: none;
+           display: block;
+           padding: 10px 15px;
+           &:hover{
+             background-color:#4C586D ;
+
+           }
+            &.collapsed{
+              background-color: #23292A ;
+
+            }
+
+
+
+         }
+        }
+        #collapseOne{
+          .panel-body{
+            border:  none;
+            padding:  0px;
+            li{
+              display: block;
+
+              font-size: 120%;
+              a{
+                color: #ffffff;
+                width: 100%;
+                display: block;
+                padding: 10px 15px;
+                text-decoration: none;
+                text-align: left;
+                font-size: 130%;
+                border-top: 1px solid $gray;
+                &:hover{
+                  background-color:#4C586D ;
+
+                }
+              }
+            }
+          }
+
+        }
+
+      }
+    }
+
+  }
+}
+@media(min-width:350px)and(max-width:400px){
+  #mainHeader{
+    height: 130px;
+  }
+  #mainHeader ul.mainMenu{
+    text-align: center;
+  }
+
+  .header-row{
+   position: relative;
+    padding-bottom: 0px;
+  }
+  #mainHeader .logo{
+    padding-top: 10px;
+    margin-left: 5%;
+    min-width: 130px;
+    width: 35%;
+    text-align: right;
+    img{
+      width: 100%;
+    }
+  }
+
+  #mainHeader hgroup h1{
+    font-size: 300%;
+  }
+
+
+  #mainHeader .logo-sign{
+    padding-left: 0px;
+
+    min-width: 150px;
+    width: 50%;
+
+    h1#sign-with-logo{
+      font-size: 350%;
+    }
+   h1 a{
+
+   }
+    h2{
+      padding-left: 0px;
+      font-size: 120%;
+    }
+
+  }
+
+
+  #mainHeader .header-contacts{
+    display: none;
+
+
+  }
+  #mainHeader .link-list{
+    display: none;
+
+  }
+
+  #mainHeader hgroup h2{
+    font-size: 190%;
+    padding-top: 10px;
+    padding-left: 12px;
+
+  }
+
+
+
+}
+@media(min-width:100px)and(max-width:350px){
+  #mainHeader{
+    height: 110px;
+  }
+  #mainHeader ul.mainMenu{
+    text-align: center;
+  }
+
+  .header-row{
+    position: relative;
+    padding-bottom: 100px;
+  }
+  #mainHeader .logo{
+    padding-top: 5px;
+    margin-left: 5%;
+    min-width: 0px;
+    width: 40%;
+    text-align: right;
+    img{
+      width: 95px;
+    }
+  }
+
+  #mainHeader hgroup h1{
+    font-size: 300%;
+  }
+  #mainHeader hgroup h2{
+    font-size: 190%;
+    padding-top: 0px;
     padding-left: 30px;
 
   }
 
-  #mainHeader  .logo-sign{
-    margin-left: 15%;
-    width: 70%;
 
-    #sign-with-logo{
-      padding-left: 80px ;
-      padding-top: 10px ;
+  #mainHeader .logo-sign{
+    padding-left: 0px;
+    min-width: 0px;
+    width: 40%;
+    min-width: 0%;
+    h1 a{
 
-      background: url("../../img/swan_150x100.png") no-repeat left ;
-      background-size: 78px 100%;
     }
+    h2{
+      font-size: 120%;
+      padding-left: 0px;
+
+    }
+    //text-align: right;
   }
+
+
+  #mainHeader .header-contacts{
+    display: none;
+
+
+  }
+  #mainHeader .link-list{
+    display: none;
+
+  }
+
+  #mainHeader .logo-sign h2{
+    min-width: 150px;
+  }
+  #small-menu{
+    display: block;
+    padding: 0px;
+    text-align: center;
+    background-color: #23292A ;
+    #accordion{
+
+      .panel-default{
+        background-color: #23292A ;
+        border: none;
+        border-radius: 0px;
+        .panel-heading{
+          padding: 0px;
+
+
+          a{
+            color: #ffffff;
+            background-color:#4C586D ;
+            font: 130% normal "Open Sans Light";
+            text-decoration: none;
+            display: block;
+            padding: 10px 15px;
+            &:hover{
+              background-color:#4C586D ;
+
+            }
+            &.collapsed{
+              background-color: #23292A ;
+
+            }
+
+
+
+          }
+        }
+        #collapseOne{
+          .panel-body{
+            border:  none;
+            padding:  0px;
+            li{
+              display: block;
+
+              font-size: 120%;
+              a{
+                color: #ffffff;
+                width: 100%;
+                display: block;
+                padding: 10px 15px;
+                text-decoration: none;
+                text-align: left;
+                font-size: 130%;
+                border-top: 1px solid $gray;
+                &:hover{
+                  background-color:#4C586D ;
+
+                }
+              }
+            }
+          }
+
+        }
+
+      }
+    }
+
+  }
+
+
+
+
 
   }
