@@ -64,17 +64,37 @@
           #sliderFirst .info-section .row.darck-background .text-center.background .technologies-text-phone .container h1 {
             font-size: 200%;
             color: white;
-            margin-bottom: 50px; }
+            margin-bottom: 30px; }
           #sliderFirst .info-section .row.darck-background .text-center.background .technologies-text-phone .container .content p {
             text-align: justify;
             font-size: 95.2381%;
             color: white; }
 
+@media (max-width: 730px) {
+  #sliderFirst {
+    padding-bottom: 0px; }
+    #sliderFirst .info-section .row.darck-background .text-center.background .technologies-text-phone .container {
+      padding: 0 40px; }
+      #sliderFirst .info-section .row.darck-background .text-center.background .technologies-text-phone .container h1 {
+        font-size: 161.90476%;
+        margin-bottom: 20px; } }
+@media (max-width: 500px) {
+  #sliderFirst .info-section .row.darck-background .text-center.background .technologies-text-phone .container {
+    padding: 0 20px;
+    font-size: 133.33333%; }
+    #sliderFirst .info-section .row.darck-background .text-center.background .technologies-text-phone .container h1 {
+      font-size: 152.38095%;
+      margin-bottom: 20px; } }
 #sliderSecond {
   background: #f4feff; }
   #sliderSecond img {
-    margin: 5px 5px; }
+    margin: 20px 15px; }
 
+@media (max-width: 500px) {
+  .col-sm-12.text-center {
+    padding: 0px; }
+    .col-sm-12.text-center img {
+      max-width: 120px; } }
 #sliderThird {
   background-color: #64898c; }
   #sliderThird .row {
@@ -85,6 +105,8 @@
     #sliderThird .row .col-sm-3.col-xs-6.text-center {
       min-width: 140px;
       min-height: 200px; }
+      #sliderThird .row .col-sm-3.col-xs-6.text-center a {
+        text-decoration: none; }
       #sliderThird .row .col-sm-3.col-xs-6.text-center .round_image {
         width: 120px;
         height: 120px;
@@ -103,11 +125,89 @@
   #sliderThird .row.topBannerLinks p {
     color: #ffffff;
     font-size: 190.47619%; }
+  #sliderThird .myIndicators {
+    display: none; }
 
-@media (min-width: 50px) and (max-width: 400px) {
-  #sliderThird .col-sm-3.col-xs-6.text-center {
-    margin: 0 auto;
-    float: center; } }
+@media (max-width: 490px) {
+  #sliderThird .col-sm-3.col-xs-6.text-center p {
+    font-size: 170%; } }
+@media (max-width: 440px) {
+  #sliderThird .col-sm-3.col-xs-6.text-center p {
+    font-size: 150%; } }
+@media (max-width: 420px) {
+  #sliderThird .row h1 {
+    font-size: 270%;
+    margin-bottom: 20px; }
+  #sliderThird .col-sm-3.col-xs-6.text-center p {
+    font-size: 130%; }
+  #sliderThird .topBannerLinks {
+    display: none; }
+  #sliderThird .myIndicators {
+    display: block; }
+    #sliderThird .myIndicators ul {
+      display: block; }
+      #sliderThird .myIndicators ul li {
+        padding: 0;
+        line-height: 120%;
+        width: 100%; }
+        #sliderThird .myIndicators ul li a {
+          width: 100%;
+          height: 100%;
+          display: block;
+          padding: 15px 5px 15px 60px;
+          font-family: "Open Sans Light";
+          font-size: 152.38095%;
+          color: #ffffff;
+          text-decoration: none;
+          line-height: 100%; }
+        #sliderThird .myIndicators ul li.mobile {
+          background: url("../../img/service1_25x25.png") left center no-repeat; }
+          #sliderThird .myIndicators ul li.mobile:hover {
+            background-color: #6699ff; }
+            #sliderThird .myIndicators ul li.mobile:hover a {
+              background: none;
+              color: #ffffff; }
+        #sliderThird .myIndicators ul li.staff {
+          background: url("../../img/service2_25x25.png") left center no-repeat; }
+          #sliderThird .myIndicators ul li.staff:hover {
+            background-color: #6699ff; }
+            #sliderThird .myIndicators ul li.staff:hover a {
+              background: none;
+              color: #ffffff; }
+        #sliderThird .myIndicators ul li.app {
+          background: url("../../img/service3_25x25.png") left center no-repeat; }
+          #sliderThird .myIndicators ul li.app:hover, #sliderThird .myIndicators ul li.app.active {
+            background-color: #6699ff; }
+            #sliderThird .myIndicators ul li.app:hover a, #sliderThird .myIndicators ul li.app.active a {
+              background: none;
+              color: #ffffff; }
+        #sliderThird .myIndicators ul li.design {
+          background: url("../../img/service4_25x25.png") left center no-repeat; }
+          #sliderThird .myIndicators ul li.design:hover {
+            background-color: #6699ff; }
+            #sliderThird .myIndicators ul li.design:hover a {
+              background: none;
+              color: #ffffff; }
+        #sliderThird .myIndicators ul li .marketing {
+          background: #f4feff url("../../img/icon_s_5_45.png") left center no-repeat; }
+          #sliderThird .myIndicators ul li .marketing:hover {
+            background: #6699ff url("../../img/service5_25x25.png") left center no-repeat; }
+            #sliderThird .myIndicators ul li .marketing:hover a {
+              background: none;
+              color: #ffffff; }
+    #sliderThird .myIndicators .box {
+      display: none; } }
+@media (max-width: 370px) {
+  #sliderThird .col-sm-3.col-xs-6.text-center p {
+    font-size: 120%; } }
+@media (max-width: 350px) {
+  #sliderThird .col-sm-3.col-xs-6.text-center p {
+    font-size: 110%; } }
+@media (max-width: 335px) {
+  #sliderThird .container {
+    padding: 0px; }
+    #sliderThird .container .col-sm-3.col-xs-6.text-center p {
+      font-size: 100%; } }
 #sliderFour {
   padding: 50px 50px;
   background-size: cover; }
@@ -129,6 +229,7 @@
     width: 100%;
     border-radius: 0; }
     #sliderFour ul.link-list li.active a {
+      height: 47px;
       border: none;
       background: #98b1da;
       border-radius: 0;
@@ -148,6 +249,7 @@
       width: 100%;
       margin-left: 10px; }
     #sliderFour ul.link-list li a:hover {
+      height: 47px;
       background-color: #98b1da;
       color: #ffffff;
       border: none;
@@ -160,3 +262,15 @@
     color: #000dff; }
   #sliderFour #phone ul li.sub-topic {
     font-weight: 800; }
+
+@media (max-width: 500px) {
+  #sliderFour {
+    padding: 20px 20px; } }
+@media (max-width: 400px) {
+  #sliderFour {
+    padding: 10px 10px; }
+    #sliderFour .col-sm-4.col-xs-6 {
+      min-width: 140px;
+      width: 100%; }
+      #sliderFour .col-sm-4.col-xs-6 ul {
+        width: 100%; } }
