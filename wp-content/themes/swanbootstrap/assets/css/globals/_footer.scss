@@ -50,6 +50,9 @@ footer#mainFooter {
     }
 
   }
+  #camel-line{
+    display: none;
+  }
 
 }
 
@@ -126,6 +129,13 @@ footer#mainFooter {
 }
 }
 @media (min-width: 500px) and(max-width: 770px) {
+  footer#mainFooter #camel-line{
+    display: block;
+    padding-bottom: 0px;
+    p{
+      color: white;
+    }
+  }
   #second-h{
     margin-left: 0px;
   }
@@ -156,7 +166,7 @@ footer#mainFooter {
     padding-bottom: 20px;
 
     address {
-      width: 280px;
+      width: 310px;
       margin: 0 auto;
       //text-align: center;
       ul {
@@ -168,16 +178,21 @@ footer#mainFooter {
 
   }
   .direct-lines-footer {
+    .direct-line-container{
+      width: 310px;
+      margin: 0 auto;
+      text-align: left;
+    }
     //position: absolute;
     width: 100%;
     min-width: 0px;
-    display: inline-block;
+    //display: inline-block;
     //margin: 0 auto;
     text-align: center;
     padding-bottom: 10px;
     ul {
       li {
-        display: inline-block;
+        //display: inline-block;
       }
     }
   }
@@ -188,6 +203,17 @@ footer#mainFooter {
 }
 
 @media (min-width: 100px) and(max-width: 500px) {
+  footer#mainFooter #camel-line{
+    display: block;
+    p{
+      color: white;
+      text-align: center;
+      width: 290px;
+      margin: 0 auto;
+      padding-left: 10px;
+      text-align: left;
+    }
+  }
   #second-h{
     margin-left: 0px;
   }
@@ -219,13 +245,19 @@ footer#mainFooter {
     padding-top: 10px;
 
     address {
-      width: 280px;
+      width: 290px;
       margin: 0 auto;
+      padding-left: 1px;
     }
 
   }
    .direct-lines-footer {
     //position: absolute;
+     .direct-line-container{
+       width: 290px;
+       margin: 0 auto;
+       text-align: left;
+     }
     width: 100%;
     min-width: 0px;
     display: inline-block;
@@ -234,7 +266,7 @@ footer#mainFooter {
     padding-bottom: 10px;
     ul {
       li {
-        display: inline-block;
+        //display: inline-block;
       }
       li:first{
         display: none;

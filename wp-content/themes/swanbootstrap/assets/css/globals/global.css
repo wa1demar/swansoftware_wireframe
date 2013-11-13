@@ -667,6 +667,8 @@ footer#mainFooter {
     footer#mainFooter ul.mainMenu li a {
       color: #ffffff;
       font-family: "Open Sans Light"; }
+  footer#mainFooter #camel-line {
+    display: none; }
 
 @media (min-width: 100px) and (max-width: 945px) {
   .direct-lines-footer {
@@ -676,6 +678,12 @@ footer#mainFooter {
   #second-h {
     margin-left: 8px; } }
 @media (min-width: 500px) and (max-width: 770px) {
+  footer#mainFooter #camel-line {
+    display: block;
+    padding-bottom: 0px; }
+    footer#mainFooter #camel-line p {
+      color: white; }
+
   #second-h {
     margin-left: 0px; }
 
@@ -695,21 +703,32 @@ footer#mainFooter {
     min-width: 0px;
     padding-bottom: 20px; }
     .direct-contact-footer address {
-      width: 280px;
+      width: 310px;
       margin: 0 auto; }
 
   .direct-lines-footer {
     width: 100%;
     min-width: 0px;
-    display: inline-block;
     text-align: center;
     padding-bottom: 10px; }
-    .direct-lines-footer ul li {
-      display: inline-block; }
+    .direct-lines-footer .direct-line-container {
+      width: 310px;
+      margin: 0 auto;
+      text-align: left; }
 
   .main-menu-footer {
     text-align: center; } }
 @media (min-width: 100px) and (max-width: 500px) {
+  footer#mainFooter #camel-line {
+    display: block; }
+    footer#mainFooter #camel-line p {
+      color: white;
+      text-align: center;
+      width: 290px;
+      margin: 0 auto;
+      padding-left: 10px;
+      text-align: left; }
+
   #second-h {
     margin-left: 0px; }
 
@@ -732,16 +751,19 @@ footer#mainFooter {
     padding-bottom: 10px;
     padding-top: 10px; }
     .direct-contact-footer address {
-      width: 280px;
-      margin: 0 auto; }
+      width: 290px;
+      margin: 0 auto;
+      padding-left: 1px; }
 
   .direct-lines-footer {
     width: 100%;
     min-width: 0px;
     display: inline-block;
     padding-bottom: 10px; }
-    .direct-lines-footer ul li {
-      display: inline-block; }
+    .direct-lines-footer .direct-line-container {
+      width: 290px;
+      margin: 0 auto;
+      text-align: left; }
     .direct-lines-footer ul li:first {
       display: none;
       width: 100%; }
