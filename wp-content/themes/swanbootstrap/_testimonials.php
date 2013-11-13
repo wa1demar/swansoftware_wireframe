@@ -34,12 +34,12 @@
                                         <?php the_content() ?>
                                     </div>
                                 </div>
-                                <div class='col-xs-6 text-left'>
+                                <div id = 'link' class='col-xs-6 text-left'>
                                     <h1>Link</h1>
 
                                     <?php the_field('links') ?>
                                 </div>
-                                <div class='col-xs-6 text-left'>
+                                <div id = 'used-services' class='col-xs-6 text-left'>
                                     <h1>Used services</h1>
 
                                     <?php the_field('services') ?>

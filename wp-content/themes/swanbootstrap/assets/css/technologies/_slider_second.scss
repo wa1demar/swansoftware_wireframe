@@ -2,6 +2,14 @@
   background: $white;
 
   img{
-    margin: 5px 5px;
+    margin: 20px 15px;
+  }
+}
+@media(max-width: 500px){
+  .col-sm-12.text-center{
+    padding: 0px;
+  img{
+    max-width: 120px;
+  }
   }
 }

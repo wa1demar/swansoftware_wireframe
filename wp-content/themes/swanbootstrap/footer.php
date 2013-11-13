@@ -36,13 +36,18 @@
                     </ul>
                 </address>
             </div>
+            <div class="col-sm-3 col-md-2 col-lg-2  direct-lines-footer" id = "camel-line">
+                <p>698 Pro-Med Ln,Ste 200 Carmel IN 46032;
+            </div>
             <div class="col-sm-3 col-md-2 col-lg-2  direct-lines-footer">
+            <div class="direct-line-container">
                 <ul>
                     <li>Direct Lines:</li>
                     <li><b>317-691-3806</b></li>
                     <li><b>317-362-9017</b></li>
                     <li><b>317-985-2622</b></li>
                 </ul>
+            </div>
             </div>
         </div>
         <div class="row">

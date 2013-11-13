@@ -102,6 +102,57 @@
                 <!--<p>Internet Marketing</p>-->
                 <!--</div>-->
             </div>
+            <div class="row myIndicators">
+                <ul style="">
+                    <li class="mobile active">
+                        <a href="#mobile" data-toggle="tab">Mobile Development</a></li>
+                    <li class="staff"><a href="#staff" data-toggle="tab">Staf
+                            Augmentation</a></li>
+                    <li class="app"><a href="#app" data-toggle="tab">Custom
+                            Application Development</a></li>
+                    <li class="design"><a href="#design" data-toggle="tab">Design</a>
+                    </li>
+                    <!--<li class="marketing"><a href="#">Internet Marketing</a></li>-->
+                </ul>
+
+                <div class="box col-sm-3 col-xs-3 text-center">
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_title('Mobile Application Development'))); ?>" data-target="#carousel-example-generic" data-slide-to="1" class="active">
+                        <div class="round_image text-center">
+                            <img src="<?php bloginfo('template_directory') ?>/assets/img/service1_115x100.png">
+                        </div>
+
+                        <p>Mobile Development</p>
+                    </a>
+                </div>
+                <div class="box col-sm-3 col-xs-3 text-center">
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_title('Staff Augmentation'))); ?>" data-target="#carousel-example-generic" data-slide-to="2">
+                        <div class="round_image">
+                            <img src="<?php bloginfo('template_directory') ?>/assets/img/service2_115x100.png">
+                        </div>
+
+                        <p>Staff Augmentation</p>
+                    </a>
+                </div>
+                <div class="box col-sm-3 col-xs-3 text-center">
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_title('Custom Application Development'))); ?>" data-target="#carousel-example-generic" data-slide-to="3">
+                        <div class="round_image">
+                            <img src="<?php bloginfo('template_directory') ?>/assets/img/service3_115x100.png">
+                        </div>
+
+                        <p>Custom Application Development</p>
+                    </a>
+                </div>
+                <div class="box col-sm-3 col-xs-3 text-center">
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_title('Design'))); ?>" data-target="#carousel-example-generic" data-slide-to="4">
+                        <div class="round_image">
+                            <img src="<?php bloginfo('template_directory') ?>/assets/img/service4_115x100.png">
+                        </div>
+
+                        <p>Design</p>
+                    </a>
+                </div>
+            </div>
+
 
         </div>
 
