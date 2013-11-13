@@ -294,4 +294,13 @@
 @media (max-width: 400px) {
   #sliderFirst .dark-background .form .inputs .news,
   #sliderFirst .dark-background .form .inputs .search {
-    width: 100%; } }
+    width: 100%; }
+
+  #sectionSecond #respond form .label {
+    width: 100%; }
+  #sectionSecond #respond .form-submit {
+    text-align: center; }
+    #sectionSecond #respond .form-submit input {
+      margin: 0; }
+  #sectionSecond .next-sign {
+    padding: 0 20px; } }

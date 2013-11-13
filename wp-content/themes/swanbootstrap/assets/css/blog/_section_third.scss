@@ -9,6 +9,10 @@
     min-height: 400px;
     margin-bottom: 20px;
 
+    &.first {
+      display: none;
+    }
+
 
     font-size: getSize(16);                         // TODO
     padding-left:  0;

@@ -117,7 +117,7 @@ if (have_posts()) : ?>
                 <div class="col-sm-8">
                     <?php while (have_posts()) : the_post(); ?>
                         <div style="position: relative">
-                            <div class='img-container'
+                            <div class='img-container <?php if ($last_post_ID == get_the_ID()) echo("first")?>'
                                  style="background: url('<?php echo get_field('image') != "" ? get_field('image') : $default_img ?>') center no-repeat; background-size: cover">
                                 <div class='col-xs-4 round-sign text-center'>
                                     <?= get_the_date('M') ?>

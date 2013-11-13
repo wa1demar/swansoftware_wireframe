@@ -132,6 +132,8 @@
     font-size: 152.38095%;
     padding-left: 0;
     position: relative; }
+    #sliderThird .img-container.first {
+      display: none; }
     #sliderThird .img-container .round-sign {
       background: url("../../img/link_bg_blue_round.png") no-repeat center;
       background-size: cover;
@@ -236,7 +238,7 @@
     #sliderFirst .dark-background .form .inputs .search {
       width: 50%; }
 
-  #sliderThird.first {
+  #sliderThird .img-container.first {
     display: block; } }
 @media (max-width: 650px) {
   #sliderFirst .dark-background .form .inputs .news,

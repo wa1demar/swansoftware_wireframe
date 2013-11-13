@@ -134,12 +134,12 @@ the_post(); ?>
 
                     <div class=content-footer>
                         <div class=' row score-icon'>
-                            <div class=' col-xs-6 text-left rating-row'>
+                            <div class=' col-sm-6 text-left rating-row'>
                                 <?php if (function_exists('the_ratings')) {
                                     the_ratings();
                                 } ?>
                             </div>
-                            <div class=' col-xs-6 text-right'>
+                            <div class=' col-sm-6 text-right'>
                                 <ul class="horizontal social-icons ">
 
 

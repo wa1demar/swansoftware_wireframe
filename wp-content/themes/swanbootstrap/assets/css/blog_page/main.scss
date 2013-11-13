@@ -106,5 +106,28 @@
         }
       }
     }
+
+
+  }
+
+  #sectionSecond {
+    #respond {
+      form {
+        .label {
+          width: 100%;
+        }
+      }
+      .form-submit {
+        text-align: center;
+
+        input {
+          margin: 0;
+        }
+      }
+    }
+
+    .next-sign {
+      padding: 0 20px;
+    }
   }
 }

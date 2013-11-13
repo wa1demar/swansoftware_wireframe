@@ -66,14 +66,14 @@
                         </div>
                     </div>
                     <div class="row myIndicators">
-                        <ul style="">
-                            <li class="mobile active">
-                                <a href="#mobile" data-toggle="tab">Mobile Development</a></li>
-                            <li class="staff"><a href="#staff" data-toggle="tab">Staf
+                        <ul >
+                            <li class="mobile">
+                                <a href="<?php echo esc_url(get_permalink(get_page_by_title('Mobile Application Development'))); ?>">Mobile Development</a></li>
+                            <li class="staff"><a href="<?php echo esc_url(get_permalink(get_page_by_title('Staff Augmentation'))); ?>" >Staf
                                     Augmentation</a></li>
-                            <li class="app"><a href="#app" data-toggle="tab">Custom
+                            <li class="app"><a href="<?php echo esc_url(get_permalink(get_page_by_title('Custom Application Development'))); ?>" >Custom
                                     Application Development</a></li>
-                            <li class="design"><a href="#design" data-toggle="tab">Design</a>
+                            <li class="design"><a href="<?php echo esc_url(get_permalink(get_page_by_title('Design'))); ?>" >Design</a>
                             </li>
                             <!--<li class="marketing"><a href="#">Internet Marketing</a></li>-->
                         </ul>
@@ -275,8 +275,19 @@
        href="<?= get_permalink(get_page_by_title('Company')) ?>"><span>Meet Our Superhero Team</span></a>
 </div>
 <script>
-s_width = $('body').width();
+function activateLinks() {
+    s_width = $('body').width();
     if (s_width <= 600) {
         $('.box a').removeAttr('data-target');
+    } else {
+        $('.box a').attr('data-target', '#carousel-example-generic');
     }
+}
+
+$(window).resize(function() {
+    activateLinks();
+});
+
+$(window).resize(activateLinks());
+$(document).onload(activateLinks());
 </script>
