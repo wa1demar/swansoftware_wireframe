@@ -175,6 +175,7 @@
                     <div class="getStartedButton">
                         <a href="<?= get_permalink(get_page_by_title('Get Started')) ?>">Get Started</a>
                     </div>
+                    <img class="hand" src="<?php bloginfo('template_directory') ?>/assets/img/hand.png">
                 </div>
 
             </div>

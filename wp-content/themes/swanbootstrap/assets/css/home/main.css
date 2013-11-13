@@ -188,6 +188,11 @@
       top: 240px;
       left: 33%;
       width: 34%; }
+    #sliderFirst .topBanner img.hand {
+      position: absolute;
+      top: 229px;
+      left: 46.5%;
+      z-index: 1; }
   #sliderFirst .mobile .cloud {
     top: 45px;
     width: 600px;
@@ -266,12 +271,17 @@
       top: 240px;
       width: 40%;
       left: 33%; }
+    #sliderFirst .topBanner img.hand {
+      left: 52.5%; }
   #sliderFirst .topBannerLinks p {
     font-size: 1.75rem; } }
 @media (max-width: 768px) {
   #sliderFirst .topBanner {
     background-size: contain;
     height: 625px; }
+    #sliderFirst .topBanner img.hand {
+      top: 197px;
+      left: 344px; }
   #sliderFirst .mobile .cloud {
     top: 21px;
     width: 69%;

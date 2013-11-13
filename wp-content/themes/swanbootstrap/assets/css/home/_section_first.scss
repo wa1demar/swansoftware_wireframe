@@ -251,6 +251,13 @@
         left: 33%;
         width: 34%;
       }
+
+      img.hand {
+        position: absolute;
+        top: 229px;
+        left: 46.5%;
+        z-index: 1;
+      }
     }
 
     .mobile {
@@ -435,6 +442,10 @@
         width: 40%;
         left: 33%;
       }
+
+      img.hand {
+        left: 52.5%;
+      }
     }
     .topBannerLinks {
       p {
@@ -484,6 +495,12 @@
           }
         }
       }
+
+      img.hand {
+        top: 197px;
+        left: 344px;
+      }
+
     }
 
     .mobile {
