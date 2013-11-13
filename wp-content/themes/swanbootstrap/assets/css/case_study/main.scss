@@ -18,6 +18,7 @@
       p {
         font-size: getRSize(20);
         color: #ffffff;
+        text-align: justify;
       }
     }
 
@@ -140,7 +141,7 @@
 
       .carousel-inner {
         top: 28px;
-        left: 120px;
+        left: 24.5%;
         width: 245px;
 
         img {
@@ -160,7 +161,6 @@
     img {
 
       &.left {
-        float: left;
         margin: 0 20px 0 0;
         width: 254px;
         height: 254px;
@@ -168,7 +168,6 @@
       }
 
       &.right {
-        float: right;
         margin: 0 0px 0 20px;
         width: 254px;
         height: 254px;
@@ -196,7 +195,6 @@
       }
     }
 
-
   }
 
 }
@@ -211,15 +209,15 @@
     background: $green_bg url("../../img/staff_people.png") bottom left no-repeat;
     width: 100%;
     height: 400px;
-//    background-size: contain;
+    //    background-size: contain;
   }
 
   .design_canvas {
     width: 456px;
     height: 304px;
     background-size: contain;
-//    webkit-transform:rotate(120deg);
-//    -moz-transform:rotate(120deg);
+    //    webkit-transform:rotate(120deg);
+    //    -moz-transform:rotate(120deg);
 
     img {
       position: absolute;
@@ -227,7 +225,6 @@
       top: -18px;
     }
   }
-
 
   .ipad_screen {
     background: url("../../img/ipad_frame.PNG") left top no-repeat;
@@ -241,7 +238,6 @@
       top: 83px;
       left: 81px;
     }
-
 
   }
 
@@ -260,10 +256,7 @@
       width: 450px;
     }
 
-
   }
-
-
 
   .tablet_screen {
     background: url("../../img/android_tablet.png") left top no-repeat;
@@ -290,8 +283,8 @@
 
     &.mobile {
       background: url("../../img/service1_115x100.png") left center no-repeat;
-//      background-size: 12% 50%;
-       background-size: 14% ;
+      //      background-size: 12% 50%;
+      background-size: 14%;
     }
 
     &.staff {
@@ -309,16 +302,15 @@
       background-size: 14%;
     }
 
-
     & {
-      padding-left:  70px;
-//      margin: 10px 0;
+      padding-left: 70px;
+      //      margin: 10px 0;
       line-height: 200%;
 
       a {
         color: #ffffff;
         font-size: getRSize(30);
-//        padding: 0 0 0 100px;
+        //        padding: 0 0 0 100px;
       }
     }
   }
@@ -351,3 +343,254 @@
   }
 
 }
+
+@media screen {
+  #sectionSecond {
+    .rounded {
+
+      img {
+        .left {
+          float: left;
+        }
+
+        .right {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  #sectionFirst {
+    .dark-background {
+      .android_phone_screen {
+        .carousel-inner {
+          left: auto;
+          right: -23%;
+        }
+      }
+
+      .ios_phone_screen {
+        .carousel-inner {
+          left: auto;
+          right: -34.5%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  #sectionFirst {
+    .dark-background {
+      .ios_phone_screen {
+        .carousel-inner {
+          left: auto;
+          right: -34%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 885px) {
+  #sectionFirst {
+    .dark-background {
+      .android_phone_screen {
+        .carousel-inner {
+          left: auto;
+          right: -21%;
+        }
+      }
+
+      .ios_phone_screen {
+        .carousel-inner {
+          left: auto;
+          right: -33%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  #sectionFirst {
+    .dark-background {
+      .android_phone_screen {
+        .carousel-inner {
+          left: auto;
+          right: -19%;
+        }
+      }
+
+      .ios_phone_screen {
+        .carousel-inner {
+          left: auto;
+          right: -32%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  #sectionFirst {
+    .dark-background {
+      .android_phone_screen {
+        .carousel-inner {
+          left: auto;
+          right: -18%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 790px) {
+  #sectionFirst {
+    .dark-background {
+      .ios_phone_screen {
+        .carousel-inner {
+          right: -31%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #sectionFirst {
+    .dark-background {
+      .col-sm-6 {
+        width: 100%;
+      }
+      .android_phone_screen {
+        display: none;
+      }
+      .ios_phone_screen {
+          display: none;
+      }
+    }
+  }
+
+  #sectionSecond {
+    .rounded {
+      padding: 10px;
+      text-align: center;
+
+      img {
+
+        .left {
+          float: none;
+        }
+
+        .right {
+          float: none;
+        }
+      }
+
+      section {
+        &.left, &.right {
+          text-align: justify;
+
+          h1 {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+  #sectionThird {
+    min-height: 0;
+    .tablet_screen,
+    .ipad_screen {
+      display: none;
+    }
+
+    .col-sm-6 {
+      width: 100%;
+    }
+
+    section {
+      &.design,
+      &.custom,
+      &.staff,
+      &.mobile {
+        background-size: 9%;
+      }
+    }
+  }
+
+  #sectionFourth {
+    padding: 10px;
+    background: none;
+    .container {
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      .test {
+
+        blockquote p {
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  #sectionSecond {
+    .rounded {
+
+      img {
+        .left {
+          float: none;
+        }
+
+        .right {
+          float: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #sectionThird {
+
+    section {
+      &.design,
+      &.custom,
+      &.staff,
+      &.mobile {
+        background-size: 12%;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  #sectionThird {
+
+    section {
+      &.design,
+      &.custom,
+      &.staff,
+      &.mobile {
+        background-size: 14%;
+
+        a {
+          font-size: getRSize(25);
+        }
+      }
+    }
+  }
+}
+

@@ -34,7 +34,8 @@
       margin-bottom: 20px; }
     #sectionFirst .dark-background article p {
       font-size: 1.75rem;
-      color: #ffffff; }
+      color: #ffffff;
+      text-align: justify; }
     #sectionFirst .dark-background .ios_phone_screen {
       position: absolute;
       z-index: 10;
@@ -113,7 +114,7 @@
             background: #455664; }
       #sectionFirst .dark-background .android_phone_screen .carousel-inner {
         top: 28px;
-        left: 120px;
+        left: 24.5%;
         width: 245px; }
         #sectionFirst .dark-background .android_phone_screen .carousel-inner img {
           width: 245px;
@@ -124,13 +125,11 @@
   padding: 120px 0 50px 0;
   overflow: hidden; }
   #sectionSecond .rounded img.left {
-    float: left;
     margin: 0 20px 0 0;
     width: 254px;
     height: 254px;
     border: 5px #64898c solid; }
   #sectionSecond .rounded img.right {
-    float: right;
     margin: 0 0px 0 20px;
     width: 254px;
     height: 254px;
@@ -232,3 +231,93 @@
       margin: 0 auto; }
   #sectionFourth blockquote p {
     font-style: italic; }
+
+@media screen {
+  #sectionSecond .rounded img .left {
+    float: left; }
+  #sectionSecond .rounded img .right {
+    float: right; } }
+@media (max-width: 970px) {
+  #sectionFirst .dark-background .android_phone_screen .carousel-inner {
+    left: auto;
+    right: -23%; }
+  #sectionFirst .dark-background .ios_phone_screen .carousel-inner {
+    left: auto;
+    right: -34.5%; } }
+@media (max-width: 920px) {
+  #sectionFirst .dark-background .ios_phone_screen .carousel-inner {
+    left: auto;
+    right: -34%; } }
+@media (max-width: 885px) {
+  #sectionFirst .dark-background .android_phone_screen .carousel-inner {
+    left: auto;
+    right: -21%; }
+  #sectionFirst .dark-background .ios_phone_screen .carousel-inner {
+    left: auto;
+    right: -33%; } }
+@media (max-width: 830px) {
+  #sectionFirst .dark-background .android_phone_screen .carousel-inner {
+    left: auto;
+    right: -19%; }
+  #sectionFirst .dark-background .ios_phone_screen .carousel-inner {
+    left: auto;
+    right: -32%; } }
+@media (max-width: 830px) {
+  #sectionFirst .dark-background .android_phone_screen .carousel-inner {
+    left: auto;
+    right: -18%; } }
+@media (max-width: 790px) {
+  #sectionFirst .dark-background .ios_phone_screen .carousel-inner {
+    right: -31%; } }
+@media (max-width: 768px) {
+  #sectionFirst .dark-background .col-sm-6 {
+    width: 100%; }
+  #sectionFirst .dark-background .android_phone_screen {
+    display: none; }
+  #sectionFirst .dark-background .ios_phone_screen {
+    display: none; }
+
+  #sectionSecond .rounded {
+    padding: 10px;
+    text-align: center; }
+    #sectionSecond .rounded img .left {
+      float: none; }
+    #sectionSecond .rounded img .right {
+      float: none; }
+    #sectionSecond .rounded section.left, #sectionSecond .rounded section.right {
+      text-align: justify; }
+      #sectionSecond .rounded section.left h1, #sectionSecond .rounded section.right h1 {
+        text-align: center; }
+
+  #sectionThird {
+    min-height: 0; }
+    #sectionThird .tablet_screen,
+    #sectionThird .ipad_screen {
+      display: none; }
+    #sectionThird .col-sm-6 {
+      width: 100%; }
+    #sectionThird section.design, #sectionThird section.custom, #sectionThird section.staff, #sectionThird section.mobile {
+      background-size: 9%; }
+
+  #sectionFourth {
+    padding: 10px;
+    background: none; }
+    #sectionFourth .container h1 {
+      text-align: center; }
+    #sectionFourth .container p {
+      text-align: center; }
+    #sectionFourth .container .test blockquote p {
+      text-align: justify; } }
+@media (max-width: 640px) {
+  #sectionSecond .rounded img .left {
+    float: none; }
+  #sectionSecond .rounded img .right {
+    float: none; } }
+@media (max-width: 480px) {
+  #sectionThird section.design, #sectionThird section.custom, #sectionThird section.staff, #sectionThird section.mobile {
+    background-size: 12%; } }
+@media (max-width: 400px) {
+  #sectionThird section.design, #sectionThird section.custom, #sectionThird section.staff, #sectionThird section.mobile {
+    background-size: 14%; }
+    #sectionThird section.design a, #sectionThird section.custom a, #sectionThird section.staff a, #sectionThird section.mobile a {
+      font-size: 2.1875rem; } }

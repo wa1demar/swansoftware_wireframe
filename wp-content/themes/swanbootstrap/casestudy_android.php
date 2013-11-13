@@ -13,13 +13,13 @@
 <?php get_header() ?>
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
     <?php $bg = get_field('background') != "" ? get_field('background') : getDefaultBG(); ?>
-    <div id='sectionFirst' style="background: url('<?= $bg ?>') center top repeat-x;">
+    <div id='sectionFirst' style="background: url('<?= $bg ?>') center top ;">
         <?php addSocials($bg) ?>
 
         <div class='dark-background'>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-sm-6">
                         <?php if (get_field('logo') != ""):?>
                             <img class="logo" src="<?=get_field('logo') ?>">
                         <?php else: ?>
@@ -42,7 +42,7 @@
                             array_push($imgs, $image->getAttribute('src'));
                         }
                         ?>
-                        <div class="col-lg-6">
+                        <div class="col-sm-6">
                             <div class="android_phone_screen">
                                 <div id="myCarousel" class="carousel slide" >
                                     <ol class="carousel-indicators myIndicators">
@@ -106,13 +106,13 @@
     <div id="sectionThird">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-sm-6">
                     <div class="tablet_screen">
                         <img src="<?=get_field('ipad_screen') ?>">
                     </div>
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-sm-6">
                     <h1>Related Services</h1>
                     <?php
                     $serv = array(
@@ -137,11 +137,11 @@
     <div id="sectionFourth">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 tech">
+                <div class="col-sm-6 tech">
                     <h1>Used technologies</h1>
                     <?=get_field('technologies') ?>
                 </div>
-                <div class="col-lg-6 test">
+                <div class="col-sm-6 test">
                     <h1>Testimonials</h1>
                     <blockquote>
                         <?=get_field('testimonials') ?>
