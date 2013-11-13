@@ -35,12 +35,12 @@
                             know you have a favorite.
                         </div>
                     </div>
-                    <div class='col-xs-6 text-left'>
+                    <div  id = 'link' class='col-xs-6 text-left'>
                         <h1>Link</h1>
 
                         <a href="http://www.dibpal.com"> www.dibpal.com </a>
                     </div>
-                    <div class='col-xs-6 text-left'>
+                    <div   class='col-xs-6 text-left'>
                         <h1>Used services</h1>
 
                         <a href="#"> Custom App Development </a>

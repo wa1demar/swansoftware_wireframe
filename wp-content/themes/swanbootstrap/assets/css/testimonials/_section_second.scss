@@ -4,7 +4,8 @@
     border: none;
     li {
       border: none;
-      display: table;
+      display: inline-block;
+      float: none;
 
       a {
         border: none;
@@ -38,4 +39,39 @@
     }
   }
 
+}
+
+@media(max-width: 680px){
+  #sliderSecond{
+    padding: 0px;
+  ul {
+    li{
+      a{
+        height: 120px;
+        img{
+          width: 100px;
+        }
+        &:hover {
+          background: $white;
+        }
+      }
+      &.active {
+        a{
+          background: $white;
+          &:hover {
+            background: $white;
+
+          }
+
+        }
+      }
+    }
+  }
+  }
+
+}
+@media(max-width: 360px){
+  .col-sm-12.text-center{
+    padding: 0px;
+  }
 }
