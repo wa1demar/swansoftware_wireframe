@@ -116,16 +116,18 @@ section {
   background: #f4feff; }
   #serviceContent .content {
     background: #f4feff url("../../img/service_content_bg.png") right center no-repeat; }
-    #serviceContent .content .row {
-      display: -webkit-box;
-      display: -moz-box; }
     #serviceContent .content .article {
-      -webkit-box-align: center;
-      -moz-box-align: center;
       font-size: 114.28571%; }
+      #serviceContent .content .article .center {
+        height: 420px; }
+        #serviceContent .content .article .center p {
+          font-size: 133.33333%; }
     #serviceContent .content .articleList h1 {
       color: #ffffff;
-      margin-bottom: 10px; }
+      width: 240px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      font-size: 300%; }
     #serviceContent .content .articleList li {
       background: url("../../img/marker_yellow_big.png") left top no-repeat;
       padding-left: 20px;

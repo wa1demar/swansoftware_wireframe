@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../../fonts/OpenSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Light";
+  src: url("../../fonts/OpenSans-Light.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Bold";
+  src: url("../../fonts/OpenSans-Bold.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Italic";
+  src: url("../../fonts/OpenSans-Italic.ttf"); }
+
+@font-face {
+  font-family: "Open Sans Semibold";
+  src: url("../../fonts/OpenSans-Semibold.ttf"); }
+
+@font-face {
+  font-family: "Recetrac Bold";
+  src: url("../../fonts/BARAKB.TTF"); }
+
+#sliderFirst {
+  background: url("../../pics/technology.png") center;
+  padding: 10px 0 40px 0; }
+  #sliderFirst .darck-background {
+    background: url("../../img/bg-black-transparent.png") no-repeat center;
+    background-position: 99% 50%;
+    background-size: 100% 90%;
+    margin: 0 0;
+    padding: 0 0 0 0; }
+    #sliderFirst .darck-background img {
+      width: 100%; }
+    #sliderFirst .darck-background .img-background {
+      min-height: 400px;
+      background: url("../../img/blog-1.png") center no-repeat;
+      font-size: 152.38095%;
+      padding-left: 0;
+      position: relative; }
+      #sliderFirst .darck-background .img-background .round-sign {
+        background: url("../../img/link_bg_blue_round.png") no-repeat center;
+        background-size: cover;
+        width: 150px;
+        min-height: 150px;
+        position: absolute;
+        bottom: 24%;
+        left: 2%;
+        z-index: 1000;
+        opacity: 0.7;
+        color: #ffffff;
+        font-size: 123.80952%; }
+        #sliderFirst .darck-background .img-background .round-sign h1 {
+          color: #ffffff; }
+      #sliderFirst .darck-background .img-background .white-footer {
+        color: #647678;
+        height: 40%;
+        margin-right: 8px;
+        margin-left: 2px;
+        background: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        bottom: 5%;
+        padding: 10px 0; }
+        #sliderFirst .darck-background .img-background .white-footer a {
+          margin-top: 10px; }
+    #sliderFirst .darck-background h1.title {
+      margin: 20px 0;
+      color: #ffffff;
+      padding-bottom: 20px;
+      background: url("../../img/gray_equals.png") bottom repeat-x; }
+    #sliderFirst .darck-background .inputs b {
+      color: #ffffff;
+      font-size: 190.47619%;
+      font-weight: 100;
+      margin-left: 15px; }
+    #sliderFirst .darck-background .inputs input {
+      border-radius: initial;
+      background-color: #3D4955;
+      color: #566E96;
+      border: none;
+      margin-top: 5px;
+      margin-bottom: 30px; }
+    #sliderFirst .darck-background .inputs .input1 {
+      padding-right: 0px; }
+    #sliderFirst .darck-background .inputs .input_submit {
+      background-color: #6699FF;
+      color: #ffffff;
+      border: none;
+      margin-top: 5px;
+      border-radius: initial; }
+    #sliderFirst .darck-background .inputs button.submit {
+      height: 34px;
+      margin-top: 3px;
+      margin-left: -30px;
+      padding-top: 1px;
+      font-size: 171.42857%;
+      color: #ffffff;
+      display: inline-block;
+      vertical-align: top;
+      font-family: "Open Sans Light";
+      background: #3D4955;
+      font-weight: bold;
+      border: none; }
+      #sliderFirst .darck-background .inputs button.submit img {
+        margin-bottom: 4px; }
+    #sliderFirst .darck-background .inputs #serch-form {
+      margin-top: 3px;
+      display: inline-block;
+      width: 100%;
+      float: left; }
+    #sliderFirst .darck-background .topic-background {
+      min-height: 400px;
+      padding: 30px 0; }
