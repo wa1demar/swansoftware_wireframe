@@ -191,7 +191,7 @@ the_post(); ?>
                             <div class="col-xs-4  titles">
                                 <img src="<?= get_field('image') != "" ? get_field('image') : $default_img ?>">
 
-                                <p><a href="#"><?php the_title() ?></a></p>
+                                <p><a href="<?php the_permalink()?>"><?php the_title() ?></a></p>
 
                                 <div class=text>
                                     <?php the_my_excerpt($post) ?>
