@@ -13,7 +13,7 @@
 <?php $default_img = get_bloginfo('template_directory') . '/assets/img/blog-1.png' ?>
 <?php $last_post_ID = 0; ?>
 <?php $c = 1;
-if (have_posts()) : ?>
+//if (have_posts()) : ?>
     <?php
     $args = array(
         // Change these category SLUGS to suit your use.
@@ -110,12 +110,12 @@ if (have_posts()) : ?>
                 </div>
             </div>
         <?php endwhile ?>
-    <?php endif ?>
+        <?php endif ?>
     <div id='sliderThird'>
         <div class='container'>
             <div class='row'>
                 <div class="col-sm-8">
-                    <?php while (have_posts()) : the_post(); ?>
+                    <?php if(have_posts()): while (have_posts()) : the_post(); ?>
                         <div style="position: relative">
                             <div class='img-container <?php if ($last_post_ID == get_the_ID()) echo("first")?>'
                                  style="background: url('<?php echo get_field('image') != "" ? get_field('image') : $default_img ?>') center no-repeat; background-size: cover">
@@ -147,6 +147,28 @@ if (have_posts()) : ?>
                             </div>
                         </div>
                     <?php endwhile; ?>
+<!---->
+<!--                        <div class='col-xs-8'>-->
+<!--                            <div class="row">-->
+<!--                                <div class='col-xs-6 text-left '>-->
+<!--                                    <div class="prev">--><?//= get_next_posts_link("Older") ?><!--</div>-->
+<!---->
+<!--                                </div>-->
+<!--                                <div class='col-xs-6 text-right '>-->
+<!--                                    <div class="next">--><?//= get_previous_posts_link("New Posts") ?><!--</div>-->
+<!---->
+<!--                                </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                    <?php else : ?>
+                        <div id='not_found_section'>
+                            <div class='rov'>
+                                <div class='coll-xs-12 text-center'>
+                                    <h3>Not found any results for your request </h3>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endif ?>
                 </div>
                 <div class="col-sm-4">
                     <p class='tags'>Browser by Tag</p>
@@ -161,4 +183,4 @@ if (have_posts()) : ?>
             </div>
         </div>
     </div>
-<?php endif ?>
+<?php //endif ?>

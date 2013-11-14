@@ -143,7 +143,7 @@
                                             <img src="<?php bloginfo('template_directory') ?>/assets/img/comment.png">
                                         </div>
                                         <div class="col-xs-8 form-comment"><textarea name='comment_c' required="required"
-                                                                                     class=' form-control'  placeholder="  Type your messahe here..."></textarea>
+                                                                                     class=' form-control'  placeholder="  Type your message here..."></textarea>
                                         </div>
                                     </div>
                                     <input   type='submit' class="blue_btn small submit" name='submit_contact_us'

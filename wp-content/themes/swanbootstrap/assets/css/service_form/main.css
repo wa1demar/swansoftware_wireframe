@@ -53,14 +53,15 @@
     margin: 10px 10px; }
   #sliderSecond .check-box-container-form {
     margin-top: 30px;
+    display: table;
     width: 100%; }
     #sliderSecond .check-box-container-form .label-block {
       width: 20%;
+      display: table-cell;
+      vertical-align: top;
       padding: 50px 0; }
       #sliderSecond .check-box-container-form .label-block input {
         widht: 15px; }
-  #sliderSecond .css-label.design {
-    padding-top: 23px; }
   #sliderSecond input[type=checkbox].css-checkbox {
     position: absolute;
     overflow: hidden;
@@ -72,12 +73,10 @@
     border: 0; }
   #sliderSecond input[type=checkbox].css-checkbox + label.css-label {
     padding-left: 32px;
-    height: 55px;
-    display: inline-block;
+    height: 100%;
     line-height: 25px;
     background-repeat: no-repeat;
     font-size: 171.42857%;
-    vertical-align: middle;
     font-weight: 100;
     text-align: left;
     cursor: pointer; }

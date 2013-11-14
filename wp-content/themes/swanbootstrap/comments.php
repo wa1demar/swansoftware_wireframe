@@ -22,7 +22,7 @@
         'comment_notes_after' => '',
         'comment_field' => '<div class="row">
             <div class="col-sm-4 label">' . _x( 'Comment', 'noun' ) . '<img src="'.get_bloginfo('template_directory') .'/assets/img/comment.png"></div>
-            <div class="col-sm-8"><textarea id="comment" name="comment"  aria-required="true" placeholder="  Type your messahe here..."></textarea></div></div>',
+            <div class="col-sm-8"><textarea id="comment" name="comment"  aria-required="true" placeholder="  Type your message here..."></textarea></div></div>',
         'label_submit' => 'Send',
 
 

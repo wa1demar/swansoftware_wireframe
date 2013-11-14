@@ -9,7 +9,6 @@
  *
  */
 ?>
-
 <?php include 'flash.php'; ?>
 <?php get_header() ?>
 <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/service_form/main.css"/>
@@ -197,7 +196,7 @@
                         <div class="col-xs-8 form-comment">
                             <div class='comment error-sign'>Comment can't be blank</div>
                             <textarea required="required" name = 'comment_n' class=' form-control'
-                                placeholder="  Type your messahe here..."></textarea>
+                                placeholder="  Type your message here..."></textarea>
                         </div>
                     </div>
                     <input  type = 'submit' class="blue_btn small submit " name = 'submit_service_form' value = 'Send'>

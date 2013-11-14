@@ -70,7 +70,7 @@ if (isset($_POST['submit_contact_us'])) {
                 header("Location:  " . $_SERVER['HTTP_REFERER']);
             }
         } else {
-            Flash::alert("Bad email");
+            Flash::add("Error", "Bad email");
             header("Location:  " . $_SERVER['HTTP_REFERER']);
         }
 

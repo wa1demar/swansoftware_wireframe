@@ -8,10 +8,13 @@
 
   .check-box-container-form {
     margin-top: 30px;
+    display: table;
 
     width: 100%;
     .label-block {
       width: 20%;
+      display: table-cell;
+      vertical-align: top;
 
       //display: inline;
       padding: 50px 0;
@@ -24,7 +27,7 @@
 
   }
   .css-label.design {
-    padding-top: 23px;
+//    padding-top: 23px;
 
   }
   // style for checkbox
@@ -40,15 +43,15 @@
   }
   input[type=checkbox].css-checkbox + label.css-label {
     padding-left: 32px;
-    height: 55px;
-    display: inline-block;
+    height: 100%;
+//    display: inline-block;
     line-height: 25px;
     background-repeat: no-repeat;
     //background-position: 0 0;
     //background-size: 25;
     font-size: getSize(18);
     //TODO
-    vertical-align: middle;
+//    vertical-align: middle;
     font-weight: 100;
     text-align: left;
     cursor: pointer;
