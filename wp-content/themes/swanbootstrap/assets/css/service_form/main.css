@@ -88,6 +88,14 @@
 
 #sectionThried {
   padding: 40px 0 60px 0; }
+  #sectionThried .error-sign {
+    text-align: left;
+    display: none;
+    font-weight: bold;
+    font-size: 125%;
+    color: #F07B86; }
+  #sectionThried #contact_us_alert {
+    display: none; }
   #sectionThried .client-form .col-xs-8 {
     padding-left: 0px; }
   #sectionThried .client-form .label {
@@ -101,7 +109,8 @@
   #sectionThried .client-form input, #sectionThried .client-form textarea {
     width: 100%;
     height: 26px;
-    border: 1px solid #7C99CE; }
+    border: 1px solid #7C99CE;
+    border-radius: 0px; }
   #sectionThried .client-form .comment-div .col-xs-9 {
     padding-left: 0px; }
   #sectionThried .client-form .comment-div textarea {

@@ -9,6 +9,8 @@
  *
  */
 ?>
+
+<?php include 'flash.php'; ?>
 <?php get_header() ?>
 <link rel="stylesheet" href="<?php bloginfo('template_directory') ?>/assets/css/service_form/main.css"/>
 <script>
@@ -27,6 +29,47 @@
     });
 </script>
 <?php $bg = get_field('background') != "" ? get_field('background') : getDefaultBG(); ?>
+<script>
+    $(function () {
+
+        if (!$('#contact_us_alert').length == 0) {
+
+
+            if ($.trim($('#contact_us_alert').html()) === 'Bad email') {
+
+                $('.form-email').addClass('has-error');
+                $('.email.error-sign').css('display', 'block');
+                $('.row.email').css('padding-bottom', '20px');
+                $('.has-error .form-control').css('border',"1px solid #b94a48" );
+
+            }
+
+            if ($.trim($('#contact_us_alert').html()) === "Name can't be blank") {
+
+                $('.form-name').addClass('has-error');
+                $('.name.error-sign').css('display', 'block');
+                $('.row.name').css('padding-bottom', '20px');
+
+                $('.has-error .form-control').css('border',"1px solid #b94a48" );
+
+
+            }
+
+            if ($.trim($('#contact_us_alert').html()) === "Comment can't be blank") {
+
+                $('.form-comment').addClass('has-error');
+                $('.comment.error-sign').css('display', 'block');
+                $('.has-error .form-control').css('border',"1px solid #b94a48" );
+
+
+            }
+        }
+
+
+    })
+
+</script>
+
 <div id='sliderFirst' style="background: url('<?= $bg ?>') center top ;">
 
     <?php addSocials($bg) ?>
@@ -96,27 +139,38 @@
 
 
     <div id=sectionThried>
+        <?php foreach (Flash::$messages as $id => $msg) : ?>
+
+
+            <div class="flash_<?php echo $id ?> alert alert-info alert-dismissable" id='contact_us_alert'>
+
+                <?php echo $msg ?>
+            </div>
+        <?php endforeach; ?>
         <div class='container'>
             <div class=row>
 
 
 
                 <div class='client-form col-sm-6'>
-                    <div class="row">
+                    <div class="row name">
                         <div class="col-xs-3 label necessary-field">
                             <label class="required">Name</label>
                             <img src="<?php bloginfo('template_directory') ?>/assets/img/name.png">
                         </div>
-                        <div class="col-xs-9"><input type="text" name = 'name_n'  required = "required" placeholder="  John Doe...">
+                        <div class="col-xs-9 form-name">
+                            <div class='name error-sign'>Comment can't be blank</div>
+                            <input required="required" class=' form-control' type="text" name = 'name_n'   placeholder="  John Doe...">
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row email">
                         <div class="col-xs-3 label necessary-field">
                             <label class="required">Email</label>
                             <img src="<?php bloginfo('template_directory') ?>/assets/img/email.png">
                         </div>
-                        <div class="col-xs-9">
-                            <input type="email"  name = 'email_n' required = "required"
+                        <div class="col-xs-9 form-email">
+                            <div class='email error-sign'>Comment can't be blank</div>
+                            <input required="required" class=' form-control' type="email"  name = 'email_n'
                                    placeholder="  johndoe@jahoo.com">
                         </div>
                     </div>
@@ -126,6 +180,7 @@
                             <img src="<?php bloginfo('template_directory') ?>/assets/img/phone.png">
                         </div>
                         <div class="col-xs-9">
+
                             <input type="text" name = 'phone_n'
                                    placeholder="  +7 (987) 654-32-10">
                         </div>
@@ -139,11 +194,13 @@
                             <label class="required">Comment</label>
                             <img src="<?php bloginfo('template_directory') ?>/assets/img/comment.png">
                         </div>
-                        <div class="col-xs-8 "><textarea name = 'comment_n' required = "required"
+                        <div class="col-xs-8 form-comment">
+                            <div class='comment error-sign'>Comment can't be blank</div>
+                            <textarea required="required" name = 'comment_n' class=' form-control'
                                 placeholder="  Type your messahe here..."></textarea>
                         </div>
                     </div>
-                    <input type = 'submit' class="blue_btn small submit" name = 'submit_service_form' value = 'Send'>
+                    <input  type = 'submit' class="blue_btn small submit " name = 'submit_service_form' value = 'Send'>
 
                 </div>
             </div>

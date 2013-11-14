@@ -10,9 +10,47 @@
  * компенсирующих друг друга, заставляет программу работать
  */
 ?>
+
+<?php include 'flash.php'; ?>
 <?php get_header() ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <?php $bg = get_field('background'); ?>
+    <script>
+        $(function () {
+
+            if (!$('#contact_us_alert').length == 0) {
+
+
+                if ($.trim($('#contact_us_alert').html()) === 'Bad email') {
+
+                    $('.form-email').addClass('has-error');
+                    $('.email.error-sign').css('display', 'block');
+
+                }
+
+                if ($.trim($('#contact_us_alert').html()) === "Name can't be blank") {
+
+                    $('.form-name').addClass('has-error');
+                    $('.name.error-sign').css('display', 'block');
+
+
+
+                }
+
+                if ($.trim($('#contact_us_alert').html()) === "Comment can't be blank") {
+
+                    $('.form-comment').addClass('has-error');
+                    $('.comment.error-sign').css('display', 'block');
+
+
+
+                }
+            }
+
+
+        })
+
+    </script>
     <div class="servicesHeader" style="background: url('<?= $bg ?>') center top ;">
         <?php addSocials($bg) ?>
         <div class="headerContent blackTransparent">
@@ -29,6 +67,15 @@
 
                     </div>
                     <div class="col-sm-5 headerForm blackTransparent">
+                        <?php foreach (Flash::$messages as $id => $msg) : ?>
+
+
+                            <div class="flash_<?php echo $id ?> alert alert-info alert-dismissable" id='contact_us_alert'>
+
+                                <?php echo $msg ?>
+                            </div>
+                        <?php endforeach; ?>
+
                         <h2>Tell us about your <span>Project</span></h2> <!-- TODO: ???-->
 
 
@@ -36,19 +83,28 @@
                         <form action="<?=esc_url(get_permalink(get_page_by_title('Thank you')))?>"  method = 'POST'>
                             <input hidden="hidden"  name= 'service_p' type="text" value = "<?= the_title() ?>">
                             <div class="row">
+
                                 <div class="col-sm-4"><label>Name</label></div>
-                                <div class="col-sm-8"><input required="required" name= 'name_p' type="text" placeholder="John Doe..."></div>
+                                <div class="col-sm-8 form-name">
+                                    <div class='name error-sign'>Name can't be blank</div>
+                                    <input required="required" class=' form-control'  name= 'name_p' type="text" placeholder="John Doe..."></div>
                             </div>
                             <div class="row">
+
                                 <div class="col-sm-4"><label>Email</label></div>
-                                <div class="col-sm-8"><input required="required" type="email" name = 'email_p' placeholder="johndoe@jahoo.com"></div>
+                                <div class="col-sm-8 form-email">
+                                    <div class='email error-sign'>Bad email</div>
+                                    <input required="required"  type="email" class=' form-control' name = 'email_p' placeholder="johndoe@jahoo.com"></div>
                             </div>
                             <div class="row">
+
                                 <div class="col-sm-4"><label>Comment</label></div>
-                                <div class="col-sm-8"><textarea name = 'comment_p' placeholder="Tape your message here..."></textarea>
+                                <div class="col-sm-8 form-comment">
+                                    <div class='comment error-sign'>Comment can't be blank</div>
+                                    <textarea  required="required" name = 'comment_p' class = 'form-control' placeholder="Tape your message here..."></textarea>
                                 </div>
                             </div>
-                            <input type = 'submit' class="blue_btn small submit" name = 'submit_project_template' value = 'Send'>
+                            <input type = 'submit' class="blue_btn small submit " name = 'submit_project_template' value = 'Send'>
 
                         </form>
                     </div>
