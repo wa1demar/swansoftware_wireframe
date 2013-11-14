@@ -171,6 +171,8 @@
       position: absolute;
       top: 83px;
       left: 81px; }
+  #sectionThird .s {
+    padding-left: 120px; }
   #sectionThird .mac_screen {
     background: url("../../img/mac.png") left top no-repeat;
     height: 400px;
@@ -236,45 +238,96 @@
   #sectionSecond .rounded img .left {
     float: left; }
   #sectionSecond .rounded img .right {
-    float: right; } }
+    float: right; }
+
+  #sectionSecond .rounded img.left {
+    float: left; }
+
+  #sectionSecond .rounded img.right {
+    float: right; }
+
+  #sectionThird .mac_screen {
+    width: 100%;
+    background-size: contain; }
+    #sectionThird .mac_screen img {
+      top: 21px;
+      left: 65px;
+      height: 57%;
+      width: 83%; } }
 @media (max-width: 970px) {
   #sectionFirst .dark-background .android_phone_screen .carousel-inner {
     left: auto;
     right: -23%; }
   #sectionFirst .dark-background .ios_phone_screen .carousel-inner {
     left: auto;
-    right: -34.5%; } }
+    right: -34.5%; }
+  #sectionFirst .dark-background .mackbook_screen .carousel-inner {
+    left: auto;
+    right: -17.5%; }
+
+  #sectionThird .s {
+    padding-left: 20px; } }
 @media (max-width: 920px) {
   #sectionFirst .dark-background .ios_phone_screen .carousel-inner {
     left: auto;
-    right: -34%; } }
+    right: -34%; }
+  #sectionFirst .dark-background .mackbook_screen .carousel-inner {
+    left: auto;
+    right: -15.5%; }
+
+  #sectionThird .mac_screen {
+    width: 100%;
+    background-size: contain; }
+    #sectionThird .mac_screen img {
+      top: 19px;
+      left: 60px;
+      height: 52%;
+      width: 83%; } }
 @media (max-width: 885px) {
   #sectionFirst .dark-background .android_phone_screen .carousel-inner {
     left: auto;
     right: -21%; }
   #sectionFirst .dark-background .ios_phone_screen .carousel-inner {
     left: auto;
-    right: -33%; } }
+    right: -33%; }
+  #sectionFirst .dark-background .mackbook_screen .carousel-inner {
+    left: auto;
+    right: -13.5%; }
+
+  #sectionThird .mac_screen img {
+    height: 51%; } }
 @media (max-width: 830px) {
   #sectionFirst .dark-background .android_phone_screen .carousel-inner {
     left: auto;
     right: -19%; }
   #sectionFirst .dark-background .ios_phone_screen .carousel-inner {
     left: auto;
-    right: -32%; } }
-@media (max-width: 830px) {
-  #sectionFirst .dark-background .android_phone_screen .carousel-inner {
+    right: -32%; }
+  #sectionFirst .dark-background .mackbook_screen .carousel-inner {
     left: auto;
-    right: -18%; } }
+    right: -11.5%; }
+
+  #sectionThird .mac_screen img {
+    height: 49%; } }
 @media (max-width: 790px) {
   #sectionFirst .dark-background .ios_phone_screen .carousel-inner {
-    right: -31%; } }
+    right: -31%; }
+  #sectionFirst .dark-background .mackbook_screen .carousel-inner {
+    left: auto;
+    right: -9.5%; }
+
+  #sectionThird .mac_screen img {
+    left: 13%;
+    height: 44%; } }
 @media (max-width: 768px) {
-  #sectionFirst .dark-background .col-sm-6 {
+  #sectionFirst .dark-background .col-sm-6,
+  #sectionFirst .dark-background .col-sm-5 {
     width: 100%; }
   #sectionFirst .dark-background .android_phone_screen {
     display: none; }
   #sectionFirst .dark-background .ios_phone_screen {
+    display: none; }
+  #sectionFirst .dark-background .mackbook_screen {
     display: none; }
 
   #sectionSecond .rounded {
@@ -292,7 +345,8 @@
   #sectionThird {
     min-height: 0; }
     #sectionThird .tablet_screen,
-    #sectionThird .ipad_screen {
+    #sectionThird .ipad_screen,
+    #sectionThird .mac_screen {
       display: none; }
     #sectionThird .col-sm-6 {
       width: 100%; }

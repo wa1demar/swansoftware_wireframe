@@ -241,6 +241,10 @@
 
   }
 
+  .s {
+    padding-left: 120px
+  }
+
   .mac_screen {
     background: url("../../img/mac.png") left top no-repeat;
     height: 400px;
@@ -359,6 +363,27 @@
       }
     }
   }
+  #sectionSecond .rounded img.left {
+    float: left;
+  }
+
+  #sectionSecond .rounded img.right {
+    float: right;
+  }
+
+  #sectionThird {
+    .mac_screen {
+      width: 100%;
+      background-size: contain;
+      img {
+        top: 21px;
+        left: 65px;
+        height: 57%;
+        width: 83%;
+
+      }
+    }
+  }
 }
 
 @media (max-width: 970px) {
@@ -377,7 +402,18 @@
           right: -34.5%;
         }
       }
+
+      .mackbook_screen {
+        .carousel-inner {
+          left: auto;
+          right: -17.5%;
+        }
+      }
     }
+  }
+
+  #sectionThird .s {
+    padding-left: 20px;
   }
 }
 
@@ -389,6 +425,27 @@
           left: auto;
           right: -34%;
         }
+      }
+
+      .mackbook_screen {
+        .carousel-inner {
+          left: auto;
+          right: -15.5%;
+        }
+      }
+    }
+  }
+
+  #sectionThird {
+    .mac_screen {
+      width: 100%;
+      background-size: contain;
+      img {
+        top: 19px;
+        left: 60px;
+        height: 52%;
+        width: 83%;
+
       }
     }
   }
@@ -410,6 +467,23 @@
           right: -33%;
         }
       }
+
+      .mackbook_screen {
+        .carousel-inner {
+          left: auto;
+          right: -13.5%;
+        }
+      }
+    }
+  }
+
+  #sectionThird {
+    .mac_screen {
+      img {
+
+        height: 51%;
+
+      }
     }
   }
 }
@@ -430,18 +504,22 @@
           right: -32%;
         }
       }
-    }
-  }
-}
 
-@media (max-width: 830px) {
-  #sectionFirst {
-    .dark-background {
-      .android_phone_screen {
+      .mackbook_screen {
         .carousel-inner {
           left: auto;
-          right: -18%;
+          right: -11.5%;
         }
+      }
+    }
+  }
+
+  #sectionThird {
+    .mac_screen {
+      img {
+
+        height: 49%;
+
       }
     }
   }
@@ -455,6 +533,23 @@
           right: -31%;
         }
       }
+
+      .mackbook_screen {
+        .carousel-inner {
+          left: auto;
+          right: -9.5%;
+        }
+      }
+    }
+  }
+
+  #sectionThird {
+    .mac_screen {
+      img {
+        left: 13%;
+        height: 44%;
+
+      }
     }
   }
 }
@@ -462,7 +557,8 @@
 @media (max-width: 768px) {
   #sectionFirst {
     .dark-background {
-      .col-sm-6 {
+      .col-sm-6,
+      .col-sm-5 {
         width: 100%;
       }
       .android_phone_screen {
@@ -470,6 +566,10 @@
       }
       .ios_phone_screen {
           display: none;
+      }
+
+      .mackbook_screen {
+       display: none;
       }
     }
   }
@@ -505,7 +605,8 @@
   #sectionThird {
     min-height: 0;
     .tablet_screen,
-    .ipad_screen {
+    .ipad_screen,
+    .mac_screen {
       display: none;
     }
 

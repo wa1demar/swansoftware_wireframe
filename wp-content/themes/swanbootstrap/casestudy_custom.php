@@ -19,7 +19,7 @@
         <div class='dark-background'>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col-sm-5">
                         <?php if (get_field('logo') != ""):?>
                             <img class="logo" src="<?=get_field('logo') ?>">
                         <?php else: ?>
@@ -42,7 +42,7 @@
                             array_push($imgs, $image->getAttribute('src'));
                         }
                         ?>
-                        <div class="col-lg-7">
+                        <div class="col-sm-7">
                             <div class="mackbook_screen">
                                 <div id="carousel-example-generic" class="carousel slide" >
                                     <ol class="carousel-indicators myIndicators">
@@ -109,13 +109,13 @@
     <div id="sectionThird" >
         <div class="container ">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-sm-6">
                     <div class="mac_screen">
                         <img src="<?=get_field('mac_image') ?>">
                     </div>
                 </div>
 
-                <div class="col-lg-6" style="padding-left: 120px">
+                <div class="col-sm-6 s" >
                     <h1>Related Services</h1>
                     <?php
                     $serv = array(
@@ -140,11 +140,11 @@
     <div id="sectionFourth">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 tech">
+                <div class="col-sm-6 tech">
                     <h1>Used technologies</h1>
                     <?=get_field('technologies') ?>
                 </div>
-                <div class="col-lg-6 test">
+                <div class="col-sm-6 test">
                     <h1>Testimonials</h1>
                     <blockquote>
                         <?=get_field('testimonials') ?>
