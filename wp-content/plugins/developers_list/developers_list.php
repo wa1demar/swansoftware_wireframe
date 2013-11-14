@@ -6,192 +6,208 @@ Version: 0.0.1
 Author: waldemar
 */
 
-// Текущая директория
-$currentDir = dirname(__FILE__);
-define('DEVELOPERS_LIST_DIR', $currentDir);
+//function myplugin_admin_page() {
+//    add_menu_page('Developers List', 'Developers List', 8, __FILE__, 'wgl_create_post_type');
+//}
+//add_action('admin_menu', 'myplugin_admin_page');
 
-// Версия плагина
-define('DEVELOPERS_LIST_VERSION', '0.0.1');
+/** Install Folder */
+define('WGL_FOLDER', '/' . dirname( plugin_basename(__FILE__)));
 
-// Название плагина
-$pluginName = plugin_basename(DEVELOPERS_LIST_DIR);
+/** Path for front-end links */
+define('WGL_URL', WP_PLUGIN_URL . WGL_FOLDER);
 
-// URI путь до директории с плагином
-$pluginUrl = trailingslashit(WP_PLUGIN_URL . '/' . $pluginName);
+// Post type
+define('WGL_POSTYPE', 'wgl');
 
-// Путь для CSS, JS скриптов и картинок
-$assetsUrl = $pluginUrl . '/assets';
+add_action( 'init', 'wgl_create_post_type' );
+add_action( 'admin_head', 'wgl_posttype_icon' );
+add_action( 'save_post', 'wgl_save_postdata', 1, 2 );
 
-register_activation_hook(__FILE__, 'myplug_set_options');
-register_deactivation_hook(__FILE__, 'myplug_unset_options');
+// ===================
+// ** Setup the style and script
+// ===================
+add_action( 'init', 'wp_add_gallery_style' );
+add_action( 'init', 'wp_add_gallery_script' );
 
 
-// в этой переменной будет содержаться имя таблицы с настройкам написанного нами плагина wordpress
-$myplugin_list_table = myplugin_get_list_table(); # в этой переменной будет содержаться имя таблицы с настройкам написанного нами плагина wordpress
-function myplugin_get_list_table() {
-    global $wpdb; # класс wordpress для работы с БД
-    return $wpdb->prefix . "myplugin_list"; # создаём имя таблицы настроек плагина
+function wp_add_gallery_style(){
+    wp_register_style('wpgallery.css', WGL_URL . '/wpgallery.css');
+    wp_enqueue_style('wpgallery.css');
+    wp_register_style('jquery.lightbox-0.5.css', WGL_URL . '/js/jquery.lightbox-0.5.css');
+    wp_enqueue_style('jquery.lightbox-0.5.css');
 }
 
-$myplugin_category_table = myplugin_get_category_table();
-function myplugin_get_category_table() {
-    global $wpdb; # класс wordpress для работы с БД
-    return $wpdb->prefix . "myplugin_category"; # создаём имя таблицы настроек плагина
+function wp_add_gallery_script(){
+    wp_register_script( 'jquery', WGL_URL . '/js/jquery-1.4.4.min.js');
+    wp_enqueue_script( 'jquery' );
+    wp_register_script( 'jquerylightbox', WGL_URL . '/js/jquery.lightbox-0.5.js');
+    wp_enqueue_script( 'jquerylightbox' );
 }
 
-function myplugin_set_options() {
-    global $wpdb;
-    add_option('myplug_modify_title', 0); # будет ли плагин по умолчанию обрабатывать заголовки записей. 0 - нет
-    add_option('myplug_modify_content', 1); # --||-- тело записей. 1 - да
-
-    $myplugin_list_table = myplugin_get_list_table(); # вызов функции повторяется, т. к. данные действия происходят на этапе установки плагина, когда вызов в теле еще не может быть осуществлён
-    $myplugin_category_table = myplugin_get_category_table();
-    $charset_collate = ''; # кодировка БД
-    if ( version_compare(mysql_get_server_info(), '4.1.0', '>=') )
-        $charset_collate = "DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci"; # устанавливаем уникод
-
-    if($wpdb->get_var("SHOW TABLES LIKE '$myplugin_list_table'") != $myplugin_list_table) { # если таблица настроек плагина еще не создана - создаём
-        $sql = "CREATE TABLE `" . $myplugin_list_table . "` (
-            `id` INT NOT NULL AUTO_INCREMENT,
-            `name` VARCHAR(255) NOT NULL default '',
-            `image` VARCHAR(255) NOT NULL default '',
-            `position` VARCHAR(255) NOT NULL default '',
-            `number` INT NOT NULL ,
-            `category_id` INT NOT NULL,
-            UNIQUE KEY id (id)
-        )$charset_collate";
-        require_once(ABSPATH . 'wp-admin/includes/upgrade.php'); # обращение к функциям wordpress для
-        dbDelta($sql); # работы с БД. создаём новую таблицу
-    }
-
-    if($wpdb->get_var("SHOW TABLES LIKE '$myplugin_category_table'") != $myplugin_category_table) { # если таблица настроек плагина еще не создана - создаём
-        $sql = "CREATE TABLE `" . $myplugin_category_table . "` (
-            `id` INT NOT NULL AUTO_INCREMENT,
-            `name` VARCHAR(255) NOT NULL default '',
-            UNIQUE KEY id (id)
-        )$charset_collate";
-        require_once(ABSPATH . 'wp-admin/includes/upgrade.php'); # обращение к функциям wordpress для
-        dbDelta($sql); # работы с БД. создаём новую таблицу
-    }
-}
-
-function myplugin_unset_options () {
-    global $wpdb, $myplugin_category_table, $myplugin_list_table;
-    delete_option('myplug_modify_title');
-    delete_option('myplug_modify_content');
-    $sql = "DROP TABLE $myplugin_category_table";
-    $wpdb->query($sql);
-    $sql = "DROP TABLE $myplugin_list_table";
-    $wpdb->query($sql);
-}
-
-function myplugin_admin_page() {
-    add_menu_page('Developers List', 'Developers List', 8, __FILE__, 'myplugin_options_page');
-}
-add_action('admin_menu', 'myplugin_admin_page');
-
-function myplugin_options_page() {      //Функция создания и обработки страницы настроек плагина
-    global $wpdb, $myplugin_list_table, $myplugin_category_table;
-    $myplugin_options = array(          //Создаём массив с настройками плагина
-        'myplug_modify_name',
+// =======================
+// ** Create the post type
+// =======================
+function wgl_create_post_type() {
+    // Define the labels
+    $labels = array(
+        'name' => _x('WPDevelopersList', 'post type general name'),
+        'add_new' => _x('Add New', 'new view')
     );
-    $cmd = $_POST['cmd'];               //Обработка пользовательского ввода
-    foreach ($myplugin_options as $myplugin_opt) {
-        $$myplugin_opt = get_option($myplugin_opt);
-    }
-    if ($cmd == "del_prefs") {          //Если нажато "удалить фразы" - очищаем таблицу настроек плагина
-        $sql = "TRUNCATE TABLE $myplugin_category_table";
-        $wpdb->query( $sql );
+
+    // Register the post type
+    register_post_type(WGL_POSTYPE, array(
+        'labels' => $labels,
+        'public' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'query_var' => true,
+        'menu_icon' => WGL_URL .'/images/gallery_ico.png',
+       // 'register_meta_box_cb' => 'wgl_add_url_box',
+        'supports' => array(
+            'title',
+)
+    ));
+}
+
+// ===========================
+// ** Create the icon in admin
+// ===========================
+function wgl_posttype_icon() {
+    global $post_type;
+    $qry_postype = ( isset($_GET['post_type']) ) ? $_GET['post_type'] : '' ;
+
+    if (($qry_postype == WGL_POSTYPE) || ($post_type == WGL_POSTYPE)) {
+        $icon_url = WGL_URL . '/images/gallery_ico.png';
         ?>
-        <div class="updated"><p><strong> <?php echo __('All phrases are removed from the database','example_plugin'); ?></strong></p></div> /* Сообщаем пользвателю об успешной очистке. */
+        <style type="text/css" media="all">
+            /*<![CDATA[*/
+            .icon32 { background: url(<?php echo $icon_url; ?>) no-repeat 1px !important;}
+            /*]]>*/
+        </style>
     <?php
     }
-    if ($cmd == "add_prefs" && $_POST['prefs_base']) { //Если введены новые фразы в соотв. поле - обработаем их
-        $lines = explode("\n", $_POST['prefs_base']); //Ввод разбивается на строки и кладётся в массив, разделитель - перевод строки
-        foreach($lines as $line){   //Перебираем массив со строками
-            $line = trim($line);    //Обрезка каждой строки от переводов
-            if (!$line) continue;   //Если строка отстутствует - переходим к следующей итерации
-            list($title, $body) = explode("|", $line);  //Разделение строки на две подстроки
-            //Кладём подстроки в таблицу плагина.
-            $sql = "INSERT INTO $myplugin_prefs_table (title, body) VALUES('$title','$body')";
-            $wpdb->query($sql);
-        }
-        ?>
-        <div class="updated"><p><strong> <?php echo __('Phrases added to the database','example_plugin'); ?></strong></p></div> /*Сообщаем пользователю об успешной обработке*/
-    <?php
+}
+
+// ===================================
+// ** Create box arrays for image urls
+// ===================================
+$wgl_box_images = array (
+    'Photo' => array (
+        array( 'wgl_small_img_url', 'Location of the small image:', 'image')
+    ),
+    'Url for large image' => array (
+        array( 'wgl_large_img_url', 'Location of the large image:', 'text')
+    )
+);
+
+// ===================================
+// ** Add boxes for image's urls
+// ===================================
+//function wgl_add_url_box() {
+//    global $wgl_box_images, $post;
+//    if ( function_exists( 'add_meta_box' ) ) {
+//        $val = explode(";", get_post_meta($post->ID, 'wgl_img_url', true));
+//        foreach ( array_keys( $wgl_box_images ) as $key=>$wgl_box_image ) {
+//            add_meta_box( $wgl_box_image, __( $wgl_box_image), 'wgl_post_url_box', WGL_POSTYPE, 'normal', 'high', $val[$key] );
+//        }
+//    }
+//}
+
+//function wgl_post_url_box ( $obj, $box) {
+//    global $wgl_box_images, $post;
+//    // Generate box contents
+//    foreach ( $wgl_box_images[$box['id']] as $wgl_box ) {
+//        echo '<br /><label for="'.$wgl_box["0"].'">'.$wgl_box["1"].'</label><br />'
+//            . '<input style="width: 95%;" type="text" name="'.$wgl_box["0"].'" value="'.$box['args'].'"/>';
+//    }
+//}
+
+// ===============================
+// ** Save data when post is saved
+// ===============================
+function wgl_save_postdata($post_id, $post) {
+    global $wgl_box_images;
+
+    if ( 'page' == $_POST['post_type'] ) {
+        if ( ! current_user_can( 'edit_page', $post->ID ))
+            return $post->ID;
+    } else {
+        if ( ! current_user_can( 'edit_post', $post->ID ))
+            return $post->ID;
     }
-    if ($cmd == "myplugin_save_opt") { //Обработка нажатия "Сохранить настройки"
-        foreach ($myplugin_options as $myplugin_opt) {  //Перебор массива с настройками
-            $$myplugin_opt = $_POST[$myplugin_opt]; //Каждому элементу массива присваиваем введённое пользователем занчение
-        }
 
-        foreach ($myplugin_options as $myplugin_opt) { //Обновляем настройки плагина в таблице настроек wordpress
-            update_option($myplugin_opt, $$myplugin_opt);
-        }
-        ?>
-        <div class="updated"><p><strong> <?php echo __('Settings saved','example_plugin'); ?></strong></p></div>
-    <?php
+//    foreach ( $wgl_box_images as $wgl_box_image ) {
+//        foreach ( $wgl_box_image as $wgl_fields ) {
+//            $wgl_data[$wgl_fields[0]] =  $_POST[$wgl_fields[0]];
+//        }
+//    }
+
+    if ( 'revision' == $post->post_type  ) {
+        // don't store custom data twice
+        return;
     }
-    ?>
-    <div class="wrap">
-        <h2>Developers List</h2>
 
-        <h3><?php echo __('Settings','example_plugin'); ?></h3> /*Название раздела настроек*/
-        /*Начало формы для обработки настроек. Форма содержит 2 чекбокса, включающих или отключающих соответствующие функции плагина*/
-        <form method="post" action="<? echo $_SERVER['REQUEST_URI'];?>">
-            <table class="form-table">
-                <tr>
-                    <th colspan=2 scope="row"> /*Первый чекбокс - будет ли плагин обрабатывать заголовки записей*/
-                        <input name="myplug_modify_title" type="checkbox" <?if($myplug_modify_title)echo "checked";?>> <?php echo __('Add random phrase to post title','example_plugin'); ?>
-                    </th>
-                </tr>
-                <tr>
-                    <th colspan=2 scope="row"> /*Второй чекбокс - будет ли плагин обрабатывать тело записей*/
-                        <input name="myplug_modify_content" type="checkbox" <?if($myplug_modify_content)echo "checked";?>> <?php echo __('Add random phrase to post content','example_plugin'); ?>
-                    </th>
-                </tr>
-            </table>
-            <input type="hidden" name="cmd" value="myplugin_save_opt"> /*"Функциональная" часть кнопки сохранения настроек*/
-            <p class="submit">
-                <input type="submit" name="Submit" value="<?php _e('Save Changes') ?>" /> /*Вывод кнопки сохранения настроек в браузер. Стандартная функция Wordpress*/
-            </p>
-        </form> /*Конец формы обработки настроек*/
+    if ( get_post_meta($post->ID, $key, FALSE) ) {
+        // Field has a value.
+        update_post_meta($post->ID, 'wgl_img_url', $wgl_data['wgl_small_img_url'].';'.$wgl_data['wgl_large_img_url']);
+    } else {
+        // Field does not have a value.
+        add_post_meta($post->ID, 'wgl_img_url', $wgl_data['wgl_small_img_url'].';'.$wgl_data['wgl_large_img_url']);
+    }
 
-        /*Вывод информации о плагине. Например - кем разработан*/
-        <h3><?php echo __('Plugin developed','example_plugin'); ?></h3>
-        <table class="form-table">
-            <tr><th>
-                    <ul>
-                        <li><?php echo __('By: <a href="http://dimio.org/" target="_blank">dimio</a>','example_plugin'); ?></li>
-                    </ul>
-                </th></tr></table>
+    if (!$wgl_data['wgl_small_img_url'] && !$wgl_data['wgl_large_img_url']) {
+        delete_post_meta($post->ID, 'wgl_img_url');
+    }
+}
 
-        /*Блок ввода новых фраз в таблицу настроек плагина. Сначала идёт справка для пользователя*/
-        <h3><?php echo __('Adding phrases','example_plugin'); ?></h3>
-        /*Начало формы ввода. Форма содержит текстовое поле для ввода шириной 80 символов и высотой 12 строк*/
-        <table class="form-table" width="300px">
-            <tr>
-                <td>
-                    <?php echo __('Format phrases: Title|Body','example_plugin'); ?><br />
-                    <form method="post" action="<? echo $_SERVER['REQUEST_URI'];?>">
-                        <textarea cols=80 rows=12 name="prefs_base"></textarea> /*Поле для ввода новых фраз*/
-                </td>
-            </tr>
-        </table>
-        /*Кнопка для сохранения фраз. По аналогии с кнопкой сохранения настроек, но без применения стандартной ф-и Wordpress*/
-        <input type="hidden" name="cmd" value="add_prefs">
-        <p class="submit">
-            <input type="submit" name="Submit" value="<?php echo __('Add phrases','example_plugin'); ?>" />
-        </p>
-        </form>
-        /*Форма, содержащая единственную кнопку - очистки таблицы настроек плагина*/
-        <form method="post" action="<? echo $_SERVER['REQUEST_URI'];?>">
-            <input type="hidden" name="cmd" value="del_prefs">
-            <input type="submit" name="Submit" value="<?php echo __('Remove all phrases from the database','example_plugin'); ?>" />
-        </form>
-    </div>
+//==================================
+// ** Add Shortcode [wpgallerylist]
+//==================================
 
-<?php
-//Конец функции создания и обработки страницы настроек.
+add_shortcode('wpgallerylist', 'wpgallerylist_shortcode');
+
+function wpgallerylist_shortcode($atts, $content = null) {
+    global $wpdb;
+
+    $rows = $wpdb->get_results( "SELECT w.id, w.post_date, w.post_title, w.post_content, m.meta_key, m.meta_value FROM $wpdb->posts w LEFT JOIN $wpdb->postmeta m on (w.id = m.post_id) WHERE w.post_type = 'wgl' and w.post_status='publish' and m.meta_key in ('wgl_img_url') ORDER BY w.post_date DESC");
+
+    $display = '';
+    $display = '<script type="text/javascript">
+		// <![CDATA[
+jQuery(function() {
+	jQuery("#wpgallery a").lightBox({
+			overlayOpacity: 0.6,
+			containerResizeSpeed: 350,
+			txtImage: "Изображение",
+			txtOf: "из"
+});
+});
+// ]]>
+</script>';
+
+    $display .= '<ul id="wpgallery">';
+
+    foreach ( (array) $rows as $row ) {
+        $display .= '<li>';
+
+        $wp_images = explode( ";", $row->meta_value);
+
+        $display .= '<div class="img_container"><a href="'.$wp_images[1].'">';
+        $display .= '<img src="'.$wp_images[0].'"/>';
+        $display .= '</a></div>';
+
+        $display .= '<div class="text_container">';
+        $display .= '<div>'.$row->post_title.'</div>';
+        $display .= '<div>'.$row->post_content.'</div>';
+        $display .= '</div>';
+
+        $display .= '</li>';
+    }
+
+    $display .= '</ul><div class="clear"></div>';
+    $display .= '<br><br><br>';
+
+    return $display;
 }
 ?>

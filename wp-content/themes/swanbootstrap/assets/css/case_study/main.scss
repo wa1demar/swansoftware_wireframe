@@ -93,7 +93,7 @@
 
       .carousel-indicators {
         bottom: -180px;
-        left: 310px;
+        //        left: 310px;
 
         li {
           background: $blue_soft;
@@ -363,12 +363,18 @@
       }
     }
   }
-  #sectionSecond .rounded img.left {
-    float: left;
-  }
+  #sectionSecond {
+    .rounded {
+      img {
+        &.left {
+          float: left;
+        }
+        &.right {
+          float: right;
+        }
+      }
 
-  #sectionSecond .rounded img.right {
-    float: right;
+    }
   }
 
   #sectionThird {
@@ -383,7 +389,36 @@
 
       }
     }
+
+    .people {
+      background-size: 60% 91%;
+    }
   }
+}
+
+@media (max-width: 1000px) {
+  #sectionFirst {
+    .dark-background {
+      .mac_screen {
+        width: 90%;
+        background-size: contain;
+
+        .carousel-inner {
+          left: 13%;
+          top: 23px;
+          width: 83%;
+          height: 238px;
+        }
+      }
+    }
+  }
+
+  #sectionThird {
+    .people {
+      background-size: 60% 87%;
+    }
+  }
+
 }
 
 @media (max-width: 970px) {
@@ -409,11 +444,31 @@
           right: -17.5%;
         }
       }
+
+      .mac_screen {
+
+        .carousel-inner {
+          height: 229px;
+        }
+      }
     }
   }
 
-  #sectionThird .s {
-    padding-left: 20px;
+  #sectionThird {
+    .s {
+      padding-left: 20px;
+    }
+
+    .people {
+      background-size: 52% 73%;
+    }
+
+    .design_canvas {
+      width: 97%;
+      img {
+        width: 118%;
+      }
+    }
   }
 }
 
@@ -431,6 +486,13 @@
         .carousel-inner {
           left: auto;
           right: -15.5%;
+        }
+      }
+
+      .mac_screen {
+
+        .carousel-inner {
+          height: 220px;
         }
       }
     }
@@ -474,6 +536,13 @@
           right: -13.5%;
         }
       }
+
+      .mac_screen {
+
+        .carousel-inner {
+          height: 210px;
+        }
+      }
     }
   }
 
@@ -485,6 +554,19 @@
 
       }
     }
+
+    .people {
+      background-size: 50% 65%;
+    }
+
+//    .design_canvas {
+//      width: 113%;
+//      img {
+//        width: 135%;
+//      }
+//    }
+
+
   }
 }
 
@@ -509,6 +591,13 @@
         .carousel-inner {
           left: auto;
           right: -11.5%;
+        }
+      }
+
+      .mac_screen {
+
+        .carousel-inner {
+          height: 195px;
         }
       }
     }
@@ -540,6 +629,13 @@
           right: -9.5%;
         }
       }
+
+      .mac_screen {
+
+        .carousel-inner {
+          height: 183px;
+        }
+      }
     }
   }
 
@@ -565,11 +661,15 @@
         display: none;
       }
       .ios_phone_screen {
-          display: none;
+        display: none;
       }
 
       .mackbook_screen {
-       display: none;
+        display: none;
+      }
+
+      .mac_screen {
+        display: none;
       }
     }
   }
@@ -581,11 +681,11 @@
 
       img {
 
-        .left {
+        &.left {
           float: none;
         }
 
-        .right {
+        &.right {
           float: none;
         }
       }
@@ -612,6 +712,14 @@
 
     .col-sm-6 {
       width: 100%;
+    }
+
+    .people {
+      background: none;
+    }
+
+    .design_canvas {
+      display: none;
     }
 
     section {

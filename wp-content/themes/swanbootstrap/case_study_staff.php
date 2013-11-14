@@ -113,7 +113,7 @@
 
                 </div>
 
-                <div class="col-sm-6" style="padding-left: 120px">
+                <div class="col-sm-6 s" >
                     <h1>Related Services</h1>
                     <?php
                     $serv = array(

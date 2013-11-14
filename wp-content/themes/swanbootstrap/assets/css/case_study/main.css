@@ -83,8 +83,7 @@
       top: -40px;
       background: url("../../img/mac.png") top no-repeat; }
       #sectionFirst .dark-background .mac_screen .carousel-indicators {
-        bottom: -180px;
-        left: 310px; }
+        bottom: -180px; }
         #sectionFirst .dark-background .mac_screen .carousel-indicators li {
           background: #98b1da;
           border: 1px solid #6699ff; }
@@ -242,7 +241,6 @@
 
   #sectionSecond .rounded img.left {
     float: left; }
-
   #sectionSecond .rounded img.right {
     float: right; }
 
@@ -253,7 +251,21 @@
       top: 21px;
       left: 65px;
       height: 57%;
-      width: 83%; } }
+      width: 83%; }
+  #sectionThird .people {
+    background-size: 60% 91%; } }
+@media (max-width: 1000px) {
+  #sectionFirst .dark-background .mac_screen {
+    width: 90%;
+    background-size: contain; }
+    #sectionFirst .dark-background .mac_screen .carousel-inner {
+      left: 13%;
+      top: 23px;
+      width: 83%;
+      height: 238px; }
+
+  #sectionThird .people {
+    background-size: 60% 87%; } }
 @media (max-width: 970px) {
   #sectionFirst .dark-background .android_phone_screen .carousel-inner {
     left: auto;
@@ -264,9 +276,17 @@
   #sectionFirst .dark-background .mackbook_screen .carousel-inner {
     left: auto;
     right: -17.5%; }
+  #sectionFirst .dark-background .mac_screen .carousel-inner {
+    height: 229px; }
 
   #sectionThird .s {
-    padding-left: 20px; } }
+    padding-left: 20px; }
+  #sectionThird .people {
+    background-size: 52% 73%; }
+  #sectionThird .design_canvas {
+    width: 97%; }
+    #sectionThird .design_canvas img {
+      width: 118%; } }
 @media (max-width: 920px) {
   #sectionFirst .dark-background .ios_phone_screen .carousel-inner {
     left: auto;
@@ -274,6 +294,8 @@
   #sectionFirst .dark-background .mackbook_screen .carousel-inner {
     left: auto;
     right: -15.5%; }
+  #sectionFirst .dark-background .mac_screen .carousel-inner {
+    height: 220px; }
 
   #sectionThird .mac_screen {
     width: 100%;
@@ -293,9 +315,13 @@
   #sectionFirst .dark-background .mackbook_screen .carousel-inner {
     left: auto;
     right: -13.5%; }
+  #sectionFirst .dark-background .mac_screen .carousel-inner {
+    height: 210px; }
 
   #sectionThird .mac_screen img {
-    height: 51%; } }
+    height: 51%; }
+  #sectionThird .people {
+    background-size: 50% 65%; } }
 @media (max-width: 830px) {
   #sectionFirst .dark-background .android_phone_screen .carousel-inner {
     left: auto;
@@ -306,6 +332,8 @@
   #sectionFirst .dark-background .mackbook_screen .carousel-inner {
     left: auto;
     right: -11.5%; }
+  #sectionFirst .dark-background .mac_screen .carousel-inner {
+    height: 195px; }
 
   #sectionThird .mac_screen img {
     height: 49%; } }
@@ -315,6 +343,8 @@
   #sectionFirst .dark-background .mackbook_screen .carousel-inner {
     left: auto;
     right: -9.5%; }
+  #sectionFirst .dark-background .mac_screen .carousel-inner {
+    height: 183px; }
 
   #sectionThird .mac_screen img {
     left: 13%;
@@ -329,13 +359,15 @@
     display: none; }
   #sectionFirst .dark-background .mackbook_screen {
     display: none; }
+  #sectionFirst .dark-background .mac_screen {
+    display: none; }
 
   #sectionSecond .rounded {
     padding: 10px;
     text-align: center; }
-    #sectionSecond .rounded img .left {
+    #sectionSecond .rounded img.left {
       float: none; }
-    #sectionSecond .rounded img .right {
+    #sectionSecond .rounded img.right {
       float: none; }
     #sectionSecond .rounded section.left, #sectionSecond .rounded section.right {
       text-align: justify; }
@@ -350,6 +382,10 @@
       display: none; }
     #sectionThird .col-sm-6 {
       width: 100%; }
+    #sectionThird .people {
+      background: none; }
+    #sectionThird .design_canvas {
+      display: none; }
     #sectionThird section.design, #sectionThird section.custom, #sectionThird section.staff, #sectionThird section.mobile {
       background-size: 9%; }
 
