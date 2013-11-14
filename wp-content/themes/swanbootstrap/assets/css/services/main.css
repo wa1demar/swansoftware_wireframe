@@ -27,6 +27,14 @@ section {
 
 .servicesHeader {
   padding: 10px 0 20px 0; }
+  .servicesHeader .error-sign {
+    text-align: left;
+    display: none;
+    font-weight: bold;
+    font-size: 125%;
+    color: #F07B86; }
+  .servicesHeader #contact_us_alert {
+    display: none; }
   .servicesHeader .headerContent .headerList {
     overflow: hidden;
     display: table;
@@ -67,9 +75,11 @@ section {
         width: 100%;
         font-size: 133.33333%;
         padding: 2px 5px;
-        margin-bottom: 12px; }
+        margin-bottom: 12px;
+        border-radius: 0px; }
       .servicesHeader .headerContent .headerForm form textarea {
-        height: 60px; }
+        height: 60px;
+        border-radius: 0px; }
       .servicesHeader .headerContent .headerForm form input.submit, .servicesHeader .headerContent .headerForm form textarea.submit {
         margin: 0 auto;
         width: 150px;

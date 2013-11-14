@@ -1,6 +1,19 @@
 #sectionThried {
+  .error-sign{
+    text-align: left;
+    display: none;
+    font-weight: bold;
+    font-size: 125%;
+    color: #F07B86;
+
+  }
+  #contact_us_alert{
+    display: none;
+  }
   padding: 40px 0 60px 0;
   .client-form {
+
+
     .col-xs-8 {
       padding-left: 0px;
 
@@ -23,6 +36,7 @@
       width: 100%;
       height: 26px;
       border: 1px solid #7C99CE;
+      border-radius: 0px;
 
     }
     .comment-div {

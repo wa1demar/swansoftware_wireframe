@@ -46,16 +46,13 @@
   font-family: "Recetrac Bold";
   src: url("../../fonts/BARAKB.TTF"); }
 
+#sliderFirst .error-sign {
+  display: none;
+  font-weight: bold;
+  font-size: 125%;
+  color: #F07B86; }
 #sliderFirst #contact_us_alert {
-  position: fixed;
-  top: 30px;
-  right: 100px;
-  width: 250px;
-  padding: 20px;
-  background-color: #FCC;
-  border: solid 2px #C66; }
-  #sliderFirst #contact_us_alert:first-letter {
-    text-transform: uppercase; }
+  display: none; }
 #sliderFirst .info-section .row.dark-background {
   width: 100%;
   margin: 0 0 0 0; }
@@ -101,10 +98,12 @@
                 margin-left: 10px; }
             #sliderFirst .info-section .row.dark-background .text-center.background .contact-text-phone .container .form-section .row input {
               font-size: 152.38095%;
-              height: 30px; }
+              height: 30px;
+              border-radius: 0px; }
             #sliderFirst .info-section .row.dark-background .text-center.background .contact-text-phone .container .form-section .row textarea {
               font-size: 152.38095%;
-              height: 80px; }
+              height: 80px;
+              border-radius: 0px; }
 @media (min-width: 605px) {
   #sliderFirst .col-xs-3.label {
     text-align: right; }
@@ -119,7 +118,6 @@
     width: 100%; } }
 @media (min-width: 320px) and (max-width: 605px) {
   #sliderFirst .col-xs-3.label {
-    width: 100%;
     text-align: left;
     margin-left: 15%; }
   #sliderFirst .col-xs-8 {
@@ -128,7 +126,8 @@
       width: 70%;
       margin: 0 auto; }
     #sliderFirst .col-xs-8 textarea {
-      width: 70%; } }
+      width: 70%;
+      margin: 0 auto; } }
 @media (max-width: 510px) {
   #sliderFirst .col-xs-3.label {
     margin-left: 1%; }

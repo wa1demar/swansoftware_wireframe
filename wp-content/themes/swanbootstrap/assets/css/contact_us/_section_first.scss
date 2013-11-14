@@ -1,16 +1,16 @@
 @import "../globals/constants";
 
 #sliderFirst {
-  #contact_us_alert{
-    position: fixed;
-    top: 30px;
-    right: 100px;
-    width: 250px;
-    padding: 20px;
-    background-color: #FCC;
-    border: solid 2px #C66;
-    &:first-letter { text-transform: uppercase; }
 
+  .error-sign{
+      display: none;
+      font-weight: bold;
+      font-size: 125%;
+      color: #F07B86;
+
+  }
+  #contact_us_alert{
+    display: none;
   }
 
 
@@ -79,10 +79,12 @@
                  input {
                    font-size: getSize(16);
                   height: 30px;
+                   border-radius: 0px;
                 }
                 textarea{
                   font-size: getSize(16);
                   height: 80px;
+                  border-radius: 0px;
                 }
 
               }
@@ -107,6 +109,7 @@
 
       textarea {
         width: 100%;
+
       }
     }
   }
@@ -123,7 +126,7 @@
 
   @media(min-width: 320px) and (max-width: 605px) {
     .col-xs-3.label {
-      width: 100%;
+
       text-align: left;
       margin-left: 15%;
     }
@@ -138,6 +141,7 @@
 
       textarea {
         width: 70%;
+        margin: 0 auto;
       }
     }
   }

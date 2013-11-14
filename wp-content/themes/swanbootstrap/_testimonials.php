@@ -73,6 +73,11 @@
 </div>
 <script>
     $(function () {
-        $('#myTab a:first').tab('show')
+        $('#myTab a:first').tab('show');
+        $('#myTab li a ').click(
+            function()
+            {
+                window.location = "#sliderFirst";
+            });
     })
 </script>
