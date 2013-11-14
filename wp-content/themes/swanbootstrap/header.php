@@ -56,6 +56,7 @@
     <script src="<?php bloginfo('template_directory')?>/assets/js/bootstrap.min.js"></script>
     <script src="<?php bloginfo('template_directory')?>/assets/js/carousel.js"></script>
     <script src="<?php bloginfo('template_directory')?>/assets/js/tab.js"></script>
+    <script src="<?php bloginfo('template_directory')?>/assets/js/validate.js"></script>
 
     <?php wp_head() ?>
 </head>
