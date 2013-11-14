@@ -175,7 +175,9 @@ section {
       clear: both; } }
   @media (max-width: 375px) {
     #serviceContent .articleList ul {
-      width: 95%; } }
+      width: 95%; }
+    #serviceContent .articleList p {
+      width: 240px; } }
 
 #info {
   background: #a4bdbf; }
