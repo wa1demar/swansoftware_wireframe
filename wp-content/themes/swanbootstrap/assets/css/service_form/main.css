@@ -58,7 +58,7 @@
     #sliderSecond .check-box-container-form .label-block {
       width: 20%;
       display: table-cell;
-      vertical-align: top;
+      vertical-align: middle;
       padding: 50px 0; }
       #sliderSecond .check-box-container-form .label-block input {
         widht: 15px; }
@@ -83,8 +83,22 @@
   #sliderSecond input[type=checkbox].css-checkbox:checked + label.css-label {
     background: url("../../../assets/img/checkbox_checked.png") left center no-repeat; }
   #sliderSecond .css-label {
-    background: url("../../../assets/img/checkbox_unchecked.png") left center; }
+    background: url("../../../assets/img/checkbox_unchecked.png") left top; }
 
+@media (max-width: 800px) {
+  #sliderSecond .check-box-container-form .label-block {
+    width: 40%;
+    display: block;
+    float: right;
+    text-align: left;
+    padding: 20px; } }
+@media (max-width: 620px) {
+  #sliderSecond .check-box-container-form .label-block {
+    width: 90%;
+    display: block;
+    float: right;
+    text-align: left;
+    padding: 20px; } }
 #sectionThried {
   padding: 40px 0 60px 0; }
   #sectionThried .error-sign {
@@ -149,3 +163,37 @@
     float: right; }
     #sectionThried input.submit:hover {
       background: #6699ff; }
+
+@media screen {
+  #sectionThried .client-form .label {
+    padding-bottom: 20px; } }
+@media (max-width: 500px) {
+  #sectionThried .client-form .label {
+    width: 100%;
+    padding-bottom: 0;
+    padding-top: 10px;
+    text-align: left; }
+
+  #sectionThried .client-form .col-xs-8 {
+    padding-left: 15px; }
+
+  #sectionThried .client-form input, #sectionThried .client-form textarea {
+    width: 100%; }
+
+  #sectionThried .client-form .comment-div .label.comment-label {
+    padding-left: 15px; }
+
+  #sectionThried .client-form img {
+    float: none; }
+
+  #sectionThried .form-name {
+    width: 100%; }
+
+  #sectionThried .form-email {
+    width: 100%; }
+
+  #sectionThried .form-phone {
+    width: 100%; }
+
+  #sectionThried .form-comment {
+    width: 100%; } }

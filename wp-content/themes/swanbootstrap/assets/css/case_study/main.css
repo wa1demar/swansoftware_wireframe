@@ -53,7 +53,7 @@
       #sectionFirst .dark-background .ios_phone_screen .carousel-inner {
         top: 90px;
         left: 170px;
-        width: 195px; }
+        width: 100%; }
     #sectionFirst .dark-background .mackbook_screen {
       position: absolute;
       z-index: 10;

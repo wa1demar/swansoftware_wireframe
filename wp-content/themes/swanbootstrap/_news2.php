@@ -147,19 +147,17 @@
                             </div>
                         </div>
                     <?php endwhile; ?>
-<!---->
-<!--                        <div class='col-xs-8'>-->
-<!--                            <div class="row">-->
-<!--                                <div class='col-xs-6 text-left '>-->
-<!--                                    <div class="prev">--><?//= get_next_posts_link("Older") ?><!--</div>-->
-<!---->
-<!--                                </div>-->
-<!--                                <div class='col-xs-6 text-right '>-->
-<!--                                    <div class="next">--><?//= get_previous_posts_link("New Posts") ?><!--</div>-->
-<!---->
-<!--                                </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
+
+                        <div class="row">
+                        <div class='col-xs-6 text-left '>
+                            <div class="prev"><?= get_next_posts_link("Older") ?></div>
+
+                        </div>
+                        <div class='col-xs-6 text-right '>
+                            <div class="next"><?= get_previous_posts_link("New Posts") ?></div>
+
+                        </div>
+                    </div>
                     <?php else : ?>
                         <div id='not_found_section'>
                             <div class='rov'>

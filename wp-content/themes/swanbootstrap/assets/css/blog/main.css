@@ -134,6 +134,8 @@
     position: relative; }
     #sliderThird .img-container.first {
       display: none; }
+      #sliderThird .img-container.first .white-footer {
+        display: none; }
     #sliderThird .img-container .round-sign {
       background: url("../../img/link_bg_blue_round.png") no-repeat center;
       background-size: cover;
@@ -172,6 +174,14 @@
     font-size: 114.28571%;
     font-weight: bold;
     line-height: 1.5; }
+  #sliderThird .prev a {
+    font-size: 2.1875rem;
+    background: url("../../img/prev.png") left center no-repeat;
+    padding-left: 25px; }
+  #sliderThird .next a {
+    font-size: 2.1875rem;
+    background: url("../../img/next.png") right center no-repeat;
+    padding-right: 25px; }
   @media (max-width: 500px) {
     #sliderThird .img-container .shadow {
       bottom: 0.5%; }
