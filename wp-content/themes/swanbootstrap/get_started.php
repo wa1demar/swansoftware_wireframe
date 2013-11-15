@@ -69,9 +69,29 @@
             $('#name-input').val($.trim($('.name_p').html()));
             $('#phone-input').val($.trim($('.phone_p').html()));
 
+            set_services();
+
+
         }
-        function set_service(){
-            arr = $.trim($('.service').html())
+        function set_services(){
+
+
+//
+            if($('.services').html().match(/Mobile Aplication/)!==null){
+                $('#demo_box_1').prop('checked', true);
+            }
+            if($('.services').html().match(/Staff Augmentation/)!==null){
+                $('#demo_box_2').prop('checked', true);
+            }
+            if($('.services').html().match(/Custom Application Development/)!==null){
+                $('#demo_box_3').prop('checked', true);
+            }
+            if($('.services').html().match(/Design/)!==null){
+                $('#demo_box_4').prop('checked', true);
+            }
+            if($('.services').html().match(/Internet Marketing/)!==null){
+                $('#demo_box_5').prop('checked', true);
+            }
         }
 
 
@@ -123,8 +143,7 @@
                             <label for="demo_box_2" name="demo_lbl_2" class="css-label"> Staff Augmentation</label>
                         </div>
                         <div class='label-block col-sm-2'>
-                            <input id="demo_box_3" name="service[3]" value="Custom Application
-                                Development" class="css-checkbox" type="checkbox"/>
+                            <input id="demo_box_3" name="service[3]" value="Custom Application Development" class="css-checkbox" type="checkbox"/>
                             <label for="demo_box_3" name="demo_lbl_3" class="css-label"> Custom Application
                                 Development</label>
                         </div>
@@ -179,7 +198,7 @@
                         </div>
                         <div class="col-xs-9 form-email">
                             <div class='email error-sign'>Bad email</div>
-                            <input  id ='email-input' class=' form-control' type="text"  name = 'email_n' required="required"
+                            <input  id ='email-input' class=' form-control' type="email"  name = 'email_n' required="required"
                                    placeholder="  johndoe@jahoo.com">
                         </div>
                     </div>
