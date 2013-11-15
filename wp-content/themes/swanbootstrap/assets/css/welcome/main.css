@@ -93,17 +93,19 @@
           font-size: 238.09524%; }
         #wrap #sliderFirst .info-section .row.darck-background .text-center.background .welcome-text-phone ul.links li {
           display: inline;
-          border-left: 2px solid #269abc; }
-          #wrap #sliderFirst .info-section .row.darck-background .text-center.background .welcome-text-phone ul.links li a {
-            margin: 0 10px;
-            font-size: 171.42857%;
-            font-weight: bold; }
-          #wrap #sliderFirst .info-section .row.darck-background .text-center.background .welcome-text-phone ul.links li a.blue {
-            color: #94B4D5; }
-          #wrap #sliderFirst .info-section .row.darck-background .text-center.background .welcome-text-phone ul.links li a.green {
-            color: #49D019; }
-          #wrap #sliderFirst .info-section .row.darck-background .text-center.background .welcome-text-phone ul.links li a.yellow {
-            color: #B6B125; }
+          border-left: 2px solid #269abc;
+          padding: 0 10px;
+          font-size: 171.42857%;
+          font-weight: bold;
+          text-decoration: none;
+          font-family: "Open Sans Light";
+          line-height: 1.428571429; }
+        #wrap #sliderFirst .info-section .row.darck-background .text-center.background .welcome-text-phone ul.links li#blue {
+          color: #94B4D5; }
+        #wrap #sliderFirst .info-section .row.darck-background .text-center.background .welcome-text-phone ul.links li#green {
+          color: #49D019; }
+        #wrap #sliderFirst .info-section .row.darck-background .text-center.background .welcome-text-phone ul.links li#yellow {
+          color: #B6B125; }
         #wrap #sliderFirst .info-section .row.darck-background .text-center.background .welcome-text-phone ul.links li:first-child {
           border-left: none; }
 
