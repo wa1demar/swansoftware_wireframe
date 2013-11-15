@@ -160,7 +160,9 @@ if (isset($_POST['submit_contact_us'])) {
             Flash::add("name_p", $name);
             Flash::add("email_p", $email);
             Flash::add("phone_p",$phone);
-//            print($_POST['service']);
+//            $services = $services ? addslashes(strip_tags(explode( $services,  $arr))) : "";
+            Flash::add("services", $services);
+
             header("Location:  " . $_SERVER['HTTP_REFERER']);
         }
 
