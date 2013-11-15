@@ -90,45 +90,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <?php $cli = get_posts(
-                        array(
-                            'category__in' => get_cat_ID('Clients'),
-                            'numberposts' => 12,
-                        )
-                    );?>
-                    <?php if (count($cli) > 0): ?>
+
                     <section class="sec">
                         <span class="title">
                             <h1>Our Clients</h1>
                             <a href="<?=getCategory('Clients'); ?>">View All +</a>
                         </span>
-                        <?php if( $cli ): foreach( $cli as $post ):  ?>
-                            <?php setup_postdata($post);?>
-                            <img src="<?=get_field('logo') ?>">
-                        <?php endforeach; endif; ?>
-                        <?php wp_reset_postdata(); ?>
+
                     </section>
-                    <?php endif; ?>
-                    <?php $tec = get_posts(
-                        array(
-                            'category__in' => get_cat_ID('Technologies'),
-                            'numberposts' => 12,
-                        )
-                    );?>
-                    <?php if (count($tec) > 0): ?>
+
                     <section style="text-align: center">
                         <span class="title">
                             <h1 class="text-center">Area of Expertise</h1>
                             <a href=" <?php echo esc_url( get_permalink( get_page_by_title( 'Technologies' ) ) ); ?>">View All +</a>
 
                         </span>
-                        <?php if( $tec ): foreach( $tec as $post ):  ?>
-                        <?php setup_postdata($post);?>
-                            <img src="<?=get_field('logo') ?>">
-                        <?php endforeach; endif; ?>
-                        <?php wp_reset_postdata(); ?>
+                        <img src="<?php bloginfo("template_directory")?>/assets/pics/tech_1.png">
+                        <img src="<?php bloginfo("template_directory")?>/assets/pics/tech_2.png">
+
+                        <img src="<?php bloginfo("template_directory")?>/assets/pics/tech_4.png">
+                        <img src="<?php bloginfo("template_directory")?>/assets/pics/tech_5.png">
+                        <img src="<?php bloginfo("template_directory")?>/assets/pics/tech_6.png">
+                        <img src="<?php bloginfo("template_directory")?>/assets/pics/ruby.png">
+                        <img src="<?php bloginfo("template_directory")?>/assets/pics/tech_3.png">
                     </section>
-                    <?php endif; ?>
+
 
                 </div>
             </div>
