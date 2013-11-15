@@ -40,7 +40,7 @@
                 $('.email.error-sign').css('display', 'block');
                 $('.row.email').css('padding-bottom', '20px');
                 $('.has-error .form-control').css('border',"1px solid #b94a48" );
-
+                set_start_value();
             }
 
             if ($.trim($('#contact_us_alert').html()) === "Name can't be blank") {
@@ -50,7 +50,7 @@
                 $('.row.name').css('padding-bottom', '20px');
 
                 $('.has-error .form-control').css('border',"1px solid #b94a48" );
-
+                set_start_value();
 
             }
 
@@ -59,9 +59,16 @@
                 $('.form-comment').addClass('has-error');
                 $('.comment.error-sign').css('display', 'block');
                 $('.has-error .form-control').css('border',"1px solid #b94a48" );
-
+                set_start_value();
 
             }
+        }
+        function set_start_value(){
+            $('#comment-input').val($.trim($('.comment_p').html()));
+            $('#email-input').val($.trim($('.email_p').html()));
+            $('#name-input').val($.trim($('.name_p').html()));
+            $('#phone-input').val($.trim($('.phone_p').html()));
+
         }
 
 
@@ -141,7 +148,7 @@
         <?php foreach (Flash::$messages as $id => $msg) : ?>
 
 
-            <div class="flash_<?php echo $id ?> alert alert-info alert-dismissable" id='contact_us_alert'>
+            <div class="<?php echo $id ?> alert alert-info alert-dismissable" id='contact_us_alert'>
 
                 <?php echo $msg ?>
             </div>
@@ -158,8 +165,8 @@
                             <img src="<?php bloginfo('template_directory') ?>/assets/img/name.png">
                         </div>
                         <div class="col-xs-9 form-name">
-                            <div class='name error-sign'>Comment can't be blank</div>
-                            <input required="required" class=' form-control' type="text" name = 'name_n'   placeholder="  John Doe...">
+                            <div class='name error-sign'>Name can't be blank</div>
+                            <input required="required" id ='name-input' class=' form-control' type="text" name = 'name_n'   placeholder="  John Doe...">
                         </div>
                     </div>
                     <div class="row email">
@@ -168,8 +175,8 @@
                             <img src="<?php bloginfo('template_directory') ?>/assets/img/email.png">
                         </div>
                         <div class="col-xs-9 form-email">
-                            <div class='email error-sign'>Comment can't be blank</div>
-                            <input required="required" class=' form-control' type="email"  name = 'email_n'
+                            <div class='email error-sign'>Bad email</div>
+                            <input  id ='email-input' class=' form-control' type="email"  name = 'email_n' required="required"
                                    placeholder="  johndoe@jahoo.com">
                         </div>
                     </div>
@@ -180,7 +187,7 @@
                         </div>
                         <div class="col-xs-9 form-phone">
 
-                            <input type="text" clname = 'phone_n'
+                            <input id = 'phone-input' type="text" name = 'phone_n'
                                    placeholder="  +7 (987) 654-32-10">
                         </div>
                     </div>
@@ -195,7 +202,7 @@
                         </div>
                         <div class="col-xs-8 form-comment">
                             <div class='comment error-sign'>Comment can't be blank</div>
-                            <textarea required="required" name = 'comment_n' class=' form-control'
+                            <textarea id ='comment-input' name = 'comment_n' class=' form-control' required="required"
                                 placeholder="  Type your message here..."></textarea>
                         </div>
                     </div>

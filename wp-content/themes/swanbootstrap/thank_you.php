@@ -66,16 +66,25 @@ if (isset($_POST['submit_contact_us'])) {
 
 
             } else {
-                Flash::alert("Comment can't be blank");
+                Flash::add("comment_error", "Comment can't be blank");
+                Flash::add("comment_p", $comment);
+                Flash::add("name_p", $name);
+                Flash::add("email_p", $email);
                 header("Location:  " . $_SERVER['HTTP_REFERER']);
             }
         } else {
-            Flash::add("Error", "Bad email");
+            Flash::add('email_error',"Bad email");
+            Flash::add("comment_p", $comment);
+            Flash::add("name_p", $name);
+            Flash::add("email_p", $email);
             header("Location:  " . $_SERVER['HTTP_REFERER']);
         }
 
     } else {
-        Flash::alert("Name can't be blank");
+        Flash::add('name_error', "Name can't be blank");
+        Flash::add("comment_p", $comment);
+        Flash::add("name_p", $name);
+        Flash::add("email_p", $email);
         header("Location:  " . $_SERVER['HTTP_REFERER']);
     }
 
@@ -85,7 +94,7 @@ if (isset($_POST['submit_contact_us'])) {
     $name = addslashes(strip_tags($_POST['name_n']));
     $email = addslashes(strip_tags($_POST['email_n']));
     $comment = addslashes(strip_tags($_POST['comment_n']));
-    $services = addslashes(strip_tags(implode(", ", $_POST['service'])));
+    $services = isset($_POST['service']) ? addslashes(strip_tags(implode(", ", $_POST['service']))) : "";
     $phone = addslashes(strip_tags($_POST['phone_n']));
 
 
@@ -138,16 +147,29 @@ if (isset($_POST['submit_contact_us'])) {
 
 
             } else {
-                Flash::alert("Comment can't be blank");
+                Flash::add("comment_error", "Comment can't be blank");
+                Flash::add("comment_p", $comment);
+                Flash::add("name_p", $name);
+                Flash::add("email_p", $email);
+                Flash::add("phone_p",$phone);
                 header("Location:  " . $_SERVER['HTTP_REFERER']);
             }
         } else {
-            Flash::alert("Bad email");
+            Flash::add('email_error',"Bad email");
+            Flash::add("comment_p", $comment);
+            Flash::add("name_p", $name);
+            Flash::add("email_p", $email);
+            Flash::add("phone_p",$phone);
+//            print($_POST['service']);
             header("Location:  " . $_SERVER['HTTP_REFERER']);
         }
 
     } else {
-        Flash::alert("Name can't be blank");
+        Flash::add('name_error', "Name can't be blank");
+        Flash::add("comment_p", $comment);
+        Flash::add("name_p", $name);
+        Flash::add("email_p", $email);
+        Flash::add("phone_p",$phone);
         header("Location:  " . $_SERVER['HTTP_REFERER']);
     }
 
@@ -209,16 +231,26 @@ if (isset($_POST['submit_contact_us'])) {
 
 
             } else {
-                Flash::alert("Comment can't be blank");
+                Flash::add("comment_error", "Comment can't be blank");
+                Flash::add("comment_p", $comment);
+                Flash::add("name_p", $name);
+                Flash::add("email_p", $email);
+
                 header("Location:  " . $_SERVER['HTTP_REFERER']);
             }
         } else {
-            Flash::alert("Bad email");
+            Flash::add('email_error',"Bad email");
+            Flash::add("comment_p", $comment);
+            Flash::add("name_p", $name);
+            Flash::add("email_p", $email);
             header("Location:  " . $_SERVER['HTTP_REFERER']);
         }
 
     } else {
-        Flash::alert("Name can't be blank");
+        Flash::add('name_error', "Name can't be blank");
+        Flash::add("comment_p", $comment);
+        Flash::add("name_p", $name);
+        Flash::add("email_p", $email);
         header("Location:  " . $_SERVER['HTTP_REFERER']);
     }
 

@@ -65,62 +65,6 @@ footer#mainFooter {
 
 }
 
-//@media (min-width: 500px) and(max-width: 500px) {
-//  .footer-row {
-//    //position: relative;
-//    //height: 200px
-//  }
-//  .logo-footer {
-//    margin: 0 0;
-//    width: 100%;
-//
-//    .logo-container {
-//      width: 420px;
-//      margin: 0 auto;
-//      .title-item {
-//        padding-top: 8px;
-//        max-width: 145px;
-//      }
-//    }
-//  }
-//
-//  .direct-contact-footer {
-//    //position: absolute;
-//
-//    display: inline-block;
-//    width: 61%;
-//    min-width: 410px;
-//
-//    address {
-//      width: 280px;
-//      margin-left: 35%;
-//      //text-align: center;
-//      ul {
-//        li {
-//          //display: inline-block;
-//        }
-//      }
-//    }
-//
-//  }
-//  .direct-lines-footer {
-//    //position: absolute;
-//    width: 25%;
-//    min-width: 170px;
-//    display: inline-block;
-//    text-align
-//    //text-align: center;
-//    ul {
-//      li {
-//        //display: inline-block;
-//      }
-//    }
-//  }
-//  .main-menu-footer {
-//    text-align: center;
-//  }
-//
-//}
 
 @media (min-width: 100px) and(max-width: 990px) {
   #second-h {
@@ -246,6 +190,7 @@ footer#mainFooter {
     min-width: 0px;
     padding-bottom: 10px;
     padding-top: 10px;
+    padding-left: 0px;
 
     address {
       width: 290px;
@@ -255,6 +200,7 @@ footer#mainFooter {
 
   }
   .direct-lines-footer {
+    padding-left: 0px;
 
     .direct-line-container {
       width: 290px;

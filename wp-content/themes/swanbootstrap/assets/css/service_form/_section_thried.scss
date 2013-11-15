@@ -69,17 +69,7 @@
     font-weight: normal;
 
   }
-  #contact_us_alert{
-    position: fixed;
-    top: 30px;
-    right: 100px;
-    width: 250px;
-    padding: 20px;
-    background-color: #FCC;
-    border: solid 2px #C66;
-    &:first-letter { text-transform: uppercase; }
 
-  }
   input.submit{
     margin: 0 auto;
     width: 200px;
