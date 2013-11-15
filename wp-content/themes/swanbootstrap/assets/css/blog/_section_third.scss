@@ -11,6 +11,10 @@
 
     &.first {
       display: none;
+
+      .white-footer {
+        display: none;
+      }
     }
 
 
@@ -80,6 +84,22 @@
 
 
 
+  }
+
+  .prev {
+    a {
+      font-size: getRSize(25);
+      background: url("../../img/prev.png") left center no-repeat;
+      padding-left: 25px;
+    }
+  }
+
+  .next {
+    a {
+      font-size: getRSize(25);
+      background: url("../../img/next.png") right center no-repeat;
+      padding-right: 25px;
+    }
   }
 
   @media (max-width: 500px) {

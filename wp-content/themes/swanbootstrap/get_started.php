@@ -86,12 +86,12 @@
     <div class='row darck-background'>
         <div class="container text-center">
             <div class="row">
-                <div class='col-xs-5  text-right'>
+                <div class='col-sm-5  text-right'>
                     <img
                         src="<?php bloginfo('template_directory') ?>/assets/img/form_icon.png">
                 </div>
 
-                <div class='col-xs-7 text-left'>
+                <div class='col-sm-7 text-left'>
                     <div class='text'>
                         Complete the inquiry form below
                         <br/>
@@ -156,7 +156,6 @@
                 <?php echo $msg ?>
             </div>
         <?php endforeach; ?>
-
         <div class='container'>
             <div class=row>
 
@@ -189,7 +188,7 @@
                             Phone
                             <img src="<?php bloginfo('template_directory') ?>/assets/img/phone.png">
                         </div>
-                        <div class="col-xs-9">
+                        <div class="col-xs-9 form-phone">
 
                             <input id = 'phone-input' type="text" name = 'phone_n'
                                    placeholder="  +7 (987) 654-32-10">

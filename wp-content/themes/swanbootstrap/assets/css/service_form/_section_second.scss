@@ -14,7 +14,7 @@
     .label-block {
       width: 20%;
       display: table-cell;
-      vertical-align: top;
+      vertical-align: middle;
 
       //display: inline;
       padding: 50px 0;
@@ -44,28 +44,45 @@
   input[type=checkbox].css-checkbox + label.css-label {
     padding-left: 32px;
     height: 100%;
-//    display: inline-block;
     line-height: 25px;
     background-repeat: no-repeat;
-    //background-position: 0 0;
-    //background-size: 25;
     font-size: getSize(18);
-    //TODO
-//    vertical-align: middle;
+
     font-weight: 100;
     text-align: left;
     cursor: pointer;
   }
   input[type=checkbox].css-checkbox:checked + label.css-label {
-    //background-position: 0 -25px;
     background: url("../../../assets/img/checkbox_checked.png") left center no-repeat;
   }
   .css-label {
-    background: url("../../../assets/img/checkbox_unchecked.png") left center;
+    background: url("../../../assets/img/checkbox_unchecked.png") left top;
 
   }
 
 
 
 }
+
+@media (max-width: 800px) {
+  #sliderSecond .check-box-container-form .label-block {
+    width: 40%;
+    display: block;
+    float: right;
+    text-align: left;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  #sliderSecond .check-box-container-form .label-block {
+    width: 90%;
+    display: block;
+    float: right;
+    text-align: left;
+    padding: 20px;
+  }
+}
+
+
 

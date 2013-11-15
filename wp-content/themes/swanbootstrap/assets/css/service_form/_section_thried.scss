@@ -92,3 +92,57 @@
 
 
 }
+
+@media screen {
+  #sectionThried .client-form .label {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  #sectionThried .client-form .label {
+    width: 100%;
+    padding-bottom: 0;
+    padding-top: 10px;
+    text-align: left;
+  }
+
+  #sectionThried .client-form .col-xs-8 {
+    padding-left: 15px;
+  }
+
+  #sectionThried .client-form input, #sectionThried .client-form textarea {
+    width: 100%;
+  }
+
+  #sectionThried .client-form .comment-div .label.comment-label {
+    padding-left: 15px;
+  }
+
+  #sectionThried .client-form img {
+    float: none;
+  }
+
+  #sectionThried .form-name {
+      width: 100%;
+
+  }
+
+  #sectionThried .form-email {
+    width: 100%;
+
+  }
+
+  #sectionThried .form-phone{
+    width: 100%;
+
+  }
+
+  #sectionThried .form-comment{
+    width: 100%;
+
+  }
+
+
+
+}
