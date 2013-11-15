@@ -166,7 +166,8 @@ $last_post = new WP_Query($args);
                     global $wpdb;
                     $limit = 0;
                     $year_prev = null;
-                    $months = $wpdb->get_results("SELECT DISTINCT MONTH( post_date ) AS month ,	YEAR( post_date ) AS year, COUNT( id ) as post_count FROM $wpdb->posts WHERE post_status = 'publish' and post_date <= now( ) and post_type = 'post' GROUP BY month , year ORDER BY post_date ASC");
+                    $year = isset($_GET['year']) ? $_GET['year'] : date('Y');
+                    $months = $wpdb->get_results("SELECT DISTINCT MONTH( post_date ) AS month ,	YEAR( post_date ) AS year, COUNT( id ) as post_count FROM $wpdb->posts WHERE post_status = 'publish' and post_date == $$year and post_type = 'post' GROUP BY month , year ORDER BY post_date ASC");
                     foreach ($months as $month) :
                         $year_current = $month->year;
 
@@ -177,6 +178,7 @@ $last_post = new WP_Query($args);
                             <a href="<?php bloginfo('url') ?>/<?php echo $month->year; ?>/<?php echo date("m", mktime(0, 0, 0, $month->month, 1, $month->year)) ?>"><span
                                     class="archive-month"><?php echo date_i18n("F", mktime(0, 0, 0, $month->month, 1, $month->year)) ?></span></a>
                         </li>
+
                         <?php $year_prev = $year_current; ?>
 
                         <?php if (++$limit >= 18) {
@@ -185,7 +187,7 @@ $last_post = new WP_Query($args);
 
                     <?php endforeach; ?>
 
-
+                    <?php wp_get_archives('type=monthly&cat=3'); ?>
                 <?php else : ?>
                     <div id='not_found_section'>
                         <div class='rov'>
