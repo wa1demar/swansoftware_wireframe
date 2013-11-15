@@ -88,10 +88,16 @@
   //njibgyfvtyfvgyjm
 
 }
+@media(max-width: 767px){
+  #sliderFour .left-border-dotted{
+    background: none;
+  }
+}
 @media(max-width: 500px){
   #sliderFour{
     padding: 20px 20px;
   }
+
 }
 @media(max-width: 400px){
   #sliderFour{
