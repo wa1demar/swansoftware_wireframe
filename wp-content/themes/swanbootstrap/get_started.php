@@ -70,6 +70,9 @@
             $('#phone-input').val($.trim($('.phone_p').html()));
 
         }
+        function set_service(){
+            arr = $.trim($('.service').html())
+        }
 
 
     })
@@ -177,7 +180,7 @@
                         </div>
                         <div class="col-xs-9 form-email">
                             <div class='email error-sign'>Bad email</div>
-                            <input  id ='email-input' class=' form-control' type="email"  name = 'email_n' required="required"
+                            <input  id ='email-input' class=' form-control' type="text"  name = 'email_n' required="required"
                                    placeholder="  johndoe@jahoo.com">
                         </div>
                     </div>
