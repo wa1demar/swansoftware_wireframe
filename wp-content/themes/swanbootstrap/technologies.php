@@ -132,12 +132,12 @@
     <div class="container">
     <div id="wrapper" class='row tab1'>
     <div class='col-sm-3'>
-        <ul class='link-list nav nav-tabs' id="">
-            <li class="active"><a href="#java" >Java tool set</a></li>
-            <li><a href="#ruby" >Ruby tool set</a></li>
-            <li><a href="#net" >.NET tool set</a></li>
-            <li><a href="#js" ">JavaScript tool set</a></li>
-            <li><a href="#phone" ">Smartphone tool set</a></li>
+        <ul class='link-list nav nav-tabs' id="myTab">
+            <li class="active"><a href="#java" data-toggle="tab" >Java tool set</a></li>
+            <li><a href="#ruby" data-toggle="tab" >Ruby tool set</a></li>
+            <li><a href="#net"  data-toggle="tab">.NET tool set</a></li>
+            <li><a href="#js" data-toggle="tab">JavaScript tool set</a></li>
+            <li><a href="#phone" data-toggle="tab">Smartphone tool set</a></li>
         </ul>
     </div>
     <div class='col-sm-9 left-border-dotted tab-content'>
