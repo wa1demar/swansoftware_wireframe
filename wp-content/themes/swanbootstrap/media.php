@@ -36,9 +36,9 @@
 
                         </div>
                         <ul class='links'>
-                            <li><a href='#' class='blue'> Be Original</a></li>
-                            <li><a href='#' class='green'>Discover</a></li>
-                            <li><a href='#' class='yellow'> Stand Out</a></li>
+                            <li id='blue'> Be Original</li>
+                            <li id='green'>Discover   </li>
+                            <li id='yellow'> Stand Out</li>
 
                         </ul>
 
