@@ -754,13 +754,15 @@ footer#mainFooter {
     width: 100%;
     min-width: 0px;
     padding-bottom: 10px;
-    padding-top: 10px; }
+    padding-top: 10px;
+    padding-left: 0px; }
     .direct-contact-footer address {
       width: 290px;
       margin: 0 auto;
       padding-left: 1px; }
 
   .direct-lines-footer {
+    padding-left: 0px;
     width: 100%;
     min-width: 0px;
     display: inline-block;

@@ -105,53 +105,24 @@
             <div class="row myIndicators">
                 <ul style="">
                     <li class="mobile active">
-                        <a href="#mobile" data-toggle="tab">Mobile Development</a></li>
-                    <li class="staff"><a href="#staff" data-toggle="tab">Staf
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_title('Mobile Application Development'))); ?>">
+                            Mobile Development</a></li>
+                    <li class="staff">
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_title('Staff Augmentation'))); ?>">
+                            Staf
                             Augmentation</a></li>
-                    <li class="app"><a href="#app" data-toggle="tab">Custom
+                    <li class="app">
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_title('Custom Application Development'))); ?>">
+                            Custom
                             Application Development</a></li>
-                    <li class="design"><a href="#design" data-toggle="tab">Design</a>
+                    <li class="design">
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_title('Design'))); ?>" >
+                            Design</a>
                     </li>
                     <!--<li class="marketing"><a href="#">Internet Marketing</a></li>-->
                 </ul>
 
-                <div class="box col-sm-3 col-xs-3 text-center">
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_title('Mobile Application Development'))); ?>" data-target="#carousel-example-generic" data-slide-to="1" class="active">
-                        <div class="round_image text-center">
-                            <img src="<?php bloginfo('template_directory') ?>/assets/img/service1_115x100.png">
-                        </div>
-
-                        <p>Mobile Development</p>
-                    </a>
-                </div>
-                <div class="box col-sm-3 col-xs-3 text-center">
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_title('Staff Augmentation'))); ?>" data-target="#carousel-example-generic" data-slide-to="2">
-                        <div class="round_image">
-                            <img src="<?php bloginfo('template_directory') ?>/assets/img/service2_115x100.png">
-                        </div>
-
-                        <p>Staff Augmentation</p>
-                    </a>
-                </div>
-                <div class="box col-sm-3 col-xs-3 text-center">
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_title('Custom Application Development'))); ?>" data-target="#carousel-example-generic" data-slide-to="3">
-                        <div class="round_image">
-                            <img src="<?php bloginfo('template_directory') ?>/assets/img/service3_115x100.png">
-                        </div>
-
-                        <p>Custom Application Development</p>
-                    </a>
-                </div>
-                <div class="box col-sm-3 col-xs-3 text-center">
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_title('Design'))); ?>" data-target="#carousel-example-generic" data-slide-to="4">
-                        <div class="round_image">
-                            <img src="<?php bloginfo('template_directory') ?>/assets/img/service4_115x100.png">
-                        </div>
-
-                        <p>Design</p>
-                    </a>
-                </div>
-            </div>
+             </div>
 
 
         </div>
@@ -161,12 +132,12 @@
     <div class="container">
     <div id="wrapper" class='row tab1'>
     <div class='col-sm-3'>
-        <ul class='link-list nav nav-tabs' id="myTab">
-            <li class="active"><a href="#java" data-toggle="tab">Java tool set</a></li>
-            <li><a href="#ruby" data-toggle="tab">Ruby tool set</a></li>
-            <li><a href="#net" data-toggle="tab">.NET tool set</a></li>
-            <li><a href="#js" data-toggle="tab">JavaScript tool set</a></li>
-            <li><a href="#phone" data-toggle="tab">Smartphone tool set</a></li>
+        <ul class='link-list nav nav-tabs' id="">
+            <li class="active"><a href="#java" >Java tool set</a></li>
+            <li><a href="#ruby" >Ruby tool set</a></li>
+            <li><a href="#net" >.NET tool set</a></li>
+            <li><a href="#js" ">JavaScript tool set</a></li>
+            <li><a href="#phone" ">Smartphone tool set</a></li>
         </ul>
     </div>
     <div class='col-sm-9 left-border-dotted tab-content'>

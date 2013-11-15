@@ -125,16 +125,6 @@
     background: url("../../../assets/img/star.png") right top no-repeat;
     padding-right: 15px;
     font-weight: normal; }
-  #sectionThried #contact_us_alert {
-    position: fixed;
-    top: 30px;
-    right: 100px;
-    width: 250px;
-    padding: 20px;
-    background-color: #FCC;
-    border: solid 2px #C66; }
-    #sectionThried #contact_us_alert:first-letter {
-      text-transform: uppercase; }
   #sectionThried input.submit {
     margin: 0 auto;
     width: 200px;

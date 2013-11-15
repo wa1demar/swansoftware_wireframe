@@ -29,14 +29,14 @@
 
                     $('.form-email').addClass('has-error');
                     $('.email.error-sign').css('display', 'block');
-
+                    set_start_value();
                 }
 
                 if ($.trim($('#contact_us_alert').html()) === "Name can't be blank") {
 
                     $('.form-name').addClass('has-error');
                     $('.name.error-sign').css('display', 'block');
-
+                    set_start_value();
 
 
                 }
@@ -45,10 +45,16 @@
 
                     $('.form-comment').addClass('has-error');
                     $('.comment.error-sign').css('display', 'block');
-
+                    set_start_value();
 
 
                 }
+            }
+            function set_start_value(){
+                $('#comment-input').val($.trim($('.comment_p').html()));
+                $('#email-input').val($.trim($('.email_p').html()));
+                $('#name-input').val($.trim($('.name_p').html()));
+
             }
 
 
@@ -61,7 +67,7 @@
             <?php foreach (Flash::$messages as $id => $msg) : ?>
 
 
-                <div class="flash_<?php echo $id ?> alert alert-info alert-dismissable" id='contact_us_alert'>
+                <div class="<?php echo $id ?> alert alert-info alert-dismissable" id='contact_us_alert'>
 
                     <?php echo $msg ?>
                 </div>
@@ -115,10 +121,12 @@
                                             Name
 
 
+
                                             <img src="<?php bloginfo('template_directory') ?>/assets/img/name.png">
                                         </div>
-                                        <div class="col-xs-8 form-name "><input type="text" name='name_c' required="required"
-                                                                       class=' form-control' id="inputError"
+                                        <div class="col-xs-8 form-name ">
+                                            <input type="text" name='name_c' required="required"
+                                                   class=' form-control' id ="name-input"
                                                                        placeholder="  John Doe...">
                                         </div>
                                     </div>
@@ -130,7 +138,7 @@
                                             <img src="<?php bloginfo('template_directory') ?>/assets/img/email.png">
                                         </div>
                                         <div class="col-xs-8 form-email ">
-                                            <input type="email" name='email_c'  required="required"
+                                            <input type="email" name='email_c' id ="email-input" required="required"
                                                    class=' form-control' placeholder="johndoe@jahoo.com">
                                         </div>
                                     </div>
@@ -142,7 +150,8 @@
 
                                             <img src="<?php bloginfo('template_directory') ?>/assets/img/comment.png">
                                         </div>
-                                        <div class="col-xs-8 form-comment"><textarea name='comment_c' required="required"
+                                        <div class="col-xs-8 form-comment">
+                                            <textarea required="required"  name='comment_c' id ="comment-input"
                                                                                      class=' form-control'  placeholder="  Type your message here..."></textarea>
                                         </div>
                                     </div>
