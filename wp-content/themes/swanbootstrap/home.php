@@ -52,6 +52,13 @@
                 </div>
             </div>
         </div>
+        <script>
+            $('.carousel5').carousel({
+                interval: 10000
+            })
+            $('.carousel5').carousel('next');
+        </script>
+        
 
 
         <!--        // end carousel-->
@@ -146,8 +153,4 @@
 
 <?php get_footer() ?>
 
-<script>
-    $('.carousel5').carousel({
-        interval: 10000
-    })
-</script>
+
