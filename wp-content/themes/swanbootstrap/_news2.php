@@ -251,7 +251,7 @@ $last_post = new WP_Query($args);
                 <?php endif ?>
             </div>
             <div class="col-sm-4">
-                <p class='tags'>Browser by Tag</p>
+                <p class='tags'>Browse by Tag</p>
                 <ul>
                     <?php $tags = get_tags(array('number' => 15)); ?>
                     <?php foreach ($tags as $tag): ?>

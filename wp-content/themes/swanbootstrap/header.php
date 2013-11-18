@@ -73,7 +73,7 @@
                 </div>
             </div>
 
-            <div class="col-xs-4 logo-sign">
+            <div class="col-xs-3 logo-sign">
                 <div class="row">
 
                     <div class="col-xs-12 ">
@@ -89,7 +89,7 @@
 
             <div class="col-sm-6 col-xs-12  header-contacts">
                 <div class="row  ">
-                    <div class="col-md-6  col-md-offset-6  ">
+                    <div class="col-md-6  col-md-offset-7  ">
                         <div class="address">
                             <ul>
                                 <li class="phone "><p>317-691-3806</p></li>

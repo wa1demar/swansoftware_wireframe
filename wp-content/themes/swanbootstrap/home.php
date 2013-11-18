@@ -1,6 +1,5 @@
 <?php
 /**
- * Template Name: Home Template
  *
  * Created by PhpStorm.
  * @author: waldemar
