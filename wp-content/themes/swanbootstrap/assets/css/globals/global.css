@@ -219,13 +219,16 @@ a, a:active, a:focus {
     top: 120px;
     width: 100%;
     margin-left: 0%; } }
+@media (min-width: 520px) and (max-width: 680px) and (max-width: 545px) {
+  .header-row {
+    padding-bottom: 60px; } }
 @media (min-width: 480px) and (max-width: 520px) {
   #mainHeader ul.mainMenu {
     text-align: center; }
 
   .header-row {
     position: relative;
-    padding-bottom: 40px; }
+    padding-bottom: 60px; }
 
   .logo {
     margin-left: 5%;
@@ -274,7 +277,7 @@ a, a:active, a:focus {
       background-size: 78px 100%; } }
 @media (min-width: 460px) and (max-width: 480px) {
   #mainHeader {
-    height: 180px; }
+    height: 190px; }
 
   #mainHeader ul.mainMenu {
     text-align: center; }
@@ -307,7 +310,7 @@ a, a:active, a:focus {
 
   #mainHeader .link-list {
     position: absolute;
-    top: 110px;
+    top: 100px;
     width: 100%;
     margin-left: 0%; }
 

@@ -181,6 +181,7 @@
 
 }
 
+
 @media(min-width:520px)and(max-width:680px){
   #mainHeader ul.mainMenu{
     text-align: center;
@@ -227,40 +228,18 @@
 
   #mainHeader .header-contacts{
     display: none;
-    //width: 80%;
-    //
-    //position:absolute;
-    //left: 10%;
-    //top: 110px;
-    //.address{
-    //  //text-align: center;
-    //  width: 200px;
-    //  margin: 0 auto;
-    //}
-    //ul{
-    //
-    //
-    //  li.address{
-    //    //display: inline-block;
-    //    width: auto;
-    //
-    //    padding-left: 22px;
-    //    //height: 60px;
-    //  }
-    //  li.phone{
-    //    //display: block;
-    //    width: auto;
-    //    padding-left: 22px;
-    //
-    //  }
-    // }
-
   }
   #mainHeader .link-list{
     position:absolute;
     top: 120px;
     width: 100%;
     margin-left: 0%;
+  }
+  @media(max-width:545px){
+    .header-row{
+
+      padding-bottom: 60px;
+    }
   }
 
 }
@@ -271,7 +250,7 @@
 
   .header-row{
    position: relative;
-    padding-bottom: 40px;
+    padding-bottom: 60px;
   }
   .logo{
     margin-left: 5%;
@@ -298,33 +277,6 @@
 
   #mainHeader .header-contacts{
     display: none;
-    //width: 90%;
-
-    //position:absolute;
-    //left: 5%;
-    //top: 110px;
-    ////right: 0px;
-    //.address{
-    //  width: 200px;
-    //  margin: 0 auto;
-    //}
-    //ul{
-
-
-      //li.address{
-
-        //width: auto;
-
-        //padding-left: 22px;
-      //
-      //}
-      //li.phone{
-
-        //width: auto;
-        //padding-left: 22px;
-
-      //}
-    //}
 
   }
    #mainHeader  .link-list{
@@ -368,7 +320,7 @@
 }
 @media(min-width:460px)and(max-width:480px){
   #mainHeader{
-    height: 180px;
+    height: 190px;
   }
   #mainHeader ul.mainMenu{
     text-align: center;
@@ -411,46 +363,11 @@
 
   #mainHeader .header-contacts{
     display: none;
-    //width: 98%;
-    //
-    //position:absolute;
-    //left: 1%;
-    //top: 100px;
-    ////right: 0px;
-    //.address{
-    //  width: 230px;
-    //  margin: 0 auto;
-    //}
-    //ul{
-    //
-    //
-    //  li.address{
-    //
-    //    width: auto;
-    //
-    //    padding-left: 22px;
-    //    padding-top: 10px;
-    //
-    //    p{
-    //      font-size: 140%;
-    //    }
-    //  }
-    //  li.phone{
-    //
-    //    width: auto;
-    //    padding-left: 22px;
-    //    padding-top: 10px;
-    //    p{
-    //      font-size: 140%;
-    //    }
-    //
-    //  }
-    //}
 
   }
   #mainHeader .link-list{
     position:absolute;
-    top: 110px;
+    top: 100px;
     width: 100%;
     margin-left: 0%;
   }
