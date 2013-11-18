@@ -614,3 +614,7 @@
   background: url("../../img/swan-bg.png") top center no-repeat;
   padding: 50px 0;
   margin-top: 10px; }
+
+@media (max-width: 338px) {
+  #sliderFifth a.blue_btn {
+    width: 100%; } }

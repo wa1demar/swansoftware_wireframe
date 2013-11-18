@@ -103,7 +103,7 @@
             </div>
 
             <div class="col-xs-12 text-center link-list">
-                <div class="row">
+                <div class="row container-non-height">
                     <div class="col-xs-12 text-center">
                         <?php wp_nav_menu(getArgsForMainMenu()) ?>
                     </div>
