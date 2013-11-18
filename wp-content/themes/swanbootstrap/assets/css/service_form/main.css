@@ -22,6 +22,9 @@
   font-family: "Recetrac Bold";
   src: url("../../fonts/BARAKB.TTF"); }
 
+a, a:active, a:focus {
+  outline: none; }
+
 #sliderFirst {
   background: url("../../pics/technology.png") repeat-x top;
   padding: 10px 0 40px 0; }

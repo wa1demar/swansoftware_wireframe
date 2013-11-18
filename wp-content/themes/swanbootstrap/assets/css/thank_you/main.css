@@ -22,6 +22,9 @@
   font-family: "Recetrac Bold";
   src: url("../../fonts/BARAKB.TTF"); }
 
+a, a:active, a:focus {
+  outline: none; }
+
 .body-row {
   text-align: center;
   padding: 80px 0px;

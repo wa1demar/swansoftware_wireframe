@@ -44,3 +44,5 @@ $default_font: "Open Sans Light";
 @function getRSize($px) {
   @return (($px * 1.4rem) / 16) + 0rem;
 }
+
+a, a:active, a:focus {outline:none}

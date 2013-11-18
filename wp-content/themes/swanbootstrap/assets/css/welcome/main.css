@@ -22,6 +22,9 @@
   font-family: "Recetrac Bold";
   src: url("../../fonts/BARAKB.TTF"); }
 
+a, a:active, a:focus {
+  outline: none; }
+
 @font-face {
   font-family: "Open Sans";
   src: url("../../fonts/OpenSans-Regular.ttf"); }
@@ -45,6 +48,9 @@
 @font-face {
   font-family: "Recetrac Bold";
   src: url("../../fonts/BARAKB.TTF"); }
+
+a, a:active, a:focus {
+  outline: none; }
 
 #wrap {
   padding-bottom: 20px;

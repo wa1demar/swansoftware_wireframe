@@ -22,6 +22,9 @@
   font-family: "Recetrac Bold";
   src: url("../../fonts/BARAKB.TTF"); }
 
+a, a:active, a:focus {
+  outline: none; }
+
 #sliderFirst {
   padding: 10px 0 40px 0; }
   #sliderFirst .darck-background {
@@ -29,6 +32,11 @@
     margin: 0 0;
     width: 100%;
     padding: 30px 0; }
+    #sliderFirst .darck-background #used-services li {
+      list-style: none;
+      font-size: 1.75rem; }
+    #sliderFirst .darck-background #link a {
+      font-size: 1.75rem; }
     #sliderFirst .darck-background h1 {
       color: #ffffff; }
     #sliderFirst .darck-background .title {
@@ -80,9 +88,13 @@
         #sliderSecond ul li a img {
           margin: 10px 10px; }
       #sliderSecond ul li.active a {
-        background: #f4feff url("../../img/hover_active.png") center center no-repeat; }
+        background: #f4feff url("../../img/hover_active.png") center center no-repeat;
+        border: none;
+        outline: 0px solid #fff; }
         #sliderSecond ul li.active a:hover {
           background: #f4feff url("../../img/hover_active.png") center center no-repeat; }
+      #sliderSecond ul li.active a:focus {
+        outline: 0px solid #fff; }
 
 @media (max-width: 680px) {
   #sliderSecond {

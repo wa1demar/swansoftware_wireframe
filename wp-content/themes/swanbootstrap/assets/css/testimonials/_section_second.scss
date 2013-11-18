@@ -27,10 +27,16 @@
       &.active {
         a {
           background: $white url("../../img/hover_active.png") center center no-repeat;
+          border: none;
+          outline:0px solid #fff;
 
           &:hover {
             background: $white url("../../img/hover_active.png") center center no-repeat;
           }
+        }
+
+        a:focus {
+          outline:0px solid #fff;
         }
 
       }
