@@ -3,3 +3,8 @@
   padding: 50px 0;
   margin-top: 10px;
 }
+@media(max-width: 338px) {
+  #sliderFifth a.blue_btn{
+    width: 100%;
+  }
+}
