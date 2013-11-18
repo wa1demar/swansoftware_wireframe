@@ -96,7 +96,14 @@
                             <h1>Our Clients</h1>
                             <a href="<?=getCategory('Clients'); ?>">View All +</a>
                         </span>
-
+                        <img src="<?php bloginfo("template_directory")?>/assets/pics/sysiq.png">
+                        <img src="<?php bloginfo("template_directory")?>/assets/pics/foodpal.png">
+                        <img src="<?php bloginfo("template_directory")?>/assets/pics/irecord.png">
+                        <img src="<?php bloginfo("template_directory")?>/assets/pics/jasper.png">
+                        <img src="<?php bloginfo("template_directory")?>/assets/pics/just1.png">
+                        <img src="<?php bloginfo("template_directory")?>/assets/pics/bitpal.png">
+                        <img src="<?php bloginfo("template_directory")?>/assets/pics/answer.png">
+                        <img src="<?php bloginfo("template_directory")?>/assets/pics/astound.png">
                     </section>
 
                     <section style="text-align: center">
@@ -111,8 +118,9 @@
                         <img src="<?php bloginfo("template_directory")?>/assets/pics/tech_4.png">
                         <img src="<?php bloginfo("template_directory")?>/assets/pics/tech_5.png">
                         <img src="<?php bloginfo("template_directory")?>/assets/pics/tech_6.png">
-                        <img src="<?php bloginfo("template_directory")?>/assets/pics/ruby.png">
+                        <img src="<?php bloginfo("template_directory")?>/assets/pics/ruby_on_rails_logo-252x300.jpg">
                         <img src="<?php bloginfo("template_directory")?>/assets/pics/tech_3.png">
+                        <img src="<?php bloginfo("template_directory")?>/assets/pics/microsoft-.net-framework-4.jpg">
                     </section>
 
 

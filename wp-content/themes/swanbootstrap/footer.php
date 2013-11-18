@@ -29,10 +29,10 @@
                 <address>
                     <ul>
                         <li>Direct Contacts:</li>
-                        <li><a href="#">info@swansoftwaresolutions.com</a></li>
+                        <li><a href="mailto:info@swansoftwaresolutions.com">info@swansoftwaresolutions.com</a></li>
                         <li>Email Addresses:</li>
-                        <li><a href="#">sales@swansoftwaresolutions.com</a> </li>
-                        <li><a href="#">executive@swansoftwaresolutions.com</a></li>
+                        <li><a href="mailto:sales@swansoftwaresolutions.com">sales@swansoftwaresolutions.com</a> </li>
+                        <li><a href="mailto:executive@swansoftwaresolutions.com">executive@swansoftwaresolutions.com</a></li>
                     </ul>
                 </address>
             </div>

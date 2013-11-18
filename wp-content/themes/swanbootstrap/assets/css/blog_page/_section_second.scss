@@ -6,6 +6,7 @@
   .post_title {
     font-size: getRSize(10);
     text-align: center;
+    display: none;
   }
 
   ul.socials {
@@ -28,6 +29,7 @@
     padding-bottom: 20px;
     p {
       text-align: justify;
+      font-size: getRSize(20);
 
       img {
         margin: 5px;
@@ -222,4 +224,12 @@
 
   }
 
+}
+
+@media (max-width: 850px) {
+  #sectionSecond {
+    .post_title {
+      display: block;
+    }
+  }
 }

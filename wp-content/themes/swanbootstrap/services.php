@@ -98,7 +98,7 @@
                             </div>
                             <div class="row">
 
-                                <div class="col-sm-4"><label>Comment</label></div>
+                                <div class="col-sm-4"><label>Comments</label></div>
                                 <div class="col-sm-8 form-comment">
                                     <div class='comment error-sign'>Comment can't be blank</div>
                                     <textarea required="required"   id= 'comment-input' name = 'comment_p' class = 'form-control' placeholder="Tape your message here..."></textarea>
@@ -143,7 +143,7 @@
 <?php endif; ?>
     <section id="separator">
         <div class="container">
-            <h1>You can order the service by <a href="#">filling the form</a> or just <a href="#">cull us</a></h1>
+            <h1>You can order the service by <a href="http://magnificent-planet.ru/home/get-started/">filling the form</a> or just <a href="http://magnificent-planet.ru/home/contact-us/">cull us</a></h1>
         </div>
     </section>
     <div class="tab1">
@@ -162,7 +162,7 @@
                             <?php $logos = get_posts(
                                 array(
                                     'category__in' => get_cat_ID(get_the_title()),
-                                    'numberposts' => 100,
+                                    'numberposts' => 10,
                                     )
                                 );?>
 <!--                        --><?php //$clients = get_posts("cat=".get_cat_ID($cat)."&posts_per_page=100"); ?>
@@ -185,7 +185,7 @@
                     <?php $test = get_posts(
                         array(
                             'category__in' => get_cat_ID(get_the_title()),
-                            'numberposts' => 100,
+                            'numberposts' => 10,
                         )
                     );?>
 <!--                    --><?php //query_posts("cat=".get_cat_ID($cat)."&posts_per_page=100"); ?>

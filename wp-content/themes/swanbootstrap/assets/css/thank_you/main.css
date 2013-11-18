@@ -25,7 +25,8 @@
 .body-row {
   text-align: center;
   padding: 80px 0px;
-  background: url("../../pics/technology.png") center; }
+  background: url("../../pics/technology.png") center;
+  margin: 0; }
 
 #mainContent {
   width: 100%; }

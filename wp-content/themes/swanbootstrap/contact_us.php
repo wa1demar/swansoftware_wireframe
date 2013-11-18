@@ -100,12 +100,12 @@
                                     <b>Email addresses </b>
 
                                     <div class='text'>
-                                        info@swansoftwaresolutions.com
+                                        <a href="mailto:info@swansoftwaresolutions.com">info@swansoftwaresolutions.com</a>
                                         <br/>
-                                        sales@swansoftwaresolutions.com
+                                        <a href="mailto:sales@swansoftwaresolutions.com">sales@swansoftwaresolutions.com</a>
                                         <br/>
-                                        executive@swansoftwaresolutions.com
-                                    </div>
+                                        <a href="mailto:executive@swansoftwaresolutions.com">executive@swansoftwaresolutions.com</a>
+                                 </div>
 
                                 </div>
                             </div>

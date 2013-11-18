@@ -71,6 +71,8 @@
           font-size: 133.33333%; }
           #sliderFirst .info-section .row.dark-background .text-center.background .contact-text-phone .container .text-section .text-left .text {
             margin: 10px 0 10px 10px; }
+            #sliderFirst .info-section .row.dark-background .text-center.background .contact-text-phone .container .text-section .text-left .text a {
+              color: #f4feff; }
           #sliderFirst .info-section .row.dark-background .text-center.background .contact-text-phone .container .text-section .text-left b {
             margin-left: 10px;
             margin-bottom: 40px;

@@ -42,6 +42,8 @@
     font-size: 285.71429%; } }
 #sectionSecond {
   padding: 40px 0; }
+  #sectionSecond p {
+    font-size: 1.75rem; }
   #sectionSecond h1 {
     padding-bottom: 20px; }
   #sectionSecond .services {
@@ -108,7 +110,7 @@
       width: 30%; }
     #sectionSecond #greensection .text {
       color: #ffffff;
-      font-size: 114.28571%; }
+      font-size: 1.75rem; }
   #sectionSecond .main-staff {
     margin: 40px 0; }
     #sectionSecond .main-staff img {
@@ -269,7 +271,8 @@
   padding: 20px 0;
   background: #DFEDEE; }
   #sectionThird h1 {
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    text-align: center; }
   #sectionThird .managers img {
     width: 100%; }
   #sectionThird .managers span {

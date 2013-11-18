@@ -324,7 +324,7 @@
 </section>
 <script>
     $('.carousel1').carousel({
-        interval: 50000
+        interval: 25000
     })
 
 //    $('.carousel2').carousel({

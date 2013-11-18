@@ -53,7 +53,10 @@
       #sectionFirst .dark-background .ios_phone_screen .carousel-inner {
         top: 90px;
         left: 170px;
-        width: 100%; }
+        width: 197px; }
+        #sectionFirst .dark-background .ios_phone_screen .carousel-inner img {
+          width: 195px;
+          height: 344px; }
     #sectionFirst .dark-background .mackbook_screen {
       position: absolute;
       z-index: 10;
@@ -137,8 +140,12 @@
     padding: 50px 0; }
     #sectionSecond .rounded section.left {
       text-align: left; }
+      #sectionSecond .rounded section.left p {
+        font-size: 1.75rem; }
     #sectionSecond .rounded section.right {
       text-align: right; }
+      #sectionSecond .rounded section.right p {
+        font-size: 1.75rem; }
     #sectionSecond .rounded section h1 {
       font-size: 2.45rem;
       padding: 10px 0; }

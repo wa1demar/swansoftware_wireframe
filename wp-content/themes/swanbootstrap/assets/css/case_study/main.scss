@@ -33,6 +33,8 @@
       .carousel-indicators {
         bottom: -200px;
 
+
+
         li {
           background: $blue_soft;
           border: 1px solid $blue;
@@ -46,7 +48,12 @@
       .carousel-inner {
         top: 90px;
         left: 170px;
-        width: 100%;
+        width: 197px;
+
+        img {
+          width: 195px;
+          height: 344px;
+        }
       }
     }
 
@@ -181,12 +188,19 @@
 
       &.left {
         text-align: left;
+        p {
+          font-size: 1.75rem;
+        }
+
 
       }
 
       &.right {
 
         text-align: right;
+        p {
+          font-size: 1.75rem;
+        }
       }
 
       h1 {

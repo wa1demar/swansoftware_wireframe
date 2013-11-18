@@ -140,3 +140,6 @@
     font-size: 142.85714%;
     line-height: 1.5;
     text-align: justify; }
+  @media (max-width: 355px) {
+    #slidersecond .content {
+      margin-top: 50px; } }

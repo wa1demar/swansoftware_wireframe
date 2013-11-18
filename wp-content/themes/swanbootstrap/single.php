@@ -44,8 +44,7 @@ the_post(); ?>
                         <div class='col-xs-9'>
                             <b><?php the_title() ?></b><br/>
                             <?php the_my_excerpt($post) ?>
-                            <br/>
-                            <a href="<?php the_permalink() ?>">View all +</a>
+
 
                         </div>
                     </div>
@@ -105,27 +104,27 @@ the_post(); ?>
                         <h1><?php the_title()?></h1>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12 text-right">
-
-
-                        <ul class="horizontal top-social-icons  ">
-
-
-                            <li><a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/fb.png"/></a>
-                            </li>
-                            <li><a href="#"><img
-                                        src="<?php bloginfo('template_directory') ?>/assets/img/tw.png"/></a>
-                            </li>
-                            <li><a href="#"><img src="<?php bloginfo('template_directory') ?>/assets/img/gp.png"/></a>
-                            </li>
-                            <li><a href="#"><img
-                                        src="<?php bloginfo('template_directory') ?>/assets/img/li.png"/></a>
-                            </li>
-                        </ul>
-
-                    </div>
-                </div>
+<!--                <div class="row">-->
+<!--                    <div class="col-xs-12 text-right">-->
+<!---->
+<!---->
+<!--                        <ul class="horizontal top-social-icons  ">-->
+<!---->
+<!---->
+<!--                            <li><a href="#"><img src="--><?php //bloginfo('template_directory') ?><!--/assets/img/fb.png"/></a>-->
+<!--                            </li>-->
+<!--                            <li><a href="#"><img-->
+<!--                                        src="--><?php //bloginfo('template_directory') ?><!--/assets/img/tw.png"/></a>-->
+<!--                            </li>-->
+<!--                            <li><a href="#"><img src="--><?php //bloginfo('template_directory') ?><!--/assets/img/gp.png"/></a>-->
+<!--                            </li>-->
+<!--                            <li><a href="#"><img-->
+<!--                                        src="--><?php //bloginfo('template_directory') ?><!--/assets/img/li.png"/></a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!---->
+<!--                    </div>-->
+<!--                </div>-->
 
                 <div class="col-xs-12 text-left text-content">
                     <!--        --><?php //if (have_posts()) : while (have_posts()) : ?>
@@ -143,16 +142,16 @@ the_post(); ?>
                                 <ul class="horizontal social-icons ">
 
 
-                                    <li><a href="#"><img
+                                    <li><a href="http://www.facebook.com/pages/Swan-Software-Solutions-LLC/202165863143543"><img
                                                 src="<?php bloginfo('template_directory') ?>/assets/img/fb.png"/></a>
                                     </li>
-                                    <li><a href="#"><img
+                                    <li><a href="http://twitter.com/#!/swan_software"><img
                                                 src="<?php bloginfo('template_directory') ?>/assets/img/tw.png"/></a>
                                     </li>
-                                    <li><a href="#"><img
+                                    <li><a href="http://plus.google.com/109431432473588272273"><img
                                                 src="<?php bloginfo('template_directory') ?>/assets/img/gp.png"/></a>
                                     </li>
-                                    <li><a href="#"><img
+                                    <li><a href="http://www.linkedin.com/groups/Swan-Software-Solutions-LLC-3533676"><img
                                                 src="<?php bloginfo('template_directory') ?>/assets/img/li.png"/></a>
                                     </li>
                                 </ul>
@@ -222,7 +221,7 @@ the_post(); ?>
                 </div>
                 <div class="row next-sign">
                     <img src="<?php bloginfo('template_directory') ?>/assets/img/next-sign.png">
-                    <a href="#">Back to blog</a>
+                    <a href="<?php echo($_SERVER['HTTP_REFERER'])?>">Back to blog</a>
 
                 </div>
             </div>

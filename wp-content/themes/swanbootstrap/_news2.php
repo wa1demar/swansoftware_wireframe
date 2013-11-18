@@ -57,7 +57,7 @@ $last_post = new WP_Query($args);
 
                                 </div>
                                 <div class='col-xs-9'>
-                                    <b><?php the_title() ?></b><br/>
+                                    <b><a href="<?php the_permalink()?>"><?php the_title() ?></a></b><br/>
                                     <?php the_my_excerpt($post) ?>
                                     <br/>
                                     <a href="<?php the_permalink() ?>">View all +</a>
@@ -116,6 +116,12 @@ $last_post = new WP_Query($args);
     <div class='container'>
         <div class='row'>
             <div class="col-sm-8">
+              <?php  $args2 = array(
+                'category_name' => 'News',
+                'posts_per_page' => 5
+                );
+
+//                $p = new WP_Query($args2); ?>
                 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
                     <div style="position: relative">
                         <div class='img-container <?php if ($last_post_ID == get_the_ID()) echo("first") ?>'
@@ -161,33 +167,79 @@ $last_post = new WP_Query($args);
 
 
                     </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <?php
+                            global $wpdb;
+                            $cat = get_cat_ID('News');
+                            $year = isset($_GET['year']) ? $_GET['year'] : date('Y');
+                            $years = $wpdb->get_results("
+                    SELECT DISTINCT YEAR(post_date) as 'year'
+	                FROM wp_posts
+	                INNER JOIN wp_term_relationships
+                    ON (wp_posts.ID = wp_term_relationships.object_id)
+                    INNER JOIN wp_term_taxonomy
+                    ON (wp_term_relationships.term_taxonomy_id = wp_term_taxonomy.term_taxonomy_id)
+                    AND wp_term_taxonomy.taxonomy = 'category'
+                    AND wp_term_taxonomy.term_id IN ($cat)
+                    where YEAR(post_date) <= $year
+                    ORDER BY post_date DESC LIMIT 2");
 
-                    <?php
-                    global $wpdb;
-                    $limit = 0;
-                    $year_prev = null;
-                    $year = isset($_GET['year']) ? $_GET['year'] : date('Y');
-                    $months = $wpdb->get_results("SELECT DISTINCT MONTH( post_date ) AS month ,	YEAR( post_date ) AS year, COUNT( id ) as post_count FROM $wpdb->posts WHERE post_status = 'publish' and post_date == $$year and post_type = 'post' GROUP BY month , year ORDER BY post_date ASC");
-                    foreach ($months as $month) :
-                        $year_current = $month->year;
+                            $years = array_reverse($years); ?>
 
-                                ?>
+                            <div class="row">
+                                <div class="col-xs-6 text-left">
+                                    <?php if (count($years) > 1) :?>
+                                        <li class="archive-year"><a href="<?php bloginfo('url') ?>/<?php echo $years[0]->year; ?>/?cat=<?php echo(get_cat_ID('News'))?>"><?php echo $years[0]->year; ?></a></li>
+                                    <?php endif; ?>
+                                </div>
+                                <div class="col-xs-6 text-right">
+                                    <?php if (count($years) > 1) :?>
+                                        <li class="archive-year"><a href="<?php bloginfo('url') ?>/<?php echo $years[1]->year; ?>/?cat=<?php echo(get_cat_ID('News'))?>"><?php echo $years[1]->year; ?></a></li>
+                                    <?php else : ?>
+                                        <li class="archive-year"><a href="<?php bloginfo('url') ?>/<?php echo $years[0]->year; ?>/?cat=<?php echo(get_cat_ID('News'))?>"><?php echo $years[0]->year; ?></a></li>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
 
 
-                        <li>
-                            <a href="<?php bloginfo('url') ?>/<?php echo $month->year; ?>/<?php echo date("m", mktime(0, 0, 0, $month->month, 1, $month->year)) ?>"><span
-                                    class="archive-month"><?php echo date_i18n("F", mktime(0, 0, 0, $month->month, 1, $month->year)) ?></span></a>
-                        </li>
 
-                        <?php $year_prev = $year_current; ?>
 
-                        <?php if (++$limit >= 18) {
-                        break;
-                    } ?>
 
-                    <?php endforeach; ?>
 
-                    <?php wp_get_archives('type=monthly&cat=3'); ?>
+                        </div>
+                    </div>
+<div class="row">
+    <div class="col-xs-12 text-center">
+        <?php
+        $cat = get_cat_ID('News');
+        global $wpdb;
+        $year = isset($_GET['year']) ? $_GET['year'] : date('Y');
+        $months = $wpdb->get_results("
+                    SELECT DISTINCT MONTH(post_date) as 'month',  YEAR(post_date) as 'year'
+	                FROM wp_posts
+	                INNER JOIN wp_term_relationships
+                    ON (wp_posts.ID = wp_term_relationships.object_id)
+                    INNER JOIN wp_term_taxonomy
+                    ON (wp_term_relationships.term_taxonomy_id = wp_term_taxonomy.term_taxonomy_id)
+                    AND wp_term_taxonomy.taxonomy = 'category'
+                    AND wp_term_taxonomy.term_id IN ($cat)
+                    where YEAR(post_date) = $year
+                    ORDER BY post_date ASC");
+        foreach ($months as $month) :
+            ?>
+            <li class="archive-month">
+                <a  href="<?php bloginfo('url') ?>/<?php echo $month->year; ?>/<?php echo date("m", mktime(0, 0, 0, $month->month, 1, $month->year)) ?>/?cat=<?php echo(get_cat_ID('News'))?>"><span
+                        ><?php echo substr(date_i18n("F", mktime(0, 0, 0, $month->month, 1, $month->year)), 0, 1) ?></span></a>
+            </li>
+
+        <?php endforeach; ?>
+
+    </div>
+</div>
+
+
+
                 <?php else : ?>
                     <div id='not_found_section'>
                         <div class='rov'>

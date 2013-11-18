@@ -130,16 +130,16 @@
 
 
                 <p class="speech" id='design_speech'>
-                    <span>Industry Solutions</span>
+                    <span>Professional team</span>
                     <br/>
-                    Professional team 75 developers with HQ in the USA
+                     75 developers with HQ in the USA
                 </p>
             </div>
             <div id="app-container">
 
 
                 <p class="speech" id='app_speech'>
-                    <span> Professional Team</span>
+                    <span>Industry Solutions</span>
                     <br/>
                     More than 7 years of working experience
 
@@ -147,7 +147,7 @@
             </div>
             <div id="staff-container">
                 <p class="speech" id='staff_speech'>
-                    <span>Direct Communication</span>
+                    <span>Unique education center</span>
                     <br/>
 
                     Own education system for new employees
@@ -157,7 +157,7 @@
             </div>
             <div id="mobile-container">
                 <p class="speech" id='mobile_speech'>
-                    <span>Latest Technologies</span>
+                    <span>Direct Communication</span>
                     <br/>
                     Direct contact with Project Manager and Development Team
 

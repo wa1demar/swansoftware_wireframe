@@ -102,6 +102,35 @@
     }
   }
 
+  li.archive-year {
+    list-style: none;
+    margin-top: 20px;
+    a {
+      font-size: getRSize(25);
+
+    }
+
+  }
+
+  li.archive-month {
+    list-style: none;
+    display: inline-block;
+    margin-top: 5px;
+
+
+    a {
+      padding: 5px 11px;
+      font-size: getRSize(25);
+      background: $blue_soft;
+      border-radius: 20px;
+      color: #ffffff;
+
+      &:hover {
+        background: $blue;
+      }
+    }
+  }
+
   @media (max-width: 500px) {
     .img-container {
       .shadow {
