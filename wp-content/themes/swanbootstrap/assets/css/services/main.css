@@ -148,10 +148,7 @@ section {
   @media screen {
     #serviceContent .articleList {
       padding: 55px;
-      height: 410px; }
-    #serviceContent .article {
-      display: -webkit-box;
-      display: -moz-box; } }
+      height: 410px; } }
   @media (max-width: 970px) {
     #serviceContent .articleList {
       padding: 40px 30px 0px 140px; }

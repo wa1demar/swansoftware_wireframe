@@ -10,7 +10,7 @@
 
     <?php
     $fields = array(
-        'author' => '<div class="row"><div class="col-sm-4 label">' . __( 'Name' ) . '<img src="' .get_bloginfo('template_directory') . '/assets/img/name.png"></div>
+        'author' => '<div class="row"><div class="col-sm-4 label">Name<img src="' .get_bloginfo('template_directory') . '/assets/img/name.png"></div>
             <div class="col-sm-8"><input type="text" id="author" name="author" class="author" value="' . esc_attr($commenter['comment_author']) . '" placeholder="  John Doe..." maxlength="30" autocomplete="on" tabindex="1" required' . $aria_req . '></div>
         </div>',
         'email' => '<div class="row">
@@ -21,7 +21,7 @@
     $args = array(
         'comment_notes_after' => '',
         'comment_field' => '<div class="row">
-            <div class="col-sm-4 label">' . _x( 'Comment', 'noun' ) . '<img src="'.get_bloginfo('template_directory') .'/assets/img/comment.png"></div>
+            <div class="col-sm-4 label">Comment<img src="'.get_bloginfo('template_directory') .'/assets/img/comment.png"></div>
             <div class="col-sm-8"><textarea id="comment" name="comment"  aria-required="true" placeholder="  Type your message here..."></textarea></div></div>',
         'label_submit' => 'Send',
 
@@ -32,11 +32,11 @@
     ?>
     <ol class="commentlist">
         <?php $args = array(
-            'reply_text' => 'Ответить',
+            'reply_text' => 'Reply',
 //            'callback' => 'verstaka_comment'
         );
         wp_list_comments($args); ?>
     </ol>
     <?php else : ?>
-  <h3>Обсуждения закрыты для данной страницы</h3>
+  <h3>Comments are closed for this page</h3>
 <?php endif ?>

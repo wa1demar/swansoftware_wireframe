@@ -124,7 +124,7 @@
                     ?>
                     <?php foreach (get_field('services') as $key => $value):?>
                     <section class="<?=$value ?>">
-                        <a href="#">
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_title($serv[$value]))); ?>">
                             <?= $serv[$value]?>
                         </a>
                     </section>

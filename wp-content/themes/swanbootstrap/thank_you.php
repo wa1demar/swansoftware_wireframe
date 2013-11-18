@@ -272,9 +272,9 @@ if (isset($_POST['submit_contact_us'])) {
 <?php get_header() ?>
 
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
-    <div class="row body-row">
+    <div class="row body-row" style="margin: 0">
         <div class="container">
-            <div class="col-lg-12">
+            <div class="col-lg-12" style="min-height: 250px">
                 <?php the_content() ?>
             </div>
         </div>

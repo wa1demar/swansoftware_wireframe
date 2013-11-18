@@ -607,6 +607,8 @@
   #sliderFourth section.sec {
     padding-bottom: 0;
     text-align: center; }
+  #sliderFourth img {
+    padding: 10px; }
 
 #sliderFifth {
   background: url("../../img/swan-bg.png") top center no-repeat;

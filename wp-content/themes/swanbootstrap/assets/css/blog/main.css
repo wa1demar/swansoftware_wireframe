@@ -182,6 +182,23 @@
     font-size: 2.1875rem;
     background: url("../../img/next.png") right center no-repeat;
     padding-right: 25px; }
+  #sliderThird li.archive-year {
+    list-style: none;
+    margin-top: 20px; }
+    #sliderThird li.archive-year a {
+      font-size: 2.1875rem; }
+  #sliderThird li.archive-month {
+    list-style: none;
+    display: inline-block;
+    margin-top: 5px; }
+    #sliderThird li.archive-month a {
+      padding: 5px 11px;
+      font-size: 2.1875rem;
+      background: #98b1da;
+      border-radius: 20px;
+      color: #ffffff; }
+      #sliderThird li.archive-month a:hover {
+        background: #6699ff; }
   @media (max-width: 500px) {
     #sliderThird .img-container .shadow {
       bottom: 0.5%; }

@@ -46,7 +46,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" id='center'><img src="<?php bloginfo('template_directory') ?>/assets/img/pdf.png" /> Download our Media Kit</a>
+        <a href="http://magnificent-planet.ru/wp-content/uploads/Swan-MediaKit.pdf" target="_blank" id='center'><img src="<?php bloginfo('template_directory') ?>/assets/img/pdf.png" /> Download our Media Kit</a>
     </div>
 
 </div>
@@ -55,7 +55,7 @@
         <div class ='row'>
             <div class= 'col-xs-2'>
             </div>
-            <div class = 'text-section-2 col-xs-8 '>
+            <div class = 'text-section-2 col-xs-8 content'>
                 <?php the_content()?>
 
             </div>

@@ -81,7 +81,7 @@
     text-align: left;
     cursor: pointer; }
   #sliderSecond input[type=checkbox].css-checkbox:checked + label.css-label {
-    background: url("../../../assets/img/checkbox_checked.png") left center no-repeat; }
+    background: url("../../../assets/img/checkbox_checked.png") left top no-repeat; }
   #sliderSecond .css-label {
     background: url("../../../assets/img/checkbox_unchecked.png") left top; }
 
@@ -187,3 +187,5 @@
 
   #sectionThried .form-comment {
     width: 100%; } }
+#sectionThried .client-form img {
+  float: none; }
